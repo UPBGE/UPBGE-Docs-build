@@ -1,7 +1,7 @@
 {
     "description": "DO NOT DELETE THIS FILE. This file is used to keep track of which files have been synced in the most recent deployment. If you delete this file a resync will need to be done (which can take a while) - read more: https://github.com/SamKirkland/FTP-Deploy-Action",
     "version": "1.0.0",
-    "generatedTime": 1631025467934,
+    "generatedTime": 1631025501926,
     "data": [
         {
             "type": "file",
@@ -12,8 +12,8 @@
         {
             "type": "file",
             "name": "UPBGE_Manual.zip",
-            "size": 23250181,
-            "hash": "ceba871c945a7fabb36aa631aa06a6f110e9bbd293d3bdb753d500b946d3f0c1"
+            "size": 23250180,
+            "hash": "c69b85263fb6c9c738f11e1fd9227afeb21d7f6f93305fbdb7603b39b0b654c2"
         },
         {
             "type": "folder",
@@ -823,15 +823,15 @@
         },
         {
             "type": "file",
-            "name": "_images/logic-actuators-types-collection-suspend_collection.png",
-            "size": 11397,
-            "hash": "c2bc72e7bebeae527fdc8196360cbbca6e0552a6bc27732055b8c1acd343bda9"
-        },
-        {
-            "type": "file",
             "name": "_images/logic-actuators-types-collection-resume_collection.png",
             "size": 11174,
             "hash": "ea58c182f29e435bb1146744ddd60b3cfb0717e0fa33e7b08248153bb2d79d0e"
+        },
+        {
+            "type": "file",
+            "name": "_images/logic-actuators-types-collection-suspend_collection.png",
+            "size": 11397,
+            "hash": "c2bc72e7bebeae527fdc8196360cbbca6e0552a6bc27732055b8c1acd343bda9"
         },
         {
             "type": "file",
@@ -1585,15 +1585,15 @@
         },
         {
             "type": "file",
-            "name": "_images/tutorials-move_object-debug_properties.png",
-            "size": 27391,
-            "hash": "6687e8b8851b4e87ea321956d199bde338db6923c4d99fcc934605a2ea99d257"
-        },
-        {
-            "type": "file",
             "name": "_images/tutorials-move_object-initial_scene.png",
             "size": 14023,
             "hash": "f42faf0d24ec721670b6f188c22f9d0adcd4e60806bd2490dcc042dd4e24006b"
+        },
+        {
+            "type": "file",
+            "name": "_images/tutorials-move_object-debug_properties.png",
+            "size": 27391,
+            "hash": "6687e8b8851b4e87ea321956d199bde338db6923c4d99fcc934605a2ea99d257"
         },
         {
             "type": "file",
@@ -1643,6 +1643,12 @@
         },
         {
             "type": "file",
+            "name": "_static/documentation_options.js",
+            "size": 354,
+            "hash": "3a0a2cb4f37f57b15bf7196941416030bc360fad9c6f33c391fb061039b66512"
+        },
+        {
+            "type": "file",
             "name": "_static/file.png",
             "size": 286,
             "hash": "5c4bc9a16aebf38c4b950f59b8e501ca36495328cb9eb622218bce9064a35e3e"
@@ -1662,12 +1668,6 @@
             "name": "_static/jquery.js",
             "size": 89476,
             "hash": "f7f6a5894f1d19ddad6fa392b2ece2c5e578cbf7da4ea805b6885eb6985b6e3d"
-        },
-        {
-            "type": "file",
-            "name": "_static/documentation_options.js",
-            "size": 354,
-            "hash": "3a0a2cb4f37f57b15bf7196941416030bc360fad9c6f33c391fb061039b66512"
         },
         {
             "type": "folder",
@@ -3538,6 +3538,12 @@
             "hash": "fa4582d4e6dff48c49e35308a822e1cf6263a6f0077aa29f56dbba98213f677c"
         },
         {
+            "type": "file",
+            "name": "_sources/manual/logic/sensors/introduction.rst.txt",
+            "size": 5336,
+            "hash": "f21144137041769b7e6df7816cafdc5e5104f812f1c5eb107bf7e915afad5768"
+        },
+        {
             "type": "folder",
             "name": "_sources/manual/logic/sensors/types"
         },
@@ -3562,12 +3568,6 @@
         {
             "type": "folder",
             "name": "_sources/manual/logic_nodes/category_2/animation"
-        },
-        {
-            "type": "file",
-            "name": "_sources/manual/logic/sensors/introduction.rst.txt",
-            "size": 5336,
-            "hash": "f21144137041769b7e6df7816cafdc5e5104f812f1c5eb107bf7e915afad5768"
         },
         {
             "type": "file",
@@ -3655,15 +3655,15 @@
         },
         {
             "type": "file",
-            "name": "_sources/manual/python_components/getting_started/index.rst.txt",
-            "size": 718,
-            "hash": "d7a3131171e4fae43bf6093b2c8fdb22b79cec7ed23f703e3d91a216882d7049"
-        },
-        {
-            "type": "file",
             "name": "_sources/manual/python_components/getting_started/character_controller_templates.rst.txt",
             "size": 8178,
             "hash": "1552da65d670d67a7fda22960f70122d405d56a49246a52b4c4bc97c1228f15d"
+        },
+        {
+            "type": "file",
+            "name": "_sources/manual/python_components/getting_started/index.rst.txt",
+            "size": 718,
+            "hash": "d7a3131171e4fae43bf6093b2c8fdb22b79cec7ed23f703e3d91a216882d7049"
         },
         {
             "type": "file",
@@ -5436,8 +5436,8 @@
         {
             "type": "file",
             "name": "manual/logic_nodes/category_2/objects/transformation/apply_rotation.html",
-            "size": 11996,
-            "hash": "01fe6dad14e6500903ab3672b01db7aec29ddee07affa2bace1bc9ac3f1c1b8d"
+            "size": 12003,
+            "hash": "060c6b13c460fd9f5277d49aa802c038366c9da8d65dbf7da412595415450cd3"
         },
         {
             "type": "file",
@@ -5838,8 +5838,8 @@
         {
             "type": "file",
             "name": "_sources/manual/logic_nodes/category_2/objects/transformation/apply_rotation.rst.txt",
-            "size": 764,
-            "hash": "f4644f6d7515236a19cf29502d9289d93f9c3deb005c8f77f035427c5b5bcb6c"
+            "size": 765,
+            "hash": "8bd75ffb3e739d55afab3c13845c27f24941ae1e634e705f792c6dd120ce5efe"
         },
         {
             "type": "file",
