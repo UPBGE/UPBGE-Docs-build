@@ -1,7 +1,7 @@
 {
     "description": "DO NOT DELETE THIS FILE. This file is used to keep track of which files have been synced in the most recent deployment. If you delete this file a resync will need to be done (which can take a while) - read more: https://github.com/SamKirkland/FTP-Deploy-Action",
     "version": "1.0.0",
-    "generatedTime": 1631025501926,
+    "generatedTime": 1631031313061,
     "data": [
         {
             "type": "file",
@@ -10,14 +10,14 @@
             "hash": "c5a223fa32b07dffddb2f204fcab68ca64d291688033cdf03bb9ff77a16391e4"
         },
         {
-            "type": "file",
-            "name": "UPBGE_Manual.zip",
-            "size": 23250180,
-            "hash": "c69b85263fb6c9c738f11e1fd9227afeb21d7f6f93305fbdb7603b39b0b654c2"
-        },
-        {
             "type": "folder",
             "name": "_images"
+        },
+        {
+            "type": "file",
+            "name": "UPBGE_Manual.zip",
+            "size": 23250096,
+            "hash": "19c2d0eeb57edcdaae664b5545a91331de2c5b2da6039f43dc7689ca5def3aa5"
         },
         {
             "type": "folder",
@@ -60,16 +60,6 @@
             "name": "searchindex.js",
             "size": 126367,
             "hash": "fe1b03c64a31a45687c6760482184399f2e0889dc40d4cea176262c5fc0db72e"
-        },
-        {
-            "type": "file",
-            "name": "_sources/index.rst.txt",
-            "size": 1106,
-            "hash": "4075f341a0bceb9c715da20c781ecb177d7d64c6ac31135b1eb3973cfebce5d7"
-        },
-        {
-            "type": "folder",
-            "name": "_sources/manual"
         },
         {
             "type": "file",
@@ -1375,15 +1365,15 @@
         },
         {
             "type": "file",
-            "name": "_images/logic-sensors-types-message-message.png",
-            "size": 9151,
-            "hash": "8f866905c61b5de2a9bedaadea3de3af52b08d0744d3f407c14a60a3af804b7a"
-        },
-        {
-            "type": "file",
             "name": "_images/logic-sensors-types-mouse-mouse.png",
             "size": 9800,
             "hash": "96c96410c1c1b2c37ad545c333400ec0808c94a10d534479892a9ec03fe941ef"
+        },
+        {
+            "type": "file",
+            "name": "_images/logic-sensors-types-message-message.png",
+            "size": 9151,
+            "hash": "8f866905c61b5de2a9bedaadea3de3af52b08d0744d3f407c14a60a3af804b7a"
         },
         {
             "type": "file",
@@ -1423,15 +1413,15 @@
         },
         {
             "type": "file",
-            "name": "_images/logic-sensors-types-random-random.png",
-            "size": 7255,
-            "hash": "421a2ce6475b99bd16c396ebb050f5a0581055eecdb5d3555e50ee52db4d144a"
-        },
-        {
-            "type": "file",
             "name": "_images/logic-sensors-types-ray-ray.png",
             "size": 11899,
             "hash": "a46a19229476f2ddbc4e61de70d66c193f49b5e4f68c94d163d996f2c7378add"
+        },
+        {
+            "type": "file",
+            "name": "_images/logic-sensors-types-random-random.png",
+            "size": 7255,
+            "hash": "421a2ce6475b99bd16c396ebb050f5a0581055eecdb5d3555e50ee52db4d144a"
         },
         {
             "type": "file",
@@ -1585,12 +1575,6 @@
         },
         {
             "type": "file",
-            "name": "_images/tutorials-move_object-initial_scene.png",
-            "size": 14023,
-            "hash": "f42faf0d24ec721670b6f188c22f9d0adcd4e60806bd2490dcc042dd4e24006b"
-        },
-        {
-            "type": "file",
             "name": "_images/tutorials-move_object-debug_properties.png",
             "size": 27391,
             "hash": "6687e8b8851b4e87ea321956d199bde338db6923c4d99fcc934605a2ea99d257"
@@ -1600,6 +1584,12 @@
             "name": "_images/tutorials-move_object-logic_editor_1.png",
             "size": 19551,
             "hash": "294fc9a5cb3c479528720f6370f510c70efec38110bbc602b947242dcbeed793"
+        },
+        {
+            "type": "file",
+            "name": "_images/tutorials-move_object-initial_scene.png",
+            "size": 14023,
+            "hash": "f42faf0d24ec721670b6f188c22f9d0adcd4e60806bd2490dcc042dd4e24006b"
         },
         {
             "type": "file",
@@ -1624,6 +1614,16 @@
             "name": "_images/tutorials-play_animation-logic_editor_1.png",
             "size": 47449,
             "hash": "415c5585d6807a4d3dcd9fa308a76c3ea447a5907edb3603d75143992ed0029d"
+        },
+        {
+            "type": "file",
+            "name": "_sources/index.rst.txt",
+            "size": 1106,
+            "hash": "4075f341a0bceb9c715da20c781ecb177d7d64c6ac31135b1eb3973cfebce5d7"
+        },
+        {
+            "type": "folder",
+            "name": "_sources/manual"
         },
         {
             "type": "file",
@@ -5436,8 +5436,8 @@
         {
             "type": "file",
             "name": "manual/logic_nodes/category_2/objects/transformation/apply_rotation.html",
-            "size": 12003,
-            "hash": "060c6b13c460fd9f5277d49aa802c038366c9da8d65dbf7da412595415450cd3"
+            "size": 11792,
+            "hash": "6cb46d1cb8bec9cdae4a48c58526541b8a9ce5c1045a5f4de22d2ccaf68bb137"
         },
         {
             "type": "file",
@@ -5838,8 +5838,8 @@
         {
             "type": "file",
             "name": "_sources/manual/logic_nodes/category_2/objects/transformation/apply_rotation.rst.txt",
-            "size": 765,
-            "hash": "8bd75ffb3e739d55afab3c13845c27f24941ae1e634e705f792c6dd120ce5efe"
+            "size": 612,
+            "hash": "b0b64070f3a5e6aac150b353ba804bbe503bbc459291a24fc098fc42fcc273da"
         },
         {
             "type": "file",
