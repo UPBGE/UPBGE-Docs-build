@@ -1,7 +1,7 @@
 {
     "description": "DO NOT DELETE THIS FILE. This file is used to keep track of which files have been synced in the most recent deployment. If you delete this file a resync will need to be done (which can take a while) - read more: https://github.com/SamKirkland/FTP-Deploy-Action",
     "version": "1.0.0",
-    "generatedTime": 1631041197254,
+    "generatedTime": 1631041583307,
     "data": [
         {
             "type": "file",
@@ -12,8 +12,8 @@
         {
             "type": "file",
             "name": "UPBGE_Manual.zip",
-            "size": 23250156,
-            "hash": "3809db596ce965c9ca6d34b5122fe7f2c2e6d6c24470984951bbca68b920e549"
+            "size": 23250236,
+            "hash": "545375fcba6ffac5d576c61c8c0658e073134a857bbb533c3ef863fa22f17b52"
         },
         {
             "type": "folder",
@@ -58,8 +58,8 @@
         {
             "type": "file",
             "name": "searchindex.js",
-            "size": 126403,
-            "hash": "017c482e11d69dcb4d6ba549a4afedb0c16151010ec3795dc5f0ed9825a0636a"
+            "size": 126435,
+            "hash": "6d03bc91abfc1587f63cd4504a63d1830f7f9f1470136b4326b77d0d9cba0210"
         },
         {
             "type": "file",
@@ -1059,6 +1059,12 @@
         },
         {
             "type": "file",
+            "name": "_images/logic-actuators-types-random-float_uniform.png",
+            "size": 15079,
+            "hash": "c489bc5ed830766e462704ef9b8741db0c3d7dacf54b69532fb8d52663e04a8e"
+        },
+        {
+            "type": "file",
             "name": "_images/logic-actuators-types-random-int_constant.png",
             "size": 14582,
             "hash": "988a9ba4ed964baa86eeafe00cfd153d24caa5c564f558b8f277db181be5263a"
@@ -1068,12 +1074,6 @@
             "name": "_images/logic-actuators-types-random-int_poisson.png",
             "size": 14537,
             "hash": "a691e73220cc9ac7fcf37ab00ff386e30276fc9383c59203e5fbad1d77e0aa07"
-        },
-        {
-            "type": "file",
-            "name": "_images/logic-actuators-types-random-float_uniform.png",
-            "size": 15079,
-            "hash": "c489bc5ed830766e462704ef9b8741db0c3d7dacf54b69532fb8d52663e04a8e"
         },
         {
             "type": "file",
@@ -1626,12 +1626,6 @@
             "name": "_sources/manual"
         },
         {
-            "type": "file",
-            "name": "_static/basic.css",
-            "size": 14636,
-            "hash": "ce3b09e4ff38bb80da6e487e324d7e70e6d63ec43cbbd43b0fe0e84c86f2811d"
-        },
-        {
             "type": "folder",
             "name": "_static/css"
         },
@@ -1640,6 +1634,12 @@
             "name": "_static/doctools.js",
             "size": 9630,
             "hash": "5a001934886bdedcbabf89f6a81e8253c0c1bb47ac18e9c7b859f0fcb1d92406"
+        },
+        {
+            "type": "file",
+            "name": "_static/basic.css",
+            "size": 14636,
+            "hash": "ce3b09e4ff38bb80da6e487e324d7e70e6d63ec43cbbd43b0fe0e84c86f2811d"
         },
         {
             "type": "file",
@@ -2849,15 +2849,15 @@
         },
         {
             "type": "file",
-            "name": "_static/fonts/RobotoSlab/roboto-slab-v7-bold.eot",
-            "size": 79520,
-            "hash": "4438991a12ff951cc8d0e83348ec06d9f910591b1b014c476e9595d4da099e48"
-        },
-        {
-            "type": "file",
             "name": "_static/fonts/RobotoSlab/roboto-slab-v7-bold.ttf",
             "size": 170616,
             "hash": "ba12d2eab1fa765b6b05398fa7e047dd76293f0c051ce57a8f7b0c591c14d42b"
+        },
+        {
+            "type": "file",
+            "name": "_static/fonts/RobotoSlab/roboto-slab-v7-bold.eot",
+            "size": 79520,
+            "hash": "4438991a12ff951cc8d0e83348ec06d9f910591b1b014c476e9595d4da099e48"
         },
         {
             "type": "file",
@@ -5448,8 +5448,8 @@
         {
             "type": "file",
             "name": "manual/logic_nodes/category_2/objects/transformation/follow_path.html",
-            "size": 13086,
-            "hash": "3a742e2d49433fc2b6c876cf28783b62311ea9cbb25c7eaf86ddd57583ad0335"
+            "size": 13164,
+            "hash": "fd2dd11d6deebf08296b547f695d690dd0f51cf70481c9304a4e86945b28c8e9"
         },
         {
             "type": "file",
@@ -5850,8 +5850,8 @@
         {
             "type": "file",
             "name": "_sources/manual/logic_nodes/category_2/objects/transformation/follow_path.rst.txt",
-            "size": 1999,
-            "hash": "3a624c1e06f71c18da79c8371f952ed4a1177ad250b4d9165db8504b1f4993a5"
+            "size": 2069,
+            "hash": "6781d58fb57c4438cb7eb6601140fc4088ea56b5ae8c72621803c456c8a5352d"
         },
         {
             "type": "file",
