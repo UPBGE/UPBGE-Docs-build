@@ -1,7 +1,7 @@
 {
     "description": "DO NOT DELETE THIS FILE. This file is used to keep track of which files have been synced in the most recent deployment. If you delete this file a resync will need to be done (which can take a while) - read more: https://github.com/SamKirkland/FTP-Deploy-Action",
     "version": "1.0.0",
-    "generatedTime": 1631024382314,
+    "generatedTime": 1631025367048,
     "data": [
         {
             "type": "file",
@@ -12,8 +12,8 @@
         {
             "type": "file",
             "name": "UPBGE_Manual.zip",
-            "size": 23250201,
-            "hash": "c1af8227528a4b8148d35d928bcc0eec81f4c55e1469d0e2be97efad60f1809b"
+            "size": 23250158,
+            "hash": "8a5dc181b6b870b748a9d1a824abee2c6b2293faa649df7c41f357f1b9ebff28"
         },
         {
             "type": "folder",
@@ -58,8 +58,18 @@
         {
             "type": "file",
             "name": "searchindex.js",
-            "size": 126400,
-            "hash": "4f8e35508cfd11cb7b47b70258f4dbae4707c2e2daa5033fd133a677a12832a2"
+            "size": 126367,
+            "hash": "fe1b03c64a31a45687c6760482184399f2e0889dc40d4cea176262c5fc0db72e"
+        },
+        {
+            "type": "file",
+            "name": "_sources/index.rst.txt",
+            "size": 1106,
+            "hash": "4075f341a0bceb9c715da20c781ecb177d7d64c6ac31135b1eb3973cfebce5d7"
+        },
+        {
+            "type": "folder",
+            "name": "_sources/manual"
         },
         {
             "type": "file",
@@ -759,27 +769,27 @@
         },
         {
             "type": "file",
-            "name": "_images/logic-actuators-editing-column.png",
-            "size": 15491,
-            "hash": "3a93c8d2630a14f7917813879fa46021bdcf75edd80ba6e6fb9265656eb42075"
-        },
-        {
-            "type": "file",
             "name": "_images/logic-actuators-editing-column1.png",
             "size": 15377,
             "hash": "22c2f18560293399e5a10a5e387a9b63bda76e9a9445d4e7f4afcfe8fe26a1fa"
         },
         {
             "type": "file",
-            "name": "_images/logic-actuators-types-action-action.png",
-            "size": 21062,
-            "hash": "1846f9d53ccf34f03116a7eb023ac4a9767b9deebb6de030175e669e153a5732"
-        },
-        {
-            "type": "file",
             "name": "_images/logic-actuators-editing-column2.png",
             "size": 15516,
             "hash": "92335dc63938751e11254894f6f45469262ac43124d92e434af7f0cb031938e4"
+        },
+        {
+            "type": "file",
+            "name": "_images/logic-actuators-editing-column.png",
+            "size": 15491,
+            "hash": "3a93c8d2630a14f7917813879fa46021bdcf75edd80ba6e6fb9265656eb42075"
+        },
+        {
+            "type": "file",
+            "name": "_images/logic-actuators-types-action-action.png",
+            "size": 21062,
+            "hash": "1846f9d53ccf34f03116a7eb023ac4a9767b9deebb6de030175e669e153a5732"
         },
         {
             "type": "file",
@@ -1431,15 +1441,15 @@
         },
         {
             "type": "file",
-            "name": "_images/logic-states-panel1.png",
-            "size": 14487,
-            "hash": "f1f4a2a256dc739bdfc837db7ce91a72f83bd95df4280b5db0d0e69a5e51ef61"
-        },
-        {
-            "type": "file",
             "name": "_images/logic-states-panel2.png",
             "size": 14453,
             "hash": "1b8983ad2860a2da3e7d3ca54d578042dc4dfe62ec80051fd802f7c1e7f18a93"
+        },
+        {
+            "type": "file",
+            "name": "_images/logic-states-panel1.png",
+            "size": 14487,
+            "hash": "f1f4a2a256dc739bdfc837db7ce91a72f83bd95df4280b5db0d0e69a5e51ef61"
         },
         {
             "type": "file",
@@ -1617,16 +1627,6 @@
         },
         {
             "type": "file",
-            "name": "_sources/index.rst.txt",
-            "size": 1106,
-            "hash": "4075f341a0bceb9c715da20c781ecb177d7d64c6ac31135b1eb3973cfebce5d7"
-        },
-        {
-            "type": "folder",
-            "name": "_sources/manual"
-        },
-        {
-            "type": "file",
             "name": "_static/basic.css",
             "size": 14636,
             "hash": "ce3b09e4ff38bb80da6e487e324d7e70e6d63ec43cbbd43b0fe0e84c86f2811d"
@@ -1687,15 +1687,15 @@
         },
         {
             "type": "file",
-            "name": "_static/pygments.css",
-            "size": 4395,
-            "hash": "c67b5260b50a0f434e9b26585479ce67ab2184adc7b31c26d665642d3512835f"
-        },
-        {
-            "type": "file",
             "name": "_static/plus.png",
             "size": 90,
             "hash": "54115199b96a130cba02147c47c0deb43dcc9b9f08b5162bba8642b34980ac63"
+        },
+        {
+            "type": "file",
+            "name": "_static/pygments.css",
+            "size": 4395,
+            "hash": "c67b5260b50a0f434e9b26585479ce67ab2184adc7b31c26d665642d3512835f"
         },
         {
             "type": "file",
@@ -1705,15 +1705,15 @@
         },
         {
             "type": "file",
-            "name": "_static/underscore.js",
-            "size": 19530,
-            "hash": "218fb1c1fc72e9af6b866f430be2a67fa376392b4db2f4dbf32772671b6ae55c"
-        },
-        {
-            "type": "file",
             "name": "_static/underscore-1.13.1.js",
             "size": 68420,
             "hash": "cc10f799cd0f6b65f95c4012445497e5ba3cb9f51964a9468940b27bde98b487"
+        },
+        {
+            "type": "file",
+            "name": "_static/underscore.js",
+            "size": 19530,
+            "hash": "218fb1c1fc72e9af6b866f430be2a67fa376392b4db2f4dbf32772671b6ae55c"
         },
         {
             "type": "file",
@@ -2094,6 +2094,30 @@
             "name": "manual/editors/text"
         },
         {
+            "type": "file",
+            "name": "manual/introduction/briefing.html",
+            "size": 19019,
+            "hash": "d6068052077631d182fb4755aa3f05bd52159ed4fa0d9d2e2d5740b22bd7e729"
+        },
+        {
+            "type": "file",
+            "name": "manual/introduction/compatibility_notes.html",
+            "size": 12161,
+            "hash": "76b5eb41aae56facb61f691d3fce51b3fb16f0ef5915fc9a9e776e7d366beae5"
+        },
+        {
+            "type": "file",
+            "name": "manual/introduction/deeper_look.html",
+            "size": 13820,
+            "hash": "8e56955aa2834db05fe79581344748c263afd9ac56a07df737c91520e7327e45"
+        },
+        {
+            "type": "file",
+            "name": "manual/introduction/index.html",
+            "size": 8036,
+            "hash": "1b57dc284511ee574f884bd94381aa715178c0a1382a77e4d30d8316010c78ea"
+        },
+        {
             "type": "folder",
             "name": "manual/logic/actuators"
         },
@@ -2128,30 +2152,6 @@
             "name": "manual/logic/states.html",
             "size": 12696,
             "hash": "9b070cb19292e84bfc0f9546f4ccf42d0409aa0ca6aba41b4451bba500ff22d8"
-        },
-        {
-            "type": "file",
-            "name": "manual/introduction/briefing.html",
-            "size": 19019,
-            "hash": "d6068052077631d182fb4755aa3f05bd52159ed4fa0d9d2e2d5740b22bd7e729"
-        },
-        {
-            "type": "file",
-            "name": "manual/introduction/compatibility_notes.html",
-            "size": 12161,
-            "hash": "76b5eb41aae56facb61f691d3fce51b3fb16f0ef5915fc9a9e776e7d366beae5"
-        },
-        {
-            "type": "file",
-            "name": "manual/introduction/deeper_look.html",
-            "size": 13820,
-            "hash": "8e56955aa2834db05fe79581344748c263afd9ac56a07df737c91520e7327e45"
-        },
-        {
-            "type": "file",
-            "name": "manual/introduction/index.html",
-            "size": 8036,
-            "hash": "1b57dc284511ee574f884bd94381aa715178c0a1382a77e4d30d8316010c78ea"
         },
         {
             "type": "folder",
@@ -2274,6 +2274,10 @@
             "hash": "5b7f3718de3ef100ab6e2366db81c7733593f6563ae56b4d7be2adb80404a7b7"
         },
         {
+            "type": "folder",
+            "name": "manual/tutorials/getting_started"
+        },
+        {
             "type": "file",
             "name": "manual/tutorials/index.html",
             "size": 9291,
@@ -2286,10 +2290,6 @@
         {
             "type": "folder",
             "name": "manual/tutorials/introducing_logic_nodes"
-        },
-        {
-            "type": "folder",
-            "name": "manual/tutorials/getting_started"
         },
         {
             "type": "folder",
@@ -2313,15 +2313,15 @@
         },
         {
             "type": "file",
-            "name": "_sources/manual/about/whats_new.rst.txt",
-            "size": 416,
-            "hash": "af0e6af2308604a643de1d441b9fc19b22f011e453a93d076179a0cd57c8c3fe"
-        },
-        {
-            "type": "file",
             "name": "_sources/manual/about/license.rst.txt",
             "size": 2426,
             "hash": "1fa6992bf518eed2afab4048f66ed93e3fb98623139299593b1b2d03c796ebad"
+        },
+        {
+            "type": "file",
+            "name": "_sources/manual/about/whats_new.rst.txt",
+            "size": 416,
+            "hash": "af0e6af2308604a643de1d441b9fc19b22f011e453a93d076179a0cd57c8c3fe"
         },
         {
             "type": "file",
@@ -2921,6 +2921,12 @@
         },
         {
             "type": "file",
+            "name": "manual/editors/properties/materials.html",
+            "size": 10273,
+            "hash": "2bee0ca2b1da268097d63033b6d02b65535b42760aeb8c65366816c436f46bb8"
+        },
+        {
+            "type": "file",
             "name": "manual/editors/properties/object.html",
             "size": 25512,
             "hash": "045d0c8f4e60b619a9c31e79f12c1225c16ada8098583f4439c8203e2faacd40"
@@ -2930,12 +2936,6 @@
             "name": "manual/editors/properties/physics.html",
             "size": 19305,
             "hash": "f8908c56f2a1aa8337f24e5459c395829f2155775faa5384dde996360e952130"
-        },
-        {
-            "type": "file",
-            "name": "manual/editors/properties/materials.html",
-            "size": 10273,
-            "hash": "2bee0ca2b1da268097d63033b6d02b65535b42760aeb8c65366816c436f46bb8"
         },
         {
             "type": "file",
@@ -3237,6 +3237,30 @@
         },
         {
             "type": "file",
+            "name": "manual/tutorials/getting_started/3D_basic_concepts.html",
+            "size": 23937,
+            "hash": "17981489a78c0d013674dba23141ca096c0f61376e548f224f42f18622c3a13a"
+        },
+        {
+            "type": "file",
+            "name": "manual/tutorials/getting_started/index.html",
+            "size": 12082,
+            "hash": "106c2aa93eb819f507af3e45a7349841afc25820ca320b2c6ad82e4ed37c3a71"
+        },
+        {
+            "type": "file",
+            "name": "manual/tutorials/getting_started/blender_basic.html",
+            "size": 38384,
+            "hash": "6620bb77bcaea1783962e878498fa7fdec952131d55f197c81a425b22ce97b6e"
+        },
+        {
+            "type": "file",
+            "name": "manual/tutorials/getting_started/game_basic_concepts.html",
+            "size": 15161,
+            "hash": "5fa26c0546ea0b28bc29b32fe74e9d450f5f88e41a43ee0f899b030581719d61"
+        },
+        {
+            "type": "file",
             "name": "manual/tutorials/introducing_logic_bricks/first_person_camera.html",
             "size": 7808,
             "hash": "4079d620943e6b8b7347fc1d404598b9fe89ad4a3a3c34f72f8ac0f628e63d91"
@@ -3276,30 +3300,6 @@
             "name": "manual/tutorials/introducing_logic_nodes/index.html",
             "size": 8117,
             "hash": "8864076db5d0518921b50be30beaf6633bd716210c31cb5e73ed2371038f2f34"
-        },
-        {
-            "type": "file",
-            "name": "manual/tutorials/getting_started/3D_basic_concepts.html",
-            "size": 23937,
-            "hash": "17981489a78c0d013674dba23141ca096c0f61376e548f224f42f18622c3a13a"
-        },
-        {
-            "type": "file",
-            "name": "manual/tutorials/getting_started/blender_basic.html",
-            "size": 38384,
-            "hash": "6620bb77bcaea1783962e878498fa7fdec952131d55f197c81a425b22ce97b6e"
-        },
-        {
-            "type": "file",
-            "name": "manual/tutorials/getting_started/game_basic_concepts.html",
-            "size": 15161,
-            "hash": "5fa26c0546ea0b28bc29b32fe74e9d450f5f88e41a43ee0f899b030581719d61"
-        },
-        {
-            "type": "file",
-            "name": "manual/tutorials/getting_started/index.html",
-            "size": 12082,
-            "hash": "106c2aa93eb819f507af3e45a7349841afc25820ca320b2c6ad82e4ed37c3a71"
         },
         {
             "type": "file",
@@ -3793,6 +3793,54 @@
         },
         {
             "type": "file",
+            "name": "manual/logic/controllers/types/and.html",
+            "size": 9778,
+            "hash": "802480ea91a5b34622f873bab1dc6b2d62d8fe2db8dc4bdf246bb442a1919ea6"
+        },
+        {
+            "type": "file",
+            "name": "manual/logic/controllers/types/expression.html",
+            "size": 19395,
+            "hash": "acea96679e4aa486ad1330eb1000dc8b60e38f3ebaf6d9e8a48a2f9c0af5c60b"
+        },
+        {
+            "type": "file",
+            "name": "manual/logic/controllers/types/nand.html",
+            "size": 9824,
+            "hash": "85ed7abfe58f8bef0d4dcc4ebbf1bd634b6d3e47ca89c80784283413c9f74635"
+        },
+        {
+            "type": "file",
+            "name": "manual/logic/controllers/types/nor.html",
+            "size": 9734,
+            "hash": "f777dc7532927bea746145b5fb1d72e99129475e5ebf385d8c0a576acc760817"
+        },
+        {
+            "type": "file",
+            "name": "manual/logic/controllers/types/or.html",
+            "size": 9734,
+            "hash": "9d11c733812e2c54321423989a3edd6417b3878e892ddc5199f7c623c23cec1c"
+        },
+        {
+            "type": "file",
+            "name": "manual/logic/controllers/types/python.html",
+            "size": 11769,
+            "hash": "1e09fe33c75a8de7e8d2c24fafb8cb54f4fcad27a525ca6370866b2c65f0f6f2"
+        },
+        {
+            "type": "file",
+            "name": "manual/logic/controllers/types/xnor.html",
+            "size": 9784,
+            "hash": "25243f9a51bf97606065383976160505a72d0d22a29537068883544b20f0b379"
+        },
+        {
+            "type": "file",
+            "name": "manual/logic/controllers/types/xor.html",
+            "size": 9748,
+            "hash": "b78f9eb53d9f58abd6b7340802ff5a909555b1c21546ac7c527a2af73f95ce0a"
+        },
+        {
+            "type": "file",
             "name": "manual/logic/actuators/types/action.html",
             "size": 13272,
             "hash": "0089cf415dd6c11fcf68d62ac98f3ac08d02fa61a931885494501dccf8d1c123"
@@ -3910,54 +3958,6 @@
             "name": "manual/logic/actuators/types/visibility.html",
             "size": 11487,
             "hash": "527caf93e16c201f0dc426d5a58c80a024fbe240f7fc596eb64bf4d86f77579f"
-        },
-        {
-            "type": "file",
-            "name": "manual/logic/controllers/types/and.html",
-            "size": 9778,
-            "hash": "802480ea91a5b34622f873bab1dc6b2d62d8fe2db8dc4bdf246bb442a1919ea6"
-        },
-        {
-            "type": "file",
-            "name": "manual/logic/controllers/types/expression.html",
-            "size": 19395,
-            "hash": "acea96679e4aa486ad1330eb1000dc8b60e38f3ebaf6d9e8a48a2f9c0af5c60b"
-        },
-        {
-            "type": "file",
-            "name": "manual/logic/controllers/types/nand.html",
-            "size": 9824,
-            "hash": "85ed7abfe58f8bef0d4dcc4ebbf1bd634b6d3e47ca89c80784283413c9f74635"
-        },
-        {
-            "type": "file",
-            "name": "manual/logic/controllers/types/nor.html",
-            "size": 9734,
-            "hash": "f777dc7532927bea746145b5fb1d72e99129475e5ebf385d8c0a576acc760817"
-        },
-        {
-            "type": "file",
-            "name": "manual/logic/controllers/types/or.html",
-            "size": 9734,
-            "hash": "9d11c733812e2c54321423989a3edd6417b3878e892ddc5199f7c623c23cec1c"
-        },
-        {
-            "type": "file",
-            "name": "manual/logic/controllers/types/python.html",
-            "size": 11769,
-            "hash": "1e09fe33c75a8de7e8d2c24fafb8cb54f4fcad27a525ca6370866b2c65f0f6f2"
-        },
-        {
-            "type": "file",
-            "name": "manual/logic/controllers/types/xnor.html",
-            "size": 9784,
-            "hash": "25243f9a51bf97606065383976160505a72d0d22a29537068883544b20f0b379"
-        },
-        {
-            "type": "file",
-            "name": "manual/logic/controllers/types/xor.html",
-            "size": 9748,
-            "hash": "b78f9eb53d9f58abd6b7340802ff5a909555b1c21546ac7c527a2af73f95ce0a"
         },
         {
             "type": "file",
@@ -5436,8 +5436,8 @@
         {
             "type": "file",
             "name": "manual/logic_nodes/category_2/objects/transformation/apply_rotation.html",
-            "size": 11949,
-            "hash": "f8113dedc2812f2f91af9bc8b75732162f164fe2d1a3e625cbe8d02044e1627a"
+            "size": 11905,
+            "hash": "3cc19f27f22eaa77b15d1c156e3053dfb2269c3838d1e98927488279793cf1c3"
         },
         {
             "type": "file",
@@ -5838,8 +5838,8 @@
         {
             "type": "file",
             "name": "_sources/manual/logic_nodes/category_2/objects/transformation/apply_rotation.rst.txt",
-            "size": 668,
-            "hash": "3f0ae5a8b770debebfe3161bf387d3e9ea0107fb2b0ff8f6d2323b8cb30fa697"
+            "size": 681,
+            "hash": "e681f0d05912e5e2bb59641703cea95143a6235507cd3589e3d74bb239376da9"
         },
         {
             "type": "file",
