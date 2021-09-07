@@ -228,7 +228,7 @@
 <h1>Rotate to<a class="headerlink" href="#rotate-to" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="description">
 <h2>Description<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h2>
-<p>Rotates a selected object to a specific angle instantly.</p>
+<p>Rotates a selected object to a specific angle, it can be instantaneous or with speed.</p>
 <p>Applies rotation only on a single axis and fixed angulation in the world.</p>
 <p>See also <a class="reference external" href="https://upbge.org/manual/manual/logic_nodes/category_2/objects/transformation/apply_rotation.html">Apply Rotation</a></p>
 </div>
@@ -240,6 +240,8 @@
 <dt>Object</dt><dd><p>Object that will be rotared</p>
 </dd>
 <dt>Target</dt><dd><p>The object’s rotation defined in degrees</p>
+</dd>
+<dt>Speed</dt><dd><p>The speed to complete the move. Every time the node is activated, the displacement made will be smaller</p>
 </dd>
 <dt>Rot Axis</dt><dd><p>The axis of the object that will be used to rotate it during node execution</p>
 </dd>

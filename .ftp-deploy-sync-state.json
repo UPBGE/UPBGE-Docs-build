@@ -1,7 +1,7 @@
 {
     "description": "DO NOT DELETE THIS FILE. This file is used to keep track of which files have been synced in the most recent deployment. If you delete this file a resync will need to be done (which can take a while) - read more: https://github.com/SamKirkland/FTP-Deploy-Action",
     "version": "1.0.0",
-    "generatedTime": 1631032423329,
+    "generatedTime": 1631033898901,
     "data": [
         {
             "type": "file",
@@ -12,8 +12,8 @@
         {
             "type": "file",
             "name": "UPBGE_Manual.zip",
-            "size": 23250153,
-            "hash": "7c885b0eebfa7678cf2daaa67501ccd67f27b6bde84010535cbe688601e61d8c"
+            "size": 23250317,
+            "hash": "bffa7c1c99a2e3d036ca7d258b41d217311bb884e28811d497fdff97ae56d336"
         },
         {
             "type": "folder",
@@ -58,8 +58,8 @@
         {
             "type": "file",
             "name": "searchindex.js",
-            "size": 126374,
-            "hash": "c11cc77de833990d99aea5404f27250cd23627c7ec13cd43d8986fcd516438ff"
+            "size": 126426,
+            "hash": "4e3d3e6d7380f89101a4a3d2c968e31bef17f714be705702388d0ebbd67aed24"
         },
         {
             "type": "file",
@@ -783,15 +783,15 @@
         },
         {
             "type": "file",
-            "name": "_images/logic-actuators-types-armature-armature.png",
-            "size": 12150,
-            "hash": "56629eaa6f7fd0da7340fcd6e598d85dcf605b91136c4c679a1a287f9ce5ca05"
-        },
-        {
-            "type": "file",
             "name": "_images/logic-actuators-types-camera-camera.png",
             "size": 16767,
             "hash": "e2863bb5daa1c0b11cb276872b41e6f96b1efdadeb0aab80f6353294eeed4812"
+        },
+        {
+            "type": "file",
+            "name": "_images/logic-actuators-types-collection-collection.png",
+            "size": 11397,
+            "hash": "c2bc72e7bebeae527fdc8196360cbbca6e0552a6bc27732055b8c1acd343bda9"
         },
         {
             "type": "file",
@@ -801,9 +801,9 @@
         },
         {
             "type": "file",
-            "name": "_images/logic-actuators-types-collection-collection.png",
-            "size": 11397,
-            "hash": "c2bc72e7bebeae527fdc8196360cbbca6e0552a6bc27732055b8c1acd343bda9"
+            "name": "_images/logic-actuators-types-armature-armature.png",
+            "size": 12150,
+            "hash": "56629eaa6f7fd0da7340fcd6e598d85dcf605b91136c4c679a1a287f9ce5ca05"
         },
         {
             "type": "file",
@@ -843,15 +843,15 @@
         },
         {
             "type": "file",
-            "name": "_images/logic-actuators-types-constraint-location.png",
-            "size": 16434,
-            "hash": "c6b0fc5e8aa21df48772762fe72eca55f5988ae579e3bfccc8b52348a6ceb1e4"
-        },
-        {
-            "type": "file",
             "name": "_images/logic-actuators-types-constraint-orientation.png",
             "size": 20050,
             "hash": "d5a2d41d89e44ae10499df6782969f6f2d3b940e84d8d4471626f95bd95ff630"
+        },
+        {
+            "type": "file",
+            "name": "_images/logic-actuators-types-constraint-location.png",
+            "size": 16434,
+            "hash": "c6b0fc5e8aa21df48772762fe72eca55f5988ae579e3bfccc8b52348a6ceb1e4"
         },
         {
             "type": "file",
@@ -1269,15 +1269,15 @@
         },
         {
             "type": "file",
-            "name": "_images/logic-nodes-category-2-objects-transformation-align-axis-to-vector.png",
-            "size": 16320,
-            "hash": "71255d1f9ca8e1f6e648fe5655920ad188205589f924243917aa26363fb10fcb"
-        },
-        {
-            "type": "file",
             "name": "_images/logic-logic_properties-panel.png",
             "size": 7908,
             "hash": "7c908b06f3b538e1e851986476a5a63ee18b4838046db167a5c5e42b76bf9160"
+        },
+        {
+            "type": "file",
+            "name": "_images/logic-nodes-category-2-objects-transformation-align-axis-to-vector.png",
+            "size": 16320,
+            "hash": "71255d1f9ca8e1f6e648fe5655920ad188205589f924243917aa26363fb10fcb"
         },
         {
             "type": "file",
@@ -3511,12 +3511,6 @@
         },
         {
             "type": "file",
-            "name": "_sources/manual/logic/controllers/index.rst.txt",
-            "size": 376,
-            "hash": "be5200cdf9461f991473dc7b9eeda847c9a291b991333820bd807640c7ffc547"
-        },
-        {
-            "type": "file",
             "name": "_sources/manual/logic/controllers/introduction.rst.txt",
             "size": 2221,
             "hash": "10046c2029620500018e7caa163e3fd1d3c15392c2b468a103f101affb54da1a"
@@ -3524,6 +3518,12 @@
         {
             "type": "folder",
             "name": "_sources/manual/logic/controllers/types"
+        },
+        {
+            "type": "file",
+            "name": "_sources/manual/logic/controllers/index.rst.txt",
+            "size": 376,
+            "hash": "be5200cdf9461f991473dc7b9eeda847c9a291b991333820bd807640c7ffc547"
         },
         {
             "type": "file",
@@ -4050,14 +4050,14 @@
             "hash": "9ca051c2d6c34717ba4641e48459926ed4b37031650fb473115853a712ac0893"
         },
         {
-            "type": "folder",
-            "name": "manual/logic_nodes/category_1/events/custom"
-        },
-        {
             "type": "file",
             "name": "manual/logic_nodes/category_1/events/index.html",
             "size": 7323,
             "hash": "b65f988f0d717a066ddf97ec0a97b4c08a27e0ed51284b92f6a775d1995e01ee"
+        },
+        {
+            "type": "folder",
+            "name": "manual/logic_nodes/category_1/events/custom"
         },
         {
             "type": "file",
@@ -4185,15 +4185,15 @@
         },
         {
             "type": "file",
-            "name": "manual/logic_nodes/category_2/lights/get_light_color.html",
-            "size": 7969,
-            "hash": "91e9507b0e62738ac7ba063f408c3a2e898ffdf6faaceea3847b3dc78fc7aaf2"
-        },
-        {
-            "type": "file",
             "name": "manual/logic_nodes/category_2/lights/get_light_energy.html",
             "size": 8008,
             "hash": "ed27ad0ab467bb29610a1040b352cadf6970f0173eb99451094d3d5c093d08d6"
+        },
+        {
+            "type": "file",
+            "name": "manual/logic_nodes/category_2/lights/get_light_color.html",
+            "size": 7969,
+            "hash": "91e9507b0e62738ac7ba063f408c3a2e898ffdf6faaceea3847b3dc78fc7aaf2"
         },
         {
             "type": "file",
@@ -5472,8 +5472,8 @@
         {
             "type": "file",
             "name": "manual/logic_nodes/category_2/objects/transformation/rotate_to.html",
-            "size": 11899,
-            "hash": "6c8ce1a8638a43bc1ca405d0b785cd78dc42a0048c88285b2e0d9b775cc87fc0"
+            "size": 12063,
+            "hash": "cf7f1ebe7bfef23682e725d4ea11903b34a9f5201cf1b55644ea4aeac28e7db1"
         },
         {
             "type": "file",
@@ -5874,8 +5874,8 @@
         {
             "type": "file",
             "name": "_sources/manual/logic_nodes/category_2/objects/transformation/rotate_to.rst.txt",
-            "size": 690,
-            "hash": "f8748a1a0333299d398208b2d8f6319109df47a97b341160041ba078141be47e"
+            "size": 835,
+            "hash": "a8723bfb8d644e854c1d67f28af6a38f93681bfe02c250cf129bca10ccd82218"
         },
         {
             "type": "file",
