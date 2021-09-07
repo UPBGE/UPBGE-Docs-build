@@ -1,7 +1,7 @@
 {
     "description": "DO NOT DELETE THIS FILE. This file is used to keep track of which files have been synced in the most recent deployment. If you delete this file a resync will need to be done (which can take a while) - read more: https://github.com/SamKirkland/FTP-Deploy-Action",
     "version": "1.0.0",
-    "generatedTime": 1631032227244,
+    "generatedTime": 1631032423329,
     "data": [
         {
             "type": "file",
@@ -12,12 +12,16 @@
         {
             "type": "file",
             "name": "UPBGE_Manual.zip",
-            "size": 23250089,
-            "hash": "52c5e61f6337eb73bc5d283d40bb1a5e3dd850a126a01dbe9f4682fd1ee66c8f"
+            "size": 23250153,
+            "hash": "7c885b0eebfa7678cf2daaa67501ccd67f27b6bde84010535cbe688601e61d8c"
         },
         {
             "type": "folder",
             "name": "_images"
+        },
+        {
+            "type": "folder",
+            "name": "_sources"
         },
         {
             "type": "folder",
@@ -28,10 +32,6 @@
             "name": "genindex.html",
             "size": 5154,
             "hash": "a6501dc56046c0db422ef327b11cdd8a285330109c56eea3445dcb1eb1482e6b"
-        },
-        {
-            "type": "folder",
-            "name": "_sources"
         },
         {
             "type": "file",
@@ -58,104 +58,14 @@
         {
             "type": "file",
             "name": "searchindex.js",
-            "size": 126358,
-            "hash": "cdce954543b5337f2058f0e91e7ff36b4068927c8df9fdb4ce460817b1098632"
+            "size": 126374,
+            "hash": "c11cc77de833990d99aea5404f27250cd23627c7ec13cd43d8986fcd516438ff"
         },
         {
             "type": "file",
-            "name": "_static/basic.css",
-            "size": 14636,
-            "hash": "ce3b09e4ff38bb80da6e487e324d7e70e6d63ec43cbbd43b0fe0e84c86f2811d"
-        },
-        {
-            "type": "folder",
-            "name": "_static/css"
-        },
-        {
-            "type": "file",
-            "name": "_static/documentation_options.js",
-            "size": 354,
-            "hash": "3a0a2cb4f37f57b15bf7196941416030bc360fad9c6f33c391fb061039b66512"
-        },
-        {
-            "type": "file",
-            "name": "_static/doctools.js",
-            "size": 9630,
-            "hash": "5a001934886bdedcbabf89f6a81e8253c0c1bb47ac18e9c7b859f0fcb1d92406"
-        },
-        {
-            "type": "folder",
-            "name": "_static/fonts"
-        },
-        {
-            "type": "file",
-            "name": "_static/file.png",
-            "size": 286,
-            "hash": "5c4bc9a16aebf38c4b950f59b8e501ca36495328cb9eb622218bce9064a35e3e"
-        },
-        {
-            "type": "file",
-            "name": "_static/jquery-3.5.1.js",
-            "size": 287630,
-            "hash": "416a3b2c3bf16d64f6b5b6d0f7b079df2267614dd6847fc2f3271b4409233c37"
-        },
-        {
-            "type": "file",
-            "name": "_static/jquery.js",
-            "size": 89476,
-            "hash": "f7f6a5894f1d19ddad6fa392b2ece2c5e578cbf7da4ea805b6885eb6985b6e3d"
-        },
-        {
-            "type": "folder",
-            "name": "_static/js"
-        },
-        {
-            "type": "file",
-            "name": "_static/language_data.js",
-            "size": 10854,
-            "hash": "004ad6ad7e772d6f3c61c65a7fb255e2b36d8bf583044c08ab97e7e5e6b8442d"
-        },
-        {
-            "type": "file",
-            "name": "_static/minus.png",
-            "size": 90,
-            "hash": "47e7fc50db3699f1ca41ce9a2ffa202c00c5d1d5180c55f62ba859b1bd6cc008"
-        },
-        {
-            "type": "file",
-            "name": "_static/plus.png",
-            "size": 90,
-            "hash": "54115199b96a130cba02147c47c0deb43dcc9b9f08b5162bba8642b34980ac63"
-        },
-        {
-            "type": "file",
-            "name": "_static/pygments.css",
-            "size": 4395,
-            "hash": "c67b5260b50a0f434e9b26585479ce67ab2184adc7b31c26d665642d3512835f"
-        },
-        {
-            "type": "file",
-            "name": "_static/searchtools.js",
-            "size": 16578,
-            "hash": "57b289dc3e22ade1d8ac15549db40f0305b81b5558a2418b6246bb1ac6d463f6"
-        },
-        {
-            "type": "file",
-            "name": "_static/underscore-1.13.1.js",
-            "size": 68420,
-            "hash": "cc10f799cd0f6b65f95c4012445497e5ba3cb9f51964a9468940b27bde98b487"
-        },
-        {
-            "type": "file",
-            "name": "_static/underscore.js",
-            "size": 19530,
-            "hash": "218fb1c1fc72e9af6b866f430be2a67fa376392b4db2f4dbf32772671b6ae55c"
-        },
-        {
-            "type": "file",
-            "name": "_static/upbge_logo.png",
-            "size": 7652,
-            "hash": "fc58268edf918898a12655e700a18f97c24dc2b45299af2d72db696667c641e4"
+            "name": "_images/Fig-01.png",
+            "size": 29776,
+            "hash": "74b77e43c8ee66b5ead277cec5a9afdfa764402279db5ed2cede61cfc21d7e72"
         },
         {
             "type": "file",
@@ -171,15 +81,15 @@
         },
         {
             "type": "file",
-            "name": "_images/Fig-01.png",
-            "size": 29776,
-            "hash": "74b77e43c8ee66b5ead277cec5a9afdfa764402279db5ed2cede61cfc21d7e72"
-        },
-        {
-            "type": "file",
             "name": "_images/Fig-04.png",
             "size": 67784,
             "hash": "70631498c0fff8212045d54057443d30bfe55b8d325e21a30952fa8980e1fe12"
+        },
+        {
+            "type": "file",
+            "name": "_images/Fig-05.png",
+            "size": 6972,
+            "hash": "2c8ad5320813a09338f023ab23b25a945a7358fae2a0f370a4c171361fd547a8"
         },
         {
             "type": "file",
@@ -195,21 +105,15 @@
         },
         {
             "type": "file",
-            "name": "_images/Fig-05.png",
-            "size": 6972,
-            "hash": "2c8ad5320813a09338f023ab23b25a945a7358fae2a0f370a4c171361fd547a8"
+            "name": "_images/Fig-08.png",
+            "size": 374283,
+            "hash": "39219f1fcc836ee06fab79d4c91ce9073eeef2f0a5d2f8f9f0fb101fd6590fb8"
         },
         {
             "type": "file",
             "name": "_images/Fig-09.png",
             "size": 10950,
             "hash": "37997b5f840026c28fbed27bf0e832ccf4c5025c98d756209934be1c96cdebf5"
-        },
-        {
-            "type": "file",
-            "name": "_images/Fig-08.png",
-            "size": 374283,
-            "hash": "39219f1fcc836ee06fab79d4c91ce9073eeef2f0a5d2f8f9f0fb101fd6590fb8"
         },
         {
             "type": "file",
@@ -249,15 +153,15 @@
         },
         {
             "type": "file",
-            "name": "_images/Fig-18.png",
-            "size": 8965,
-            "hash": "2610a50006a64074bb8879ba78abcb73c742a35e3f6e9d01e557f7e89aec4fe6"
-        },
-        {
-            "type": "file",
             "name": "_images/Fig-16.png",
             "size": 10124,
             "hash": "4fd5366ec5f2219c92d5b50cddeeff10eb50176eb82276821de4ccb9b3be46fb"
+        },
+        {
+            "type": "file",
+            "name": "_images/Fig-18.png",
+            "size": 8965,
+            "hash": "2610a50006a64074bb8879ba78abcb73c742a35e3f6e9d01e557f7e89aec4fe6"
         },
         {
             "type": "file",
@@ -393,15 +297,15 @@
         },
         {
             "type": "file",
-            "name": "_images/Fig01-21.png",
-            "size": 42691,
-            "hash": "1b94875049221786f901876e44c3f0c6a22132452984b028977600ed9969c781"
-        },
-        {
-            "type": "file",
             "name": "_images/Fig01-20c.png",
             "size": 61977,
             "hash": "a5bc5f7691b141912d63e20879eebbe583406dd05da6e2a89f870b3e8bf7b3ac"
+        },
+        {
+            "type": "file",
+            "name": "_images/Fig01-21.png",
+            "size": 42691,
+            "hash": "1b94875049221786f901876e44c3f0c6a22132452984b028977600ed9969c781"
         },
         {
             "type": "file",
@@ -453,6 +357,12 @@
         },
         {
             "type": "file",
+            "name": "_images/Fig01-32.png",
+            "size": 29799,
+            "hash": "1c9ecb2a886670d6479b797f1ce47aac4c4973256d910272dbd3c5b952c2e8f9"
+        },
+        {
+            "type": "file",
             "name": "_images/Fig01-33.png",
             "size": 11407,
             "hash": "0e2ac746f5db2a5302d37260a140595ff2d3ad6f41df08a5306ac825c03b3ed5"
@@ -462,12 +372,6 @@
             "name": "_images/Fig07-01.png",
             "size": 819532,
             "hash": "aa1435229d0952a7694ec67ff815ae726bb55c8a604ac1f8abb74e11dab2dec5"
-        },
-        {
-            "type": "file",
-            "name": "_images/Fig01-32.png",
-            "size": 29799,
-            "hash": "1c9ecb2a886670d6479b797f1ce47aac4c4973256d910272dbd3c5b952c2e8f9"
         },
         {
             "type": "file",
@@ -1365,15 +1269,15 @@
         },
         {
             "type": "file",
-            "name": "_images/logic-logic_properties-panel.png",
-            "size": 7908,
-            "hash": "7c908b06f3b538e1e851986476a5a63ee18b4838046db167a5c5e42b76bf9160"
-        },
-        {
-            "type": "file",
             "name": "_images/logic-nodes-category-2-objects-transformation-align-axis-to-vector.png",
             "size": 16320,
             "hash": "71255d1f9ca8e1f6e648fe5655920ad188205589f924243917aa26363fb10fcb"
+        },
+        {
+            "type": "file",
+            "name": "_images/logic-logic_properties-panel.png",
+            "size": 7908,
+            "hash": "7c908b06f3b538e1e851986476a5a63ee18b4838046db167a5c5e42b76bf9160"
         },
         {
             "type": "file",
@@ -1689,6 +1593,12 @@
         },
         {
             "type": "file",
+            "name": "_images/tutorials-move_object-logic_editor_2.png",
+            "size": 18276,
+            "hash": "4da9d34bc48bafd62bf21fd2ec3ae317cc0d868e71963e97434eda4da221839b"
+        },
+        {
+            "type": "file",
             "name": "_images/tutorials-move_object-logic_editor_3.png",
             "size": 23467,
             "hash": "c422c35815175d800d2c849c78bc50e82b4f0079e8e5c5dbdb7d36aee2225817"
@@ -1698,12 +1608,6 @@
             "name": "_images/tutorials-play_animation-action_editor.png",
             "size": 67276,
             "hash": "cf8285144df88e6a82e5d03a51ec740c9866a32c5a1df42bc17185759a8dc523"
-        },
-        {
-            "type": "file",
-            "name": "_images/tutorials-move_object-logic_editor_2.png",
-            "size": 18276,
-            "hash": "4da9d34bc48bafd62bf21fd2ec3ae317cc0d868e71963e97434eda4da221839b"
         },
         {
             "type": "file",
@@ -1722,16 +1626,112 @@
             "name": "_sources/manual"
         },
         {
+            "type": "file",
+            "name": "_static/basic.css",
+            "size": 14636,
+            "hash": "ce3b09e4ff38bb80da6e487e324d7e70e6d63ec43cbbd43b0fe0e84c86f2811d"
+        },
+        {
+            "type": "folder",
+            "name": "_static/css"
+        },
+        {
+            "type": "file",
+            "name": "_static/doctools.js",
+            "size": 9630,
+            "hash": "5a001934886bdedcbabf89f6a81e8253c0c1bb47ac18e9c7b859f0fcb1d92406"
+        },
+        {
+            "type": "file",
+            "name": "_static/documentation_options.js",
+            "size": 354,
+            "hash": "3a0a2cb4f37f57b15bf7196941416030bc360fad9c6f33c391fb061039b66512"
+        },
+        {
+            "type": "file",
+            "name": "_static/file.png",
+            "size": 286,
+            "hash": "5c4bc9a16aebf38c4b950f59b8e501ca36495328cb9eb622218bce9064a35e3e"
+        },
+        {
+            "type": "folder",
+            "name": "_static/fonts"
+        },
+        {
+            "type": "file",
+            "name": "_static/jquery-3.5.1.js",
+            "size": 287630,
+            "hash": "416a3b2c3bf16d64f6b5b6d0f7b079df2267614dd6847fc2f3271b4409233c37"
+        },
+        {
+            "type": "file",
+            "name": "_static/jquery.js",
+            "size": 89476,
+            "hash": "f7f6a5894f1d19ddad6fa392b2ece2c5e578cbf7da4ea805b6885eb6985b6e3d"
+        },
+        {
+            "type": "folder",
+            "name": "_static/js"
+        },
+        {
+            "type": "file",
+            "name": "_static/language_data.js",
+            "size": 10854,
+            "hash": "004ad6ad7e772d6f3c61c65a7fb255e2b36d8bf583044c08ab97e7e5e6b8442d"
+        },
+        {
+            "type": "file",
+            "name": "_static/minus.png",
+            "size": 90,
+            "hash": "47e7fc50db3699f1ca41ce9a2ffa202c00c5d1d5180c55f62ba859b1bd6cc008"
+        },
+        {
+            "type": "file",
+            "name": "_static/plus.png",
+            "size": 90,
+            "hash": "54115199b96a130cba02147c47c0deb43dcc9b9f08b5162bba8642b34980ac63"
+        },
+        {
+            "type": "file",
+            "name": "_static/pygments.css",
+            "size": 4395,
+            "hash": "c67b5260b50a0f434e9b26585479ce67ab2184adc7b31c26d665642d3512835f"
+        },
+        {
+            "type": "file",
+            "name": "_static/searchtools.js",
+            "size": 16578,
+            "hash": "57b289dc3e22ade1d8ac15549db40f0305b81b5558a2418b6246bb1ac6d463f6"
+        },
+        {
+            "type": "file",
+            "name": "_static/underscore-1.13.1.js",
+            "size": 68420,
+            "hash": "cc10f799cd0f6b65f95c4012445497e5ba3cb9f51964a9468940b27bde98b487"
+        },
+        {
+            "type": "file",
+            "name": "_static/underscore.js",
+            "size": 19530,
+            "hash": "218fb1c1fc72e9af6b866f430be2a67fa376392b4db2f4dbf32772671b6ae55c"
+        },
+        {
+            "type": "file",
+            "name": "_static/upbge_logo.png",
+            "size": 7652,
+            "hash": "fc58268edf918898a12655e700a18f97c24dc2b45299af2d72db696667c641e4"
+        },
+        {
+            "type": "folder",
+            "name": "manual/about"
+        },
+        {
             "type": "folder",
             "name": "manual/datablocks"
         },
         {
             "type": "folder",
             "name": "manual/editors"
-        },
-        {
-            "type": "folder",
-            "name": "manual/about"
         },
         {
             "type": "folder",
@@ -1770,20 +1770,68 @@
             "name": "manual/tutorials"
         },
         {
+            "type": "folder",
+            "name": "_sources/manual/about"
+        },
+        {
+            "type": "folder",
+            "name": "_sources/manual/datablocks"
+        },
+        {
+            "type": "folder",
+            "name": "_sources/manual/editors"
+        },
+        {
+            "type": "folder",
+            "name": "_sources/manual/introduction"
+        },
+        {
+            "type": "folder",
+            "name": "_sources/manual/logic"
+        },
+        {
+            "type": "folder",
+            "name": "_sources/manual/logic_nodes"
+        },
+        {
+            "type": "folder",
+            "name": "_sources/manual/physics"
+        },
+        {
+            "type": "folder",
+            "name": "_sources/manual/python"
+        },
+        {
+            "type": "folder",
+            "name": "_sources/manual/python_components"
+        },
+        {
+            "type": "folder",
+            "name": "_sources/manual/release"
+        },
+        {
+            "type": "folder",
+            "name": "_sources/manual/tools"
+        },
+        {
+            "type": "folder",
+            "name": "_sources/manual/tutorials"
+        },
+        {
             "type": "file",
             "name": "_static/css/badge_only.css",
             "size": 3275,
             "hash": "c4050fa47d8bb6297c79811f663e6cfa32cb6b783b47eaeddd6ba50d5cf1a666"
         },
         {
+            "type": "folder",
+            "name": "_static/css/fonts"
+        },
+        {
             "type": "file",
             "name": "_static/css/theme.css",
             "size": 123687,
             "hash": "0fe1c43f95064ebe41691b2429011cd1633d7c4a460fa444b0b26dd4aafcf2fd"
-        },
-        {
-            "type": "folder",
-            "name": "_static/css/fonts"
         },
         {
             "type": "file",
@@ -1902,52 +1950,28 @@
             "hash": "b1c4d09da3a719c689344888584ef18c52c4bbcff3b7aaed7752fdff7a47050c"
         },
         {
-            "type": "folder",
-            "name": "_sources/manual/about"
+            "type": "file",
+            "name": "manual/about/index.html",
+            "size": 7046,
+            "hash": "ca366c2116125aa79fb027bc64f715e1dcca879244e940c5b34371606f08c009"
         },
         {
-            "type": "folder",
-            "name": "_sources/manual/datablocks"
+            "type": "file",
+            "name": "manual/about/introduction.html",
+            "size": 10996,
+            "hash": "425e589078e417716c25459bae940f54021fed8e2247303515321d333e6b6c05"
         },
         {
-            "type": "folder",
-            "name": "_sources/manual/editors"
+            "type": "file",
+            "name": "manual/about/license.html",
+            "size": 8922,
+            "hash": "0ae95adf8517ad53e1159009a36ffb74f19c9532a351165aa4e1a652cfb445dc"
         },
         {
-            "type": "folder",
-            "name": "_sources/manual/introduction"
-        },
-        {
-            "type": "folder",
-            "name": "_sources/manual/logic"
-        },
-        {
-            "type": "folder",
-            "name": "_sources/manual/logic_nodes"
-        },
-        {
-            "type": "folder",
-            "name": "_sources/manual/physics"
-        },
-        {
-            "type": "folder",
-            "name": "_sources/manual/python"
-        },
-        {
-            "type": "folder",
-            "name": "_sources/manual/python_components"
-        },
-        {
-            "type": "folder",
-            "name": "_sources/manual/release"
-        },
-        {
-            "type": "folder",
-            "name": "_sources/manual/tools"
-        },
-        {
-            "type": "folder",
-            "name": "_sources/manual/tutorials"
+            "type": "file",
+            "name": "manual/about/whats_new.html",
+            "size": 6643,
+            "hash": "725b1961c3562a37c866b7863bd908fca82db739fd8e816e536a0f5ece127d72"
         },
         {
             "type": "file",
@@ -2068,30 +2092,6 @@
         {
             "type": "folder",
             "name": "manual/editors/text"
-        },
-        {
-            "type": "file",
-            "name": "manual/about/index.html",
-            "size": 7046,
-            "hash": "ca366c2116125aa79fb027bc64f715e1dcca879244e940c5b34371606f08c009"
-        },
-        {
-            "type": "file",
-            "name": "manual/about/introduction.html",
-            "size": 10996,
-            "hash": "425e589078e417716c25459bae940f54021fed8e2247303515321d333e6b6c05"
-        },
-        {
-            "type": "file",
-            "name": "manual/about/license.html",
-            "size": 8922,
-            "hash": "0ae95adf8517ad53e1159009a36ffb74f19c9532a351165aa4e1a652cfb445dc"
-        },
-        {
-            "type": "file",
-            "name": "manual/about/whats_new.html",
-            "size": 6643,
-            "hash": "725b1961c3562a37c866b7863bd908fca82db739fd8e816e536a0f5ece127d72"
         },
         {
             "type": "file",
@@ -2298,252 +2298,6 @@
         {
             "type": "folder",
             "name": "manual/tutorials/introducing_python_components"
-        },
-        {
-            "type": "file",
-            "name": "_static/css/fonts/Roboto-Slab-Bold.woff",
-            "size": 87624,
-            "hash": "9fec87cadbe2413b255f1ec577573a83f1ca2e1c37aa023dbebcd3a7b864636a"
-        },
-        {
-            "type": "file",
-            "name": "_static/css/fonts/Roboto-Slab-Bold.woff2",
-            "size": 67312,
-            "hash": "1a0c024dd1a267c52d5575469ffe8570d1e84164de7d393cf3414bafd17d7a0c"
-        },
-        {
-            "type": "file",
-            "name": "_static/css/fonts/Roboto-Slab-Regular.woff",
-            "size": 86288,
-            "hash": "9f32630e2c0c5135bf1e86e36cb65b3932e4410644235bc2bd995e9c7f6ff117"
-        },
-        {
-            "type": "file",
-            "name": "_static/css/fonts/Roboto-Slab-Regular.woff2",
-            "size": 66444,
-            "hash": "874e42222856d7af03b3f438d21d923a4280d47fe67c48510e2174a1579795ef"
-        },
-        {
-            "type": "file",
-            "name": "_static/css/fonts/fontawesome-webfont.eot",
-            "size": 165742,
-            "hash": "7bfcab6db99d5cfbf1705ca0536ddc78585432cc5fa41bbd7ad0f009033b2979"
-        },
-        {
-            "type": "file",
-            "name": "_static/css/fonts/fontawesome-webfont.svg",
-            "size": 444379,
-            "hash": "ad6157926c1622ba4e1d03d478f1541368524bfc46f51e42fe0d945f7ef323e4"
-        },
-        {
-            "type": "file",
-            "name": "_static/css/fonts/fontawesome-webfont.ttf",
-            "size": 165548,
-            "hash": "aa58f33f239a0fb02f5c7a6c45c043d7a9ac9a093335806694ecd6d4edc0d6a8"
-        },
-        {
-            "type": "file",
-            "name": "_static/css/fonts/fontawesome-webfont.woff",
-            "size": 98024,
-            "hash": "ba0c59deb5450f5cb41b3f93609ee2d0d995415877ddfa223e8a8a7533474f07"
-        },
-        {
-            "type": "file",
-            "name": "_static/css/fonts/fontawesome-webfont.woff2",
-            "size": 77160,
-            "hash": "2adefcbc041e7d18fcf2d417879dc5a09997aa64d675b7a3c4b6ce33da13f3fe"
-        },
-        {
-            "type": "file",
-            "name": "_static/css/fonts/lato-bold-italic.woff",
-            "size": 323344,
-            "hash": "980c8592e5488df256192c999e92db8fd302db8cd8909b7fa266a684e37e45f8"
-        },
-        {
-            "type": "file",
-            "name": "_static/css/fonts/lato-bold-italic.woff2",
-            "size": 193308,
-            "hash": "c0916a33340d063f7b05679e08031e729d1888444706f04804705da5966d895d"
-        },
-        {
-            "type": "file",
-            "name": "_static/css/fonts/lato-bold.woff",
-            "size": 309728,
-            "hash": "0e56b17d142eb366c8007031d14e34da48c70b4a9d9a0ca492e696a7bae45e1e"
-        },
-        {
-            "type": "file",
-            "name": "_static/css/fonts/lato-bold.woff2",
-            "size": 184912,
-            "hash": "ae88fc0d7a961832f809527d30bd3983a6866d42f66a56ade23f543681594db6"
-        },
-        {
-            "type": "file",
-            "name": "_static/css/fonts/lato-normal-italic.woff",
-            "size": 328412,
-            "hash": "26318a1467a5e5caf10b04cfa942d079632560cd7a29cec565fd1dc9f7ec5081"
-        },
-        {
-            "type": "file",
-            "name": "_static/css/fonts/lato-normal-italic.woff2",
-            "size": 195704,
-            "hash": "4465765f2f6eddcdad34ffd7cab559e56bc0e75e45e192f85e9562b0771481dc"
-        },
-        {
-            "type": "file",
-            "name": "_static/css/fonts/lato-normal.woff",
-            "size": 309192,
-            "hash": "5b9025dda4d7688e3311b0c17eddc501133b807def33effaef6593843cf5416e"
-        },
-        {
-            "type": "file",
-            "name": "_static/css/fonts/lato-normal.woff2",
-            "size": 182708,
-            "hash": "983b0caf336e8542214fc17019a4fc5e0360864b92806ca14d55c1fc1c2c5a0f"
-        },
-        {
-            "type": "file",
-            "name": "_static/fonts/Lato/lato-bold.eot",
-            "size": 256056,
-            "hash": "b91fc1ca55df440dc11354b32a39b45db663d24bb17b16dcb2e706330955b0d1"
-        },
-        {
-            "type": "file",
-            "name": "_static/fonts/Lato/lato-bold.ttf",
-            "size": 600856,
-            "hash": "f71f833c099f450606f8107b83ef208ae918c0ea00779466d45e9be96b0bc7cc"
-        },
-        {
-            "type": "file",
-            "name": "_static/fonts/Lato/lato-bold.woff",
-            "size": 309728,
-            "hash": "0e56b17d142eb366c8007031d14e34da48c70b4a9d9a0ca492e696a7bae45e1e"
-        },
-        {
-            "type": "file",
-            "name": "_static/fonts/Lato/lato-bold.woff2",
-            "size": 184912,
-            "hash": "ae88fc0d7a961832f809527d30bd3983a6866d42f66a56ade23f543681594db6"
-        },
-        {
-            "type": "file",
-            "name": "_static/fonts/Lato/lato-bolditalic.eot",
-            "size": 266158,
-            "hash": "b3d585879a02f48c5d43d8f91d06b167e367a31934bb3b8147c0a90b5ca32bfc"
-        },
-        {
-            "type": "file",
-            "name": "_static/fonts/Lato/lato-bolditalic.ttf",
-            "size": 622572,
-            "hash": "f98d040631714eabffd0ffb747576674fa78c2910f6d9e3dc0c58481d03c1898"
-        },
-        {
-            "type": "file",
-            "name": "_static/fonts/Lato/lato-bolditalic.woff",
-            "size": 323344,
-            "hash": "980c8592e5488df256192c999e92db8fd302db8cd8909b7fa266a684e37e45f8"
-        },
-        {
-            "type": "file",
-            "name": "_static/fonts/Lato/lato-bolditalic.woff2",
-            "size": 193308,
-            "hash": "c0916a33340d063f7b05679e08031e729d1888444706f04804705da5966d895d"
-        },
-        {
-            "type": "file",
-            "name": "_static/fonts/Lato/lato-italic.eot",
-            "size": 268604,
-            "hash": "bc24dbe04f5b2415678f978e7e2f630cc6610670d684e088e73ad29c439eafe3"
-        },
-        {
-            "type": "file",
-            "name": "_static/fonts/Lato/lato-italic.ttf",
-            "size": 639388,
-            "hash": "12d825af88eafea1ce3aa469f83c03acaecd0d03f690f409c8643529f1205b4f"
-        },
-        {
-            "type": "file",
-            "name": "_static/fonts/Lato/lato-italic.woff",
-            "size": 328412,
-            "hash": "26318a1467a5e5caf10b04cfa942d079632560cd7a29cec565fd1dc9f7ec5081"
-        },
-        {
-            "type": "file",
-            "name": "_static/fonts/Lato/lato-italic.woff2",
-            "size": 195704,
-            "hash": "4465765f2f6eddcdad34ffd7cab559e56bc0e75e45e192f85e9562b0771481dc"
-        },
-        {
-            "type": "file",
-            "name": "_static/fonts/Lato/lato-regular.eot",
-            "size": 253461,
-            "hash": "e735410675eacc363b257112f39eb819a854b03077d7b1f0caa6e7660ffbd8b3"
-        },
-        {
-            "type": "file",
-            "name": "_static/fonts/Lato/lato-regular.ttf",
-            "size": 607720,
-            "hash": "089ab6d4a57e0e6c4dd3b681b6fd50a5184f1b902429d35e1227e52d6ccad1bd"
-        },
-        {
-            "type": "file",
-            "name": "_static/fonts/Lato/lato-regular.woff",
-            "size": 309192,
-            "hash": "5b9025dda4d7688e3311b0c17eddc501133b807def33effaef6593843cf5416e"
-        },
-        {
-            "type": "file",
-            "name": "_static/fonts/Lato/lato-regular.woff2",
-            "size": 182708,
-            "hash": "983b0caf336e8542214fc17019a4fc5e0360864b92806ca14d55c1fc1c2c5a0f"
-        },
-        {
-            "type": "file",
-            "name": "_static/fonts/RobotoSlab/roboto-slab-v7-bold.eot",
-            "size": 79520,
-            "hash": "4438991a12ff951cc8d0e83348ec06d9f910591b1b014c476e9595d4da099e48"
-        },
-        {
-            "type": "file",
-            "name": "_static/fonts/RobotoSlab/roboto-slab-v7-bold.ttf",
-            "size": 170616,
-            "hash": "ba12d2eab1fa765b6b05398fa7e047dd76293f0c051ce57a8f7b0c591c14d42b"
-        },
-        {
-            "type": "file",
-            "name": "_static/fonts/RobotoSlab/roboto-slab-v7-bold.woff",
-            "size": 87624,
-            "hash": "9fec87cadbe2413b255f1ec577573a83f1ca2e1c37aa023dbebcd3a7b864636a"
-        },
-        {
-            "type": "file",
-            "name": "_static/fonts/RobotoSlab/roboto-slab-v7-bold.woff2",
-            "size": 67312,
-            "hash": "1a0c024dd1a267c52d5575469ffe8570d1e84164de7d393cf3414bafd17d7a0c"
-        },
-        {
-            "type": "file",
-            "name": "_static/fonts/RobotoSlab/roboto-slab-v7-regular.eot",
-            "size": 78331,
-            "hash": "b3809b71d417c6c225e77a55880aa7915b4e4b4f77a5e2d243f3563731e7f55c"
-        },
-        {
-            "type": "file",
-            "name": "_static/fonts/RobotoSlab/roboto-slab-v7-regular.ttf",
-            "size": 169064,
-            "hash": "13aa5f54c6f2fa2e388fe0e675cdbcc6a81f6270a8bf9c03a5df8af9cb022810"
-        },
-        {
-            "type": "file",
-            "name": "_static/fonts/RobotoSlab/roboto-slab-v7-regular.woff",
-            "size": 86288,
-            "hash": "9f32630e2c0c5135bf1e86e36cb65b3932e4410644235bc2bd995e9c7f6ff117"
-        },
-        {
-            "type": "file",
-            "name": "_static/fonts/RobotoSlab/roboto-slab-v7-regular.woff2",
-            "size": 66444,
-            "hash": "874e42222856d7af03b3f438d21d923a4280d47fe67c48510e2174a1579795ef"
         },
         {
             "type": "file",
@@ -2894,6 +2648,252 @@
         {
             "type": "folder",
             "name": "_sources/manual/tutorials/introducing_python_components"
+        },
+        {
+            "type": "file",
+            "name": "_static/css/fonts/Roboto-Slab-Bold.woff",
+            "size": 87624,
+            "hash": "9fec87cadbe2413b255f1ec577573a83f1ca2e1c37aa023dbebcd3a7b864636a"
+        },
+        {
+            "type": "file",
+            "name": "_static/css/fonts/Roboto-Slab-Bold.woff2",
+            "size": 67312,
+            "hash": "1a0c024dd1a267c52d5575469ffe8570d1e84164de7d393cf3414bafd17d7a0c"
+        },
+        {
+            "type": "file",
+            "name": "_static/css/fonts/Roboto-Slab-Regular.woff",
+            "size": 86288,
+            "hash": "9f32630e2c0c5135bf1e86e36cb65b3932e4410644235bc2bd995e9c7f6ff117"
+        },
+        {
+            "type": "file",
+            "name": "_static/css/fonts/Roboto-Slab-Regular.woff2",
+            "size": 66444,
+            "hash": "874e42222856d7af03b3f438d21d923a4280d47fe67c48510e2174a1579795ef"
+        },
+        {
+            "type": "file",
+            "name": "_static/css/fonts/fontawesome-webfont.eot",
+            "size": 165742,
+            "hash": "7bfcab6db99d5cfbf1705ca0536ddc78585432cc5fa41bbd7ad0f009033b2979"
+        },
+        {
+            "type": "file",
+            "name": "_static/css/fonts/fontawesome-webfont.svg",
+            "size": 444379,
+            "hash": "ad6157926c1622ba4e1d03d478f1541368524bfc46f51e42fe0d945f7ef323e4"
+        },
+        {
+            "type": "file",
+            "name": "_static/css/fonts/fontawesome-webfont.ttf",
+            "size": 165548,
+            "hash": "aa58f33f239a0fb02f5c7a6c45c043d7a9ac9a093335806694ecd6d4edc0d6a8"
+        },
+        {
+            "type": "file",
+            "name": "_static/css/fonts/fontawesome-webfont.woff",
+            "size": 98024,
+            "hash": "ba0c59deb5450f5cb41b3f93609ee2d0d995415877ddfa223e8a8a7533474f07"
+        },
+        {
+            "type": "file",
+            "name": "_static/css/fonts/fontawesome-webfont.woff2",
+            "size": 77160,
+            "hash": "2adefcbc041e7d18fcf2d417879dc5a09997aa64d675b7a3c4b6ce33da13f3fe"
+        },
+        {
+            "type": "file",
+            "name": "_static/css/fonts/lato-bold-italic.woff",
+            "size": 323344,
+            "hash": "980c8592e5488df256192c999e92db8fd302db8cd8909b7fa266a684e37e45f8"
+        },
+        {
+            "type": "file",
+            "name": "_static/css/fonts/lato-bold-italic.woff2",
+            "size": 193308,
+            "hash": "c0916a33340d063f7b05679e08031e729d1888444706f04804705da5966d895d"
+        },
+        {
+            "type": "file",
+            "name": "_static/css/fonts/lato-bold.woff",
+            "size": 309728,
+            "hash": "0e56b17d142eb366c8007031d14e34da48c70b4a9d9a0ca492e696a7bae45e1e"
+        },
+        {
+            "type": "file",
+            "name": "_static/css/fonts/lato-bold.woff2",
+            "size": 184912,
+            "hash": "ae88fc0d7a961832f809527d30bd3983a6866d42f66a56ade23f543681594db6"
+        },
+        {
+            "type": "file",
+            "name": "_static/css/fonts/lato-normal-italic.woff",
+            "size": 328412,
+            "hash": "26318a1467a5e5caf10b04cfa942d079632560cd7a29cec565fd1dc9f7ec5081"
+        },
+        {
+            "type": "file",
+            "name": "_static/css/fonts/lato-normal-italic.woff2",
+            "size": 195704,
+            "hash": "4465765f2f6eddcdad34ffd7cab559e56bc0e75e45e192f85e9562b0771481dc"
+        },
+        {
+            "type": "file",
+            "name": "_static/css/fonts/lato-normal.woff",
+            "size": 309192,
+            "hash": "5b9025dda4d7688e3311b0c17eddc501133b807def33effaef6593843cf5416e"
+        },
+        {
+            "type": "file",
+            "name": "_static/css/fonts/lato-normal.woff2",
+            "size": 182708,
+            "hash": "983b0caf336e8542214fc17019a4fc5e0360864b92806ca14d55c1fc1c2c5a0f"
+        },
+        {
+            "type": "file",
+            "name": "_static/fonts/Lato/lato-bold.eot",
+            "size": 256056,
+            "hash": "b91fc1ca55df440dc11354b32a39b45db663d24bb17b16dcb2e706330955b0d1"
+        },
+        {
+            "type": "file",
+            "name": "_static/fonts/Lato/lato-bold.ttf",
+            "size": 600856,
+            "hash": "f71f833c099f450606f8107b83ef208ae918c0ea00779466d45e9be96b0bc7cc"
+        },
+        {
+            "type": "file",
+            "name": "_static/fonts/Lato/lato-bold.woff",
+            "size": 309728,
+            "hash": "0e56b17d142eb366c8007031d14e34da48c70b4a9d9a0ca492e696a7bae45e1e"
+        },
+        {
+            "type": "file",
+            "name": "_static/fonts/Lato/lato-bold.woff2",
+            "size": 184912,
+            "hash": "ae88fc0d7a961832f809527d30bd3983a6866d42f66a56ade23f543681594db6"
+        },
+        {
+            "type": "file",
+            "name": "_static/fonts/Lato/lato-bolditalic.eot",
+            "size": 266158,
+            "hash": "b3d585879a02f48c5d43d8f91d06b167e367a31934bb3b8147c0a90b5ca32bfc"
+        },
+        {
+            "type": "file",
+            "name": "_static/fonts/Lato/lato-bolditalic.ttf",
+            "size": 622572,
+            "hash": "f98d040631714eabffd0ffb747576674fa78c2910f6d9e3dc0c58481d03c1898"
+        },
+        {
+            "type": "file",
+            "name": "_static/fonts/Lato/lato-bolditalic.woff",
+            "size": 323344,
+            "hash": "980c8592e5488df256192c999e92db8fd302db8cd8909b7fa266a684e37e45f8"
+        },
+        {
+            "type": "file",
+            "name": "_static/fonts/Lato/lato-bolditalic.woff2",
+            "size": 193308,
+            "hash": "c0916a33340d063f7b05679e08031e729d1888444706f04804705da5966d895d"
+        },
+        {
+            "type": "file",
+            "name": "_static/fonts/Lato/lato-italic.eot",
+            "size": 268604,
+            "hash": "bc24dbe04f5b2415678f978e7e2f630cc6610670d684e088e73ad29c439eafe3"
+        },
+        {
+            "type": "file",
+            "name": "_static/fonts/Lato/lato-italic.ttf",
+            "size": 639388,
+            "hash": "12d825af88eafea1ce3aa469f83c03acaecd0d03f690f409c8643529f1205b4f"
+        },
+        {
+            "type": "file",
+            "name": "_static/fonts/Lato/lato-italic.woff",
+            "size": 328412,
+            "hash": "26318a1467a5e5caf10b04cfa942d079632560cd7a29cec565fd1dc9f7ec5081"
+        },
+        {
+            "type": "file",
+            "name": "_static/fonts/Lato/lato-italic.woff2",
+            "size": 195704,
+            "hash": "4465765f2f6eddcdad34ffd7cab559e56bc0e75e45e192f85e9562b0771481dc"
+        },
+        {
+            "type": "file",
+            "name": "_static/fonts/Lato/lato-regular.eot",
+            "size": 253461,
+            "hash": "e735410675eacc363b257112f39eb819a854b03077d7b1f0caa6e7660ffbd8b3"
+        },
+        {
+            "type": "file",
+            "name": "_static/fonts/Lato/lato-regular.ttf",
+            "size": 607720,
+            "hash": "089ab6d4a57e0e6c4dd3b681b6fd50a5184f1b902429d35e1227e52d6ccad1bd"
+        },
+        {
+            "type": "file",
+            "name": "_static/fonts/Lato/lato-regular.woff",
+            "size": 309192,
+            "hash": "5b9025dda4d7688e3311b0c17eddc501133b807def33effaef6593843cf5416e"
+        },
+        {
+            "type": "file",
+            "name": "_static/fonts/Lato/lato-regular.woff2",
+            "size": 182708,
+            "hash": "983b0caf336e8542214fc17019a4fc5e0360864b92806ca14d55c1fc1c2c5a0f"
+        },
+        {
+            "type": "file",
+            "name": "_static/fonts/RobotoSlab/roboto-slab-v7-bold.eot",
+            "size": 79520,
+            "hash": "4438991a12ff951cc8d0e83348ec06d9f910591b1b014c476e9595d4da099e48"
+        },
+        {
+            "type": "file",
+            "name": "_static/fonts/RobotoSlab/roboto-slab-v7-bold.ttf",
+            "size": 170616,
+            "hash": "ba12d2eab1fa765b6b05398fa7e047dd76293f0c051ce57a8f7b0c591c14d42b"
+        },
+        {
+            "type": "file",
+            "name": "_static/fonts/RobotoSlab/roboto-slab-v7-bold.woff",
+            "size": 87624,
+            "hash": "9fec87cadbe2413b255f1ec577573a83f1ca2e1c37aa023dbebcd3a7b864636a"
+        },
+        {
+            "type": "file",
+            "name": "_static/fonts/RobotoSlab/roboto-slab-v7-bold.woff2",
+            "size": 67312,
+            "hash": "1a0c024dd1a267c52d5575469ffe8570d1e84164de7d393cf3414bafd17d7a0c"
+        },
+        {
+            "type": "file",
+            "name": "_static/fonts/RobotoSlab/roboto-slab-v7-regular.eot",
+            "size": 78331,
+            "hash": "b3809b71d417c6c225e77a55880aa7915b4e4b4f77a5e2d243f3563731e7f55c"
+        },
+        {
+            "type": "file",
+            "name": "_static/fonts/RobotoSlab/roboto-slab-v7-regular.ttf",
+            "size": 169064,
+            "hash": "13aa5f54c6f2fa2e388fe0e675cdbcc6a81f6270a8bf9c03a5df8af9cb022810"
+        },
+        {
+            "type": "file",
+            "name": "_static/fonts/RobotoSlab/roboto-slab-v7-regular.woff",
+            "size": 86288,
+            "hash": "9f32630e2c0c5135bf1e86e36cb65b3932e4410644235bc2bd995e9c7f6ff117"
+        },
+        {
+            "type": "file",
+            "name": "_static/fonts/RobotoSlab/roboto-slab-v7-regular.woff2",
+            "size": 66444,
+            "hash": "874e42222856d7af03b3f438d21d923a4280d47fe67c48510e2174a1579795ef"
         },
         {
             "type": "file",
@@ -4184,24 +4184,6 @@
             "hash": "9c35f3e692ef9ac1006881e4a8dc7ad0a5becf16a27659fdd0cd116c5cf193d4"
         },
         {
-            "type": "folder",
-            "name": "manual/logic_nodes/category_2/nodes/geometry"
-        },
-        {
-            "type": "folder",
-            "name": "manual/logic_nodes/category_2/nodes/groups"
-        },
-        {
-            "type": "file",
-            "name": "manual/logic_nodes/category_2/nodes/index.html",
-            "size": 7978,
-            "hash": "883d7b176fbb8a0e9faac05db693562f03a172156d52c372e5345d56f94376be"
-        },
-        {
-            "type": "folder",
-            "name": "manual/logic_nodes/category_2/nodes/materials"
-        },
-        {
             "type": "file",
             "name": "manual/logic_nodes/category_2/lights/get_light_color.html",
             "size": 7969,
@@ -4236,6 +4218,24 @@
             "name": "manual/logic_nodes/category_2/lights/set_light_shadow.html",
             "size": 7990,
             "hash": "6fef14846ee09917ba74f24cd9152fa632cfe81395246578238bf1edb8ee70a6"
+        },
+        {
+            "type": "folder",
+            "name": "manual/logic_nodes/category_2/nodes/geometry"
+        },
+        {
+            "type": "folder",
+            "name": "manual/logic_nodes/category_2/nodes/groups"
+        },
+        {
+            "type": "file",
+            "name": "manual/logic_nodes/category_2/nodes/index.html",
+            "size": 7978,
+            "hash": "883d7b176fbb8a0e9faac05db693562f03a172156d52c372e5345d56f94376be"
+        },
+        {
+            "type": "folder",
+            "name": "manual/logic_nodes/category_2/nodes/materials"
         },
         {
             "type": "file",
@@ -4811,15 +4811,15 @@
         },
         {
             "type": "file",
-            "name": "_sources/manual/logic_nodes/category_2/animation/set_animation_frame.rst.txt",
-            "size": 60,
-            "hash": "8fcdc77b24de945dcd003781d1e1fe8f9e23165ba3216dff7504ff30005e41e9"
-        },
-        {
-            "type": "file",
             "name": "_sources/manual/logic_nodes/category_2/animation/play_animation.rst.txt",
             "size": 45,
             "hash": "686c3d721be619ceaf334666b998c63015626f81aef220f595866d00a3c3728b"
+        },
+        {
+            "type": "file",
+            "name": "_sources/manual/logic_nodes/category_2/animation/set_animation_frame.rst.txt",
+            "size": 60,
+            "hash": "8fcdc77b24de945dcd003781d1e1fe8f9e23165ba3216dff7504ff30005e41e9"
         },
         {
             "type": "file",
@@ -5436,8 +5436,8 @@
         {
             "type": "file",
             "name": "manual/logic_nodes/category_2/objects/transformation/apply_rotation.html",
-            "size": 11792,
-            "hash": "6cb46d1cb8bec9cdae4a48c58526541b8a9ce5c1045a5f4de22d2ccaf68bb137"
+            "size": 11860,
+            "hash": "16004ddc22f2acfb5ea41a13d256653d7bbf792bf63592808f4480bfdc4ab9ab"
         },
         {
             "type": "file",
@@ -5838,8 +5838,8 @@
         {
             "type": "file",
             "name": "_sources/manual/logic_nodes/category_2/objects/transformation/apply_rotation.rst.txt",
-            "size": 612,
-            "hash": "b0b64070f3a5e6aac150b353ba804bbe503bbc459291a24fc098fc42fcc273da"
+            "size": 680,
+            "hash": "aca41f854d0f7535bda2e4fa64d029cbb4b37053bc057ab7ac67f7c5bea40b80"
         },
         {
             "type": "file",
