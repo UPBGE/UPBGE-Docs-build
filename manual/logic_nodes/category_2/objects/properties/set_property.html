@@ -110,7 +110,12 @@
 <li class="toctree-l5"><a class="reference internal" href="get_property.html">Get Property</a></li>
 <li class="toctree-l5"><a class="reference internal" href="has_property.html">Has Property</a></li>
 <li class="toctree-l5"><a class="reference internal" href="modify_property.html">Modify Property</a></li>
-<li class="toctree-l5 current"><a class="current reference internal" href="#">Set Property</a></li>
+<li class="toctree-l5 current"><a class="current reference internal" href="#">Set Property</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="#description">Description</a></li>
+<li class="toctree-l6"><a class="reference internal" href="#input">Input</a></li>
+<li class="toctree-l6"><a class="reference internal" href="#output">Output</a></li>
+</ul>
+</li>
 <li class="toctree-l5"><a class="reference internal" href="toggle_property.html">Toggle Property</a></li>
 </ul>
 </li>
@@ -218,6 +223,31 @@
             
   <div class="section" id="set-property">
 <h1>Set Property<a class="headerlink" href="#set-property" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="description">
+<h2>Description<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h2>
+<p>Changes a property of a selected object.</p>
+<p>The values that can be assigned are: string, float, integer, bool, file path</p>
+</div>
+<div class="section" id="input">
+<h2>Input<a class="headerlink" href="#input" title="Permalink to this headline">¶</a></h2>
+<p>Condition
+The condition for this node start</p>
+<dl class="simple">
+<dt>Object</dt><dd><p>Object that contains the desired properties</p>
+</dd>
+<dt>Property</dt><dd><p>Specifies which properties to change</p>
+</dd>
+<dt>Type</dt><dd><p>Select which type of property to change (string, float, integer, bool, file path) and its new value</p>
+</dd>
+</dl>
+</div>
+<div class="section" id="output">
+<h2>Output<a class="headerlink" href="#output" title="Permalink to this headline">¶</a></h2>
+<dl class="simple">
+<dt><strong>Done</strong></dt><dd><p><strong>True</strong> if the node performed successfully.</p>
+</dd>
+</dl>
+</div>
 </div>
 
 
