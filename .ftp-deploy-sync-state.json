@@ -1,7 +1,7 @@
 {
     "description": "DO NOT DELETE THIS FILE. This file is used to keep track of which files have been synced in the most recent deployment. If you delete this file a resync will need to be done (which can take a while) - read more: https://github.com/SamKirkland/FTP-Deploy-Action",
     "version": "1.0.0",
-    "generatedTime": 1631041583307,
+    "generatedTime": 1631041828016,
     "data": [
         {
             "type": "file",
@@ -12,8 +12,8 @@
         {
             "type": "file",
             "name": "UPBGE_Manual.zip",
-            "size": 23250236,
-            "hash": "545375fcba6ffac5d576c61c8c0658e073134a857bbb533c3ef863fa22f17b52"
+            "size": 23250220,
+            "hash": "c6e2a3da137e4ae30dd32e058032397d9d9d073c7b8457f104c9be292b3ef2a2"
         },
         {
             "type": "folder",
@@ -58,8 +58,8 @@
         {
             "type": "file",
             "name": "searchindex.js",
-            "size": 126435,
-            "hash": "6d03bc91abfc1587f63cd4504a63d1830f7f9f1470136b4326b77d0d9cba0210"
+            "size": 126427,
+            "hash": "6cfa56cd8cc2c2fd6147e26c5552462cf5ea7fe74ade87db25f2e13fb07690d8"
         },
         {
             "type": "file",
@@ -1626,6 +1626,12 @@
             "name": "_sources/manual"
         },
         {
+            "type": "file",
+            "name": "_static/basic.css",
+            "size": 14636,
+            "hash": "ce3b09e4ff38bb80da6e487e324d7e70e6d63ec43cbbd43b0fe0e84c86f2811d"
+        },
+        {
             "type": "folder",
             "name": "_static/css"
         },
@@ -1634,12 +1640,6 @@
             "name": "_static/doctools.js",
             "size": 9630,
             "hash": "5a001934886bdedcbabf89f6a81e8253c0c1bb47ac18e9c7b859f0fcb1d92406"
-        },
-        {
-            "type": "file",
-            "name": "_static/basic.css",
-            "size": 14636,
-            "hash": "ce3b09e4ff38bb80da6e487e324d7e70e6d63ec43cbbd43b0fe0e84c86f2811d"
         },
         {
             "type": "file",
@@ -1852,14 +1852,14 @@
             "hash": "e28c150b4390e5fd59aedc2c150b150086fbcba0b4dbde08ac260d6db65018d6"
         },
         {
+            "type": "folder",
+            "name": "_static/fonts/Lato"
+        },
+        {
             "type": "file",
             "name": "_static/fonts/Inconsolata.ttf",
             "size": 63184,
             "hash": "c2d9721f4afc45e77b103c9ae735f44a4ffc5603e19b240de9857f87e9ae2bf4"
-        },
-        {
-            "type": "folder",
-            "name": "_static/fonts/Lato"
         },
         {
             "type": "file",
@@ -1909,15 +1909,15 @@
         },
         {
             "type": "file",
-            "name": "_static/fonts/fontawesome-webfont.woff",
-            "size": 98024,
-            "hash": "ba0c59deb5450f5cb41b3f93609ee2d0d995415877ddfa223e8a8a7533474f07"
-        },
-        {
-            "type": "file",
             "name": "_static/fonts/fontawesome-webfont.woff2",
             "size": 77160,
             "hash": "2adefcbc041e7d18fcf2d417879dc5a09997aa64d675b7a3c4b6ce33da13f3fe"
+        },
+        {
+            "type": "file",
+            "name": "_static/fonts/fontawesome-webfont.woff",
+            "size": 98024,
+            "hash": "ba0c59deb5450f5cb41b3f93609ee2d0d995415877ddfa223e8a8a7533474f07"
         },
         {
             "type": "file",
@@ -1987,15 +1987,15 @@
         },
         {
             "type": "file",
-            "name": "manual/datablocks/camera.html",
-            "size": 8424,
-            "hash": "ac6ff99b601b508dee83763c0c5a42e633a44612a363321a6076337354286e0b"
-        },
-        {
-            "type": "file",
             "name": "manual/datablocks/collection.html",
             "size": 7596,
             "hash": "bbe9d2d18dd8e39f3bf2fddae53f762b8cd586794af1bba003d93358972ebcdd"
+        },
+        {
+            "type": "file",
+            "name": "manual/datablocks/camera.html",
+            "size": 8424,
+            "hash": "ac6ff99b601b508dee83763c0c5a42e633a44612a363321a6076337354286e0b"
         },
         {
             "type": "file",
@@ -2017,15 +2017,15 @@
         },
         {
             "type": "file",
-            "name": "manual/datablocks/library.html",
-            "size": 7574,
-            "hash": "7bdfe94bd2a93cfc32b7d67097028b25f5f0064b68adf26d3e8397e9bad30789"
-        },
-        {
-            "type": "file",
             "name": "manual/datablocks/light.html",
             "size": 7906,
             "hash": "02f3b481befa8e8d57890f8f61b4bdb0773e49f5b0fb2fab4ce0fc9131e57451"
+        },
+        {
+            "type": "file",
+            "name": "manual/datablocks/library.html",
+            "size": 7574,
+            "hash": "7bdfe94bd2a93cfc32b7d67097028b25f5f0064b68adf26d3e8397e9bad30789"
         },
         {
             "type": "file",
@@ -2047,15 +2047,15 @@
         },
         {
             "type": "file",
-            "name": "manual/datablocks/scene.html",
-            "size": 7582,
-            "hash": "a6e0f0834a1cb5417f81511d2e2e0eb03fccda6c32137d3065737735ac384727"
-        },
-        {
-            "type": "file",
             "name": "manual/datablocks/sound.html",
             "size": 7574,
             "hash": "5bdbc676e3b7127434a71c3e4cc4994794258c76071983755b2c252b983d8a16"
+        },
+        {
+            "type": "file",
+            "name": "manual/datablocks/scene.html",
+            "size": 7582,
+            "hash": "a6e0f0834a1cb5417f81511d2e2e0eb03fccda6c32137d3065737735ac384727"
         },
         {
             "type": "file",
@@ -2138,14 +2138,14 @@
             "hash": "bf662aa15dfad46dfbcc8a8255a47c59c6d0445552a43c22215312333bbee6de"
         },
         {
+            "type": "folder",
+            "name": "manual/logic/sensors"
+        },
+        {
             "type": "file",
             "name": "manual/logic/properties.html",
             "size": 11574,
             "hash": "710915a2464f2a7aa37125f4ffb37f802f10d7831ab1180af365b01bece903fb"
-        },
-        {
-            "type": "folder",
-            "name": "manual/logic/sensors"
         },
         {
             "type": "file",
@@ -2163,11 +2163,11 @@
         },
         {
             "type": "folder",
-            "name": "manual/logic_nodes/category_3"
+            "name": "manual/logic_nodes/category_4"
         },
         {
             "type": "folder",
-            "name": "manual/logic_nodes/category_4"
+            "name": "manual/logic_nodes/category_3"
         },
         {
             "type": "folder",
@@ -2699,15 +2699,15 @@
         },
         {
             "type": "file",
-            "name": "_static/css/fonts/fontawesome-webfont.woff2",
-            "size": 77160,
-            "hash": "2adefcbc041e7d18fcf2d417879dc5a09997aa64d675b7a3c4b6ce33da13f3fe"
-        },
-        {
-            "type": "file",
             "name": "_static/css/fonts/lato-bold-italic.woff",
             "size": 323344,
             "hash": "980c8592e5488df256192c999e92db8fd302db8cd8909b7fa266a684e37e45f8"
+        },
+        {
+            "type": "file",
+            "name": "_static/css/fonts/fontawesome-webfont.woff2",
+            "size": 77160,
+            "hash": "2adefcbc041e7d18fcf2d417879dc5a09997aa64d675b7a3c4b6ce33da13f3fe"
         },
         {
             "type": "file",
@@ -2729,15 +2729,15 @@
         },
         {
             "type": "file",
-            "name": "_static/css/fonts/lato-normal-italic.woff",
-            "size": 328412,
-            "hash": "26318a1467a5e5caf10b04cfa942d079632560cd7a29cec565fd1dc9f7ec5081"
-        },
-        {
-            "type": "file",
             "name": "_static/css/fonts/lato-normal-italic.woff2",
             "size": 195704,
             "hash": "4465765f2f6eddcdad34ffd7cab559e56bc0e75e45e192f85e9562b0771481dc"
+        },
+        {
+            "type": "file",
+            "name": "_static/css/fonts/lato-normal-italic.woff",
+            "size": 328412,
+            "hash": "26318a1467a5e5caf10b04cfa942d079632560cd7a29cec565fd1dc9f7ec5081"
         },
         {
             "type": "file",
@@ -2849,15 +2849,15 @@
         },
         {
             "type": "file",
-            "name": "_static/fonts/RobotoSlab/roboto-slab-v7-bold.ttf",
-            "size": 170616,
-            "hash": "ba12d2eab1fa765b6b05398fa7e047dd76293f0c051ce57a8f7b0c591c14d42b"
-        },
-        {
-            "type": "file",
             "name": "_static/fonts/RobotoSlab/roboto-slab-v7-bold.eot",
             "size": 79520,
             "hash": "4438991a12ff951cc8d0e83348ec06d9f910591b1b014c476e9595d4da099e48"
+        },
+        {
+            "type": "file",
+            "name": "_static/fonts/RobotoSlab/roboto-slab-v7-bold.ttf",
+            "size": 170616,
+            "hash": "ba12d2eab1fa765b6b05398fa7e047dd76293f0c051ce57a8f7b0c591c14d42b"
         },
         {
             "type": "file",
@@ -3144,36 +3144,6 @@
             "name": "manual/logic_nodes/category_2/sound"
         },
         {
-            "type": "file",
-            "name": "manual/logic_nodes/category_3/index.html",
-            "size": 6167,
-            "hash": "3620dcd80be4216cb5df6a8a98e422000a10987f77a3450fa127b226e15e1b51"
-        },
-        {
-            "type": "folder",
-            "name": "manual/logic_nodes/category_3/logic"
-        },
-        {
-            "type": "folder",
-            "name": "manual/logic_nodes/category_3/math"
-        },
-        {
-            "type": "folder",
-            "name": "manual/logic_nodes/category_3/physics"
-        },
-        {
-            "type": "folder",
-            "name": "manual/logic_nodes/category_3/python"
-        },
-        {
-            "type": "folder",
-            "name": "manual/logic_nodes/category_3/ray_casts"
-        },
-        {
-            "type": "folder",
-            "name": "manual/logic_nodes/category_3/time"
-        },
-        {
             "type": "folder",
             "name": "manual/logic_nodes/category_4/file"
         },
@@ -3190,6 +3160,36 @@
         {
             "type": "folder",
             "name": "manual/logic_nodes/category_4/variables"
+        },
+        {
+            "type": "file",
+            "name": "manual/logic_nodes/category_3/index.html",
+            "size": 6167,
+            "hash": "3620dcd80be4216cb5df6a8a98e422000a10987f77a3450fa127b226e15e1b51"
+        },
+        {
+            "type": "folder",
+            "name": "manual/logic_nodes/category_3/logic"
+        },
+        {
+            "type": "folder",
+            "name": "manual/logic_nodes/category_3/physics"
+        },
+        {
+            "type": "folder",
+            "name": "manual/logic_nodes/category_3/math"
+        },
+        {
+            "type": "folder",
+            "name": "manual/logic_nodes/category_3/python"
+        },
+        {
+            "type": "folder",
+            "name": "manual/logic_nodes/category_3/ray_casts"
+        },
+        {
+            "type": "folder",
+            "name": "manual/logic_nodes/category_3/time"
         },
         {
             "type": "file",
@@ -4371,21 +4371,39 @@
         },
         {
             "type": "file",
+            "name": "manual/logic_nodes/category_4/file/index.html",
+            "size": 5519,
+            "hash": "4406d63febbf9a7188e826530e97964c0d31d542affc7bf5efe698472008b1bd"
+        },
+        {
+            "type": "file",
+            "name": "manual/logic_nodes/category_4/render/index.html",
+            "size": 5521,
+            "hash": "eb28c88fb730a68cefc04b49ba45271cff7c7aa401196360cbe51b34f1431ceb"
+        },
+        {
+            "type": "file",
+            "name": "manual/logic_nodes/category_4/variables/index.html",
+            "size": 5524,
+            "hash": "59e968aeb9f5b5263c6fd1f32145f8df3fdd0ff9b231720744fa2434ef7e43cf"
+        },
+        {
+            "type": "file",
             "name": "manual/logic_nodes/category_3/logic/index.html",
             "size": 5520,
             "hash": "f9b3cc5e8c1799638641455b665e70231b8e1c54e5504ed09398ee6f70a81ca7"
         },
         {
             "type": "file",
-            "name": "manual/logic_nodes/category_3/math/index.html",
-            "size": 5519,
-            "hash": "b7dd311ad6b3403ca8a668a2fee0078f449463d71b7774abdcad23126f618d35"
-        },
-        {
-            "type": "file",
             "name": "manual/logic_nodes/category_3/physics/index.html",
             "size": 5522,
             "hash": "0615261c217b477c63a03e5ef7cb260d184f97b579d46eee2de506d3ec6bee7b"
+        },
+        {
+            "type": "file",
+            "name": "manual/logic_nodes/category_3/math/index.html",
+            "size": 5519,
+            "hash": "b7dd311ad6b3403ca8a668a2fee0078f449463d71b7774abdcad23126f618d35"
         },
         {
             "type": "file",
@@ -4404,24 +4422,6 @@
             "name": "manual/logic_nodes/category_3/time/index.html",
             "size": 5519,
             "hash": "0c71a0d741aad1a3cc89614496d9b324c8fe7cd165603be51f41ff424fa84321"
-        },
-        {
-            "type": "file",
-            "name": "manual/logic_nodes/category_4/file/index.html",
-            "size": 5519,
-            "hash": "4406d63febbf9a7188e826530e97964c0d31d542affc7bf5efe698472008b1bd"
-        },
-        {
-            "type": "file",
-            "name": "manual/logic_nodes/category_4/render/index.html",
-            "size": 5521,
-            "hash": "eb28c88fb730a68cefc04b49ba45271cff7c7aa401196360cbe51b34f1431ceb"
-        },
-        {
-            "type": "file",
-            "name": "manual/logic_nodes/category_4/variables/index.html",
-            "size": 5524,
-            "hash": "59e968aeb9f5b5263c6fd1f32145f8df3fdd0ff9b231720744fa2434ef7e43cf"
         },
         {
             "type": "file",
@@ -5448,8 +5448,8 @@
         {
             "type": "file",
             "name": "manual/logic_nodes/category_2/objects/transformation/follow_path.html",
-            "size": 13164,
-            "hash": "fd2dd11d6deebf08296b547f695d690dd0f51cf70481c9304a4e86945b28c8e9"
+            "size": 13144,
+            "hash": "83abe29ca0052129059f59e532c1d8863e359a7455a488d3ce99fa0df935cb53"
         },
         {
             "type": "file",
@@ -5850,8 +5850,8 @@
         {
             "type": "file",
             "name": "_sources/manual/logic_nodes/category_2/objects/transformation/follow_path.rst.txt",
-            "size": 2069,
-            "hash": "6781d58fb57c4438cb7eb6601140fc4088ea56b5ae8c72621803c456c8a5352d"
+            "size": 2054,
+            "hash": "25c6ae9900c87825cfa3d60f5e0ce8a2aef24e9e7ae6861cee19ff8e5fec2e3a"
         },
         {
             "type": "file",
