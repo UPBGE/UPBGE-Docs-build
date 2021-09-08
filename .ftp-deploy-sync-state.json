@@ -1,7 +1,7 @@
 {
     "description": "DO NOT DELETE THIS FILE. This file is used to keep track of which files have been synced in the most recent deployment. If you delete this file a resync will need to be done (which can take a while) - read more: https://github.com/SamKirkland/FTP-Deploy-Action",
     "version": "1.0.0",
-    "generatedTime": 1631049195562,
+    "generatedTime": 1631062388330,
     "data": [
         {
             "type": "file",
@@ -12,8 +12,8 @@
         {
             "type": "file",
             "name": "UPBGE_Manual.zip",
-            "size": 23250956,
-            "hash": "608e762f65ee125cd7c320da9c935a2920e0187e44f9bc58f811067f430e4ef2"
+            "size": 23250912,
+            "hash": "bf4a3fa10b3ca0efd89f5078a38d89c34bbb47dbeae470bec61f23725aea2780"
         },
         {
             "type": "folder",
@@ -58,18 +58,8 @@
         {
             "type": "file",
             "name": "searchindex.js",
-            "size": 126579,
-            "hash": "6d67249dc5a40274b3e9965dba805073591b2e69cf9cd81cc19085a628986345"
-        },
-        {
-            "type": "file",
-            "name": "_sources/index.rst.txt",
-            "size": 1106,
-            "hash": "4075f341a0bceb9c715da20c781ecb177d7d64c6ac31135b1eb3973cfebce5d7"
-        },
-        {
-            "type": "folder",
-            "name": "_sources/manual"
+            "size": 126567,
+            "hash": "e1375afc1cb3da0069fa6994f845a26e25bb4f355fefe13aa0cb8b12d7044e3a"
         },
         {
             "type": "file",
@@ -79,15 +69,15 @@
         },
         {
             "type": "file",
-            "name": "_images/Fig-02.png",
-            "size": 9931,
-            "hash": "71afda452a5bdf2499d27395d1c6f5c012b7b3010e94729264674a8692afbe35"
-        },
-        {
-            "type": "file",
             "name": "_images/Fig-03.png",
             "size": 2984,
             "hash": "630eca074b2b0bc9c3d8cc7b0ecc07ba0ae4a72943582a8fc136b9aa5dfa1520"
+        },
+        {
+            "type": "file",
+            "name": "_images/Fig-02.png",
+            "size": 9931,
+            "hash": "71afda452a5bdf2499d27395d1c6f5c012b7b3010e94729264674a8692afbe35"
         },
         {
             "type": "file",
@@ -181,21 +171,15 @@
         },
         {
             "type": "file",
-            "name": "_images/Fig-20.png",
-            "size": 41446,
-            "hash": "cc0f38821d109336957473c640bcd6043e3514d690452b2a1b24b16fb401576c"
+            "name": "_images/Fig01-01.jpg",
+            "size": 284147,
+            "hash": "aca9b8b267531ce5a7adcce56908400fc604bd48e0e44642bd64d70ceca4f80e"
         },
         {
             "type": "file",
             "name": "_images/Fig01-02.jpg",
             "size": 353151,
             "hash": "178e07b7bc577852337b655b7fb6afeafb45c2dea065514e569171415002ba97"
-        },
-        {
-            "type": "file",
-            "name": "_images/Fig01-01.jpg",
-            "size": 284147,
-            "hash": "aca9b8b267531ce5a7adcce56908400fc604bd48e0e44642bd64d70ceca4f80e"
         },
         {
             "type": "file",
@@ -214,6 +198,12 @@
             "name": "_images/Fig01-06.jpg",
             "size": 53067,
             "hash": "5c182dea7032d37bec4f321dd44773312d78d50e31c58bac932ea0ca14739a9e"
+        },
+        {
+            "type": "file",
+            "name": "_images/Fig-20.png",
+            "size": 41446,
+            "hash": "cc0f38821d109336957473c640bcd6043e3514d690452b2a1b24b16fb401576c"
         },
         {
             "type": "file",
@@ -355,6 +345,12 @@
         },
         {
             "type": "file",
+            "name": "_images/Fig01-30.png",
+            "size": 20294,
+            "hash": "621a24d00a73dce99613c98173343ff8ee7452bd6ec995faa7834faa82e12d44"
+        },
+        {
+            "type": "file",
             "name": "_images/Fig01-31.png",
             "size": 35874,
             "hash": "1c9e437f608cebd5fbd96312a6e12755393d8d3b3f21738ba5904aec1cb8ad31"
@@ -364,12 +360,6 @@
             "name": "_images/Fig01-32.png",
             "size": 29799,
             "hash": "1c9ecb2a886670d6479b797f1ce47aac4c4973256d910272dbd3c5b952c2e8f9"
-        },
-        {
-            "type": "file",
-            "name": "_images/Fig01-30.png",
-            "size": 20294,
-            "hash": "621a24d00a73dce99613c98173343ff8ee7452bd6ec995faa7834faa82e12d44"
         },
         {
             "type": "file",
@@ -385,15 +375,15 @@
         },
         {
             "type": "file",
-            "name": "_images/Fig07-03.png",
-            "size": 330456,
-            "hash": "ef7d1d6bef9fd3ff20257d9a77758ac5c6bc91d116347f4d37df531ef074fbda"
-        },
-        {
-            "type": "file",
             "name": "_images/Fig07-02.png",
             "size": 641871,
             "hash": "55fdfa01b18962f9a46931c16814b7103e15f4f1a83b12b8edbcb51088d88130"
+        },
+        {
+            "type": "file",
+            "name": "_images/Fig07-03.png",
+            "size": 330456,
+            "hash": "ef7d1d6bef9fd3ff20257d9a77758ac5c6bc91d116347f4d37df531ef074fbda"
         },
         {
             "type": "file",
@@ -1033,15 +1023,15 @@
         },
         {
             "type": "file",
-            "name": "_images/logic-actuators-types-random-bool_constant.png",
-            "size": 15121,
-            "hash": "294b9588f751408a8092bbc91429deef73e73147b243dfb366a70dfa5b9f4489"
-        },
-        {
-            "type": "file",
             "name": "_images/logic-actuators-types-random-bool_bernoulli.png",
             "size": 15503,
             "hash": "88baafbd4c612952cbd6dfe5d9fb846c79213ee5c5eb3400118485925199a186"
+        },
+        {
+            "type": "file",
+            "name": "_images/logic-actuators-types-random-bool_constant.png",
+            "size": 15121,
+            "hash": "294b9588f751408a8092bbc91429deef73e73147b243dfb366a70dfa5b9f4489"
         },
         {
             "type": "file",
@@ -1261,15 +1251,15 @@
         },
         {
             "type": "file",
-            "name": "_images/logic-controllers-types-xor-xor.png",
-            "size": 11495,
-            "hash": "88c48edf07b8cf754285078f8f7f94c7e53e03812956d09a07fa1974b72b62d4"
-        },
-        {
-            "type": "file",
             "name": "_images/logic-controllers-types-xnor-xnor.png",
             "size": 11150,
             "hash": "a32b361637319eb68ed2ace5273d47a7a23ca73e2c5609ff08f79129174a3a5f"
+        },
+        {
+            "type": "file",
+            "name": "_images/logic-controllers-types-xor-xor.png",
+            "size": 11495,
+            "hash": "88c48edf07b8cf754285078f8f7f94c7e53e03812956d09a07fa1974b72b62d4"
         },
         {
             "type": "file",
@@ -1624,6 +1614,16 @@
             "name": "_images/tutorials-play_animation-logic_editor_1.png",
             "size": 47449,
             "hash": "415c5585d6807a4d3dcd9fa308a76c3ea447a5907edb3603d75143992ed0029d"
+        },
+        {
+            "type": "file",
+            "name": "_sources/index.rst.txt",
+            "size": 1106,
+            "hash": "4075f341a0bceb9c715da20c781ecb177d7d64c6ac31135b1eb3973cfebce5d7"
+        },
+        {
+            "type": "folder",
+            "name": "_sources/manual"
         },
         {
             "type": "file",
@@ -3489,15 +3489,15 @@
         },
         {
             "type": "file",
-            "name": "_sources/manual/logic/actuators/index.rst.txt",
-            "size": 641,
-            "hash": "60b7b08683b62aff8fcb6a8ba55550c1b396ec7ebb5c3c82df4b5a37fb9b8a06"
-        },
-        {
-            "type": "file",
             "name": "_sources/manual/logic/actuators/introduction.rst.txt",
             "size": 1671,
             "hash": "5b6d63406d6046b7021e57cb34303a50358e3f0206162bd640079eb3cbd5ee7b"
+        },
+        {
+            "type": "file",
+            "name": "_sources/manual/logic/actuators/index.rst.txt",
+            "size": 641,
+            "hash": "60b7b08683b62aff8fcb6a8ba55550c1b396ec7ebb5c3c82df4b5a37fb9b8a06"
         },
         {
             "type": "folder",
@@ -3667,15 +3667,15 @@
         },
         {
             "type": "file",
-            "name": "_sources/manual/python_components/getting_started/top_down_templates.rst.txt",
-            "size": 4196,
-            "hash": "a7188867487cab430ac3aff1c9954d83f961d0fa916dfeee4f76c00e0d188b63"
-        },
-        {
-            "type": "file",
             "name": "_sources/manual/python_components/getting_started/util_templates.rst.txt",
             "size": 2920,
             "hash": "d8b0d5b5c3fda3ce292ba38b23d5b380cd2cc9852416886c448dabe5da02024a"
+        },
+        {
+            "type": "file",
+            "name": "_sources/manual/python_components/getting_started/top_down_templates.rst.txt",
+            "size": 4196,
+            "hash": "a7188867487cab430ac3aff1c9954d83f961d0fa916dfeee4f76c00e0d188b63"
         },
         {
             "type": "file",
@@ -3805,15 +3805,15 @@
         },
         {
             "type": "file",
-            "name": "manual/logic/actuators/types/camera.html",
-            "size": 11395,
-            "hash": "d2ebb3e36cc30f9ccf8071d83d135acfb7229b00098e95fc22925256b07f6bfc"
-        },
-        {
-            "type": "file",
             "name": "manual/logic/actuators/types/collection.html",
             "size": 13821,
             "hash": "1d69c679dcb504fd8c91f96024e767b8e47ce0a90d852bc947ecb4566e183bb8"
+        },
+        {
+            "type": "file",
+            "name": "manual/logic/actuators/types/camera.html",
+            "size": 11395,
+            "hash": "d2ebb3e36cc30f9ccf8071d83d135acfb7229b00098e95fc22925256b07f6bfc"
         },
         {
             "type": "file",
@@ -3859,15 +3859,15 @@
         },
         {
             "type": "file",
-            "name": "manual/logic/actuators/types/parent.html",
-            "size": 11919,
-            "hash": "759eb1c131a5ab4f8030a881e68b4562026a0a26e8f35c3b42a06d5dcb074754"
-        },
-        {
-            "type": "file",
             "name": "manual/logic/actuators/types/property.html",
             "size": 13618,
             "hash": "9ce718d4fe1ff751c80e73aba9dd466573e2f6bcc4d25f0e0b1d66bb21c5e830"
+        },
+        {
+            "type": "file",
+            "name": "manual/logic/actuators/types/parent.html",
+            "size": 11919,
+            "hash": "759eb1c131a5ab4f8030a881e68b4562026a0a26e8f35c3b42a06d5dcb074754"
         },
         {
             "type": "file",
@@ -4033,15 +4033,15 @@
         },
         {
             "type": "file",
-            "name": "manual/logic/sensors/types/radar.html",
-            "size": 11945,
-            "hash": "2aaae283ef1653ad86eaae330b9d3a6b717aae1ad8e959e260880cb61cb93c2e"
-        },
-        {
-            "type": "file",
             "name": "manual/logic/sensors/types/random.html",
             "size": 10756,
             "hash": "d6d9a02d22e62a36ab0af8c98fea05c2b882b421b383a4d5639e5371daee9672"
+        },
+        {
+            "type": "file",
+            "name": "manual/logic/sensors/types/radar.html",
+            "size": 11945,
+            "hash": "2aaae283ef1653ad86eaae330b9d3a6b717aae1ad8e959e260880cb61cb93c2e"
         },
         {
             "type": "file",
@@ -4150,14 +4150,14 @@
             "name": "manual/logic_nodes/category_1/input/mouse"
         },
         {
+            "type": "folder",
+            "name": "manual/logic_nodes/category_2/animation/armature_rig"
+        },
+        {
             "type": "file",
             "name": "manual/logic_nodes/category_2/animation/animation_status.html",
             "size": 8043,
             "hash": "8e7f634bdfaca7e6f967a49a43a53af1273f92cf8c6bdc314ff8f3dc18c628b4"
-        },
-        {
-            "type": "folder",
-            "name": "manual/logic_nodes/category_2/animation/armature_rig"
         },
         {
             "type": "file",
@@ -5478,8 +5478,8 @@
         {
             "type": "file",
             "name": "manual/logic_nodes/category_2/objects/transformation/translate.html",
-            "size": 11897,
-            "hash": "8e5c5463ba7b8183b257fd5b7ac62ae1c445f765b20804748d0ff39a65dff124"
+            "size": 11823,
+            "hash": "26dc81723a5075d09a59d4e01d4d58a2e057fb5844cf8a622bd7e2a8b5b135b2"
         },
         {
             "type": "file",
@@ -5880,8 +5880,8 @@
         {
             "type": "file",
             "name": "_sources/manual/logic_nodes/category_2/objects/transformation/translate.rst.txt",
-            "size": 705,
-            "hash": "09f6a9467ffcf7bf178102ffa3701873d68ac203b215d941bf2876b7b893e5fb"
+            "size": 656,
+            "hash": "7794cec9a0b3f25c0fe3550e74275b1ef3b441813bb4ecd98ff4ebcbd9c2696c"
         }
     ]
 }
