@@ -1,74 +1,36 @@
-
-
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" />
-  
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
   <title>Sound Actuator &mdash; UPBGE Manual</title>
-  
-
-  
-  <link rel="stylesheet" href="../../../../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../../../../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../../../../_static/css/theme_overrides.css" type="text/css" />
-
-  
-  
-
-  
-  
-
-  
-
-  
+      <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../../../_static/css/theme_overrides.css" type="text/css" />
   <!--[if lt IE 9]>
     <script src="../../../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../../../../" src="../../../../_static/documentation_options.js"></script>
         <script data-url_root="../../../../" id="documentation_options" src="../../../../_static/documentation_options.js"></script>
         <script src="../../../../_static/jquery.js"></script>
         <script src="../../../../_static/underscore.js"></script>
         <script src="../../../../_static/doctools.js"></script>
-    
-    <script type="text/javascript" src="../../../../_static/js/theme.js"></script>
-
-    
+    <script src="../../../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../../../genindex.html" />
     <link rel="search" title="Search" href="../../../../search.html" />
     <link rel="next" title="State Actuator" href="state.html" />
     <link rel="prev" title="Scene Actuator" href="scene.html" /> 
 </head>
 
-<body class="wy-body-for-nav">
-
-   
+<body class="wy-body-for-nav"> 
   <div class="wy-grid-for-nav">
-    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-          
-
-          
             <a href="../../../../index.html" class="icon icon-home"> UPBGE Manual
-          
-
-          
-            
             <img src="../../../../_static/upbge_logo.png" class="logo" alt="Logo"/>
-          
           </a>
-
-          
-
-          
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../../../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -76,18 +38,7 @@
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-
-          
-        </div>
-
-        
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">Manual</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../../../introduction/index.html">Introduction</a></li>
@@ -146,92 +97,53 @@
 <li class="toctree-l1"><a class="reference internal" href="../../../about/index.html">About</a></li>
 </ul>
 
-            
-          
         </div>
-        
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../../../../index.html">UPBGE Manual</a>
-        
       </nav>
 
-
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div role="navigation" aria-label="breadcrumbs navigation">
-
+          <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-    
       <li><a href="../../../../index.html" class="icon icon-home"></a> &raquo;</li>
-        
           <li><a href="../../index.html">Logic Bricks</a> &raquo;</li>
-        
           <li><a href="../index.html">Actuators</a> &raquo;</li>
-        
       <li>Sound Actuator</li>
-    
-    
       <li class="wy-breadcrumbs-aside">
-        
-          
             <a href="../../../../_sources/manual/logic/actuators/types/sound.rst.txt" rel="nofollow"> View page source</a>
-          
-        
       </li>
-    
   </ul>
-
-  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-            
-  <div class="section" id="sound-actuator">
-<span id="bpy-types-soundactuator"></span><h1>Sound Actuator<a class="headerlink" href="#sound-actuator" title="Permalink to this headline">¶</a></h1>
+             
+  <section id="sound-actuator">
+<span id="bpy-types-soundactuator"></span><h1>Sound Actuator<a class="headerlink" href="#sound-actuator" title="Permalink to this headline"></a></h1>
 <div class="admonition seealso">
 <p class="admonition-title">See also</p>
 <p>See the Python reference of this logic brick in <code class="xref py py-class docutils literal notranslate"><span class="pre">SCA_SoundActuator</span></code>.</p>
 </div>
 <p>The <em>Sound Actuator</em> allows the user to play sound files in the game engine.</p>
-<div class="figure align-default" id="id1">
+<figure class="align-default" id="id1">
 <img alt="../../../../_images/logic-actuators-types-sound-sound.png" src="../../../../_images/logic-actuators-types-sound-sound.png" />
-<p class="caption"><span class="caption-text">Sound Actuator: File selection.</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
-</div>
-<div class="figure align-default" id="id2">
+<figcaption>
+<p><span class="caption-text">Sound Actuator: File selection.</span><a class="headerlink" href="#id1" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<figure class="align-default" id="id2">
 <img alt="../../../../_images/logic-actuators-types-sound-sound1.png" src="../../../../_images/logic-actuators-types-sound-sound1.png" />
-<p class="caption"><span class="caption-text">Sound Actuator: Properties.</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
-</div>
-<div class="section" id="properties">
-<h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<figcaption>
+<p><span class="caption-text">Sound Actuator: Properties.</span><a class="headerlink" href="#id2" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<section id="properties">
+<h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline"></a></h2>
 <dl>
 <dt>Sound File</dt><dd><p>Load a new sound file or select one from the list.</p>
 </dd>
@@ -258,12 +170,14 @@ When deactivated, stops after finishing playing the sound.</p>
 <dt>Pitch</dt><dd><p>The pitch at which the sound effect is played. 0 is default, 12 is one octave.</p>
 </dd>
 </dl>
-<div class="section" id="d-sound">
-<h3>3D Sound<a class="headerlink" href="#d-sound" title="Permalink to this headline">¶</a></h3>
-<div class="figure align-default" id="id3" style="width: 200px">
+<section id="d-sound">
+<h3>3D Sound<a class="headerlink" href="#d-sound" title="Permalink to this headline"></a></h3>
+<figure class="align-default" id="id3" style="width: 200px">
 <a class="reference internal image-reference" href="../../../../_images/logic-actuators-types-sound-cone.jpg"><img alt="../../../../_images/logic-actuators-types-sound-cone.jpg" src="../../../../_images/logic-actuators-types-sound-cone.jpg" style="width: 200px;" /></a>
-<p class="caption"><span class="caption-text">The cones point in the direction of the objects negative Z axis.</span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
-</div>
+<figcaption>
+<p><span class="caption-text">The cones point in the direction of the objects negative Z axis.</span><a class="headerlink" href="#id3" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
 <p>If enabled, the sound is affected by distance, speed of the emitting object and various other things.
 The options below are only available if <em>3D Sound</em> checkbox is enabled.</p>
 <div class="admonition note">
@@ -299,51 +213,39 @@ Note that the cones always point in the direction of the objects local -Z axis (
 <dt>Cone Inner Angle</dt><dd><p>The angle of the inner cone.</p>
 </dd>
 </dl>
-</div>
-</div>
-<div class="section" id="example">
-<h2>Example<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h2>
-</div>
-</div>
+</section>
+</section>
+<section id="example">
+<h2>Example<a class="headerlink" href="#example" title="Permalink to this headline"></a></h2>
+</section>
+</section>
 
 
            </div>
-           
           </div>
-          <footer>
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-        <a href="state.html" class="btn btn-neutral float-right" title="State Actuator" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="scene.html" class="btn btn-neutral float-left" title="Scene Actuator" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="state.html" class="btn btn-neutral float-right" title="State Actuator" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>
-        &#169; Copyright This page is licensed under a CC-BY-SA 4.0 Int. License..
+    <p>&#169; Copyright This page is licensed under a CC-BY-SA 4.0 Int. License..</p>
+  </div>
 
-    </p>
-  </div> 
+   
 
 </footer>
         </div>
       </div>
-
     </section>
-
   </div>
-  
-
-  <script type="text/javascript">
+  <script>
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-
-  
-  
-    
-   
+  </script> 
 
 </body>
 </html>
