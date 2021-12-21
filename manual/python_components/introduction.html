@@ -52,7 +52,7 @@
 <li class="toctree-l3"><a class="reference internal" href="#what-is-a-python-component">What Is A Python Component?</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#python-component-creation">Python Component Creation</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#create-component">Create Component</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#register-component">Register Component</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#add-component">Add Component</a></li>
 </ul>
 </li>
 </ul>
@@ -183,48 +183,51 @@ The following example show all of these property types:</p>
 </div>
 <p>Additionally, the following data (ID) property types are supported too:</p>
 <figure class="align-left" id="id2">
-<a class="reference internal image-reference" href="../../_images/Fig-20.png"><img alt="../../_images/Fig-20.png" src="../../_images/Fig-20.png" style="width: 70%;" /></a>
+<a class="reference internal image-reference" href="../../_images/Fig-20.png"><img alt="../../_images/Fig-20.png" src="../../_images/Fig-20.png" style="width: 90%;" /></a>
 <figcaption>
 <p><span class="caption-text">Data (ID) Property Types supported</span><a class="headerlink" href="#id2" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bge</span> <span class="kn">import</span> <span class="o">*</span>
-<span class="kn">from</span> <span class="nn">mathutils</span> <span class="kn">import</span> <span class="o">*</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">bge</span><span class="o">,</span> <span class="nn">bpy</span>
 <span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">OrderedDict</span>
 
-<span class="k">class</span> <span class="nc">Bootstrap</span><span class="p">(</span><span class="n">KX_PythonComponent</span><span class="p">):</span>
-   <span class="n">args</span> <span class="o">=</span> <span class="n">OrderedDict</span><span class="p">([</span>
-        <span class="p">(</span><span class="s2">&quot;key&quot;</span><span class="p">,</span> <span class="s2">&quot;alleycat&quot;</span><span class="p">),</span>
-        <span class="p">(</span><span class="s2">&quot;config&quot;</span><span class="p">,</span> <span class="s2">&quot;//config.json&quot;</span><span class="p">),</span>
-        <span class="p">(</span><span class="s2">&quot;Action&quot;</span><span class="p">,</span> <span class="n">bpy</span><span class="o">.</span><span class="n">types</span><span class="o">.</span><span class="n">Action</span><span class="p">),</span>
-        <span class="p">(</span><span class="s2">&quot;Armature&quot;</span><span class="p">,</span> <span class="n">bpy</span><span class="o">.</span><span class="n">types</span><span class="o">.</span><span class="n">Armature</span><span class="p">),</span>
-        <span class="p">(</span><span class="s2">&quot;Camera&quot;</span><span class="p">,</span> <span class="n">bpy</span><span class="o">.</span><span class="n">types</span><span class="o">.</span><span class="n">Camera</span><span class="p">),</span>
-        <span class="p">(</span><span class="s2">&quot;Collection&quot;</span><span class="p">,</span> <span class="n">bpy</span><span class="o">.</span><span class="n">types</span><span class="o">.</span><span class="n">Collection</span><span class="p">),</span>
-        <span class="p">(</span><span class="s2">&quot;Curve&quot;</span><span class="p">,</span> <span class="n">bpy</span><span class="o">.</span><span class="n">types</span><span class="o">.</span><span class="n">Curve</span><span class="p">),</span>
-        <span class="p">(</span><span class="s2">&quot;Image&quot;</span><span class="p">,</span> <span class="n">bpy</span><span class="o">.</span><span class="n">types</span><span class="o">.</span><span class="n">Image</span><span class="p">),</span>
-        <span class="p">(</span><span class="s2">&quot;Key&quot;</span><span class="p">,</span> <span class="n">bpy</span><span class="o">.</span><span class="n">types</span><span class="o">.</span><span class="n">Key</span><span class="p">),</span>
-        <span class="p">(</span><span class="s2">&quot;Library&quot;</span><span class="p">,</span> <span class="n">bpy</span><span class="o">.</span><span class="n">types</span><span class="o">.</span><span class="n">Library</span><span class="p">),</span>
-        <span class="p">(</span><span class="s2">&quot;Light&quot;</span><span class="p">,</span> <span class="n">bpy</span><span class="o">.</span><span class="n">types</span><span class="o">.</span><span class="n">Light</span><span class="p">),</span>
-        <span class="p">(</span><span class="s2">&quot;Material&quot;</span><span class="p">,</span> <span class="n">bpy</span><span class="o">.</span><span class="n">types</span><span class="o">.</span><span class="n">Material</span><span class="p">),</span>
-        <span class="p">(</span><span class="s2">&quot;Mesh&quot;</span><span class="p">,</span> <span class="n">bpy</span><span class="o">.</span><span class="n">types</span><span class="o">.</span><span class="n">Mesh</span><span class="p">),</span>
-        <span class="p">(</span><span class="s2">&quot;Movie Clip&quot;</span><span class="p">,</span> <span class="n">bpy</span><span class="o">.</span><span class="n">types</span><span class="o">.</span><span class="n">MovieClip</span><span class="p">),</span>
-        <span class="p">(</span><span class="s2">&quot;Node Tree&quot;</span><span class="p">,</span> <span class="n">bpy</span><span class="o">.</span><span class="n">types</span><span class="o">.</span><span class="n">NodeTree</span><span class="p">),</span>
-        <span class="p">(</span><span class="s2">&quot;Object&quot;</span><span class="p">,</span> <span class="n">bpy</span><span class="o">.</span><span class="n">types</span><span class="o">.</span><span class="n">Object</span><span class="p">),</span>
-        <span class="p">(</span><span class="s2">&quot;Particle&quot;</span><span class="p">,</span> <span class="n">bpy</span><span class="o">.</span><span class="n">types</span><span class="o">.</span><span class="n">ParticleSettings</span><span class="p">),</span>
-        <span class="p">(</span><span class="s2">&quot;Sound&quot;</span><span class="p">,</span> <span class="n">bpy</span><span class="o">.</span><span class="n">types</span><span class="o">.</span><span class="n">Sound</span><span class="p">),</span>
-        <span class="p">(</span><span class="s2">&quot;Speaker&quot;</span><span class="p">,</span> <span class="n">bpy</span><span class="o">.</span><span class="n">types</span><span class="o">.</span><span class="n">Speaker</span><span class="p">),</span>
-        <span class="p">(</span><span class="s2">&quot;Text&quot;</span><span class="p">,</span> <span class="n">bpy</span><span class="o">.</span><span class="n">types</span><span class="o">.</span><span class="n">Text</span><span class="p">),</span>
-        <span class="p">(</span><span class="s2">&quot;Texture&quot;</span><span class="p">,</span> <span class="n">bpy</span><span class="o">.</span><span class="n">types</span><span class="o">.</span><span class="n">Texture</span><span class="p">),</span>
-        <span class="p">(</span><span class="s2">&quot;Vector Font&quot;</span><span class="p">,</span> <span class="n">bpy</span><span class="o">.</span><span class="n">types</span><span class="o">.</span><span class="n">VectorFont</span><span class="p">),</span>
-        <span class="p">(</span><span class="s2">&quot;Volume&quot;</span><span class="p">,</span> <span class="n">bpy</span><span class="o">.</span><span class="n">types</span><span class="o">.</span><span class="n">Volume</span><span class="p">),</span>
-        <span class="p">(</span><span class="s2">&quot;World&quot;</span><span class="p">,</span> <span class="n">bpy</span><span class="o">.</span><span class="n">types</span><span class="o">.</span><span class="n">World</span><span class="p">),</span>
-    <span class="p">])</span>
+<span class="k">class</span> <span class="nc">Bootstrap</span><span class="p">(</span><span class="n">bge</span><span class="o">.</span><span class="n">types</span><span class="o">.</span><span class="n">KX_PythonComponent</span><span class="p">):</span>
+   <span class="n">args</span> <span class="o">=</span> <span class="n">OrderedDict</span><span class="p">((</span>
+      <span class="p">(</span><span class="s2">&quot;myAction&quot;</span><span class="p">,</span> <span class="n">bpy</span><span class="o">.</span><span class="n">types</span><span class="o">.</span><span class="n">Action</span><span class="p">),</span>
+      <span class="p">(</span><span class="s2">&quot;myArmature&quot;</span><span class="p">,</span> <span class="n">bpy</span><span class="o">.</span><span class="n">types</span><span class="o">.</span><span class="n">Armature</span><span class="p">),</span>
+      <span class="p">(</span><span class="s2">&quot;myCamera&quot;</span><span class="p">,</span> <span class="n">bpy</span><span class="o">.</span><span class="n">types</span><span class="o">.</span><span class="n">Camera</span><span class="p">),</span>
+      <span class="p">(</span><span class="s2">&quot;myCollection&quot;</span><span class="p">,</span> <span class="n">bpy</span><span class="o">.</span><span class="n">types</span><span class="o">.</span><span class="n">Collection</span><span class="p">),</span>
+      <span class="p">(</span><span class="s2">&quot;myCurve&quot;</span><span class="p">,</span> <span class="n">bpy</span><span class="o">.</span><span class="n">types</span><span class="o">.</span><span class="n">Curve</span><span class="p">),</span>
+      <span class="p">(</span><span class="s2">&quot;myImage&quot;</span><span class="p">,</span> <span class="n">bpy</span><span class="o">.</span><span class="n">types</span><span class="o">.</span><span class="n">Image</span><span class="p">),</span>
+      <span class="p">(</span><span class="s2">&quot;myKey&quot;</span><span class="p">,</span> <span class="n">bpy</span><span class="o">.</span><span class="n">types</span><span class="o">.</span><span class="n">Key</span><span class="p">),</span>
+      <span class="p">(</span><span class="s2">&quot;myLibrary&quot;</span><span class="p">,</span> <span class="n">bpy</span><span class="o">.</span><span class="n">types</span><span class="o">.</span><span class="n">Library</span><span class="p">),</span>
+      <span class="p">(</span><span class="s2">&quot;myLight&quot;</span><span class="p">,</span> <span class="n">bpy</span><span class="o">.</span><span class="n">types</span><span class="o">.</span><span class="n">Light</span><span class="p">),</span>
+      <span class="p">(</span><span class="s2">&quot;myMaterial&quot;</span><span class="p">,</span> <span class="n">bpy</span><span class="o">.</span><span class="n">types</span><span class="o">.</span><span class="n">Material</span><span class="p">),</span>
+      <span class="p">(</span><span class="s2">&quot;myMesh&quot;</span><span class="p">,</span> <span class="n">bpy</span><span class="o">.</span><span class="n">types</span><span class="o">.</span><span class="n">Mesh</span><span class="p">),</span>
+      <span class="p">(</span><span class="s2">&quot;myMovieClip&quot;</span><span class="p">,</span> <span class="n">bpy</span><span class="o">.</span><span class="n">types</span><span class="o">.</span><span class="n">MovieClip</span><span class="p">),</span>
+      <span class="p">(</span><span class="s2">&quot;myNodeTree&quot;</span><span class="p">,</span> <span class="n">bpy</span><span class="o">.</span><span class="n">types</span><span class="o">.</span><span class="n">NodeTree</span><span class="p">),</span>
+      <span class="p">(</span><span class="s2">&quot;myObject&quot;</span><span class="p">,</span> <span class="n">bpy</span><span class="o">.</span><span class="n">types</span><span class="o">.</span><span class="n">Object</span><span class="p">),</span>
+      <span class="p">(</span><span class="s2">&quot;myParticle&quot;</span><span class="p">,</span> <span class="n">bpy</span><span class="o">.</span><span class="n">types</span><span class="o">.</span><span class="n">ParticleSettings</span><span class="p">),</span>
+      <span class="p">(</span><span class="s2">&quot;mySound&quot;</span><span class="p">,</span> <span class="n">bpy</span><span class="o">.</span><span class="n">types</span><span class="o">.</span><span class="n">Sound</span><span class="p">),</span>
+      <span class="p">(</span><span class="s2">&quot;mySpeaker&quot;</span><span class="p">,</span> <span class="n">bpy</span><span class="o">.</span><span class="n">types</span><span class="o">.</span><span class="n">Speaker</span><span class="p">),</span>
+      <span class="p">(</span><span class="s2">&quot;myText&quot;</span><span class="p">,</span> <span class="n">bpy</span><span class="o">.</span><span class="n">types</span><span class="o">.</span><span class="n">Text</span><span class="p">),</span>
+      <span class="p">(</span><span class="s2">&quot;myTexture&quot;</span><span class="p">,</span> <span class="n">bpy</span><span class="o">.</span><span class="n">types</span><span class="o">.</span><span class="n">Texture</span><span class="p">),</span>
+      <span class="p">(</span><span class="s2">&quot;myVectorFont&quot;</span><span class="p">,</span> <span class="n">bpy</span><span class="o">.</span><span class="n">types</span><span class="o">.</span><span class="n">VectorFont</span><span class="p">),</span>
+      <span class="p">(</span><span class="s2">&quot;myVolume&quot;</span><span class="p">,</span> <span class="n">bpy</span><span class="o">.</span><span class="n">types</span><span class="o">.</span><span class="n">Volume</span><span class="p">),</span>
+      <span class="p">(</span><span class="s2">&quot;myWorld&quot;</span><span class="p">,</span> <span class="n">bpy</span><span class="o">.</span><span class="n">types</span><span class="o">.</span><span class="n">World</span><span class="p">),</span>
+   <span class="p">))</span>
 
-<span class="k">def</span> <span class="nf">start</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">args</span><span class="p">):</span>
-   <span class="k">print</span><span class="p">(</span><span class="n">args</span><span class="p">)</span>
+   <span class="k">def</span> <span class="nf">start</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">args</span><span class="p">:</span> <span class="nb">dict</span><span class="p">):</span>
+      <span class="bp">self</span><span class="o">.</span><span class="n">myObject</span> <span class="o">=</span> <span class="bp">None</span>
+      <span class="k">if</span> <span class="s2">&quot;myObject&quot;</span> <span class="ow">in</span> <span class="n">args</span><span class="p">:</span>
+         <span class="k">print</span><span class="p">(</span><span class="s2">&quot;myObject = &quot;</span><span class="p">,</span> <span class="n">args</span><span class="p">[</span><span class="s2">&quot;myObject&quot;</span><span class="p">])</span>
+         <span class="bp">self</span><span class="o">.</span><span class="n">myObject</span> <span class="o">=</span> <span class="n">args</span><span class="p">[</span><span class="s2">&quot;myObject&quot;</span><span class="p">]</span>
+      <span class="k">else</span><span class="p">:</span>
+         <span class="k">print</span><span class="p">(</span><span class="s2">&quot;myObject not found!&quot;</span><span class="p">)</span>
 
-<span class="k">def</span> <span class="nf">update</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-   <span class="k">pass</span>
+   <span class="k">def</span> <span class="nf">update</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="bp">None</span><span class="p">:</span>
+      <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">myObject</span><span class="p">:</span>
+         <span class="k">print</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">myObject</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>The optional <strong>dispose()</strong> function is called when the component is destroyed. It is only necessary in very specific cases.</p>
@@ -232,24 +235,24 @@ The following example show all of these property types:</p>
 </section>
 <section id="python-component-creation">
 <h2>Python Component Creation<a class="headerlink" href="#python-component-creation" title="Permalink to this headline"></a></h2>
-<p>The Python Component panel is placed in the Logic Brick editor.</p>
+<p>The Python Component panel, or also called Game Component panel, is placed in the Properties editor under the Game Object Properties tab.</p>
 <figure class="align-default" id="id3">
 <img alt="../../_images/Fig-02.png" src="../../_images/Fig-02.png" />
 <figcaption>
-<p><span class="caption-text">Python Component panel</span><a class="headerlink" href="#id3" title="Permalink to this image"></a></p>
+<p><span class="caption-text">Game Component panel</span><a class="headerlink" href="#id3" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
-<p>You will find there the 2 ways to create a Python Component in UPBGE, <strong>Create Component</strong> and <strong>Register Component</strong>.</p>
+<p>You will find there the 2 ways to make a Python Component in UPBGE, <strong>Add</strong> and <strong>Create</strong>.</p>
 <figure class="align-default" id="id4">
 <img alt="../../_images/Fig-03.png" src="../../_images/Fig-03.png" />
 <figcaption>
-<p><span class="caption-text">The 2 ways to create Python Component</span><a class="headerlink" href="#id4" title="Permalink to this image"></a></p>
+<p><span class="caption-text">The 2 ways to make a Python Component</span><a class="headerlink" href="#id4" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 <section id="create-component">
 <h3>Create Component<a class="headerlink" href="#create-component" title="Permalink to this headline"></a></h3>
-<p>When you push over the <strong>Create Component</strong> button a detachable panel will appear. In that panel you can introduce the component module name and the class name, both separate by a dot.
-After entering the name and clicking on the <strong>Create Component</strong> button, a new python script with the name of the component’s module will be created in the script editor.
+<p>When you push over the <strong>Create</strong> button a detachable panel will appear. In that panel you can introduce the component module name and the class name, both separate by a dot.
+After entering the name and clicking on the <strong>Create</strong> button, a new python script with the name of the component’s module will be created in the script editor.
 That python script will contain an empty class which name will be the one entered previously.</p>
 <figure class="align-default" id="id5">
 <img alt="../../_images/Fig-04.png" src="../../_images/Fig-04.png" />
@@ -257,22 +260,22 @@ That python script will contain an empty class which name will be the one entere
 <p><span class="caption-text">Create Component process</span><a class="headerlink" href="#id5" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
-<p>As the component script is developed you can click on the component reload button to see the updated component.</p>
+<p>As the component script is developed you can click on the component reload option to see the updated component.</p>
 <figure class="align-default" id="id6">
 <img alt="../../_images/Fig-05.png" src="../../_images/Fig-05.png" />
 <figcaption>
-<p><span class="caption-text">Python Component reload button</span><a class="headerlink" href="#id6" title="Permalink to this image"></a></p>
+<p><span class="caption-text">Python Component reload process</span><a class="headerlink" href="#id6" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 </section>
-<section id="register-component">
-<h3>Register Component<a class="headerlink" href="#register-component" title="Permalink to this headline"></a></h3>
+<section id="add-component">
+<h3>Add Component<a class="headerlink" href="#add-component" title="Permalink to this headline"></a></h3>
 <p>This process is the opposite of the previous one. First of all, we already have a python script previously formatted as a component that can be placed either in the script editor or at the same level as the .blend file.</p>
-<p>When we click on the <strong>Register Component</strong> button we will have to enter the name of the python script (without the .py) followed by a dot and the class name. After accept the Python Component will be created.</p>
+<p>When we click on the <strong>Add</strong> button we will have to enter the name of the python script (without the .py) followed by a dot and the class name. After accept the Python Component will be created.</p>
 <figure class="align-default" id="id7">
 <img alt="../../_images/Fig-06.png" src="../../_images/Fig-06.png" />
 <figcaption>
-<p><span class="caption-text">Register Component process</span><a class="headerlink" href="#id7" title="Permalink to this image"></a></p>
+<p><span class="caption-text">Add Component process</span><a class="headerlink" href="#id7" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 </section>
