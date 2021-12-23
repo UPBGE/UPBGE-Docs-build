@@ -331,9 +331,9 @@ of the data types you will find in the Blender game engine API:</p>
 <ul class="simple">
 <li><p><strong>Boolean:</strong> As simple as it sounds, this data type stores a true or a false value. It can also be understood as an integer with the value of 1 or 0.</p></li>
 </ul>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">i_am_enjoying_the_book</span> <span class="o">=</span> <span class="bp">True</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">i_am_enjoying_the_manual</span> <span class="o">=</span> <span class="bp">True</span>
 
-<span class="n">i_am_understanding_the_book</span> <span class="o">=</span> <span class="n">i_am_enjoying_the_book</span> <span class="o">-</span> <span class="mi">1</span>
+<span class="n">i_am_understanding_the_manual</span> <span class="o">=</span> <span class="n">i_am_enjoying_the_manual</span> <span class="o">-</span> <span class="mi">1</span>
 </pre></div>
 </div>
 <ul class="simple">
@@ -395,14 +395,14 @@ Take a look at this example:</p>
 <p>Here we are defining a function (1–2), calling a built-in print function (3), defining another function (4–5), calling another built-in print function (6),
 and finally calling the first function we declared (7).</p>
 <p>The output of such script will be:</p>
-<p><cite>I’m outside the function.</cite>
-<cite>I’m still outside the function.</cite>
-<cite>I’m inside the first function.</cite></p>
+<p><cite>I’m outside the function.</cite></p>
+<p><cite>I’m still outside the function.</cite></p>
+<p><cite>I’m inside the first function.</cite></p>
 <p>The first thing you may notice is that Python runs from top to bottom. Therefore, you must define your function before you call it. Secondly, you can see that the second
 function is never called. So how can the code interpreter determine which print statements to call? The answer is: indentation! Whenever you change the indentation level
 (lines 1–2, 2–3, 4–5, and 5–6), you determine the hierarchical relation between the elements. Therefore line 2 belongs to the function defined in line 1, line 5 to line 4,
 and the other lines are all at the same level.</p>
-<p>Whether to use spaces or tabs in your scripts is a matter of personal preference. But be consistent, it makes it easier to copy and paste your code for reutilizing it.</p>
+<p>Python pep-8 standard recommends to use spaces for identation. In the manual we will use 4 spaces identation.</p>
 <div class="topic">
 <p class="topic-title"><strong>Pound Sign, I (Finally) Love You</strong></p>
 <p>If, like me, you never understood the reason for the number/pound sign key (#) on your phone, you will eventually find it very useful.
@@ -419,15 +419,13 @@ Programming Interface”).</p>
 <p>In the Python code, you can (and will) create your own classes, modules, and elements. For example, you may want to control some 3D elements as a group defined
 by your code. It will make it easy to get to all of them at once. Therefore, you can have a custom class that will store all the related objects you want to access
 and preserve some properties as a group.</p>
-<p>Open the book file: BookChapter72_oopoop.blend</p>
+<p>Download the example <a class="reference download internal" download="" href="../../_downloads/4d7a5c2e8aacf3b31afdebcded22383b/002_oop.zip"><code class="xref download docutils literal notranslate"><span class="pre">002_oop.zip</span></code></a>, extract it and load the oop.blend file.</p>
 <p>The first script that runs in this file is the init_world.py. Here we are creating two groups to store different kind of elements (cube and sphere).
 In order to sort the objects between the groups, we go over the entire scene object list and check for objects with a property “cube” or “sphere” and append
 them to their respective lists.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># ############### #</span>
-
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># ################ #</span>
 <span class="c1">#  init\_world.py  #</span>
-
-<span class="c1"># ############### #</span>
+<span class="c1"># ################ #</span>
 
 <span class="kn">import</span> <span class="nn">bge</span>
 <span class="kn">from</span> <span class="nn">bge</span> <span class="kn">import</span> <span class="n">logic</span> <span class="k">as</span> <span class="n">G</span>
@@ -464,11 +462,9 @@ them to their respective lists.</p>
 </div>
 <p>After storing them in the global module <cite>bge.logic</cite>, we wait for the user to click in the cube or sphere in the middle of the scene. When that happens, it
 will toggle the value of the on/off property of the cube or sphere. The following script (which runs every frame) will then hide/unhide the group’s objects accordingly.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1">## ################## #</span>
-
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># #################### #</span>
 <span class="c1"># visibility\_check.py #</span>
-
-<span class="c1"># ################### #</span>
+<span class="c1"># #################### #</span>
 
 <span class="kn">from</span> <span class="nn">bge</span> <span class="kn">import</span> <span class="n">logic</span>
 
@@ -507,10 +503,10 @@ its application in the game engine. But you may be more comfortable messing with
 <p>Below are some websites where you can learn more about Python.</p>
 <p><a class="reference external" href="http://www.python.org/">http://www.python.org/</a></p>
 <p>Learn about new Python versions, API changes, and module documentation.</p>
-<p><a class="reference external" href="www.blender.org/documentation/blender_python_api_2_66_release/#game-engine-modules">www.blender.org/documentation/blender_python_api_2_66_release/#game-engine-modules</a></p>
-<p>Official BGE API Documentation, all the built-in modules that can be used with the game engine.</p>
+<p><a class="reference external" href="https://upbge.org/docs/latest/api/">https://upbge.org/docs/latest/api/</a></p>
+<p>Official Blender + UPBGE API Documentation, all the built-in modules that can be used with the game engine.</p>
 <p><a class="reference external" href="www.blenderartists.org/forum">www.blenderartists.org/forum</a></p>
-<p>Blender Artists forum, you can find good script examples in the Python section (general Blender Python) and in the Blender game engine section.</p>
+<p>Blender Artists forum, you can find good script examples in the Python section (general Blender Python) and in the game engine section.</p>
 <p><a class="reference external" href="http://www.diveintopython3.net">http://www.diveintopython3.net</a></p>
 <p>Dive Into Python 3 covers Python 3 and its differences from Python 2. A complete book available online.</p>
 </section>
