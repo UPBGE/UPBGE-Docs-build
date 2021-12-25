@@ -285,7 +285,7 @@ a general overview is still desirable to help you understand the examples presen
 <p>Whenever you write a program, you have to use variables to store changing values at runtime. Unlike languages such as C and Java, Python variables are
 very flexible: they can be declared on the fly when you first use them; you can assign different data types for the same variable; and you can even name them dynamically:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
-   <span class="k">exec</span><span class="p">(</span><span class="s2">&quot;var_</span><span class="si">%d</span><span class="s2"> = </span><span class="si">%d</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">i</span><span class="p">,</span><span class="n">i</span><span class="p">))</span>
+  <span class="k">exec</span><span class="p">(</span><span class="s2">&quot;var_</span><span class="si">%d</span><span class="s2"> = </span><span class="si">%d</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">i</span><span class="p">,</span><span class="n">i</span><span class="p">))</span>
 </pre></div>
 </div>
 <p>This snip of code is the equivalent to the following:</p>
@@ -301,7 +301,7 @@ variables named after them. The following code snip assigns the scene objects (r
 
 <span class="k">for</span> <span class="nb">object</span> <span class="ow">in</span> <span class="n">scene</span><span class="o">.</span><span class="n">objects</span><span class="p">:</span>
 
-   <span class="k">exec</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">%s</span><span class="s2"> = object&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="nb">object</span><span class="o">.</span><span class="n">name</span><span class="p">))</span>
+  <span class="k">exec</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">%s</span><span class="s2"> = object&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="nb">object</span><span class="o">.</span><span class="n">name</span><span class="p">))</span>
 </pre></div>
 </div>
 <p>Although we have flexible data types, we must respect variable types while manipulating and passing/returning them to functions. Here you can see a list
@@ -371,13 +371,13 @@ And ambiguity in the context of code making is fatal.</p>
 Take a look at this example:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="mi">1</span> <span class="k">def</span> <span class="nf">here_i_am</span><span class="p">():</span> <span class="c1"># definition of the first function</span>
 
-<span class="mi">2</span>     <span class="k">print</span><span class="p">(</span><span class="s2">&quot;I&#39;m inside the first function.&quot;</span><span class="p">)</span>
+<span class="mi">2</span>   <span class="k">print</span><span class="p">(</span><span class="s2">&quot;I&#39;m inside the first function.&quot;</span><span class="p">)</span>
 
 <span class="mi">3</span> <span class="k">print</span><span class="p">(</span><span class="s2">&quot;I&#39;m outside the function.&quot;</span><span class="p">)</span>
 
 <span class="mi">4</span> <span class="k">def</span> <span class="nf">but_I</span><span class="s1">&#39;m_not_here(): # definition of the second function</span>
 
-<span class="mi">5</span>     <span class="k">print</span><span class="p">(</span><span class="s2">&quot;For you can&#39;t see me!&quot;</span><span class="p">)</span>
+<span class="mi">5</span>   <span class="k">print</span><span class="p">(</span><span class="s2">&quot;For you can&#39;t see me!&quot;</span><span class="p">)</span>
 
 <span class="mi">6</span> <span class="k">print</span><span class="p">(</span><span class="s2">&quot;I&#39;m still outside the function.&quot;</span><span class="p">)</span>
 
@@ -394,7 +394,7 @@ and finally calling the first function we declared (7).</p>
 function is never called. So how can the code interpreter determine which print statements to call? The answer is: indentation! Whenever you change the indentation level
 (lines 1–2, 2–3, 4–5, and 5–6), you determine the hierarchical relation between the elements. Therefore line 2 belongs to the function defined in line 1, line 5 to line 4,
 and the other lines are all at the same level.</p>
-<p>Python pep-8 standard recommends to use spaces for identation. In the manual we will use 4 spaces identation.</p>
+<p>Python pep-8 standard recommends to use spaces for identation. In the manual we will use 2 spaces identation.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p><strong>Pound Sign, I (Finally) Love You</strong></p>
@@ -432,10 +432,10 @@ them to their respective lists.</p>
 
 <span class="c1"># define a class to store all group elements and the click object</span>
 <span class="k">class</span> <span class="nc">Group</span><span class="p">():</span>
-    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">click</span> <span class="o">=</span> <span class="bp">None</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">objects</span> <span class="o">=</span> <span class="p">[]</span>
+  <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">click</span> <span class="o">=</span> <span class="bp">None</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">objects</span> <span class="o">=</span> <span class="p">[]</span>
 
 <span class="c1"># create new element groups</span>
 <span class="n">cube_group</span>   <span class="o">=</span> <span class="n">Group</span><span class="p">(</span><span class="s2">&quot;cubes&quot;</span><span class="p">)</span>
@@ -443,12 +443,12 @@ them to their respective lists.</p>
 
 <span class="c1"># add all objects with an &quot;ui&quot; property to the created element</span>
 <span class="k">for</span> <span class="n">obj</span> <span class="ow">in</span> <span class="n">scene</span><span class="o">.</span><span class="n">objects</span><span class="p">:</span>
-    <span class="k">if</span> <span class="s2">&quot;cube&quot;</span> <span class="ow">in</span> <span class="n">obj</span><span class="p">:</span>
-        <span class="n">cube_group</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">obj</span><span class="p">)</span>
-    <span class="k">elif</span> <span class="s2">&quot;sphere&quot;</span> <span class="ow">in</span> <span class="n">obj</span><span class="p">:</span>
-        <span class="n">sphere_group</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">obj</span><span class="p">)</span>
-    <span class="k">elif</span> <span class="s2">&quot;click&quot;</span> <span class="ow">in</span> <span class="n">obj</span><span class="p">:</span>
-        <span class="k">exec</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">%s</span><span class="s2">\_group.click = obj&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">obj</span><span class="p">[</span><span class="s2">&quot;click&quot;</span><span class="p">]))</span>
+  <span class="k">if</span> <span class="s2">&quot;cube&quot;</span> <span class="ow">in</span> <span class="n">obj</span><span class="p">:</span>
+    <span class="n">cube_group</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">obj</span><span class="p">)</span>
+  <span class="k">elif</span> <span class="s2">&quot;sphere&quot;</span> <span class="ow">in</span> <span class="n">obj</span><span class="p">:</span>
+    <span class="n">sphere_group</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">obj</span><span class="p">)</span>
+  <span class="k">elif</span> <span class="s2">&quot;click&quot;</span> <span class="ow">in</span> <span class="n">obj</span><span class="p">:</span>
+    <span class="k">exec</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">%s</span><span class="s2">\_group.click = obj&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">obj</span><span class="p">[</span><span class="s2">&quot;click&quot;</span><span class="p">]))</span>
 
 <span class="n">G</span><span class="o">.</span><span class="n">groups</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;cube&quot;</span><span class="p">:</span><span class="n">cube_group</span><span class="p">,</span> <span class="s2">&quot;sphere&quot;</span><span class="p">:</span><span class="n">sphere_group</span><span class="p">}</span>
 </pre></div>
@@ -463,8 +463,8 @@ will toggle the value of the on/off property of the cube or sphere. The followin
 
 <span class="c1"># defines a function to hide/turn visible all the objects passed as argument</span>
 <span class="k">def</span> <span class="nf">change_visibility</span><span class="p">(</span><span class="n">objects</span><span class="p">,</span> <span class="n">on_off</span><span class="p">):</span>
-    <span class="k">for</span> <span class="n">obj</span> <span class="ow">in</span> <span class="n">objects</span><span class="p">:</span>
-        <span class="n">obj</span><span class="o">.</span><span class="n">visible</span> <span class="o">=</span> <span class="n">on_off</span>
+  <span class="k">for</span> <span class="n">obj</span> <span class="ow">in</span> <span class="n">objects</span><span class="p">:</span>
+    <span class="n">obj</span><span class="o">.</span><span class="n">visible</span> <span class="o">=</span> <span class="n">on_off</span>
 
 <span class="c1"># retrieve the stored groups to local variables</span>
 <span class="n">cube_group</span>   <span class="o">=</span> <span class="n">logic</span><span class="o">.</span><span class="n">groups</span><span class="p">[</span><span class="s2">&quot;cube&quot;</span><span class="p">]</span>
