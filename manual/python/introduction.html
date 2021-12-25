@@ -135,8 +135,9 @@ good Python book and start learning more about it:</p>
 <li><p>Keep track of your changes with a version control system.</p></li>
 <li><p>Debug your game while it runs.</p></li>
 </ul>
-<div class="topic">
-<p class="topic-title"><strong>Logic Brick, the Necessary Good</strong></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Logic Brick, the Necessary Good</strong></p>
 <p>You can’t ever get away from logic bricks. Even when using Python exclusively for your game, you will need to invoke the scripts from a Python controller.
 The ideal is to find the balance that fits your project.</p>
 </div>
@@ -188,8 +189,9 @@ the functionality found in the logic bricks can be accomplished through an equiv
 section “Using the Game Engine API - Application Programming Interface”). The API ranges from tasks that could be performed with logic bricks, such
 as to change a property in a sensor or to completely remove an object from the game, all the way to functionality not available otherwise, such as
 playing videos and network connection.</p>
-<div class="topic">
-<p class="topic-title"><strong>We Never Forget the First Patch</strong></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>We Never Forget the First Patch</strong></p>
 <p>The ability to directly end an object from Python was introduced in Blender 2.47. This is a good example of how convenient script methods can be.
 And here comes a bit of history … back in August 2008, the project we were working on, OceanViz,
 required a huge amount of objects to dynamically pop up and die. The game engine simulation had critical performance issues, and optimization was not a luxury
@@ -220,8 +222,9 @@ world is with Python. If you want to use external devices to control the game in
 </ul>
 <p>Those possibilities go with the previous statement that almost everything that you can do with Python, you can do in the game engine. And since Python can
 be used with modules written in other languages (properly wrapped), you can virtually use any application as a basis for your system.</p>
-<div class="topic">
-<p class="topic-title"><strong>Cross-Platform, Yes; Cross-Version, Not</strong></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Cross-Platform, Yes; Cross-Version, Not</strong></p>
 <p>To use external libraries, you must know the Python version they were built against. The Python library you are using must be compatible with the
 Python version that comes with your Blender. It’s also valuable to check how often the library is updated and if it will be maintained in the future.</p>
 </div>
@@ -233,8 +236,9 @@ native file format is a binary type. Binary files are written in a way that you 
 <p>Scripts, on the other hand, are plain text files. You can open a script in any text editor and immediately see the differences between two similar files. Finding those
 differences are vital to going forward and backward with your experimentations during work. Actually, if you don’t want to check for differences manually, you may want
 to consider using external script files with a version control system such as Git, SVN, Mercury, or CVN.</p>
-<div class="topic">
-<p class="topic-title"><strong>And the Catch Is …</strong></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>And the Catch Is …</strong></p>
 <p>This works only for scripts maintained outside Blender. This is one of the strong reasons to prefer Python Module controllers as opposed to Python Script controllers.</p>
 </div>
 <p>A version control system allows you to move between working versions of your project files. It makes it relatively safe to experiment with different
@@ -272,8 +276,9 @@ found in the same folder.</p>
 </figure>
 <p>Without closing UPBGE or even stopping your game, open the file script.py in a text editor, change this line to 0.05, for example, and save it.
 You will see the speed changing immediately. Your game is literally being updated at runtime, and you can change any module that’s been called with the debug option on.</p>
-<div class="topic">
-<p class="topic-title"><strong>Turn It Off When You Leave</strong></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Turn It Off When You Leave</strong></p>
 <p>Remember to turn debugging off when you are done with this script. Reloading the script every frame can drastically reduce your performance.</p>
 </div>
 </section>
@@ -403,8 +408,9 @@ function is never called. So how can the code interpreter determine which print 
 (lines 1–2, 2–3, 4–5, and 5–6), you determine the hierarchical relation between the elements. Therefore line 2 belongs to the function defined in line 1, line 5 to line 4,
 and the other lines are all at the same level.</p>
 <p>Python pep-8 standard recommends to use spaces for identation. In the manual we will use 4 spaces identation.</p>
-<div class="topic">
-<p class="topic-title"><strong>Pound Sign, I (Finally) Love You</strong></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Pound Sign, I (Finally) Love You</strong></p>
 <p>If, like me, you never understood the reason for the number/pound sign key (#) on your phone, you will eventually find it very useful.
 In Python, any text to the right of a pound sign is ignored by the interpreter. Therefore, the pound sign is used to add commentaries to your code
 or to temporarily deactivate part of it.</p>
