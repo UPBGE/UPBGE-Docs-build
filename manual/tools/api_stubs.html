@@ -54,9 +54,11 @@
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Tools</a><ul class="current">
 <li class="toctree-l2 current"><a class="current reference internal" href="#">API Stubs</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#what-are-they">What Are They?</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#fake-bpy-module">fake-bpy-module</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#fake-bge-module">fake-bge-module</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#caveats">Caveats</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#upbge-stubs">upbge-stubs</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#using-upbge-stubs">Using upbge-stubs</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#examples">Examples</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -90,54 +92,66 @@
            <div itemprop="articleBody">
              
   <section id="api-stubs">
-<h1>API Stubs<a class="headerlink" href="#api-stubs" title="Permalink to this headline"></a></h1>
+<span id="tools-api-stubs"></span><h1>API Stubs<a class="headerlink" href="#api-stubs" title="Permalink to this headline"></a></h1>
 <section id="what-are-they">
 <h2>What Are They?<a class="headerlink" href="#what-are-they" title="Permalink to this headline"></a></h2>
 <p>Python is a dynamically-typed language, but that doesn’t mean you can’t have
 such quality-of-life features like auto-completion or type information for APIs,
 which all modern IDEs provide.</p>
-<p>The only reason you can’t have them for Blender or UPBGE projects is that the
-relevant modules(namely, <cite>bpy.*</cite> and <cite>bge.*</cite>) are only available inside Blender.</p>
+<p>The only reason you can’t have them for UPBGE projects is that the
+relevant modules (namely, <cite>bpy.*</cite> and <cite>bge.*</cite>) are only available inside UPBGE.</p>
 <p>There are two possible options to deal with this problem. Firstly, you can
-<a class="reference external" href="https://wiki.blender.org/wiki/Building_Blender/Other/BlenderAsPyModule">build Blender as a Python module</a>,
+<a class="reference external" href="https://wiki.blender.org/wiki/Building_Blender/Other/BlenderAsPyModule">build UPBGE/Blender as a Python module</a>,
 which would give your IDE the most accurate and up-to-date API information as possible.</p>
-<p>But it’s not always easy to build Blender from source, especially if you are not
-familiar with the task. In this case, using API stubs, or a “fake module” could be
-a good alternative.</p>
+<p>But it’s not always easy to build UPBGE from source, especially if you are not
+familiar with the task. In this case, using API stubs could be a good alternative.</p>
 </section>
-<section id="fake-bpy-module">
-<h2>fake-bpy-module<a class="headerlink" href="#fake-bpy-module" title="Permalink to this headline"></a></h2>
-<p>There is an open-source project named <a class="reference external" href="https://github.com/nutti/fake-bpy-module">fake-bpy-module</a>
-which provides a stub for Blender’s Python API.</p>
+<section id="upbge-stubs">
+<h2>upbge-stubs<a class="headerlink" href="#upbge-stubs" title="Permalink to this headline"></a></h2>
+<p>An utility to generate Python API stubs from documentation files in reStructuredText format
+called <a class="reference external" href="https://github.com/mysticfall/bpystubgen">BPY Stub Generator (bpystubgen)</a> can help us to get the
+UPBGE python API stubs.</p>
+<p>The main usage of the program is to create Python API stubs from the documentation generated during the build
+process of UPBGE so that an IDE can provide autocompletion support and type hints for relevant modules
+like bpy or bge.</p>
+<p>There are already a number of tools created with a similar goal in mind, notably
+<a class="reference external" href="https://github.com/nutti/fake-bpy-module">fake-bpy-module</a> and
+<a class="reference external" href="https://github.com/nutti/fake-bge-module">fake-bge-module</a> which can be a good alternative to this project.</p>
+<p>However, bpystubgen has a few advantages over the others:</p>
+<ul class="simple">
+<li><p>It’s very fast - Some of those tools may take over an hour to generate the entire stubs for Blender. But bpystubgen can do it under a minute (1,593 source documents).</p></li>
+<li><p>The generated stub modules preserve most of the source documentation, so you can use them as a manual as well.</p></li>
+<li><p>It generates PEP-561 compliant stub modules, so it’s safe to include them in your runtime module path.</p></li>
+<li><p>Along with its fast execution speed, the project also provides well-organised API and test suites to make it easier to fix bugs or improve the output quality.</p></li>
+</ul>
+<section id="using-upbge-stubs">
+<h3>Using upbge-stubs<a class="headerlink" href="#using-upbge-stubs" title="Permalink to this headline"></a></h3>
+<p>If you just want to use the API stubs, you can install them from PyPI without having to generate them yourself.
+As for UPBGE, stubs are available for the upcoming 0.3 release, which you can install as follows:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>$ pip install upbge-stubs==0.3.*
+</pre></div>
+</div>
 <p>Once you install it via pip (or any other package manager you may prefer), you can
-configure the IDE of your choice as described in the project page.</p>
+configure the IDE of your choice as described in the project page
+<a class="reference external" href="https://github.com/mysticfall/bpystubgen">BPY Stub Generator (bpystubgen)</a>.</p>
 <p>After that, you can enjoy nice auto-completion and type information for most of the
-Blender’s Python API.</p>
-<p>One thing to remember, by the way, is that you need to match the version of
-<cite>fake-bpy-module</cite> to that of Blender on which your UPBGE installation is based. For
-UPBGE 0.2.5, you need to install <cite>fake-bpy-module-2.79</cite>, for example.</p>
-<p>At the time of the writing, there is no fake-bpy-module for Blender 2.90, which
-UPBGE 0.3.0 supports. Before the new version of the module is released, you may want
-to install <cite>fake-bpy-module-2.83</cite> instead, as it is the closest version to 2.90.</p>
+UPBGE’s Python API.</p>
 </section>
-<section id="fake-bge-module">
-<h2>fake-bge-module<a class="headerlink" href="#fake-bge-module" title="Permalink to this headline"></a></h2>
-<p>There is also <a class="reference external" href="https://github.com/nutti/fake-bge-module">fake-bge-module</a>, which
-supports UPBGE’s Python API as its Blender counterpart does for Blender’s core API.</p>
-<p>The usage instruction almost the same as the other module which you can read from
-the project’s homepage. There is only a version for UPBGE 0.2.5 at the moment, but
-it should work for newer versions as well for the most part.</p>
+<section id="examples">
+<h3>Examples<a class="headerlink" href="#examples" title="Permalink to this headline"></a></h3>
+<figure class="align-default" id="id1">
+<img alt="../../_images/tools-examples-01.png" src="../../_images/tools-examples-01.png" />
+<figcaption>
+<p><span class="caption-text">Auto-completion at work in PyCharm</span><a class="headerlink" href="#id1" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<figure class="align-default" id="id2">
+<img alt="../../_images/tools-examples-02.png" src="../../_images/tools-examples-02.png" />
+<figcaption>
+<p><span class="caption-text">Pop-up documentation support in VSCode</span><a class="headerlink" href="#id2" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
 </section>
-<section id="caveats">
-<h2>Caveats<a class="headerlink" href="#caveats" title="Permalink to this headline"></a></h2>
-<p>There is one crucial caveat with providing type hints
-(<a class="reference external" href="https://www.python.org/dev/peps/pep-0484/">PEP-484</a>) for UPBGE API, however.</p>
-<p>Due to <a class="reference external" href="https://github.com/UPBGE/upbge/issues/1240">an issue</a> regarding how the
-module initializes itself, you cannot reference BGE types(e.g. <cite>KX_Camera</cite>) other
-than <cite>KX_Component</cite> in your game component.</p>
-<p>Auto-completion and type information should work regardless of the problem.
-Still, it certainly limits the benefits of such features provided by <cite>fake-bge-module</cite>,
-o better be resolved sooner than later.</p>
 </section>
 </section>
 
