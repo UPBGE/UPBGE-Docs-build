@@ -15,7 +15,9 @@
         <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
         <script src="../../_static/jquery.js"></script>
         <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/sphinx_highlight.js"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -97,9 +99,9 @@
            <div itemprop="articleBody">
              
   <section id="introduction">
-<span id="physics-introduction"></span><h1>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline"></a></h1>
+<span id="physics-introduction"></span><h1>Introduction<a class="headerlink" href="#introduction" title="Permalink to this heading"></a></h1>
 <section id="what-is-physics">
-<h2>What Is Physics?<a class="headerlink" href="#what-is-physics" title="Permalink to this headline"></a></h2>
+<h2>What Is Physics?<a class="headerlink" href="#what-is-physics" title="Permalink to this heading"></a></h2>
 <figure class="align-default">
 <img alt="../../_images/Fig06-01.png" src="../../_images/Fig06-01.png" />
 </figure>
@@ -114,7 +116,7 @@ This unique property makes games that utilize real-time physics fun to play arou
 <p>As usual, this chapter comes with a collection of example files that showcase what the physics engine can do. You can find them in the folder /chapters6/demos.</p>
 </section>
 <section id="bullet-physics-library">
-<h2>Bullet Physics Library<a class="headerlink" href="#bullet-physics-library" title="Permalink to this headline"></a></h2>
+<h2>Bullet Physics Library<a class="headerlink" href="#bullet-physics-library" title="Permalink to this heading"></a></h2>
 <p>UPBGE includes advanced physics simulation in the form of the Bullet Physics Engine (<a class="reference external" href="http://bulletphysics.org">Bullet Physics</a>).
 Most of your work will involve setting the right properties on the objects in your scene, then you can sit back and let the engine take over.
 The physics simulation can be used for games, but also for animation.</p>
@@ -125,7 +127,7 @@ Rigid body physics does not have, as an effect or a cause, any mesh deformations
 For a discussion on how to partially overcome this, see: <a class="reference internal" href="#mesh-deformations">Mesh Deformations</a>.</p>
 </section>
 <section id="overview">
-<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline"></a></h2>
+<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this heading"></a></h2>
 <p>Because physics is such an integral part of the Blender game engine, physics-related settings are found in many different places.
 However scattered they might look at first glance, there is a pattern in this chaos.</p>
 <p>The physics settings can be broken down into these sections:</p>
@@ -226,7 +228,7 @@ can be used to create realistic vehicle physics. Figure 6.7 shows the Text Edito
 <p>So now that you have an overview of what physics is all about and where to find all the settings, the rest of the chapter will explain how to use these
 settings in combination to achieve various effects.</p>
 <section id="visualizing-physics">
-<h3>Visualizing Physics<a class="headerlink" href="#visualizing-physics" title="Permalink to this headline"></a></h3>
+<h3>Visualizing Physics<a class="headerlink" href="#visualizing-physics" title="Permalink to this heading"></a></h3>
 <figure class="align-default">
 <img alt="../../_images/game_engine-physics-introduction-visualization.png" src="../../_images/game_engine-physics-introduction-visualization.png" />
 </figure>
@@ -269,7 +271,7 @@ you can add this as a Python Controller and uncomment whichever pieces you want 
 </section>
 </section>
 <section id="show-framerate-and-profile">
-<h2>Show Framerate and Profile<a class="headerlink" href="#show-framerate-and-profile" title="Permalink to this headline"></a></h2>
+<h2>Show Framerate and Profile<a class="headerlink" href="#show-framerate-and-profile" title="Permalink to this heading"></a></h2>
 <figure class="align-default" id="id7">
 <img alt="../../_images/game_engine-physics-introduction-profile_stats.jpg" src="../../_images/game_engine-physics-introduction-profile_stats.jpg" />
 <figcaption>
@@ -286,7 +288,7 @@ it will put some statistics in the upper left area of the game window.</p>
 </div>
 </section>
 <section id="mesh-deformations">
-<h2>Mesh Deformations<a class="headerlink" href="#mesh-deformations" title="Permalink to this headline"></a></h2>
+<h2>Mesh Deformations<a class="headerlink" href="#mesh-deformations" title="Permalink to this heading"></a></h2>
 <p>As mentioned above, rigid body physics do not affect mesh deformations,
 nor do they account for them in the physics model. This leaves you with a few options:</p>
 <p>You can try using a <span class="xref std std-doc">soft body</span>,
@@ -335,7 +337,7 @@ For an add-on that can help you out in the process, check out the
 <a class="reference external" href="https://wiki.blender.org/index.php/Extensions:2.6/Py/Scripts/Game_Engine/BRIK_ragdolls">Blender Ragdoll Implementation Kit</a>.</p>
 </section>
 <section id="digging-deeper">
-<span id="game-engine-physics-bake-keyframes"></span><h2>Digging Deeper<a class="headerlink" href="#digging-deeper" title="Permalink to this headline"></a></h2>
+<span id="game-engine-physics-bake-keyframes"></span><h2>Digging Deeper<a class="headerlink" href="#digging-deeper" title="Permalink to this heading"></a></h2>
 <p>Sometimes you will want to look at:</p>
 <ul class="simple">
 <li><p>The <a class="reference external" href="http://bulletphysics.org/wordpress/">main Bullet Physics page</a></p></li>
@@ -345,7 +347,7 @@ For an add-on that can help you out in the process, check out the
 </ul>
 </section>
 <section id="recording-to-keyframes">
-<h2>Recording to Keyframes<a class="headerlink" href="#recording-to-keyframes" title="Permalink to this headline"></a></h2>
+<h2>Recording to Keyframes<a class="headerlink" href="#recording-to-keyframes" title="Permalink to this heading"></a></h2>
 <p>Beyond gaming, sometimes you wish to render a complex scene that involves collisions,
 multiple forces, friction between multiple bodies,
 and air drag or even a simple setup that is just easier to achieve using the real-time physics.</p>
@@ -389,7 +391,7 @@ Unwanted channels can also be removed.</p>
 </figure>
 </section>
 <section id="exporting">
-<h2>Exporting<a class="headerlink" href="#exporting" title="Permalink to this headline"></a></h2>
+<h2>Exporting<a class="headerlink" href="#exporting" title="Permalink to this heading"></a></h2>
 <p>You can snapshot the physics world at any time with the following code:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">code</span><span class="o">-</span><span class="n">block</span><span class="p">::</span> <span class="n">python</span>
 </pre></div>

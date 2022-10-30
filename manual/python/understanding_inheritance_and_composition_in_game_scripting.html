@@ -15,7 +15,9 @@
         <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
         <script src="../../_static/jquery.js"></script>
         <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/sphinx_highlight.js"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -96,9 +98,9 @@
            <div itemprop="articleBody">
              
   <section id="understanding-inheritance-and-composition-in-game-scripting">
-<span id="id1"></span><h1>Understanding Inheritance And Composition In Game Scripting<a class="headerlink" href="#understanding-inheritance-and-composition-in-game-scripting" title="Permalink to this headline"></a></h1>
+<span id="id1"></span><h1>Understanding Inheritance And Composition In Game Scripting<a class="headerlink" href="#understanding-inheritance-and-composition-in-game-scripting" title="Permalink to this heading"></a></h1>
 <section id="introduction">
-<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline"></a></h2>
+<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this heading"></a></h2>
 <p>Let us imagine we are making a video game in which characters can attack each other and receive damage.
 You will likely want to add a few properties like health or max_health to each object and write simple scripts
 to calculate them when the character gets hit or drinks a potion. Pretty simple, isn’t it?</p>
@@ -125,7 +127,7 @@ the most widely used software paradigms, well supported by popular languages lik
 So, let’s look into the concept briefly in the next chapter.</p>
 </section>
 <section id="type-and-inheritance">
-<h2>Type and Inheritance<a class="headerlink" href="#type-and-inheritance" title="Permalink to this headline"></a></h2>
+<h2>Type and Inheritance<a class="headerlink" href="#type-and-inheritance" title="Permalink to this heading"></a></h2>
 <p>To put it simply, a type in an OOP language determines an object’s nature (i.e. properties and behaviours).
 It also applies to a dynamically typed language like Python, which allows you to write code without caring
 too much about types. You know that you can change the value of a variable from abc to ABC by invoking
@@ -140,7 +142,7 @@ idea as Damageable type as follows:</p>
   <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">init_health</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">100</span><span class="p">):</span>
     <span class="bp">self</span><span class="o">.</span><span class="n">health</span> <span class="o">=</span> <span class="n">init_health</span>
 
-  <span class="k">def</span> <span class="nf">damage</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">amount</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="bp">None</span><span class="p">:</span>
+  <span class="k">def</span> <span class="nf">damage</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">amount</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
     <span class="bp">self</span><span class="o">.</span><span class="n">health</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">health</span> <span class="o">-</span> <span class="n">amount</span><span class="p">)</span>
 
   <span class="nd">@property</span>
@@ -163,18 +165,18 @@ from ‘Damageable’ type like this:</p>
 <span class="n">character</span><span class="o">.</span><span class="n">damage</span><span class="p">(</span><span class="mi">40</span><span class="p">)</span>
 <span class="n">crate</span><span class="o">.</span><span class="n">damage</span><span class="p">(</span><span class="mi">120</span><span class="p">)</span>
 
-<span class="k">print</span><span class="p">(</span><span class="n">character</span><span class="o">.</span><span class="n">health</span><span class="p">)</span> <span class="c1"># Prints &quot;60&quot;</span>
-<span class="k">print</span><span class="p">(</span><span class="n">character</span><span class="o">.</span><span class="n">destroyed</span><span class="p">)</span> <span class="c1"># Prints &quot;False&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">character</span><span class="o">.</span><span class="n">health</span><span class="p">)</span> <span class="c1"># Prints &quot;60&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">character</span><span class="o">.</span><span class="n">destroyed</span><span class="p">)</span> <span class="c1"># Prints &quot;False&quot;</span>
 
-<span class="k">print</span><span class="p">(</span><span class="n">crate</span><span class="o">.</span><span class="n">health</span><span class="p">)</span> <span class="c1"># Prints &quot;0&quot;</span>
-<span class="k">print</span><span class="p">(</span><span class="n">crate</span><span class="o">.</span><span class="n">destroyed</span><span class="p">)</span> <span class="c1"># Prints &quot;True&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">crate</span><span class="o">.</span><span class="n">health</span><span class="p">)</span> <span class="c1"># Prints &quot;0&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">crate</span><span class="o">.</span><span class="n">destroyed</span><span class="p">)</span> <span class="c1"># Prints &quot;True&quot;</span>
 </pre></div>
 </div>
 <p>As you can see, inheritance is a powerful tool to generalise ideas and promote code reuse. But
 it is not without problems which we will discuss in the following chapter.</p>
 </section>
 <section id="problems-of-inheritance">
-<h2>Problems of Inheritance<a class="headerlink" href="#problems-of-inheritance" title="Permalink to this headline"></a></h2>
+<h2>Problems of Inheritance<a class="headerlink" href="#problems-of-inheritance" title="Permalink to this heading"></a></h2>
 <p>We just made a crate damageable by deriving it from Damageable type. But what if we also want to
 add some other features, like being able to be opened? Maybe we could define another class Openable
 to describe the concept of something which can be opened. But can an object inherit from both of those types?</p>
@@ -199,7 +201,7 @@ working on a game project. Fortunately, a design principle can be used to overco
 called Composition Over Inheritance, which also works well when writing game scripts.</p>
 </section>
 <section id="composition-over-inheritance">
-<h2>Composition Over Inheritance<a class="headerlink" href="#composition-over-inheritance" title="Permalink to this headline"></a></h2>
+<h2>Composition Over Inheritance<a class="headerlink" href="#composition-over-inheritance" title="Permalink to this heading"></a></h2>
 <p>The basic idea of composition is implementing each feature of an object as a modular ‘component’. By doing so,
 we can compose such elements to describe the behaviours and properties of the whole.</p>
 <p>For example, instead of making the Crate class inherit from Damageable type, we can rename the latter
@@ -208,7 +210,7 @@ to HitBox and make it a property of the enclosing class:</p>
   <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">init_health</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">100</span><span class="p">):</span>
     <span class="bp">self</span><span class="o">.</span><span class="n">health</span> <span class="o">=</span> <span class="n">init_health</span>
 
-  <span class="k">def</span> <span class="nf">damage</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">amount</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="bp">None</span><span class="p">:</span>
+  <span class="k">def</span> <span class="nf">damage</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">amount</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
     <span class="bp">self</span><span class="o">.</span><span class="n">health</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">health</span> <span class="o">-</span> <span class="n">amount</span><span class="p">)</span>
 
   <span class="nd">@property</span>
@@ -223,26 +225,26 @@ to HitBox and make it a property of the enclosing class:</p>
 
 <span class="n">crate</span><span class="o">.</span><span class="n">hit_box</span><span class="o">.</span><span class="n">damage</span><span class="p">(</span><span class="mi">80</span><span class="p">)</span>
 
-<span class="k">print</span><span class="p">(</span><span class="n">crate</span><span class="o">.</span><span class="n">hit_box</span><span class="o">.</span><span class="n">health</span><span class="p">)</span> <span class="c1"># Prints &quot;20&quot;</span>
-<span class="k">print</span><span class="p">(</span><span class="n">crate</span><span class="o">.</span><span class="n">hit_box</span><span class="o">.</span><span class="n">destroyed</span><span class="p">)</span> <span class="c1"># Prints &quot;False&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">crate</span><span class="o">.</span><span class="n">hit_box</span><span class="o">.</span><span class="n">health</span><span class="p">)</span> <span class="c1"># Prints &quot;20&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">crate</span><span class="o">.</span><span class="n">hit_box</span><span class="o">.</span><span class="n">destroyed</span><span class="p">)</span> <span class="c1"># Prints &quot;False&quot;</span>
 
 <span class="n">crate</span><span class="o">.</span><span class="n">hit_box</span><span class="o">.</span><span class="n">damage</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
 
-<span class="k">print</span><span class="p">(</span><span class="n">crate</span><span class="o">.</span><span class="n">hit_box</span><span class="o">.</span><span class="n">health</span><span class="p">)</span> <span class="c1"># Prints &quot;0&quot;</span>
-<span class="k">print</span><span class="p">(</span><span class="n">crate</span><span class="o">.</span><span class="n">hit_box</span><span class="o">.</span><span class="n">destroyed</span><span class="p">)</span> <span class="c1"># Prints &quot;True&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">crate</span><span class="o">.</span><span class="n">hit_box</span><span class="o">.</span><span class="n">health</span><span class="p">)</span> <span class="c1"># Prints &quot;0&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">crate</span><span class="o">.</span><span class="n">hit_box</span><span class="o">.</span><span class="n">destroyed</span><span class="p">)</span> <span class="c1"># Prints &quot;True&quot;</span>
 </pre></div>
 </div>
 <p>Similarly, we can also make the crate ‘openable’ by creating a Door component and assign an
 instance of it as a property of Crate:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Door</span><span class="p">:</span>
-  <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">opened</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="bp">True</span><span class="p">):</span>
+  <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">opened</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span><span class="p">):</span>
     <span class="bp">self</span><span class="o">.</span><span class="n">opened</span> <span class="o">=</span> <span class="n">opened</span>
 
-  <span class="k">def</span> <span class="nf">open</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="bp">None</span><span class="p">:</span>
-    <span class="bp">self</span><span class="o">.</span><span class="n">opened</span> <span class="o">=</span> <span class="bp">True</span>
+  <span class="k">def</span> <span class="nf">open</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">opened</span> <span class="o">=</span> <span class="kc">True</span>
 
-  <span class="k">def</span> <span class="nf">close</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="bp">None</span><span class="p">:</span>
-    <span class="bp">self</span><span class="o">.</span><span class="n">opened</span> <span class="o">=</span> <span class="bp">False</span>
+  <span class="k">def</span> <span class="nf">close</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">opened</span> <span class="o">=</span> <span class="kc">False</span>
 
 <span class="k">class</span> <span class="nc">Crate</span><span class="p">:</span>
   <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
@@ -252,17 +254,17 @@ instance of it as a property of Crate:</p>
 <span class="n">crate</span> <span class="o">=</span> <span class="n">Crate</span><span class="p">()</span>
 
 <span class="n">crate</span><span class="o">.</span><span class="n">door</span><span class="o">.</span><span class="n">open</span><span class="p">()</span>
-<span class="k">print</span><span class="p">(</span><span class="n">crate</span><span class="o">.</span><span class="n">door</span><span class="o">.</span><span class="n">opened</span><span class="p">)</span> <span class="c1"># Prints &quot;True&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">crate</span><span class="o">.</span><span class="n">door</span><span class="o">.</span><span class="n">opened</span><span class="p">)</span> <span class="c1"># Prints &quot;True&quot;</span>
 
 <span class="n">crate</span><span class="o">.</span><span class="n">door</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
-<span class="k">print</span><span class="p">(</span><span class="n">crate</span><span class="o">.</span><span class="n">door</span><span class="o">.</span><span class="n">opened</span><span class="p">)</span> <span class="c1"># Prints &quot;False&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">crate</span><span class="o">.</span><span class="n">door</span><span class="o">.</span><span class="n">opened</span><span class="p">)</span> <span class="c1"># Prints &quot;False&quot;</span>
 </pre></div>
 </div>
 <p>In this way, you can add as many features to an object as you like without the concern of
 introducing potential conflict in the type hierarchy.</p>
 </section>
 <section id="dynamic-component-model">
-<h2>Dynamic Component Model<a class="headerlink" href="#dynamic-component-model" title="Permalink to this headline"></a></h2>
+<h2>Dynamic Component Model<a class="headerlink" href="#dynamic-component-model" title="Permalink to this heading"></a></h2>
 <p>Let’s take the idea one step further and generalise the concept of components itself. What if
 we replace individual properties like door or hit_box with a generic list?</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Crate</span><span class="p">:</span>
@@ -334,7 +336,7 @@ write game scripts.</p>
 for everything, why almost all major OOP languages still support inheritance?</p>
 </section>
 <section id="why-inheritance-still-matters">
-<h2>Why Inheritance Still Matters?<a class="headerlink" href="#why-inheritance-still-matters" title="Permalink to this headline"></a></h2>
+<h2>Why Inheritance Still Matters?<a class="headerlink" href="#why-inheritance-still-matters" title="Permalink to this heading"></a></h2>
 <p>One prominent case where using inheritance over composition would make sense is when
 the concepts you want to represent as types have an is-a relationship with each other.</p>
 <p>Suppose you want to make an inventory system that can store things like food or weapons.
@@ -375,7 +377,7 @@ project grows larger and more complex.</p>
 </div>
 <p>Can you guess the proper usage of that API or how to implement its body if you are
 a developer? If you are not sure, how about this version?</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">heal</span><span class="p">(</span><span class="n">target</span><span class="p">:</span> <span class="n">GameObject</span><span class="p">,</span> <span class="n">amount</span><span class="p">:</span> <span class="nb">float</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="bp">None</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">heal</span><span class="p">(</span><span class="n">target</span><span class="p">:</span> <span class="n">GameObject</span><span class="p">,</span> <span class="n">amount</span><span class="p">:</span> <span class="nb">float</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span>
 </pre></div>
 </div>
 <p>Now you know that you are expected to pass a GameObject instance as the first parameter
@@ -387,7 +389,7 @@ nobody will stop you if you pass an actual house as long as it’s also a GameOb
 <p>Also, others may not be as smart as you and may have difficulty guessing the proper type of
 object to pass as the first parameter without having good documentation.</p>
 <p>But what if we haven’t adopted the component approach but just used the plain inheritance model instead?</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">heal</span><span class="p">(</span><span class="n">target</span><span class="p">:</span> <span class="n">Damageable</span><span class="p">,</span> <span class="n">amount</span><span class="p">:</span> <span class="nb">float</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="bp">None</span><span class="p">:</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">heal</span><span class="p">(</span><span class="n">target</span><span class="p">:</span> <span class="n">Damageable</span><span class="p">,</span> <span class="n">amount</span><span class="p">:</span> <span class="nb">float</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
 </pre></div>
 </div>
 <p>Now it became immediately apparent what the function expects as its first parameter.
@@ -404,7 +406,7 @@ having to rewrite the Crate class every time?</p>
 <p>A language feature or a design pattern called mixin can provide an answer to this question.</p>
 </section>
 <section id="mixins-and-traits">
-<h2>Mixins And Traits<a class="headerlink" href="#mixins-and-traits" title="Permalink to this headline"></a></h2>
+<h2>Mixins And Traits<a class="headerlink" href="#mixins-and-traits" title="Permalink to this heading"></a></h2>
 <p>According to a relevant Wikipedia article, a mixin is “a class that contains methods
 for use by other classes without having to be the parent class of those other classes”.</p>
 <p>Such a class is sometimes called a trait and often named as an adjective like Damageable or
@@ -418,7 +420,7 @@ compositional manner without erasing the type information as the component patte
   <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
     <span class="bp">self</span><span class="o">.</span><span class="n">health</span> <span class="o">=</span> <span class="mi">100</span>
 
-  <span class="k">def</span> <span class="nf">damage</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">amount</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="bp">None</span><span class="p">:</span>
+  <span class="k">def</span> <span class="nf">damage</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">amount</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
     <span class="bp">self</span><span class="o">.</span><span class="n">health</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">health</span> <span class="o">-</span> <span class="n">amount</span><span class="p">)</span>
 
   <span class="nd">@property</span>
@@ -428,13 +430,13 @@ compositional manner without erasing the type information as the component patte
 <span class="c1"># Tha same Door class, now renamed as appropriate for a trait</span>
 <span class="k">class</span> <span class="nc">Openable</span><span class="p">:</span>
   <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-    <span class="bp">self</span><span class="o">.</span><span class="n">opened</span> <span class="o">=</span> <span class="bp">True</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">opened</span> <span class="o">=</span> <span class="kc">True</span>
 
-  <span class="k">def</span> <span class="nf">open</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="bp">None</span><span class="p">:</span>
-    <span class="bp">self</span><span class="o">.</span><span class="n">opened</span> <span class="o">=</span> <span class="bp">True</span>
+  <span class="k">def</span> <span class="nf">open</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">opened</span> <span class="o">=</span> <span class="kc">True</span>
 
-  <span class="k">def</span> <span class="nf">close</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="bp">None</span><span class="p">:</span>
-    <span class="bp">self</span><span class="o">.</span><span class="n">opened</span> <span class="o">=</span> <span class="bp">False</span>
+  <span class="k">def</span> <span class="nf">close</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">opened</span> <span class="o">=</span> <span class="kc">False</span>
 
 <span class="c1"># Let&#39;s assume there is a base class for all items, named as `Item`.</span>
 <span class="c1"># Now you can &quot;mix&quot; useful traits into Item as follows:</span>
@@ -443,7 +445,7 @@ compositional manner without erasing the type information as the component patte
 
 <span class="n">crate</span> <span class="o">=</span> <span class="n">Crate</span><span class="p">()</span>
 
-<span class="k">print</span><span class="p">(</span><span class="nb">isinstance</span><span class="p">(</span><span class="n">crate</span><span class="p">,</span> <span class="n">Damageable</span><span class="p">))</span> <span class="c1"># Returns &quot;True&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">isinstance</span><span class="p">(</span><span class="n">crate</span><span class="p">,</span> <span class="n">Damageable</span><span class="p">))</span> <span class="c1"># Returns &quot;True&quot;</span>
 
 <span class="n">crate</span><span class="o">.</span><span class="n">damage</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span> <span class="c1"># Much better than crate.components[&quot;hit_box&quot;].damage(50)</span>
 <span class="n">crate</span><span class="o">.</span><span class="n">open</span><span class="p">()</span>
@@ -464,7 +466,7 @@ using components! In fact, mixins and components are not mutually exclusive conc
 you can write a trait that relies on a component to implement a behaviour.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Door</span><span class="p">(</span><span class="n">Component</span><span class="p">):</span>
   <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-    <span class="bp">self</span><span class="o">.</span><span class="n">opened</span> <span class="o">=</span> <span class="bp">True</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">opened</span> <span class="o">=</span> <span class="kc">True</span>
 
 <span class="k">class</span> <span class="nc">Openable</span><span class="p">:</span>
 
@@ -476,11 +478,11 @@ you can write a trait that relies on a component to implement a behaviour.</p>
   <span class="k">def</span> <span class="nf">opened</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span><span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
     <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">door</span><span class="o">.</span><span class="n">opened</span>
 
-  <span class="k">def</span> <span class="nf">open</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="bp">None</span><span class="p">:</span>
-    <span class="bp">self</span><span class="o">.</span><span class="n">door</span><span class="o">.</span><span class="n">opened</span> <span class="o">=</span> <span class="bp">True</span>
+  <span class="k">def</span> <span class="nf">open</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">door</span><span class="o">.</span><span class="n">opened</span> <span class="o">=</span> <span class="kc">True</span>
 
-  <span class="k">def</span> <span class="nf">close</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="bp">None</span><span class="p">:</span>
-    <span class="bp">self</span><span class="o">.</span><span class="n">door</span><span class="o">.</span><span class="n">opened</span> <span class="o">=</span> <span class="bp">False</span>
+  <span class="k">def</span> <span class="nf">close</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">door</span><span class="o">.</span><span class="n">opened</span> <span class="o">=</span> <span class="kc">False</span>
 
 <span class="k">class</span> <span class="nc">Crate</span><span class="p">(</span><span class="n">Openable</span><span class="p">,</span> <span class="n">GameObject</span><span class="p">):</span>
   <span class="k">pass</span>
@@ -499,7 +501,7 @@ fine with any Openable object, be it an animated door or one that requires a key
 open it, for instance.</p>
 </section>
 <section id="mixins-and-components-in-upbge">
-<h2>Mixins and Components in UPBGE<a class="headerlink" href="#mixins-and-components-in-upbge" title="Permalink to this headline"></a></h2>
+<h2>Mixins and Components in UPBGE<a class="headerlink" href="#mixins-and-components-in-upbge" title="Permalink to this heading"></a></h2>
 <p>As shown in the previous chapters, the component model and mixins are powerful tools
 to design your software while maintaining a clean separation of concern between
 classes responsible for different functionalities.</p>
@@ -518,10 +520,10 @@ configure them graphically within UPBGE.</p>
 replace GameObject with KX_GameObject and Component with KX_PythonComponent like this:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Door</span><span class="p">(</span><span class="n">KX_PythonComponent</span><span class="p">):</span>
   <span class="n">args</span> <span class="o">=</span> <span class="n">OrderedDict</span><span class="p">((</span>
-    <span class="p">(</span><span class="s2">&quot;Open&quot;</span><span class="p">,</span> <span class="bp">True</span><span class="p">),</span>
+    <span class="p">(</span><span class="s2">&quot;Open&quot;</span><span class="p">,</span> <span class="kc">True</span><span class="p">),</span>
   <span class="p">))</span>
 
-  <span class="k">def</span> <span class="nf">start</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">args</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="bp">None</span><span class="p">:</span>
+  <span class="k">def</span> <span class="nf">start</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">args</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
     <span class="bp">self</span><span class="o">.</span><span class="n">opened</span> <span class="o">=</span> <span class="n">args</span><span class="p">[</span><span class="s2">&quot;Open&quot;</span><span class="p">]</span>
 
 <span class="c1"># A dynamic trait based on component</span>
@@ -535,17 +537,17 @@ replace GameObject with KX_GameObject and Component with KX_PythonComponent like
   <span class="k">def</span> <span class="nf">opened</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span><span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
     <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">door</span><span class="o">.</span><span class="n">opened</span>
 
-  <span class="k">def</span> <span class="nf">open</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="bp">None</span><span class="p">:</span>
-    <span class="bp">self</span><span class="o">.</span><span class="n">door</span><span class="o">.</span><span class="n">opened</span> <span class="o">=</span> <span class="bp">True</span>
+  <span class="k">def</span> <span class="nf">open</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">door</span><span class="o">.</span><span class="n">opened</span> <span class="o">=</span> <span class="kc">True</span>
 
-  <span class="k">def</span> <span class="nf">close</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="bp">None</span><span class="p">:</span>
-    <span class="bp">self</span><span class="o">.</span><span class="n">door</span><span class="o">.</span><span class="n">opened</span> <span class="o">=</span> <span class="bp">False</span>
+  <span class="k">def</span> <span class="nf">close</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">door</span><span class="o">.</span><span class="n">opened</span> <span class="o">=</span> <span class="kc">False</span>
 
 <span class="c1"># An example of a static trait</span>
 <span class="k">class</span> <span class="nc">Damageable</span><span class="p">:</span>
   <span class="n">health</span><span class="p">:</span> <span class="nb">float</span>
 
-  <span class="k">def</span> <span class="nf">damage</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">amount</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="bp">None</span><span class="p">:</span>
+  <span class="k">def</span> <span class="nf">damage</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">amount</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
     <span class="bp">self</span><span class="o">.</span><span class="n">health</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">health</span> <span class="o">-</span> <span class="n">amount</span><span class="p">)</span>
 
   <span class="nd">@property</span>
@@ -557,7 +559,7 @@ replace GameObject with KX_GameObject and Component with KX_PythonComponent like
     <span class="p">(</span><span class="s2">&quot;Health&quot;</span><span class="p">,</span> <span class="mi">100</span><span class="p">),</span>
   <span class="p">))</span>
 
-  <span class="k">def</span> <span class="nf">start</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">args</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="bp">None</span><span class="p">:</span>
+  <span class="k">def</span> <span class="nf">start</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">args</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
     <span class="bp">self</span><span class="o">.</span><span class="n">health</span> <span class="o">=</span> <span class="n">args</span><span class="p">[</span><span class="s2">&quot;Health&quot;</span><span class="p">]</span>
 </pre></div>
 </div>

@@ -15,7 +15,9 @@
         <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
         <script src="../../../_static/jquery.js"></script>
         <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/sphinx_highlight.js"></script>
     <script src="../../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
@@ -98,14 +100,14 @@
            <div itemprop="articleBody">
              
   <section id="character-controller-templates">
-<span id="python-components-getting-started-character-controller-templates"></span><h1>Character Controller Templates<a class="headerlink" href="#character-controller-templates" title="Permalink to this headline"></a></h1>
+<span id="python-components-getting-started-character-controller-templates"></span><h1>Character Controller Templates<a class="headerlink" href="#character-controller-templates" title="Permalink to this heading"></a></h1>
 <p>These templates were created to help UPBGE users to create games or any kind of interactive things that requests a Character Controller. Easy to use, easy to attach to your project.</p>
 <figure class="align-default">
 <img alt="../../../_images/Fig-08.png" src="../../../_images/Fig-08.png" />
 </figure>
 <p>To use, just select it from template label at script editor and you’re done! You can use this template in your projects, even for commercial projects. You only need to give credits to Guilherme Teres Nunes (UnidayStudio) for this. It’s very easy to use: Just load this script into your .blend file through template label (or paste it in the same folder that your .blend is), select the object that you want, and attach the script into the object’s components using <strong>Register Component</strong> button.</p>
 <section id="character-controller-component">
-<h2>Character Controller Component<a class="headerlink" href="#character-controller-component" title="Permalink to this headline"></a></h2>
+<h2>Character Controller Component<a class="headerlink" href="#character-controller-component" title="Permalink to this heading"></a></h2>
 <p>This component will serve as a <strong>Character Controller</strong> for your game. With this, you can easly made an object move using <kbd class="kbd docutils literal notranslate">W</kbd>, <kbd class="kbd docutils literal notranslate">A</kbd>, <kbd class="kbd docutils literal notranslate">S</kbd>, <kbd class="kbd docutils literal notranslate">D</kbd>, run with <kbd class="kbd docutils literal notranslate">LSHIFT</kbd> and Jump with <kbd class="kbd docutils literal notranslate">SPACE</kbd>.
 You simply have to create a capsule for your character, set the physics type to “Character” and attach this Component to them. It’s very simple to configure:</p>
 <figure class="align-left" id="id1">
@@ -127,7 +129,7 @@ You simply have to create a capsule for your character, set the physics type to 
 </ul>
 </section>
 <section id="first-person-camera-component">
-<h2>First Person Camera Component<a class="headerlink" href="#first-person-camera-component" title="Permalink to this headline"></a></h2>
+<h2>First Person Camera Component<a class="headerlink" href="#first-person-camera-component" title="Permalink to this heading"></a></h2>
 <p>This component was created to be attached to your camera and to give you a great mouselook control. Very useful for First Person games.</p>
 <p>To use, add a camera in your scene, parent it into your character capsule (you can use the Character controller Component on it), and attach this Component to the camera. Don’t forgot to position the camera in a place near the “head” of your character.</p>
 <p>You can configure the mouse sensibility, invert <kbd class="kbd docutils literal notranslate">X</kbd> or <kbd class="kbd docutils literal notranslate">Y</kbd> axis and enable/disable the camera rotation limit. It’s very simple to configure:</p>
@@ -149,7 +151,7 @@ You simply have to create a capsule for your character, set the physics type to 
 </div>
 </section>
 <section id="third-person-camera-component">
-<h2>Third Person Camera Component<a class="headerlink" href="#third-person-camera-component" title="Permalink to this headline"></a></h2>
+<h2>Third Person Camera Component<a class="headerlink" href="#third-person-camera-component" title="Permalink to this heading"></a></h2>
 <p>This component was created to be attached to your camera to give you a great third person mouselook control. Very useful for Adventure games, RPGs, Open Worlds, or any kind of games that may require a third person camera.</p>
 <p>To use, add a camera in your scene, parent it into your character capsule (you can use the Character controller Component on it), and attach this Component to the camera. And you’re done! The component will do the rest for you. :)</p>
 <p>You can configure the mouse sensibility, invert <kbd class="kbd docutils literal notranslate">X</kbd> or <kbd class="kbd docutils literal notranslate">Y</kbd> axis and enable/disable the camera rotation limit. It’s very simple to configure:</p>
@@ -178,7 +180,7 @@ You simply have to create a capsule for your character, set the physics type to 
 </div>
 </section>
 <section id="simple-animator-component">
-<h2>Simple Animator Component<a class="headerlink" href="#simple-animator-component" title="Permalink to this headline"></a></h2>
+<h2>Simple Animator Component<a class="headerlink" href="#simple-animator-component" title="Permalink to this heading"></a></h2>
 <p>This component will automatically align the armature to the move direction of your character, runs the right animations accordding to the speed and if the character is on air or not.</p>
 <p>To use, attach this component to the armature of your character. It’s important that the armature is parented with an capsule object with physics type equals to Character. It’s very simple to configure:</p>
 <figure class="align-left" id="id4">

@@ -15,7 +15,9 @@
         <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
         <script src="../../../_static/jquery.js"></script>
         <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/sphinx_highlight.js"></script>
     <script src="../../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
@@ -100,14 +102,14 @@
            <div itemprop="articleBody">
              
   <section id="playing-an-animation">
-<h1>Playing An Animation<a class="headerlink" href="#playing-an-animation" title="Permalink to this headline"></a></h1>
+<h1>Playing An Animation<a class="headerlink" href="#playing-an-animation" title="Permalink to this heading"></a></h1>
 <p>In games, animations can be used in many places other than characters - a sliding menu, a
 opening door, coins rotating, etc. In UPBGE, an animation can be played through the use
 of an <a class="reference internal" href="../../datablocks/action.html#datablock-action"><span class="std std-ref">Action</span></a>. This tutorial will show you how to play an animation in a
 object and the concept of animation layering, allowing you to play and blend multiple
 animations at once in a single object.</p>
 <section id="before-we-start">
-<h2>Before We Start<a class="headerlink" href="#before-we-start" title="Permalink to this headline"></a></h2>
+<h2>Before We Start<a class="headerlink" href="#before-we-start" title="Permalink to this heading"></a></h2>
 <p>Before we start using animations through logic, we need some animations. As we said before,
 UPBGE animations work through the use of <a class="reference internal" href="../../datablocks/action.html#datablock-action"><span class="std std-ref">Action</span></a>, so we need to set our
 default <strong>Dope Sheet</strong> editor from <em>Dope Sheet</em> mode to <em>Action Editor</em> mode. Now, assuming
@@ -131,7 +133,7 @@ later on, as having the same channels on both (even without an actual transform)
 have the expected result in the end.</p>
 </section>
 <section id="the-logic">
-<h2>The Logic<a class="headerlink" href="#the-logic" title="Permalink to this headline"></a></h2>
+<h2>The Logic<a class="headerlink" href="#the-logic" title="Permalink to this heading"></a></h2>
 <p>Now, go to the <a class="reference internal" href="../../editors/logic/index.html#bpy-types-spacelogiceditor"><span class="std std-ref">Logic Bricks Editor</span></a> and do the following setup:</p>
 <ul class="simple">
 <li><p>Add two <a class="reference internal" href="../../logic/sensors/types/keyboard.html#sensor-keyboard"><span class="std std-ref">Keyboard Sensor</span></a> through the dropdown menu named <strong>Add Sensor</strong>.</p></li>
@@ -163,7 +165,7 @@ actuator <em>rotate</em>. When you play the game, you can’t play both animatio
 the last triggered actuator overwrites the currently playing.</p>
 </section>
 <section id="conclusion">
-<h2>Conclusion<a class="headerlink" href="#conclusion" title="Permalink to this headline"></a></h2>
+<h2>Conclusion<a class="headerlink" href="#conclusion" title="Permalink to this heading"></a></h2>
 <p>This is how you play and blend animations using visual logic in UPBGE. There’s more to be
 discovered, like playback modes, blending and more, and this can be learnt from the
 <a class="reference internal" href="../../logic/actuators/types/action.html#actuator-action"><span class="std std-ref">Action Actuator</span></a> page.</p>

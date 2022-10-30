@@ -15,7 +15,9 @@
         <script data-url_root="../../../../../" id="documentation_options" src="../../../../../_static/documentation_options.js"></script>
         <script src="../../../../../_static/jquery.js"></script>
         <script src="../../../../../_static/underscore.js"></script>
+        <script src="../../../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../../../../_static/doctools.js"></script>
+        <script src="../../../../../_static/sphinx_highlight.js"></script>
     <script src="../../../../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../../../../genindex.html" />
     <link rel="search" title="Search" href="../../../../../search.html" />
@@ -131,9 +133,9 @@
            <div itemprop="articleBody">
              
   <section id="apply-torque">
-<h1>Apply Torque<a class="headerlink" href="#apply-torque" title="Permalink to this headline"></a></h1>
+<h1>Apply Torque<a class="headerlink" href="#apply-torque" title="Permalink to this heading"></a></h1>
 <section id="description">
-<h2>Description<a class="headerlink" href="#description" title="Permalink to this headline"></a></h2>
+<h2>Description<a class="headerlink" href="#description" title="Permalink to this heading"></a></h2>
 <p>Rotate an object using torque mechanics and try to follow real-world physical rules. It uses the Newton-meter as a unit of measure (Torque = Force x Length of the lever).</p>
 <p>In the real world, applying torque requires a <strong>lever with length</strong> and an <strong>object that is experiencing a binding force</strong>. For movement to take place on this object the <em>Torque</em> must be greater than the <em>Bonding Force</em>. The <em>Real Bonding Force</em> generally encompasses friction and tension.</p>
 <p>Unlike in the real world, the wrench “holds” the screw that is being rotated, in the UPBGE there is no such limitation and so all the Torque force is applied at once, which can perpetuate the rotation continuity.</p>
@@ -144,7 +146,7 @@
 </div>
 </section>
 <section id="input">
-<h2>Input<a class="headerlink" href="#input" title="Permalink to this headline"></a></h2>
+<h2>Input<a class="headerlink" href="#input" title="Permalink to this heading"></a></h2>
 <dl class="simple">
 <dt>Global</dt><dd><p>The <em>torque</em> will be applied following the global axes of the scene</p>
 </dd>
@@ -159,7 +161,7 @@
 </dl>
 </section>
 <section id="output">
-<h2>Output<a class="headerlink" href="#output" title="Permalink to this headline"></a></h2>
+<h2>Output<a class="headerlink" href="#output" title="Permalink to this heading"></a></h2>
 <dl class="simple">
 <dt><strong>Done</strong></dt><dd><p><strong>True</strong> if the node performed successfully.</p>
 </dd>

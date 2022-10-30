@@ -15,7 +15,9 @@
         <script data-url_root="../../../../" id="documentation_options" src="../../../../_static/documentation_options.js"></script>
         <script src="../../../../_static/jquery.js"></script>
         <script src="../../../../_static/underscore.js"></script>
+        <script src="../../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../../../_static/doctools.js"></script>
+        <script src="../../../../_static/sphinx_highlight.js"></script>
     <script src="../../../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../../../genindex.html" />
     <link rel="search" title="Search" href="../../../../search.html" />
@@ -117,7 +119,7 @@
            <div itemprop="articleBody">
              
   <section id="expression-controller">
-<span id="bpy-types-expressioncontroller"></span><h1>Expression Controller<a class="headerlink" href="#expression-controller" title="Permalink to this headline"></a></h1>
+<span id="bpy-types-expressioncontroller"></span><h1>Expression Controller<a class="headerlink" href="#expression-controller" title="Permalink to this heading"></a></h1>
 <div class="admonition seealso">
 <p class="admonition-title">See also</p>
 <p>See the Python reference of this logic brick in <code class="xref py py-class docutils literal notranslate"><span class="pre">SCA_IController</span></code>.</p>
@@ -133,12 +135,12 @@
 </figcaption>
 </figure>
 <section id="expression">
-<h2>Expression<a class="headerlink" href="#expression" title="Permalink to this headline"></a></h2>
+<h2>Expression<a class="headerlink" href="#expression" title="Permalink to this heading"></a></h2>
 <p>The expression, which is written in the field, can consist of variables,
 constants and operators. These must follow the rules laid out below.</p>
 </section>
 <section id="variables">
-<h2>Variables<a class="headerlink" href="#variables" title="Permalink to this headline"></a></h2>
+<h2>Variables<a class="headerlink" href="#variables" title="Permalink to this heading"></a></h2>
 <p>You can use:</p>
 <ul class="simple">
 <li><p><em>sensors names</em>,</p></li>
@@ -147,15 +149,15 @@ constants and operators. These must follow the rules laid out below.</p>
 <p>These cannot contain blank spaces.</p>
 </section>
 <section id="operations">
-<h2>Operations<a class="headerlink" href="#operations" title="Permalink to this headline"></a></h2>
+<h2>Operations<a class="headerlink" href="#operations" title="Permalink to this heading"></a></h2>
 <section id="mathematical-operations">
-<h3>Mathematical Operations<a class="headerlink" href="#mathematical-operations" title="Permalink to this headline"></a></h3>
+<h3>Mathematical Operations<a class="headerlink" href="#mathematical-operations" title="Permalink to this heading"></a></h3>
 <p>Operators: <code class="docutils literal notranslate"><span class="pre">*</span></code>, <code class="docutils literal notranslate"><span class="pre">/</span></code>, <code class="docutils literal notranslate"><span class="pre">+</span></code>, <code class="docutils literal notranslate"><span class="pre">-</span></code></p>
 <p>Returns: a number</p>
 <p>Examples: <code class="docutils literal notranslate"><span class="pre">3</span> <span class="pre">+</span> <span class="pre">2</span></code>, <code class="docutils literal notranslate"><span class="pre">35</span> <span class="pre">/</span> <span class="pre">5</span></code></p>
 </section>
 <section id="logical-operations">
-<h3>Logical Operations<a class="headerlink" href="#logical-operations" title="Permalink to this headline"></a></h3>
+<h3>Logical Operations<a class="headerlink" href="#logical-operations" title="Permalink to this heading"></a></h3>
 <ul class="simple">
 <li><p>Comparison operators: <code class="docutils literal notranslate"><span class="pre">&lt;</span></code>, <code class="docutils literal notranslate"><span class="pre">&gt;</span></code>, <code class="docutils literal notranslate"><span class="pre">&gt;=</span></code>, <code class="docutils literal notranslate"><span class="pre">&lt;=</span></code>, <code class="docutils literal notranslate"><span class="pre">==</span></code>, <code class="docutils literal notranslate"><span class="pre">!=</span></code></p></li>
 <li><p>Booleans operators: <code class="docutils literal notranslate"><span class="pre">AND</span></code>, <code class="docutils literal notranslate"><span class="pre">OR</span></code>, <code class="docutils literal notranslate"><span class="pre">NOT</span></code></p></li>
@@ -165,7 +167,7 @@ constants and operators. These must follow the rules laid out below.</p>
 </section>
 </section>
 <section id="conditional-statement-if">
-<h2>Conditional Statement (if)<a class="headerlink" href="#conditional-statement-if" title="Permalink to this headline"></a></h2>
+<h2>Conditional Statement (if)<a class="headerlink" href="#conditional-statement-if" title="Permalink to this heading"></a></h2>
 <p>Use:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="k">if</span><span class="p">(</span> <span class="n">expression</span><span class="p">,</span> <span class="n">pulse_if_expression_is_true</span><span class="p">,</span> <span class="n">pulse_if_expression_is_false</span> <span class="p">)</span>
 </pre></div>
@@ -182,7 +184,7 @@ constants and operators. These must follow the rules laid out below.</p>
 </ul>
 </section>
 <section id="examples">
-<h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline"></a></h2>
+<h2>Examples<a class="headerlink" href="#examples" title="Permalink to this heading"></a></h2>
 <p>Given the object has a property <code class="docutils literal notranslate"><span class="pre">coins</span></code> equal to 30:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="n">coins</span> <span class="o">&gt;</span> <span class="mi">20</span>
 </pre></div>
@@ -214,7 +216,7 @@ constants and operators. These must follow the rules laid out below.</p>
 hence in this case the controller sends a positive pulse to the connected actuators.</p>
 </section>
 <section id="parts-of-the-expression-controller">
-<h2>Parts of the Expression Controller<a class="headerlink" href="#parts-of-the-expression-controller" title="Permalink to this headline"></a></h2>
+<h2>Parts of the Expression Controller<a class="headerlink" href="#parts-of-the-expression-controller" title="Permalink to this heading"></a></h2>
 <figure class="align-default" id="id2">
 <img alt="../../../../_images/logic-controllers-types-expression-part.png" src="../../../../_images/logic-controllers-types-expression-part.png" />
 <figcaption>

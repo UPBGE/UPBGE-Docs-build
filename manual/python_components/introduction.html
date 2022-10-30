@@ -15,7 +15,9 @@
         <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
         <script src="../../_static/jquery.js"></script>
         <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/sphinx_highlight.js"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -93,9 +95,9 @@
            <div itemprop="articleBody">
              
   <section id="introduction">
-<span id="python-components-introduction"></span><h1>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline"></a></h1>
+<span id="python-components-introduction"></span><h1>Introduction<a class="headerlink" href="#introduction" title="Permalink to this heading"></a></h1>
 <section id="what-is-a-python-component">
-<h2>What Is A Python Component?<a class="headerlink" href="#what-is-a-python-component" title="Permalink to this headline"></a></h2>
+<h2>What Is A Python Component?<a class="headerlink" href="#what-is-a-python-component" title="Permalink to this heading"></a></h2>
 <p>The idea of a component is a simple one. They are modules that can be attached to game objects. You can attach as many as you want,
 and each one serves a specific purpose such as third person character movement with <kbd class="kbd docutils literal notranslate">WASD</kbd> keys. After a component has been attached to an object,
 it can have various exposed settings that you can edit. In the case of a third person movement component, this could be things such as
@@ -152,8 +154,8 @@ The update() function is called each frame during the logic stage before running
       <span class="k">if</span> <span class="n">keyboard</span><span class="p">[</span><span class="n">bge</span><span class="o">.</span><span class="n">events</span><span class="o">.</span><span class="n">DKEY</span><span class="p">]:</span>
          <span class="n">rotate</span> <span class="o">-=</span> <span class="bp">self</span><span class="o">.</span><span class="n">turn_speed</span>
 
-      <span class="bp">self</span><span class="o">.</span><span class="n">object</span><span class="o">.</span><span class="n">applyMovement</span><span class="p">((</span><span class="mi">0</span><span class="p">,</span> <span class="n">move</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="bp">True</span><span class="p">)</span>
-      <span class="bp">self</span><span class="o">.</span><span class="n">object</span><span class="o">.</span><span class="n">applyRotation</span><span class="p">((</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">rotate</span><span class="p">),</span> <span class="bp">True</span><span class="p">)</span>
+      <span class="bp">self</span><span class="o">.</span><span class="n">object</span><span class="o">.</span><span class="n">applyMovement</span><span class="p">((</span><span class="mi">0</span><span class="p">,</span> <span class="n">move</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="kc">True</span><span class="p">)</span>
+      <span class="bp">self</span><span class="o">.</span><span class="n">object</span><span class="o">.</span><span class="n">applyRotation</span><span class="p">((</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">rotate</span><span class="p">),</span> <span class="kc">True</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>The standard property types supported are float, integer, boolean, string, set (for enumeration) and Vector 2D, 3D and 4D.
@@ -166,7 +168,7 @@ The following example show all of these property types:</p>
 <span class="n">args</span> <span class="o">=</span> <span class="n">OrderedDict</span><span class="p">([</span>
       <span class="p">(</span><span class="s2">&quot;Float&quot;</span><span class="p">,</span> <span class="mf">58.6</span><span class="p">),</span>
       <span class="p">(</span><span class="s2">&quot;Integer&quot;</span><span class="p">,</span> <span class="mi">150</span><span class="p">),</span>
-      <span class="p">(</span><span class="s2">&quot;Boolean&quot;</span><span class="p">,</span> <span class="bp">True</span><span class="p">),</span>
+      <span class="p">(</span><span class="s2">&quot;Boolean&quot;</span><span class="p">,</span> <span class="kc">True</span><span class="p">),</span>
       <span class="p">(</span><span class="s2">&quot;String&quot;</span><span class="p">,</span> <span class="s2">&quot;Cube&quot;</span><span class="p">),</span>
       <span class="p">(</span><span class="s2">&quot;Enum&quot;</span><span class="p">,</span> <span class="p">{</span><span class="s2">&quot;Enum 1&quot;</span><span class="p">,</span> <span class="s2">&quot;Enum 2&quot;</span><span class="p">,</span> <span class="s2">&quot;Enum 3&quot;</span><span class="p">}),</span>
       <span class="p">(</span><span class="s2">&quot;Vector 2D&quot;</span><span class="p">,</span> <span class="n">Vector</span><span class="p">((</span><span class="mf">0.8</span><span class="p">,</span> <span class="mf">0.7</span><span class="p">))),</span>
@@ -175,7 +177,7 @@ The following example show all of these property types:</p>
 <span class="p">])</span>
 
 <span class="k">def</span> <span class="nf">start</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">args</span><span class="p">):</span>
-   <span class="k">print</span><span class="p">(</span><span class="n">args</span><span class="p">)</span>
+   <span class="nb">print</span><span class="p">(</span><span class="n">args</span><span class="p">)</span>
 
 <span class="k">def</span> <span class="nf">update</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
    <span class="k">pass</span>
@@ -218,23 +220,23 @@ The following example show all of these property types:</p>
    <span class="p">))</span>
 
    <span class="k">def</span> <span class="nf">start</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">args</span><span class="p">:</span> <span class="nb">dict</span><span class="p">):</span>
-      <span class="bp">self</span><span class="o">.</span><span class="n">myObject</span> <span class="o">=</span> <span class="bp">None</span>
+      <span class="bp">self</span><span class="o">.</span><span class="n">myObject</span> <span class="o">=</span> <span class="kc">None</span>
       <span class="k">if</span> <span class="s2">&quot;myObject&quot;</span> <span class="ow">in</span> <span class="n">args</span><span class="p">:</span>
-         <span class="k">print</span><span class="p">(</span><span class="s2">&quot;myObject = &quot;</span><span class="p">,</span> <span class="n">args</span><span class="p">[</span><span class="s2">&quot;myObject&quot;</span><span class="p">])</span>
+         <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;myObject = &quot;</span><span class="p">,</span> <span class="n">args</span><span class="p">[</span><span class="s2">&quot;myObject&quot;</span><span class="p">])</span>
          <span class="bp">self</span><span class="o">.</span><span class="n">myObject</span> <span class="o">=</span> <span class="n">args</span><span class="p">[</span><span class="s2">&quot;myObject&quot;</span><span class="p">]</span>
       <span class="k">else</span><span class="p">:</span>
-         <span class="k">print</span><span class="p">(</span><span class="s2">&quot;myObject not found!&quot;</span><span class="p">)</span>
+         <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;myObject not found!&quot;</span><span class="p">)</span>
 
-   <span class="k">def</span> <span class="nf">update</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="bp">None</span><span class="p">:</span>
+   <span class="k">def</span> <span class="nf">update</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
       <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">myObject</span><span class="p">:</span>
-         <span class="k">print</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">myObject</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
+         <span class="nb">print</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">myObject</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>The optional <strong>dispose()</strong> function is called when the component is destroyed. It is only necessary in very specific cases.</p>
 <p>Inside of UPBGE there are several python component templates that can help us with common tasks. We will analyze them in the next subchapters.</p>
 </section>
 <section id="python-component-creation">
-<h2>Python Component Creation<a class="headerlink" href="#python-component-creation" title="Permalink to this headline"></a></h2>
+<h2>Python Component Creation<a class="headerlink" href="#python-component-creation" title="Permalink to this heading"></a></h2>
 <p>The Python Component panel, or also called Game Component panel, is placed in the Properties editor under the Game Object Properties tab.</p>
 <figure class="align-default" id="id3">
 <img alt="../../_images/Fig-02.png" src="../../_images/Fig-02.png" />
@@ -250,7 +252,7 @@ The following example show all of these property types:</p>
 </figcaption>
 </figure>
 <section id="create-component">
-<h3>Create Component<a class="headerlink" href="#create-component" title="Permalink to this headline"></a></h3>
+<h3>Create Component<a class="headerlink" href="#create-component" title="Permalink to this heading"></a></h3>
 <p>When you push over the <strong>Create</strong> button a detachable panel will appear. In that panel you can introduce the component module name and the class name, both separate by a dot.
 After entering the name and clicking on the <strong>Create</strong> button, a new python script with the name of the component’s module will be created in the script editor.
 That python script will contain an empty class which name will be the one entered previously.</p>
@@ -269,7 +271,7 @@ That python script will contain an empty class which name will be the one entere
 </figure>
 </section>
 <section id="add-component">
-<h3>Add Component<a class="headerlink" href="#add-component" title="Permalink to this headline"></a></h3>
+<h3>Add Component<a class="headerlink" href="#add-component" title="Permalink to this heading"></a></h3>
 <p>This process is the opposite of the previous one. First of all, we already have a python script previously formatted as a component that can be placed either in the script editor or at the same level as the .blend file.</p>
 <p>When we click on the <strong>Add</strong> button we will have to enter the name of the python script (without the .py) followed by a dot and the class name. After accept the Python Component will be created.</p>
 <figure class="align-default" id="id7">

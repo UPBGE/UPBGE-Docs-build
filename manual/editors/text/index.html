@@ -15,7 +15,9 @@
         <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
         <script src="../../../_static/jquery.js"></script>
         <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/sphinx_highlight.js"></script>
     <script src="../../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
@@ -108,7 +110,7 @@
            <div itemprop="articleBody">
              
   <section id="text-editor">
-<span id="bpy-types-spacetexteditor"></span><h1>Text Editor<a class="headerlink" href="#text-editor" title="Permalink to this headline"></a></h1>
+<span id="bpy-types-spacetexteditor"></span><h1>Text Editor<a class="headerlink" href="#text-editor" title="Permalink to this heading"></a></h1>
 <p>UPBGE has a <em>Text Editor</em> among its editor types,
 accessible via the <em>Editor type</em> menu, or the shortcut <kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Shift</kbd>-<kbd class="kbd docutils literal notranslate">F11</kbd></kbd>.</p>
 <figure class="align-default" id="id1">
@@ -118,7 +120,7 @@ accessible via the <em>Editor type</em> menu, or the shortcut <kbd class="kbd co
 </figcaption>
 </figure>
 <section id="header">
-<h2>Header<a class="headerlink" href="#header" title="Permalink to this headline"></a></h2>
+<h2>Header<a class="headerlink" href="#header" title="Permalink to this heading"></a></h2>
 <p>The newly opened Text editor is empty, with a very simple header.
 More options become available when a text file is created or opened.</p>
 <figure class="align-default" id="id2">
@@ -160,7 +162,7 @@ the <span class="xref std std-doc">Python Scripting</span> chapter.</p>
 </dd>
 </dl>
 <section id="view-menu">
-<h3>View Menu<a class="headerlink" href="#view-menu" title="Permalink to this headline"></a></h3>
+<h3>View Menu<a class="headerlink" href="#view-menu" title="Permalink to this heading"></a></h3>
 <dl class="simple">
 <dt>Sidebar <kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Ctrl</kbd>-<kbd class="kbd docutils literal notranslate">T</kbd></kbd></dt><dd><p>Show or hide the sidebar.</p>
 </dd>
@@ -196,7 +198,7 @@ If the cursor is in the middle of a word, the cursor is moved to the end of the 
 </dl>
 </section>
 <section id="text-menu">
-<h3>Text Menu<a class="headerlink" href="#text-menu" title="Permalink to this headline"></a></h3>
+<h3>Text Menu<a class="headerlink" href="#text-menu" title="Permalink to this heading"></a></h3>
 <dl class="simple">
 <dt>New <kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Alt</kbd>-<kbd class="kbd docutils literal notranslate">N</kbd></kbd></dt><dd><p>Creates a new text Data Block.</p>
 </dd>
@@ -218,7 +220,7 @@ to save the file along with giving the file a name / file extension.</p>
 </dl>
 </section>
 <section id="edit-menu">
-<h3>Edit Menu<a class="headerlink" href="#edit-menu" title="Permalink to this headline"></a></h3>
+<h3>Edit Menu<a class="headerlink" href="#edit-menu" title="Permalink to this heading"></a></h3>
 <dl class="simple">
 <dt>Undo/Redo</dt><dd><p>Basic Undo/Redo.</p>
 </dd>
@@ -247,7 +249,7 @@ to save the file along with giving the file a name / file extension.</p>
 </dl>
 </section>
 <section id="select-menu">
-<h3>Select Menu<a class="headerlink" href="#select-menu" title="Permalink to this headline"></a></h3>
+<h3>Select Menu<a class="headerlink" href="#select-menu" title="Permalink to this heading"></a></h3>
 <dl class="simple">
 <dt>All <kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Ctrl</kbd>-<kbd class="kbd docutils literal notranslate">A</kbd></kbd></dt><dd><p>Selects the entire text file.</p>
 </dd>
@@ -276,7 +278,7 @@ If the cursor is in the middle of a word, select everything to the end of the cu
 </dl>
 </section>
 <section id="format-menu">
-<h3>Format Menu<a class="headerlink" href="#format-menu" title="Permalink to this headline"></a></h3>
+<h3>Format Menu<a class="headerlink" href="#format-menu" title="Permalink to this heading"></a></h3>
 <dl class="simple">
 <dt>Indent <kbd class="kbd docutils literal notranslate">Tab</kbd></dt><dd><p>Inserts a tab character at the cursor.</p>
 </dd>
@@ -290,7 +292,7 @@ If no lines are selected the current line is toggled.</p>
 </dl>
 </section>
 <section id="template-menu">
-<h3>Template Menu<a class="headerlink" href="#template-menu" title="Permalink to this headline"></a></h3>
+<h3>Template Menu<a class="headerlink" href="#template-menu" title="Permalink to this heading"></a></h3>
 <p>The <em>Text Editor</em> has some dedicated templates for Python scripts, Python Components and GLSL shaders,
 which are useful for writing tools, like a class/function/variable browser, completion…</p>
 <figure class="align-default" id="id4">
@@ -302,7 +304,7 @@ which are useful for writing tools, like a class/function/variable browser, comp
 </section>
 </section>
 <section id="main-view">
-<h2>Main View<a class="headerlink" href="#main-view" title="Permalink to this headline"></a></h2>
+<h2>Main View<a class="headerlink" href="#main-view" title="Permalink to this heading"></a></h2>
 <p>Typing on the keyboard produces text in the text buffer.</p>
 <p>As usual, pressing, dragging and releasing <kbd class="kbd docutils literal notranslate">LMB</kbd> selects text.
 Pressing <kbd class="kbd docutils literal notranslate">RMB</kbd> opens the context menu.</p>
@@ -315,9 +317,9 @@ Be sure to keep it visible when saving!</p>
 </div>
 </section>
 <section id="sidebar">
-<h2>Sidebar<a class="headerlink" href="#sidebar" title="Permalink to this headline"></a></h2>
+<h2>Sidebar<a class="headerlink" href="#sidebar" title="Permalink to this heading"></a></h2>
 <section id="find-replace">
-<h3>Find &amp; Replace<a class="headerlink" href="#find-replace" title="Permalink to this headline"></a></h3>
+<h3>Find &amp; Replace<a class="headerlink" href="#find-replace" title="Permalink to this heading"></a></h3>
 <dl class="simple">
 <dt>Find Text <kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Ctrl</kbd>-<kbd class="kbd docutils literal notranslate">F</kbd></kbd></dt><dd><p>Searches for instances of a text that occur after the cursor.
 Using the eyedropper icon will search for the currently selected text
@@ -338,7 +340,7 @@ Using the eyedropper icon will set the currently selected text as the replace te
 </dl>
 </section>
 <section id="properties">
-<h3>Properties<a class="headerlink" href="#properties" title="Permalink to this headline"></a></h3>
+<h3>Properties<a class="headerlink" href="#properties" title="Permalink to this heading"></a></h3>
 <dl class="simple">
 <dt>Margin</dt><dd><p>Shows a right margin to help keep line length at a reasonable length when scripting.
 The width of the margin is specified in <em>Margin Column</em>.</p>
@@ -353,15 +355,15 @@ The width of the margin is specified in <em>Margin Column</em>.</p>
 </section>
 </section>
 <section id="footer">
-<h2>Footer<a class="headerlink" href="#footer" title="Permalink to this headline"></a></h2>
+<h2>Footer<a class="headerlink" href="#footer" title="Permalink to this heading"></a></h2>
 <p>The Text editor footer displays if the text is saved internal or external and
 if there are unsaved changes to an external file.
 For external files, this region also displays the file path to the text file.</p>
 </section>
 <section id="usage">
-<h2>Usage<a class="headerlink" href="#usage" title="Permalink to this headline"></a></h2>
+<h2>Usage<a class="headerlink" href="#usage" title="Permalink to this heading"></a></h2>
 <section id="running-scripts">
-<h3>Running Scripts<a class="headerlink" href="#running-scripts" title="Permalink to this headline"></a></h3>
+<h3>Running Scripts<a class="headerlink" href="#running-scripts" title="Permalink to this heading"></a></h3>
 <p>The most notable keystroke is <kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Alt</kbd>-<kbd class="kbd docutils literal notranslate">P</kbd></kbd> which makes the content of the buffer
 being parsed by the internal Python interpreter built into UPBGE.
 Before going on it is worth noticing that UPBGE comes with a fully functional Python interpreter built-in,

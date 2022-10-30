@@ -15,7 +15,9 @@
         <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
         <script src="../../../_static/jquery.js"></script>
         <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/sphinx_highlight.js"></script>
     <script src="../../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
@@ -100,7 +102,7 @@
            <div itemprop="articleBody">
              
   <section id="using-linked-libraries-in-game">
-<h1>Using Linked Libraries In Game<a class="headerlink" href="#using-linked-libraries-in-game" title="Permalink to this headline"></a></h1>
+<h1>Using Linked Libraries In Game<a class="headerlink" href="#using-linked-libraries-in-game" title="Permalink to this heading"></a></h1>
 <p><em>Linked Library</em> is a Blender feature that allows referencing a datablock from another
 blend file into the current one, allowing easier manipulation of common assets and better
 project management, as you only need to edit the original file to update all the
@@ -108,7 +110,7 @@ references. UPBGE supports this Blender feature, specially group instances, whic
 are fairly well integrated through Python. This tutorial aims to show how to use linked
 libraries, group instances and manage the links.</p>
 <section id="before-we-start">
-<h2>Before We Start<a class="headerlink" href="#before-we-start" title="Permalink to this headline"></a></h2>
+<h2>Before We Start<a class="headerlink" href="#before-we-start" title="Permalink to this heading"></a></h2>
 <p>To proceed with this tutorial, we need some base files first. On a directory, save three
 empty blend files: <em>game.blend</em> (which will contain the references from the libraries),
 <em>lib_character.blend</em> (which will contain the actual model of our character) and
@@ -130,7 +132,7 @@ file <em>game.blend</em> later, first we must create the contents of our librari
 </figure>
 </section>
 <section id="linking-the-groups">
-<h2>Linking The Groups<a class="headerlink" href="#linking-the-groups" title="Permalink to this headline"></a></h2>
+<h2>Linking The Groups<a class="headerlink" href="#linking-the-groups" title="Permalink to this heading"></a></h2>
 <p>Now, we’ll create a blend file named <em>game.blend</em> on the same directory as our previous
 files. In this file, we’ll do the following procedures:</p>
 <ul class="simple">
@@ -159,7 +161,7 @@ transformations, and if you need to edit all the placed instances, just edit the
 file to update all the references. Pretty handy, isn’t it?</p>
 </section>
 <section id="managing-the-links">
-<h2>Managing the Links<a class="headerlink" href="#managing-the-links" title="Permalink to this headline"></a></h2>
+<h2>Managing the Links<a class="headerlink" href="#managing-the-links" title="Permalink to this heading"></a></h2>
 <p>If you rename or move any of your libraries to another folder, you will face a common
 problem: broken links. There are several ways to deal with this problem, and this section
 will present you the use of the <em>Outliner</em> to manage links (and <a class="reference internal" href="../../datablocks/index.html#datablock-index"><span class="std std-ref">Datablocks</span></a>).</p>
