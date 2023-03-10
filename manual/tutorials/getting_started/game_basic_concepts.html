@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Game Basic Concepts &mdash; UPBGE Manual</title>
@@ -12,10 +12,8 @@
     <script src="../../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
-        <script src="../../../_static/jquery.js"></script>
-        <script src="../../../_static/underscore.js"></script>
-        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../../_static/doctools.js"></script>
         <script src="../../../_static/sphinx_highlight.js"></script>
     <script src="../../../_static/js/theme.js"></script>
@@ -30,12 +28,16 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../../../index.html" class="icon icon-home"> UPBGE Manual
-            <img src="../../../_static/upbge_logo.png" class="logo" alt="Logo"/>
+
+          
+          
+          <a href="../../../index.html" class="icon icon-home">
+            UPBGE Manual
+              <img src="../../../_static/upbge_logo.png" class="logo" alt="Logo"/>
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -88,10 +90,10 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../../../index.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="../index.html">Tutorials</a> &raquo;</li>
-          <li><a href="index.html">Getting Started</a> &raquo;</li>
-      <li>Game Basic Concepts</li>
+      <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Tutorials</a></li>
+          <li class="breadcrumb-item"><a href="index.html">Getting Started</a></li>
+      <li class="breadcrumb-item active">Game Basic Concepts</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../../../_sources/manual/tutorials/getting_started/game_basic_concepts.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -123,14 +125,14 @@ an object tumble and fall realistically).</p>
 <li><p><strong>Sound</strong> : Produces the audio events.</p></li>
 </ul>
 <p>The above list is not meant to be exhaustive, but it should give you an idea of what a game engine does. The Blender game engine gives you a lot of control over each of these components, which you will learn one by one in later chapters.</p>
-<div class="topic">
+<aside class="topic">
 <p class="topic-title"><strong>Quality vs. Performance</strong></p>
 <p>Making a video game is a constant balancing act between quality and performance. As artists, you want to make the virtual world as rich and detailed
 as possible; on the other hand, you need to make sure the game can run smoothly for people who might not have top-of-the-line computers. Throughout the
 process of game-making, you will run into cases where you have to make a decision whether to prioritize the visual quality or the performance of the game.
 You will also learn tricks to achieve high-quality visual without compromising the performance, as well as how to optimize the game by identifying what
 is slowing it down.</p>
-</div>
+</aside>
 </section>
 <section id="game-loop">
 <h2>Game Loop<a class="headerlink" href="#game-loop" title="Permalink to this heading"></a></h2>

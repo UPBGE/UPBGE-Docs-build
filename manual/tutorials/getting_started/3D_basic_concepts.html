@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>3D Basic Concepts &mdash; UPBGE Manual</title>
@@ -12,10 +12,8 @@
     <script src="../../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
-        <script src="../../../_static/jquery.js"></script>
-        <script src="../../../_static/underscore.js"></script>
-        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../../_static/doctools.js"></script>
         <script src="../../../_static/sphinx_highlight.js"></script>
     <script src="../../../_static/js/theme.js"></script>
@@ -30,12 +28,16 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../../../index.html" class="icon icon-home"> UPBGE Manual
-            <img src="../../../_static/upbge_logo.png" class="logo" alt="Logo"/>
+
+          
+          
+          <a href="../../../index.html" class="icon icon-home">
+            UPBGE Manual
+              <img src="../../../_static/upbge_logo.png" class="logo" alt="Logo"/>
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -92,10 +94,10 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../../../index.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="../index.html">Tutorials</a> &raquo;</li>
-          <li><a href="index.html">Getting Started</a> &raquo;</li>
-      <li>3D Basic Concepts</li>
+      <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Tutorials</a></li>
+          <li class="breadcrumb-item"><a href="index.html">Getting Started</a></li>
+      <li class="breadcrumb-item active">3D Basic Concepts</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../../../_sources/manual/tutorials/getting_started/3D_basic_concepts.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -154,11 +156,11 @@ the shape of the object, but the inside of the object is always “hollow.”</p
 the direction a polygon is facing. Because normals are used for shading computation of the surface, ideally all the normals for a mesh should be pointed “outward”.
 Wrongly oriented normals can cause the mesh to show up as black or invisible. Fortunately, there is a Make Normals Consistent function in Blender that can usually
 resolve the issue. Figure 1.8 shows how normals are presented in Blender.</p>
-<div class="topic">
+<aside class="topic">
 <p class="topic-title"><strong>Beyond Polygons</strong></p>
 <p>Technically, there are other approaches to computer graphics that do not rely on triangles or polygons, such as NURBS (Non-uniform rational B-spline)
 and voxel (short for VOlumetric piXEL). But polygon modeling and rendering is by far the most common, and it is the only supported method in the game engine.</p>
-</div>
+</aside>
 </section>
 <section id="basic-transforms">
 <h2>Basic Transforms<a class="headerlink" href="#basic-transforms" title="Permalink to this heading"></a></h2>
@@ -222,10 +224,10 @@ through a predetermined camera. Note that a predetermined camera does not mean t
 In an action game, the camera tends to follow the character from behind; in a strategy game, the camera might be hovering high above, looking down;
 in a platformer, the camera is usually looking at the scene from the side.</p>
 <p>A camera is also treated as a regular object in Blender, so you can manipulate its location and orientation just as you can with any other object.</p>
-<div class="topic">
+<aside class="topic">
 <p class="topic-title"><strong>Drawing and Composition for Visual Storytellers</strong></p>
 <p>Speaking of lights and cameras, this is the part where we point out the wonderful book by Marcos Mateu-Mestre called Framed Ink. The book uses tons of beautiful drawings to illustrate the many key principles in visual storytelling.</p>
-</div>
+</aside>
 </section>
 <section id="animation">
 <h2>Animation<a class="headerlink" href="#animation" title="Permalink to this heading"></a></h2>

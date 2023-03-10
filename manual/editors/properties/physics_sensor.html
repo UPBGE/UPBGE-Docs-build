@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Sensor Physics &mdash; UPBGE Manual</title>
@@ -12,10 +12,8 @@
     <script src="../../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
-        <script src="../../../_static/jquery.js"></script>
-        <script src="../../../_static/underscore.js"></script>
-        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../../_static/doctools.js"></script>
         <script src="../../../_static/sphinx_highlight.js"></script>
     <script src="../../../_static/js/theme.js"></script>
@@ -30,12 +28,16 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../../../index.html" class="icon icon-home"> UPBGE Manual
-            <img src="../../../_static/upbge_logo.png" class="logo" alt="Logo"/>
+
+          
+          
+          <a href="../../../index.html" class="icon icon-home">
+            UPBGE Manual
+              <img src="../../../_static/upbge_logo.png" class="logo" alt="Logo"/>
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -107,11 +109,11 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../../../index.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="../index.html">Editors</a> &raquo;</li>
-          <li><a href="index.html">Properties Editor</a> &raquo;</li>
-          <li><a href="physics.html">Physics</a> &raquo;</li>
-      <li>Sensor Physics</li>
+      <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Editors</a></li>
+          <li class="breadcrumb-item"><a href="index.html">Properties Editor</a></li>
+          <li class="breadcrumb-item"><a href="physics.html">Physics</a></li>
+      <li class="breadcrumb-item active">Sensor Physics</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../../../_sources/manual/editors/properties/physics_sensor.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -174,8 +176,8 @@ it is removed from the simulation and consume no CPU.</p></li>
 <ul>
 <li><p>When running Blender in debug mode, you will see one warning line of the console:</p>
 <blockquote>
-<div><div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>warning btCollisionDispatcher::needsCollision: static-static collision!
-In release mode this message is not printed.
+<div><div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>warning<span class="w"> </span>btCollisionDispatcher::needsCollision:<span class="w"> </span>static-static<span class="w"> </span>collision!
+In<span class="w"> </span>release<span class="w"> </span>mode<span class="w"> </span>this<span class="w"> </span>message<span class="w"> </span>is<span class="w"> </span>not<span class="w"> </span>printed.
 </pre></div>
 </div>
 </div></blockquote>

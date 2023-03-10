@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Python and the Game Engine &mdash; UPBGE Manual</title>
@@ -12,10 +12,8 @@
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
-        <script src="../../_static/jquery.js"></script>
-        <script src="../../_static/underscore.js"></script>
-        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../_static/doctools.js"></script>
         <script src="../../_static/sphinx_highlight.js"></script>
     <script src="../../_static/js/theme.js"></script>
@@ -30,12 +28,16 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../../index.html" class="icon icon-home"> UPBGE Manual
-            <img src="../../_static/upbge_logo.png" class="logo" alt="Logo"/>
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            UPBGE Manual
+              <img src="../../_static/upbge_logo.png" class="logo" alt="Logo"/>
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -180,9 +182,9 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="index.html">Python Scripting</a> &raquo;</li>
-      <li>Python and the Game Engine</li>
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="index.html">Python Scripting</a></li>
+      <li class="breadcrumb-item active">Python and the Game Engine</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../../_sources/manual/python/python_game_engine.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -451,12 +453,6 @@ clearly laying down the ideas and organizing them logically.</p>
 Each mode works as described in the following table:</p>
 <table class="docutils align-default" id="id9">
 <caption><span class="caption-text">Comparison of Different Navigation Cameras</span><a class="headerlink" href="#id9" title="Permalink to this table"></a></caption>
-<colgroup>
-<col style="width: 43%" />
-<col style="width: 21%" />
-<col style="width: 25%" />
-<col style="width: 11%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Mode</p></th>
 <th class="head"><p>Orbit</p></th>
@@ -960,10 +956,6 @@ You can read about this in the “bge.logic API” section in this chapter or on
 <p>A snapshot with those changes can be found at:</p>
 <p>/Book/Chapter7/4_navigation_system/walkthrough_3_partial/walkthrough.blend</p>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Camera clipping of 400</p></th>
 <th class="head"><p>Camera clipping of 1000</p></th>
@@ -1327,7 +1319,7 @@ You can read about this in the “bge.logic API” section in this chapter or on
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bge</span> <span class="kn">import</span> <span class="n">logic</span>
 <span class="kn">from</span> <span class="nn">bge</span> <span class="kn">import</span> <span class="n">texture</span>
 <span class="k">def</span> <span class="nf">createTexture</span><span class="p">(</span><span class="n">cont</span><span class="p">):</span>
-   <span class="sd">&quot;&quot;&quot;Create a new dynamic texture&quot;&quot;&quot;</span>
+<span class="w">   </span><span class="sd">&quot;&quot;&quot;Create a new dynamic texture&quot;&quot;&quot;</span>
    <span class="nb">object</span> <span class="o">=</span> <span class="n">cont</span><span class="o">.</span><span class="n">owner</span>
 
    <span class="c1"># get the reference pointer (ID) of the texture</span>
@@ -1348,7 +1340,7 @@ You can read about this in the “bge.logic API” section in this chapter or on
    <span class="n">dynamic_texture</span><span class="o">.</span><span class="n">refresh</span><span class="p">(</span><span class="kc">False</span><span class="p">)</span>
 
 <span class="k">def</span> <span class="nf">removeTexture</span><span class="p">(</span><span class="n">cont</span><span class="p">):</span>
-   <span class="sd">&quot;&quot;&quot;Delete the dynamic texture, reversing it back to the original one.&quot;&quot;&quot;</span>
+<span class="w">   </span><span class="sd">&quot;&quot;&quot;Delete the dynamic texture, reversing it back to the original one.&quot;&quot;&quot;</span>
    <span class="k">try</span><span class="p">:</span> <span class="k">del</span> <span class="n">logic</span><span class="o">.</span><span class="n">dynamic_texture</span>
    <span class="k">except</span><span class="p">:</span> <span class="k">pass</span>
 </pre></div>
@@ -1583,7 +1575,7 @@ The possible statuses are:</p>
 <p>In the init function, we load a new font in memory and store the generated font ID to use later.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">init</span><span class="p">():</span>
 
-   <span class="sd">&quot;&quot;&quot;init function - runs once&quot;&quot;&quot;</span>
+<span class="w">   </span><span class="sd">&quot;&quot;&quot;init function - runs once&quot;&quot;&quot;</span>
 
    <span class="c1"># create a new font object</span>
    <span class="n">font_path</span> <span class="o">=</span> <span class="n">bge</span><span class="o">.</span><span class="n">logic</span><span class="o">.</span><span class="n">expandPath</span><span class="p">(</span><span class="s1">&#39;//fonts/Zeyada.ttf&#39;</span><span class="p">)</span>
@@ -1596,7 +1588,7 @@ The possible statuses are:</p>
 </div>
 <p>The actual function responsible for writing the text is stored in the scene post_draw routine. Apart from the OpenGL calls, the setup for using the text is quite simple.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">write</span><span class="p">():</span>
-   <span class="sd">&quot;&quot;&quot;write on screen – runs every frame&quot;&quot;&quot;</span>
+<span class="w">   </span><span class="sd">&quot;&quot;&quot;write on screen – runs every frame&quot;&quot;&quot;</span>
    <span class="n">width</span> <span class="o">=</span> <span class="n">bge</span><span class="o">.</span><span class="n">render</span><span class="o">.</span><span class="n">getWindowWidth</span><span class="p">()</span>
    <span class="n">height</span> <span class="o">=</span> <span class="n">bge</span><span class="o">.</span><span class="n">render</span><span class="o">.</span><span class="n">getWindowHeight</span><span class="p">()</span>
 
