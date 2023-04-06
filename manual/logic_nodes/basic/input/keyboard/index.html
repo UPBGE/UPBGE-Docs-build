@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>&lt;no title&gt; &mdash; UPBGE Manual</title>
+  <title>Keyboard &mdash; UPBGE Manual</title>
       <link rel="stylesheet" href="../../../../../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../../../../../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../../../../../_static/css/theme_overrides.css" type="text/css" />
@@ -20,7 +20,7 @@
     <script src="../../../../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../../../../genindex.html" />
     <link rel="search" title="Search" href="../../../../../search.html" />
-    <link rel="next" title="Scene Manipulation Nodes" href="../../../scene/index.html" />
+    <link rel="next" title="Key Code" href="key_code.html" />
     <link rel="prev" title="&lt;no title&gt;" href="../gamepad/index.html" /> 
 </head>
 
@@ -45,12 +45,35 @@
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">Manual</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../../../../introduction/index.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../../tutorials/index.html">Tutorials</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../../editors/index.html">Editors</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../../logic/index.html">Logic Bricks</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../index.html">Logic Nodes</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../../index.html">Logic Nodes</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../../introduction.html">Introduction</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../index.html">General Nodes</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../../events/index.html">Events</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../game/index.html">Game</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="../index.html">Input</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="../mouse/index.html">Mouse</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Keyboard</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="key_code.html">Key Code</a></li>
+<li class="toctree-l5"><a class="reference internal" href="key_down.html">Key Down</a></li>
+<li class="toctree-l5"><a class="reference internal" href="key_up.html">Key Up</a></li>
+<li class="toctree-l5"><a class="reference internal" href="keyboard_active.html">Keyboard Active</a></li>
+<li class="toctree-l5"><a class="reference internal" href="logger.html">Logger</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../scene/index.html">Scene Manipulation Nodes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../logic_math/index.html">Logic &amp; Math Nodes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../data/index.html">Data Nodes</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="../../../../python/index.html">Python Scripting</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../../python_components/index.html">Python Components</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../../physics/index.html">Physics</a></li>
@@ -77,7 +100,7 @@
           <li class="breadcrumb-item"><a href="../../../index.html">Logic Nodes</a></li>
           <li class="breadcrumb-item"><a href="../../index.html">General Nodes</a></li>
           <li class="breadcrumb-item"><a href="../index.html">Input</a></li>
-      <li class="breadcrumb-item active">&lt;no title&gt;</li>
+      <li class="breadcrumb-item active">Keyboard</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../../../../../_sources/manual/logic_nodes/basic/input/keyboard/index.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -87,13 +110,25 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  
+  <section id="keyboard">
+<h1>Keyboard<a class="headerlink" href="#keyboard" title="Permalink to this heading"></a></h1>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="key_code.html">Key Code</a></li>
+<li class="toctree-l1"><a class="reference internal" href="key_down.html">Key Down</a></li>
+<li class="toctree-l1"><a class="reference internal" href="key_up.html">Key Up</a></li>
+<li class="toctree-l1"><a class="reference internal" href="keyboard_active.html">Keyboard Active</a></li>
+<li class="toctree-l1"><a class="reference internal" href="logger.html">Logger</a></li>
+</ul>
+</div>
+</section>
+
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="../gamepad/index.html" class="btn btn-neutral float-left" title="&lt;no title&gt;" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="../../../scene/index.html" class="btn btn-neutral float-right" title="Scene Manipulation Nodes" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="key_code.html" class="btn btn-neutral float-right" title="Key Code" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
