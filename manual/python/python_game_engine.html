@@ -12,11 +12,11 @@
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="../../_static/jquery.js"></script>
-        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
-        <script src="../../_static/doctools.js"></script>
-        <script src="../../_static/sphinx_highlight.js"></script>
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=c6e86fd7"></script>
+        <script src="../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -196,7 +196,7 @@
            <div itemprop="articleBody">
              
   <section id="python-and-the-game-engine">
-<span id="python-game-engine"></span><h1>Python and the Game Engine<a class="headerlink" href="#python-and-the-game-engine" title="Permalink to this heading"></a></h1>
+<span id="python-game-engine"></span><h1>Python and the Game Engine<a class="headerlink" href="#python-and-the-game-engine" title="Link to this heading"></a></h1>
 <p>This whole chapter is organized into three main parts: why, what, and how. Thus, if you have read from
 the beginning, you already have solid reasons to start using scripts for your project, and you understand
 what Python is. The final part of this chapter will cover how to use your Python knowledge
@@ -208,7 +208,7 @@ inside the game engine. This part is divided into four submodules:</p>
 <li><p>Using the Game Engine API.</p></li>
 </ul>
 <section id="integrating-python-in-the-game-engine">
-<h2>Integrating Python in the Game Engine<a class="headerlink" href="#integrating-python-in-the-game-engine" title="Permalink to this heading"></a></h2>
+<h2>Integrating Python in the Game Engine<a class="headerlink" href="#integrating-python-in-the-game-engine" title="Link to this heading"></a></h2>
 <p>In the game engine, the script interface is controller-centric by design. Therefore, you can consider
 the Python script simply as a more complex controller to replace the Expression or the Boolean controllers.
 In those cases, the script will be responsible for controlling how the sensors are related with the actuators
@@ -224,7 +224,7 @@ and load the abracadabra.blend file.</p>
 <figure class="align-default" id="id2">
 <img alt="../../_images/python-scripting-introduction-to-scripting-05.png" src="../../_images/python-scripting-introduction-to-scripting-05.png" />
 <figcaption>
-<p><span class="caption-text">Abracadabra</span><a class="headerlink" href="#id2" title="Permalink to this image"></a></p>
+<p><span class="caption-text">Abracadabra</span><a class="headerlink" href="#id2" title="Link to this image"></a></p>
 </figcaption>
 </figure>
 <p>Launch the game and keep the spacebar pressed. In above figure, you can see the result before and after you press the key.
@@ -262,7 +262,7 @@ activates an actuator in the camera itself, and changes a property in the text o
 <figure class="align-default" id="id3">
 <img alt="../../_images/python-scripting-introduction-to-scripting-06.png" src="../../_images/python-scripting-introduction-to-scripting-06.png" />
 <figcaption>
-<p><span class="caption-text">Simple logic bricks with a Python controller</span><a class="headerlink" href="#id3" title="Permalink to this image"></a></p>
+<p><span class="caption-text">Simple logic bricks with a Python controller</span><a class="headerlink" href="#id3" title="Link to this image"></a></p>
 </figcaption>
 </figure>
 <p>Let’s look at it from the beginning:</p>
@@ -329,16 +329,16 @@ the other game engine template files that come with the example <a class="refere
 and spend some time studying those examples.</p>
 </section>
 <section id="writing-your-python-scripts">
-<h2>Writing Your Python Scripts<a class="headerlink" href="#writing-your-python-scripts" title="Permalink to this heading"></a></h2>
+<h2>Writing Your Python Scripts<a class="headerlink" href="#writing-your-python-scripts" title="Link to this heading"></a></h2>
 <p>If you haven’t started your own scripts, now is a good time to do so. You will need a text editor, the API modules documented,
 and a good way to test your files.</p>
 <section id="text-editors">
-<h3>Text Editors<a class="headerlink" href="#text-editors" title="Permalink to this heading"></a></h3>
+<h3>Text Editors<a class="headerlink" href="#text-editors" title="Link to this heading"></a></h3>
 <p>It’s important to find a script editor that you find pleasant to work with. The most important features you will be looking
 for are: syntax coloring and highlighting, auto indentation, and auto completion. You can find editors with even more
 features than these, so experiment with different alternatives and decide what’s best for you.</p>
 <section id="upbge-text-editor">
-<h4>UPBGE Text Editor<a class="headerlink" href="#upbge-text-editor" title="Permalink to this heading"></a></h4>
+<h4>UPBGE Text Editor<a class="headerlink" href="#upbge-text-editor" title="Link to this heading"></a></h4>
 <p>As you probably know, UPBGE has its own internal text editor (see next figure). Although it may
 not be as powerful as software designed exclusively for this particular task, it can be very convenient.
 It’s useful for quick tests, small scripts, or when you want to keep everything bundled inside the Blender file.
@@ -355,12 +355,12 @@ Here are its main features:</p>
 <figure class="align-default" id="id4">
 <img alt="../../_images/python-scripting-introduction-to-scripting-07.png" src="../../_images/python-scripting-introduction-to-scripting-07.png" />
 <figcaption>
-<p><span class="caption-text">UPBGE internal text editor</span><a class="headerlink" href="#id4" title="Permalink to this image"></a></p>
+<p><span class="caption-text">UPBGE internal text editor</span><a class="headerlink" href="#id4" title="Link to this image"></a></p>
 </figcaption>
 </figure>
 </section>
 <section id="visual-studio-code-or-pycharm">
-<h4>Visual Studio Code or PyCharm<a class="headerlink" href="#visual-studio-code-or-pycharm" title="Permalink to this heading"></a></h4>
+<h4>Visual Studio Code or PyCharm<a class="headerlink" href="#visual-studio-code-or-pycharm" title="Link to this heading"></a></h4>
 <p>External editors as Visual Studio Code or PyCharm have many more features than internal UPBGE Text editor.
 The weakest point of using external editors is the auto-completion and the documentation visualization directly
 from the code.</p>
@@ -369,7 +369,7 @@ chapter you can see how install the upbge-stubs package to improve the external 
 </section>
 </section>
 <section id="reference-material-and-documentation">
-<h3>Reference Material and Documentation<a class="headerlink" href="#reference-material-and-documentation" title="Permalink to this heading"></a></h3>
+<h3>Reference Material and Documentation<a class="headerlink" href="#reference-material-and-documentation" title="Link to this heading"></a></h3>
 <p>Since the <a class="reference external" href="https://upbge.org/docs/latest/api/index.html">UPBGE game engine Python API</a> is available online, you
 have an official excuse to keep a Web browser open while you work.
 It’s not a bad idea to keep an <a class="reference external" href="https://upbge.org/docs/latest/api/upbge-api-reference.zip">offline version of it</a>,
@@ -380,7 +380,7 @@ you will not even need to open another Blender application. Also, if you are con
 style, indentation rules, and file structures, you will find easy to reuse your own scripts.</p>
 </section>
 <section id="testing-your-scripts">
-<h3>Testing Your Scripts<a class="headerlink" href="#testing-your-scripts" title="Permalink to this heading"></a></h3>
+<h3>Testing Your Scripts<a class="headerlink" href="#testing-your-scripts" title="Link to this heading"></a></h3>
 <p>It doesn’t matter how easy Python is, you will spend evenings testing and retesting your scripts before you
 have them working properly. The more complete way to test your script is to play it inside the game engine.
 However, you may not want to load your game every time you need to be sure of some Python syntax, data types’
@@ -392,7 +392,7 @@ Figure 7.8. In Linux or OSX, you have to type “python” in any console and yo
 <figure class="align-default" id="id5">
 <img alt="../../_images/python-scripting-introduction-to-scripting-08.png" src="../../_images/python-scripting-introduction-to-scripting-08.png" />
 <figcaption>
-<p><span class="caption-text">Python IDE</span><a class="headerlink" href="#id5" title="Permalink to this image"></a></p>
+<p><span class="caption-text">Python IDE</span><a class="headerlink" href="#id5" title="Link to this image"></a></p>
 </figcaption>
 </figure>
 <p>You can also use the UPBGE Python console. Change one of your current windows into the console, and you should
@@ -400,7 +400,7 @@ see the screen shown in the next figure.</p>
 <figure class="align-default" id="id6">
 <img alt="../../_images/python-scripting-introduction-to-scripting-09.png" src="../../_images/python-scripting-introduction-to-scripting-09.png" />
 <figcaption>
-<p><span class="caption-text">UPBGE Python console</span><a class="headerlink" href="#id6" title="Permalink to this image"></a></p>
+<p><span class="caption-text">UPBGE Python console</span><a class="headerlink" href="#id6" title="Link to this image"></a></p>
 </figcaption>
 </figure>
 <p>Now you can use it to type simple codes, or to run a help or a dir into any of the Python modules.
@@ -410,7 +410,7 @@ tab you can activate it and set-up its short-cut.</p>
 <figure class="align-default" id="id7">
 <img alt="../../_images/python-scripting-introduction-to-scripting-10.png" src="../../_images/python-scripting-introduction-to-scripting-10.png" />
 <figcaption>
-<p><span class="caption-text">Set-up In-game UPBGE Python console</span><a class="headerlink" href="#id7" title="Permalink to this image"></a></p>
+<p><span class="caption-text">Set-up In-game UPBGE Python console</span><a class="headerlink" href="#id7" title="Link to this image"></a></p>
 </figcaption>
 </figure>
 <p>To activate it, once the game has started you have to press the short-cut. Then the game will be paused and in the
@@ -419,7 +419,7 @@ you want to continue the game you need simply ending the interpreter, for linux 
 <figure class="align-default" id="id8">
 <img alt="../../_images/python-scripting-introduction-to-scripting-11.png" src="../../_images/python-scripting-introduction-to-scripting-11.png" />
 <figcaption>
-<p><span class="caption-text">In-game UPBGE Python console</span><a class="headerlink" href="#id8" title="Permalink to this image"></a></p>
+<p><span class="caption-text">In-game UPBGE Python console</span><a class="headerlink" href="#id8" title="Link to this image"></a></p>
 </figcaption>
 </figure>
 <p>Another important strategy is to keep the development of new functionalities outside the main file. For example,
@@ -429,7 +429,7 @@ errors faster and easier and even to port fixes over to other projects smoothly.
 </section>
 </section>
 <section id="designing-your-python-script-study-example">
-<h2>Designing Your Python Script - Study Example<a class="headerlink" href="#designing-your-python-script-study-example" title="Permalink to this heading"></a></h2>
+<h2>Designing Your Python Script - Study Example<a class="headerlink" href="#designing-your-python-script-study-example" title="Link to this heading"></a></h2>
 <p>We are now going to dive into an example of writing and planning a Python script for the game engine from scratch.
 We will assume that you have already covered all the basics of Python scripting and the general understanding of
 game engine internals so we can move on to its real usage. More specifically, we are going over the writing process
@@ -453,7 +453,7 @@ clearly laying down the ideas and organizing them logically.</p>
 <p>The system will consist of one camera for the orbit mode, and one to be used for both the fly and walk mode.
 Each mode works as described in the following table:</p>
 <table class="docutils align-default" id="id9">
-<caption><span class="caption-text">Comparison of Different Navigation Cameras</span><a class="headerlink" href="#id9" title="Permalink to this table"></a></caption>
+<caption><span class="caption-text">Comparison of Different Navigation Cameras</span><a class="headerlink" href="#id9" title="Link to this table"></a></caption>
 <thead>
 <tr class="row-odd"><th class="head"><p>Mode</p></th>
 <th class="head"><p>Orbit</p></th>
@@ -499,7 +499,7 @@ Each mode works as described in the following table:</p>
 To switch modes press 1, 2, or 3. This will change the mode to orbit, walk, and fly, respectively. To navigate, you can use the mouse and the keys WASD.</p>
 </div>
 <section id="d-world-elements">
-<h3>3D World Elements<a class="headerlink" href="#d-world-elements" title="Permalink to this heading"></a></h3>
+<h3>3D World Elements<a class="headerlink" href="#d-world-elements" title="Link to this heading"></a></h3>
 <p>Open up the file BookChapter74_navigation_systemcamera_navigation.blend.</p>
 <p>You will find two cameras and different empty objects in the first layer:</p>
 <ul class="simple">
@@ -513,7 +513,7 @@ To switch modes press 1, 2, or 3. This will change the mode to orbit, walk, and 
 <p>In the second layer, you will find the collision meshes[md]the ground and the vertical elements. Everything is very simple here, since we only need to test the system, and for that a few low poly obstacles work fine.</p>
 </section>
 <section id="understanding-the-code">
-<h3>Understanding the Code<a class="headerlink" href="#understanding-the-code" title="Permalink to this heading"></a></h3>
+<h3>Understanding the Code<a class="headerlink" href="#understanding-the-code" title="Link to this heading"></a></h3>
 <p>/Book/Chapter7/4_navigation_system/camera_navigation.py</p>
 <p>This program is divided into five different parts:
 #. Global Initialization,
@@ -525,11 +525,11 @@ To switch modes press 1, 2, or 3. This will change the mode to orbit, walk, and 
 <figure class="align-default" id="id10">
 <img alt="../../_images/Fig07-10.png" src="../../_images/Fig07-10.png" />
 <figcaption>
-<p><span class="caption-text">Script architecture</span><a class="headerlink" href="#id10" title="Permalink to this image"></a></p>
+<p><span class="caption-text">Script architecture</span><a class="headerlink" href="#id10" title="Link to this image"></a></p>
 </figcaption>
 </figure>
 <section id="global-initialization">
-<h4>Global Initialization<a class="headerlink" href="#global-initialization" title="Permalink to this heading"></a></h4>
+<h4>Global Initialization<a class="headerlink" href="#global-initialization" title="Link to this heading"></a></h4>
 <p><cite>camera_navigation.init_world()</cite></p>
 <p>There is one function that is loaded once at the beginning of the game; we call it <em>init_world</em> inside scripts.py. We are going to check the priority option in the Python controller to make sure this script runs on top of all the others. In this function, you will first find the global initialization. We are going to store in the global module logic all the elements we are going to reuse over the scripts. That way we don’t need to get the object list every time we need a particular object. A common technique is to store the scene object as well. Therefore, for every scene, you can run a script at the beginning of the game that stores a reference to the current scene globally:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="mi">33</span> <span class="n">G</span><span class="o">.</span><span class="n">scenes</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;main&quot;</span><span class="p">:</span><span class="n">G</span><span class="o">.</span><span class="n">getCurrentScene</span><span class="p">()}</span>
@@ -583,14 +583,14 @@ To switch modes press 1, 2, or 3. This will change the mode to orbit, walk, and 
 </div>
 </section>
 <section id="event-management">
-<h4>Event Management<a class="headerlink" href="#event-management" title="Permalink to this heading"></a></h4>
+<h4>Event Management<a class="headerlink" href="#event-management" title="Link to this heading"></a></h4>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">camera_navigation</span><span class="o">.</span><span class="n">mouse_move</span>
 <span class="n">camera_navigation</span><span class="o">.</span><span class="n">keyboard</span>
 </pre></div>
 </div>
 <p>Apart from the Always sensor needed for the <cite>camera_navigation.init_world()</cite> function, there are two other sensors we need - a keyboard and a mouse sensor. All the interaction you will have with this navigation system will run through those functions.</p>
 <section id="scripts-mouse-move">
-<h5>scripts.mouse_move<a class="headerlink" href="#scripts-mouse-move" title="Permalink to this heading"></a></h5>
+<h5>scripts.mouse_move<a class="headerlink" href="#scripts-mouse-move" title="Link to this heading"></a></h5>
 <p>Let’s first take a look at the mouse sensor controlling system:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="mi">210</span> <span class="k">def</span> <span class="nf">mouse_move</span><span class="p">(</span><span class="n">cont</span><span class="p">):</span>
 <span class="mi">211</span>     <span class="n">owner</span> <span class="o">=</span> <span class="n">cont</span><span class="o">.</span><span class="n">owner</span>
@@ -610,7 +610,7 @@ To switch modes press 1, 2, or 3. This will change the mode to orbit, walk, and 
 </div>
 </section>
 <section id="scripts-keyboard">
-<h5>scripts.keyboard<a class="headerlink" href="#scripts-keyboard" title="Permalink to this heading"></a></h5>
+<h5>scripts.keyboard<a class="headerlink" href="#scripts-keyboard" title="Link to this heading"></a></h5>
 <p>The second event management function handles keyboard inputs. This function takes the sensor input and calls internal functions according to the pressed key. If the pressed key is W, A, S, or D, we move the camera. If the key is 1, 2, or 3, we switch it.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="mi">110</span> <span class="k">def</span> <span class="nf">keyboard</span><span class="p">(</span><span class="n">cont</span><span class="p">):</span>
 <span class="mi">111</span>     <span class="n">owner</span> <span class="o">=</span> <span class="n">cont</span><span class="o">.</span><span class="n">owner</span>
@@ -653,7 +653,7 @@ To switch modes press 1, 2, or 3. This will change the mode to orbit, walk, and 
 </section>
 </section>
 <section id="internal-functions">
-<h4>Internal Functions<a class="headerlink" href="#internal-functions" title="Permalink to this heading"></a></h4>
+<h4>Internal Functions<a class="headerlink" href="#internal-functions" title="Link to this heading"></a></h4>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">scripts</span><span class="o">.</span><span class="n">move_camera</span>
 <span class="n">scripts</span><span class="o">.</span><span class="n">orbit_camera</span>
 <span class="n">scripts</span><span class="o">.</span><span class="n">look_camera</span>
@@ -661,7 +661,7 @@ To switch modes press 1, 2, or 3. This will change the mode to orbit, walk, and 
 </div>
 <p>These three functions are called from the event management functions. In their lines, you can find the math responsible for the camera movement. We’re calling them “internal functions” because they are the bridge between the sensors’ inputs and the outputs in the game engine world.</p>
 <section id="scripts-move-camera">
-<h5>scripts.move_camera<a class="headerlink" href="#scripts-move-camera" title="Permalink to this heading"></a></h5>
+<h5>scripts.move_camera<a class="headerlink" href="#scripts-move-camera" title="Link to this heading"></a></h5>
 <p>The function responsible for the camera movement is very simple. In the walk and fly mode, we are going to move the pivot in the desired direction (which is passed as argument). Therefore, we first need to create a vector to this course. If you are unfamiliar with vectorial math, think of vector as the direction between the origin [0, 0, 0] and the vector coordinates [X, Y, Z].</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="mi">336</span> <span class="k">def</span> <span class="nf">move_camera</span><span class="p">(</span><span class="n">direction</span><span class="p">):</span>
 <span class="mi">338</span>     <span class="k">if</span> <span class="ow">not</span> <span class="n">G</span><span class="o">.</span><span class="n">cameras</span><span class="p">[</span><span class="s2">&quot;CAM&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;MOVE&quot;</span><span class="p">:</span> <span class="k">return</span>
@@ -683,7 +683,7 @@ To switch modes press 1, 2, or 3. This will change the mode to orbit, walk, and 
 <p>Here the vector is the movement we need to apply to the pivot in order to get it moving. The size of the vector (MOVE) will act as intensity or speed of the movement.</p>
 </section>
 <section id="scripts-orbit-camera">
-<h5>scripts.orbit_camera<a class="headerlink" href="#scripts-orbit-camera" title="Permalink to this heading"></a></h5>
+<h5>scripts.orbit_camera<a class="headerlink" href="#scripts-orbit-camera" title="Link to this heading"></a></h5>
 <p>We decided to use different methods for the walk/fly camera and the orbit one. In the orbit camera, every position on the screen corresponds to an orientation of the camera.</p>
 <p>If you want to study this part of the script in particular, you can turn on the Mouse Cursor in the Render Panel. That way, you can see that the same cursor position will (or should) always generate the same view.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="mi">224</span> <span class="k">def</span> <span class="nf">orbit_camera</span><span class="p">(</span><span class="n">sensor</span><span class="p">):</span>
@@ -742,18 +742,18 @@ You can read about this in the “bge.logic API” section in this chapter or on
 </div>
 <p>We run the same operation for the vertical coordinate of the mouse. Though you must be aware that the canvas height runs from the top (0) to the bottom (height), this is different from what we could expect (or from OpenGL coordinates, for example). In order to better understand the flipping operation (line 257), you can first comment/uncomment the code to see the difference.</p>
 <p>Next find in the .blend file the pivot empty (ORB_PIVOT) and play with its rotation in the X axis. The rotation is demonstrated in Figure 7.11. Therefore, if we subtract our angle from 90º (__PI__/2 in radians), we get the proper angle to rotate the pivot vertically.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>250     y = m.pi / 2 – y
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="mi">250</span>     <span class="n">y</span> <span class="o">=</span> <span class="n">m</span><span class="o">.</span><span class="n">pi</span> <span class="o">/</span> <span class="mi">2</span> <span class="err">–</span> <span class="n">y</span>
 </pre></div>
 </div>
 <figure class="align-default" id="id11">
 <img alt="../../_images/Fig07-11.png" src="../../_images/Fig07-11.png" />
 <figcaption>
-<p><span class="caption-text">Orbit pivot rotation</span><a class="headerlink" href="#id11" title="Permalink to this image"></a></p>
+<p><span class="caption-text">Orbit pivot rotation</span><a class="headerlink" href="#id11" title="Link to this image"></a></p>
 </figcaption>
 </figure>
 </section>
 <section id="scripts-look-camera">
-<h5>scripts.look_camera<a class="headerlink" href="#scripts-look-camera" title="Permalink to this heading"></a></h5>
+<h5>scripts.look_camera<a class="headerlink" href="#scripts-look-camera" title="Link to this heading"></a></h5>
 <p>The function to rotate the walk/fly camera is quite different from the orbit one. We don’t have a direct relation between mouse coordinate and camera rotation anymore. Here we get the relative position of the cursor (from the center) and later force the mouse to be re-centered[md]to avoid continuous movement unless the mouse is moved again.</p>
 <p>In order to get the relative position of the cursor, the normalizing function needs to be different. This time we want the center of the screen to be 0.0 and the extreme edges of the canvas (border of the game window) to be -0.5 and 0.5.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="mi">291</span>     <span class="n">x</span> <span class="o">=</span> <span class="p">(</span><span class="n">win_x</span> <span class="o">/</span> <span class="n">screen_width</span><span class="p">)</span>  <span class="o">-</span> <span class="mf">0.5</span>
@@ -776,7 +776,7 @@ You can read about this in the “bge.logic API” section in this chapter or on
 </section>
 </section>
 <section id="game-interaction">
-<h4>Game Interaction<a class="headerlink" href="#game-interaction" title="Permalink to this heading"></a></h4>
+<h4>Game Interaction<a class="headerlink" href="#game-interaction" title="Link to this heading"></a></h4>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">camera_navigation</span><span class="o">.</span><span class="n">change_view</span>
 </pre></div>
 </div>
@@ -788,7 +788,7 @@ You can read about this in the “bge.logic API” section in this chapter or on
 </div>
 <p>In the previous section, we saw how the angles and directions were calculated with Python. However, we deliberately skipped the most important part: applying it to the game engine elements. It includes activating actuators (as we do in the change_view() function) or directly interfering in our game elements (cameras and pivots).</p>
 <section id="outcome-of-the-functions-scripts-move-camera-scripts-look-camera-and-scripts-orbit-camera">
-<h5>Outcome of the functions: scripts.move_camera, scripts.look_camera, and scripts.orbit_camera<a class="headerlink" href="#outcome-of-the-functions-scripts-move-camera-scripts-look-camera-and-scripts-orbit-camera" title="Permalink to this heading"></a></h5>
+<h5>Outcome of the functions: scripts.move_camera, scripts.look_camera, and scripts.orbit_camera<a class="headerlink" href="#outcome-of-the-functions-scripts-move-camera-scripts-look-camera-and-scripts-orbit-camera" title="Link to this heading"></a></h5>
 <p>Let’s put the pieces together now. We already know the camera future orientation and position. Therefore, there is almost nothing left to be calculated here. Nevertheless, there are distinct ways to change the object position and orientation.</p>
 <p>In move_camera(), we are going to use an instance method of the pivot object called applyMovement (vector, local). This is part of the game engine methods (another one is applyRotation you will see next) we explain later in this chapter in the “Using the Game Engine API” section. This built-in function translates the object using the vector passed as a parameter. It can either be relative to the local or world coordinates:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="mi">336</span> <span class="k">def</span> <span class="nf">move_camera</span><span class="p">(</span><span class="n">direction</span><span class="p">):</span>
@@ -829,7 +829,7 @@ You can read about this in the “bge.logic API” section in this chapter or on
 </div>
 </section>
 <section id="scripts-change-view">
-<h5>scripts.change_view<a class="headerlink" href="#scripts-change-view" title="Permalink to this heading"></a></h5>
+<h5>scripts.change_view<a class="headerlink" href="#scripts-change-view" title="Link to this heading"></a></h5>
 <p>After the user presses a key (1, 2, or 3) to change the view, we call the change_view() function to switch to the new camera (with a parameter specifying which camera to use). This function consists of two parts: first, we set the correct position and orientation for the camera and pivot; secondly, we change the current camera to the new one.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -876,7 +876,7 @@ You can read about this in the “bge.logic API” section in this chapter or on
 </section>
 </section>
 <section id="more-python">
-<h4>More Python<a class="headerlink" href="#more-python" title="Permalink to this heading"></a></h4>
+<h4>More Python<a class="headerlink" href="#more-python" title="Link to this heading"></a></h4>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">scripts</span><span class="o">.</span><span class="n">collision_check</span>
 <span class="n">scripts</span><span class="o">.</span><span class="n">stick_to_ground</span>
 </pre></div>
@@ -897,27 +897,27 @@ You can read about this in the “bge.logic API” section in this chapter or on
 </section>
 </section>
 <section id="reusing-your-script">
-<h3>Reusing Your Script<a class="headerlink" href="#reusing-your-script" title="Permalink to this heading"></a></h3>
+<h3>Reusing Your Script<a class="headerlink" href="#reusing-your-script" title="Link to this heading"></a></h3>
 <p>One of the reasons this system was designed so carefully is because of the need for portability. You don’t want to rewrite a navigation system every time you have a new project. This is not particular to this script example. Very often, you will be recycling your own scripts to adapt them to new files. Let’s go over some principles you should know.</p>
 <section id="file-organization-groups-and-layers">
-<h4>File Organization - Groups and Layers<a class="headerlink" href="#file-organization-groups-and-layers" title="Permalink to this heading"></a></h4>
+<h4>File Organization - Groups and Layers<a class="headerlink" href="#file-organization-groups-and-layers" title="Link to this heading"></a></h4>
 <p>The first thing to have in mind is how your final file will look. Do you want the script system to be merged with the rest of the existent Blender file? Do you want to keep them in separated scenes (very common for user interfaces)? Will you need to access/edit the script system elements later?</p>
 <p>In our case, there is no need for an extra scene. However, we need to make sure that the navigation system elements are easy to access (especially the empties with the cameras’ positions). If you can afford to dedicate one layer exclusively to the navigation system elements, do it. Make sure that the desired layer is empty in the model file and that all the objects you want to import are contained in this layer.</p>
 <p>If it’s not possible to have all your elements in a single layer, you can create a group for them. That way, you can always quickly isolate them to be listed in the outliner and selected individually. The other advantage of using groups is during importing. It’s easier to select a group to be imported than to go over all the individual objects, determining which one should be imported and which one is part of the test environment (which usually doesn’t have to be imported).</p>
 </section>
 <section id="tweaks-and-adjustments-getting-your-hands-dirty">
-<h4>Tweaks and Adjustments - Getting Your Hands Dirty<a class="headerlink" href="#tweaks-and-adjustments-getting-your-hands-dirty" title="Permalink to this heading"></a></h4>
+<h4>Tweaks and Adjustments - Getting Your Hands Dirty<a class="headerlink" href="#tweaks-and-adjustments-getting-your-hands-dirty" title="Link to this heading"></a></h4>
 <p>Open the file /Book/Chapter7/4_navigation_system/walkthrough_1_base/walkthrough.blend</p>
 <p>This small file is part of the presentation of an architectural walkthrough of an urban project (see Figure 7.12) that I (Dalai) did. It’s an academic project and only my second project using the game engine. As you can see, there are absolutely no scripts in it[md]all the interaction is done with logic bricks. I didn’t use Python for this project mainly because I had absolutely no knowledge of Python at all back then (and the project was done in six days).</p>
 <figure class="align-default" id="id12">
 <img alt="../../_images/Fig07-12.png" src="../../_images/Fig07-12.png" />
 <figcaption>
-<p><span class="caption-text">Architectural walkthrough example file</span><a class="headerlink" href="#id12" title="Permalink to this image"></a></p>
+<p><span class="caption-text">Architectural walkthrough example file</span><a class="headerlink" href="#id12" title="Link to this image"></a></p>
 </figcaption>
 </figure>
 <p>It’s time for redemption. Let’s replace its navigation system with the Python system we just studied. For convenience, this file was already organized to receive the navigation elements (cameras, empties, and so on.).</p>
 <section id="organize-and-append-your-file">
-<h5>Organize and Append Your File<a class="headerlink" href="#organize-and-append-your-file" title="Permalink to this heading"></a></h5>
+<h5>Organize and Append Your File<a class="headerlink" href="#organize-and-append-your-file" title="Link to this heading"></a></h5>
 <p>In this case, we decided to group all the navigation elements in a group called NAVIGATIONSYSTEM and to make sure they are all in layer 1. You can use the Outliner to make sure you didn’t miss any object out of the group. Leave the lamps and the collision objects out of the group.</p>
 <p>To see a snapshot of the file at this moment, you can find it in the book files at: /Book/Chapter7/4_navigation_system/walkthrough_2_partial/camera_navigation.blend</p>
 <p>Now open the walkthrough file again and append the NAVIGATIONSYSTEMwe created. It’s important not to link the group but to append it. Linked elements can only be moved in their original files; thus, you should avoid them in this case.</p>
@@ -934,12 +934,12 @@ You can read about this in the “bge.logic API” section in this chapter or on
 <figure class="align-default" id="id13">
 <img alt="../../_images/Fig07-13.png" src="../../_images/Fig07-13.png" />
 <figcaption>
-<p><span class="caption-text">Still not there</span><a class="headerlink" href="#id13" title="Permalink to this image"></a></p>
+<p><span class="caption-text">Still not there</span><a class="headerlink" href="#id13" title="Link to this image"></a></p>
 </figcaption>
 </figure>
 </section>
 <section id="adjustments-in-loco">
-<h5>Adjustments in Loco<a class="headerlink" href="#adjustments-in-loco" title="Permalink to this heading"></a></h5>
+<h5>Adjustments in Loco<a class="headerlink" href="#adjustments-in-loco" title="Link to this heading"></a></h5>
 <p>As you can see in Figure 7.13, the new camera system looks absurdly wrong. There are two main reasons for that: the walkthrough file elements are far away from the file origin [0, 0, 0], and the cameras are not prepared for a project with this magnitude (their clipping parameters are way too low). We will need to move the objects to their new correct places, adjust the camera parameters, and do a small intervention in the script file:</p>
 <p>All the elements from NAVIGATIONSYSTEM group (layer 1):</p>
 <p>Move them 2000 in X and 350 in Y.</p>
@@ -981,7 +981,7 @@ You can read about this in the “bge.logic API” section in this chapter or on
 </div>
 </section>
 <section id="script-tweaks">
-<h5>Script Tweaks<a class="headerlink" href="#script-tweaks" title="Permalink to this heading"></a></h5>
+<h5>Script Tweaks<a class="headerlink" href="#script-tweaks" title="Link to this heading"></a></h5>
 <p>Finally, it’s good to fiddle a bit with the script. Due to the particularities of this project (mainly its scale), you may feel that everything happens a bit too fast. It’s up to you to change the settings in the <cite>init_world</cite> function. Also, it would be interesting to explore multiple viewpoints for this presentation. We have already positioned the side and back empties. Although we were not using them previously, their names are present in the script as part of the available cameras list:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="mi">93</span>     <span class="n">available_cameras</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;front&quot;</span><span class="p">,</span> <span class="s2">&quot;back&quot;</span><span class="p">,</span> <span class="s2">&quot;side&quot;</span><span class="p">,</span> <span class="s2">&quot;top&quot;</span><span class="p">]</span>
 </pre></div>
@@ -1003,7 +1003,7 @@ You can read about this in the “bge.logic API” section in this chapter or on
 </section>
 </section>
 <section id="using-the-game-engine-api-application-programming-interface">
-<h2>Using the Game Engine API - Application Programming Interface<a class="headerlink" href="#using-the-game-engine-api-application-programming-interface" title="Permalink to this heading"></a></h2>
+<h2>Using the Game Engine API - Application Programming Interface<a class="headerlink" href="#using-the-game-engine-api-application-programming-interface" title="Link to this heading"></a></h2>
 <p>The game engine API is a bridge connecting your Python scripts with your game data. Through those modules, methods, and variables you can interact with your existent logic bricks, game objects, and general game functions.</p>
 <p>The official documentation can be found online in the Blender Foundation website (TODO to be changed):</p>
 <p><a class="reference external" href="http://www.blender.org/documentation/blender_python_api_2_66_release">http://www.blender.org/documentation/blender_python_api_2_66_release</a></p>
@@ -1026,10 +1026,10 @@ You can read about this in the “bge.logic API” section in this chapter or on
 <li><p>Font Drawing (blf)</p></li>
 </ul>
 <section id="bge-logic">
-<h3>bge.logic<a class="headerlink" href="#bge-logic" title="Permalink to this heading"></a></h3>
+<h3>bge.logic<a class="headerlink" href="#bge-logic" title="Link to this heading"></a></h3>
 <p>The main module is a mix of utility functions, global game settings, and logic bricks replacements. Some of those functions were already covered in the tutorial, but they are here again for convenience sake. We will look at some of the highlights.</p>
 <section id="getcurrentcontroller">
-<h4>getCurrentController()<a class="headerlink" href="#getcurrentcontroller" title="Permalink to this heading"></a></h4>
+<h4>getCurrentController()<a class="headerlink" href="#getcurrentcontroller" title="Link to this heading"></a></h4>
 <p>Returns the current controller. This is used to get a list of sensors and actuators (to check status and deactivate respectively), and the object the controller belongs to:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">controller</span>  <span class="o">=</span> <span class="n">bge</span><span class="o">.</span><span class="n">logic</span><span class="o">.</span><span class="n">getCurrentController</span><span class="p">()</span>
 <span class="nb">object</span> <span class="o">=</span> <span class="n">controller</span><span class="o">.</span><span class="n">owner</span>
@@ -1044,25 +1044,25 @@ You can read about this in the “bge.logic API” section in this chapter or on
 </div>
 </section>
 <section id="getcurrentscene">
-<h4>getCurrentScene()<a class="headerlink" href="#getcurrentscene" title="Permalink to this heading"></a></h4>
+<h4>getCurrentScene()<a class="headerlink" href="#getcurrentscene" title="Link to this heading"></a></h4>
 <p>This function returns the current scene the script was called from. The most common usage is to give you a list of all the game objects:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="nb">object</span> <span class="ow">in</span> <span class="n">bge</span><span class="o">.</span><span class="n">logic</span><span class="o">.</span><span class="n">getCurrentScene</span><span class="p">()</span><span class="o">.</span><span class="n">objects</span><span class="p">:</span> <span class="nb">print</span><span class="p">(</span><span class="nb">object</span><span class="p">)</span>
 </pre></div>
 </div>
 </section>
 <section id="expandpath">
-<h4>expandPath()<a class="headerlink" href="#expandpath" title="Permalink to this heading"></a></h4>
+<h4>expandPath()<a class="headerlink" href="#expandpath" title="Link to this heading"></a></h4>
 <p>If you need to access an external file (image, video, Blender, etc.), you need to first get its absolute path in the computer. Use single backslash (/) to separate folders and double backslash (//) if you need to refer to the current folder:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">video_absolute_path</span>  <span class="o">=</span> <span class="n">bge</span><span class="o">.</span><span class="n">logic</span><span class="o">.</span><span class="n">expandPath</span><span class="p">(</span><span class="s1">&#39;//videos/video01.ogg&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 </section>
 <section id="sendmessage-addscene-start-restart-endgame">
-<h4>sendMessage(), addScene(), start/restart/endGame()<a class="headerlink" href="#sendmessage-addscene-start-restart-endgame" title="Permalink to this heading"></a></h4>
+<h4>sendMessage(), addScene(), start/restart/endGame()<a class="headerlink" href="#sendmessage-addscene-start-restart-endgame" title="Link to this heading"></a></h4>
 <p>These functions copy the functionality of existent actuators. They are Python replacement for those global events when you need a direct way to call them, bypassing the logic bricks.</p>
 </section>
 <section id="libload-libnew-libfree-liblist-todo-to-be-replaced-with-new-ones">
-<h4>LibLoad(), LibNew(), LibFree(), LibList() (TODO to be replaced with new ones)<a class="headerlink" href="#libload-libnew-libfree-liblist-todo-to-be-replaced-with-new-ones" title="Permalink to this heading"></a></h4>
+<h4>LibLoad(), LibNew(), LibFree(), LibList() (TODO to be replaced with new ones)<a class="headerlink" href="#libload-libnew-libfree-liblist-todo-to-be-replaced-with-new-ones" title="Link to this heading"></a></h4>
 <p>There are cases when you need to load the content of an external Blender file at runtime. This is known as _dynamic loading._ The game engine supports dynamic loading of actions, meshes, or complete scenes. The new data blocks are merged into the current scene and behave just like internal objects:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">bge</span><span class="o">.</span><span class="n">logic</span><span class="o">.</span><span class="n">LibLoad</span><span class="p">(</span><span class="s2">&quot;//entities.blend&quot;</span><span class="p">,</span> <span class="s2">&quot;Scene&quot;</span><span class="p">)</span>
 </pre></div>
@@ -1074,7 +1074,7 @@ You can read about this in the “bge.logic API” section in this chapter or on
 </div>
 </section>
 <section id="globaldict-loadglobaldict-saveglobaldict">
-<h4>globalDict, loadGlobalDict(), saveGlobalDict()<a class="headerlink" href="#globaldict-loadglobaldict-saveglobaldict" title="Permalink to this heading"></a></h4>
+<h4>globalDict, loadGlobalDict(), saveGlobalDict()<a class="headerlink" href="#globaldict-loadglobaldict-saveglobaldict" title="Link to this heading"></a></h4>
 <p>The bge.logic.globalDict is a Python dictionary that is alive during the whole game. It’s a game place to store data if you need to restart the game or load a new file (level) and need to save some properties. In fact, you can even save the globalDict with the Blender file during the game and reload later.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">bge</span><span class="o">.</span><span class="n">logic</span><span class="o">.</span><span class="n">globalDict</span><span class="p">[</span><span class="s2">&quot;password&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;kidding, kids never save your passwords in files!&quot;</span>
 <span class="n">bge</span><span class="o">.</span><span class="n">logic</span><span class="o">.</span><span class="n">saveGlobalDict</span><span class="p">()</span> <span class="c1"># save globalDict externally</span>
@@ -1083,7 +1083,7 @@ You can read about this in the “bge.logic API” section in this chapter or on
 </div>
 </section>
 <section id="keyboard">
-<h4>keyboard<a class="headerlink" href="#keyboard" title="Permalink to this heading"></a></h4>
+<h4>keyboard<a class="headerlink" href="#keyboard" title="Link to this heading"></a></h4>
 <p>You can handle all the keyboard inputs directly from a script. The usage and syntax are very similar to the Keyboard sensor. You need a script running every logic tic (Always sensor pulsing with a frequency of 0 or every time a key is pressed; Keyboard sensor with “All Keys” set) where you can read the status of all the keys in the bge.logic.keyboard. events dictionary. If instead of inquiry for the status of a particular key (e.g., if spacebar is pressed), you want to list all the pressed keys, you can use the dictionary bge.logic.keyboard.active_events.</p>
 <p>The keys for both event dictionaries are the same you use with the Keyboard sensor (see the bge.events module). The status of each key (whether it was pressed, released, kept pressed, or nothing) is the value stored in the dictionary. The keys values are defined in the bge.logic module itself:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">keyboard</span> <span class="o">=</span> <span class="n">bge</span><span class="o">.</span><span class="n">logic</span><span class="o">.</span><span class="n">keyboard</span>
@@ -1101,7 +1101,7 @@ You can read about this in the “bge.logic API” section in this chapter or on
 <p>A sample file can be seen at BookChapter75_game_keyskey_detector_python.blend . This shows the more Python-centric way of handling keyboard. For the classic method of using a Keyboard sensor, look further in this chapter into the “bge.events” section.</p>
 </section>
 <section id="mouse">
-<h4>mouse<a class="headerlink" href="#mouse" title="Permalink to this heading"></a></h4>
+<h4>mouse<a class="headerlink" href="#mouse" title="Link to this heading"></a></h4>
 <p>Similar to the keyboard, this Python object can work as a replacement for the Mouse sensor. There are a few differences that make it even more appealing for scripting[md]in particular, the fact that the mouse coordinates are already normalized. As we explained in the tutorial, this helps you get consistent results, regardless of the desktop resolution. The available attributes are:</p>
 <ul class="simple">
 <li><p><strong>events:</strong> A dictionary with all the events of the mouse (left-click, wheel up, and so on) and their status (for example, bge.logic.KX_INPUT_JUST_ACTIVED).</p></li>
@@ -1110,7 +1110,7 @@ You can read about this in the “bge.logic API” section in this chapter or on
 </ul>
 </section>
 <section id="joysticks">
-<h4>joysticks<a class="headerlink" href="#joysticks" title="Permalink to this heading"></a></h4>
+<h4>joysticks<a class="headerlink" href="#joysticks" title="Link to this heading"></a></h4>
 <p>This is a list of all the joysticks your computer supports. That means the list is mainly populated by None objects, and a few, if any, joystick Python objects. To print the index, name, number of axis, and active buttons of the connected joysticks, you can do:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">bge</span><span class="o">.</span><span class="n">logic</span><span class="o">.</span><span class="n">joysticks</span><span class="p">:</span>
    <span class="n">joystick</span> <span class="o">=</span> <span class="n">bge</span><span class="o">.</span><span class="n">logic</span><span class="o">.</span><span class="n">joysticks</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
@@ -1122,17 +1122,17 @@ You can read about this in the “bge.logic API” section in this chapter or on
 <p>A sample file can be found on BookChapter7joystick.blend.</p>
 </section>
 <section id="others">
-<h4>Others<a class="headerlink" href="#others" title="Permalink to this heading"></a></h4>
+<h4>Others<a class="headerlink" href="#others" title="Link to this heading"></a></h4>
 <p>There are even more functions available in this module (setMist, getLogicTicRate, and setGravity, for example). Make sure that you visit the online documentation (or the documentation included on the book files) to see them all.</p>
 </section>
 </section>
 <section id="bge-types">
-<h3>bge.types<a class="headerlink" href="#bge-types" title="Permalink to this heading"></a></h3>
+<h3>bge.types<a class="headerlink" href="#bge-types" title="Link to this heading"></a></h3>
 <p>Objects, meshes, logic bricks, and even shaders are all different game types. Every time you call an internal function from one of them, you are accessing one of those functions. This happens when you get a position of an object, change an actuator value, and so on.</p>
 <p>Each one of the classes has the same anatomy. You can access instance methods and instance variables. In order to explain their use properly, we will go over one of the most commonly used modules, the game object.</p>
 <p>Some of the variables will only work inside the correct context. Therefore, you can’t get the mouse position of a Mouse sensor if the sensor was not triggered yet. Be aware of the right context and the game type.</p>
 <section id="class-kx-gameobject">
-<h4>Class KX_GameObject<a class="headerlink" href="#class-kx-gameobject" title="Permalink to this heading"></a></h4>
+<h4>Class KX_GameObject<a class="headerlink" href="#class-kx-gameobject" title="Link to this heading"></a></h4>
 <p>If you run a print(dir (object)) inside your script, you will get a very confusing list. It includes Python internal methods, instance methods, and instance variables. Most of them are common to all objects, so we are going to talk about them first. However, lamps and cameras not only inherit all the game object methods but also extend them with specific ones.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -1140,12 +1140,12 @@ You can read about this in the “bge.logic API” section in this chapter or on
 <p>In order to see all available methods, please refer to the documentation. We are only covering a few of them here.</p>
 </div>
 <section id="python-internal-methods">
-<h5>Python Internal Methods<a class="headerlink" href="#python-internal-methods" title="Permalink to this heading"></a></h5>
+<h5>Python Internal Methods<a class="headerlink" href="#python-internal-methods" title="Link to this heading"></a></h5>
 <p><cite>__class__, __doc__, __delattr__ …</cite></p>
 <p>Most of those methods are inherited from the Python object we are dealing with. However, given the nature of the Python classes presented in Blender, some of those methods may not be fully accessible. It’s unlikely you will be using them. So for now it’s safe to ignore any method starting and ending with double underlines (__ignoreme__).</p>
 </section>
 <section id="instance-methods">
-<h5>Instance Methods<a class="headerlink" href="#instance-methods" title="Permalink to this heading"></a></h5>
+<h5>Instance Methods<a class="headerlink" href="#instance-methods" title="Link to this heading"></a></h5>
 <p><cite>endObject(), rayCast(), getAxisVect(), suspendDynamics(), getPropertyNames() …</cite></p>
 <p>If it looks like a function, it should be one. Every game engine object provides you with a set of functions to interact with them or from them to the others. Here are some methods you should know about:</p>
 <ul class="simple">
@@ -1176,7 +1176,7 @@ You can read about this in the “bge.logic API” section in this chapter or on
 <p>Other methods are applyMovement(), applyForce(), applyTorque(), getDistanceTo(), getVectTo(), getAxisVect(), and alignAxisToVect().</p>
 </section>
 <section id="instance-variables">
-<h5>Instance Variables<a class="headerlink" href="#instance-variables" title="Permalink to this heading"></a></h5>
+<h5>Instance Variables<a class="headerlink" href="#instance-variables" title="Link to this heading"></a></h5>
 <p><cite>_name, position, mass, sensors, actuators …_</cite></p>
 <p>Last but definitively not least, we have the built-in variables. They work as internal parameters of the object (for example, name, position, orientation) or class objects linked to it (for example, parent, sensors, actuators). In Blender versions prior to 2.49, those variables were only accessible through a conjunct of get and set statements (setPosition(), getOrientation(), and so on). In Blender 2.5, 2.6 and on, they not only can be accessed directly, but also manipulated as any other variable, list, dictionary, vector, or matrix you may have:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">obj</span><span class="o">.</span><span class="n">mass</span> <span class="o">=</span> <span class="mf">5.0</span>
@@ -1204,22 +1204,22 @@ You can read about this in the “bge.logic API” section in this chapter or on
 <p>All the logic bricks of an object can be accessed through those dictionaries. The name of the sensor/controller/actuator will be used as the dictionary key, for it’s important to name them correctly.</p>
 </section>
 <section id="sub-class-kx-camera">
-<h5>Sub-Class KX_Camera<a class="headerlink" href="#sub-class-kx-camera" title="Permalink to this heading"></a></h5>
+<h5>Sub-Class KX_Camera<a class="headerlink" href="#sub-class-kx-camera" title="Link to this heading"></a></h5>
 <p>Not all the objects have access to the same methods and variables. For example, an empty object doesn’t have mass, and a static object doesn’t have torque.</p>
 <p>When the object is a camera, the difference is even more distinct. The camera object has its own class derived from KX_GameObject. It inherits all the instance variables and methods and expands it with its own. You will find some screen space functions (getScreenPosition(),getScreenVect(), getScreenRay()), some frustum methods (sphereInsideFrustum(), boxInsideFrustum(), pointInsideFrustum()), and some instance variables (lens, near, far, frustum_culling, world_to_camera, camera_to_world).</p>
 </section>
 <section id="sub-class-kx-lamp">
-<h5>Sub-Class KX_Lamp<a class="headerlink" href="#sub-class-kx-lamp" title="Permalink to this heading"></a></h5>
+<h5>Sub-Class KX_Lamp<a class="headerlink" href="#sub-class-kx-lamp" title="Link to this heading"></a></h5>
 <p>Like cameras, lamps also have their own subclass. It inherits all the instance variables and methods, and only expands the available variables.</p>
 <p>The parameters that can be changed with Python include all that can be animated with the Action actuator: energy, color, distance, attenuation, spot size, and spot blend. Additionally, you can change the lamp layer in runtime.</p>
 </section>
 </section>
 </section>
 <section id="bge-render">
-<h3>bge.render<a class="headerlink" href="#bge-render" title="Permalink to this heading"></a></h3>
+<h3>bge.render<a class="headerlink" href="#bge-render" title="Link to this heading"></a></h3>
 <p>If we compare gaming with traditional 3D artwork, rasterizer would be the rendering phase of the process. Internally, it’s when all the geometry is finally drawn to the screen with the light calculation, the filters applied, and the canvas set. For this reason, the Rasterizer module presents functions related to stereoscopy, windows and mouse management, world settings, and global GLSL material settings.</p>
 <section id="window-and-mouse">
-<h4>Window and Mouse<a class="headerlink" href="#window-and-mouse" title="Permalink to this heading"></a></h4>
+<h4>Window and Mouse<a class="headerlink" href="#window-and-mouse" title="Link to this heading"></a></h4>
 <p><cite>getWindowWidth() / getWindowHeight()</cite></p>
 <p>Get the width/height of the window (in pixels).</p>
 <p><cite>showMouse(visible)</cite></p>
@@ -1228,21 +1228,21 @@ You can read about this in the “bge.logic API” section in this chapter or on
 <p>Set the mouse cursor position (in pixels).</p>
 </section>
 <section id="world-settings-todo-to-be-removed-changed">
-<h4>World Settings (TODO to be removed/changed)<a class="headerlink" href="#world-settings-todo-to-be-removed-changed" title="Permalink to this heading"></a></h4>
+<h4>World Settings (TODO to be removed/changed)<a class="headerlink" href="#world-settings-todo-to-be-removed-changed" title="Link to this heading"></a></h4>
 <p><cite>setBackgroundColor(rgba), setAmbientColor(rgb)</cite></p>
 <p>Set the ambient and background color.</p>
 <p><cite>setMistColor(rgb), disableMist(), setMistStart(start), setMistEnd(end)</cite></p>
 <p>Configure the mist (fog) settings.</p>
 </section>
 <section id="stereo-settings-todo-to-be-changed">
-<h4>Stereo Settings (TODO to be changed)<a class="headerlink" href="#stereo-settings-todo-to-be-changed" title="Permalink to this heading"></a></h4>
+<h4>Stereo Settings (TODO to be changed)<a class="headerlink" href="#stereo-settings-todo-to-be-changed" title="Link to this heading"></a></h4>
 <p><cite>getEyeSeparation() / setEyeSeparation(eyesep)</cite></p>
 <p>Get the current eye separation for stereo mode. Usually focal length/30 provides a comfortable value.</p>
 <p><cite>getFocalLength() / setFocalLength(focallength)</cite></p>
 <p>Get the current focal length for stereo mode. It uses the current camera focal length as initial value</p>
 </section>
 <section id="material-settings-todo-to-be-changed">
-<h4>Material Settings (TODO to be changed)<a class="headerlink" href="#material-settings-todo-to-be-changed" title="Permalink to this heading"></a></h4>
+<h4>Material Settings (TODO to be changed)<a class="headerlink" href="#material-settings-todo-to-be-changed" title="Link to this heading"></a></h4>
 <p><cite>getMaterialMode(mode) / setMaterialMode(mode)</cite></p>
 <p>Get/set the material mode to use for OpenGL rendering. The available modes are:</p>
 <p><cite>KX_TEXFACE_MATERIAL, KX_BLENDER_MULTITEX_MATERIAL, KX_BLENDER_GLSL_MATERIAL</cite></p>
@@ -1251,7 +1251,7 @@ You can read about this in the “bge.logic API” section in this chapter or on
 <p><cite>“lights”, “shaders”, “shadows”, “ramps”, “nodes”, “extra_textures”</cite></p>
 </section>
 <section id="id1">
-<h4>Others<a class="headerlink" href="#id1" title="Permalink to this heading"></a></h4>
+<h4>Others<a class="headerlink" href="#id1" title="Link to this heading"></a></h4>
 <p><cite>drawLine(fromVec, toVec, color)</cite></p>
 <p>Draw a line in the 3D scene.</p>
 <p><cite>enableMotionBlur(factor) / disableMotionBlur()</cite></p>
@@ -1261,7 +1261,7 @@ You can read about this in the “bge.logic API” section in this chapter or on
 </section>
 </section>
 <section id="bge-events">
-<h3>bge.events<a class="headerlink" href="#bge-events" title="Permalink to this heading"></a></h3>
+<h3>bge.events<a class="headerlink" href="#bge-events" title="Link to this heading"></a></h3>
 <p>The Keyboard sensor allows you to set individual keys. As you can see in Figure 7.15, it can also be triggered by any key once you enable the option “All Keys.” This is very useful to configure text input in your game or to centralize all keyboard events with a single sensor and script.</p>
 <p>![Key codes visualizer](../figures/Chapter7/Fig07-15.png)</p>
 <p>In this case, every key pressed into a Keyboard sensor, will be registered as a unique integer. Each number corresponds to a specific key, and finding them allows you to control your actions accordingly to the desired key map. In order to clarify this a bit more, try the file in /Book/Chapter7/5_game_keyskey_detector_logicbrick.blend.</p>
@@ -1313,7 +1313,7 @@ You can read about this in the “bge.logic API” section in this chapter or on
 </div>
 </section>
 <section id="bge-texture">
-<h3>bge.texture<a class="headerlink" href="#bge-texture" title="Permalink to this heading"></a></h3>
+<h3>bge.texture<a class="headerlink" href="#bge-texture" title="Link to this heading"></a></h3>
 <p>The texture module was first discussed in the Chapter 5, “Graphics.” With the texture module, you can change any texture from your game while the game is running. The texture can be replaced by a single image, a video, a game camera, and even a webcam stream.</p>
 <p>Let’s look at a basic example. Please open the file: BookChapter76_texturebasic_texture_replacement.blend.</p>
 <p>This file has a single plane with a texture we will replace with an external image. Press the spacebar to change the image and Enter to return to the original one. The script responsible for the texture switching is:</p>
@@ -1382,16 +1382,16 @@ You can read about this in the “bge.logic API” section in this chapter or on
 <p>/Book/Chapter7/6_texture/webcam.blend</p>
 </section>
 <section id="bge-constraints">
-<h3>bge.constraints<a class="headerlink" href="#bge-constraints" title="Permalink to this heading"></a></h3>
+<h3>bge.constraints<a class="headerlink" href="#bge-constraints" title="Link to this heading"></a></h3>
 <p>The Bullet Physics engine allows for advanced control over the physics simulation in your game. Using Bullet as a backend, this module (formerly known as <em>Physics Constraints</em>) allows you to create and set up rigid joints, dynamic constraints, and even a vehicle wrapper. The constraints’ functionalities make sense only when you understand the context in which they are to be used (with physic dynamic objects). Therefore, this module is covered in the previous chapter on game physics.</p>
 </section>
 <section id="mathutils-math-types-and-utilities">
-<h3>Mathutils - Math Types and Utilities<a class="headerlink" href="#mathutils-math-types-and-utilities" title="Permalink to this heading"></a></h3>
+<h3>Mathutils - Math Types and Utilities<a class="headerlink" href="#mathutils-math-types-and-utilities" title="Link to this heading"></a></h3>
 <p>Mathutils is a generic module common to both Blender and the game engine. There are a lot of methods to facilitate your script in handling 3D math operations. You won’t have to reinvent the wheel every time you need to multiply vectors or transpose matrixes. Simply using the mathutils classes and built-in methods frees you to invest your time in something far more important: relearning all of the long-forgotten math lessons you skipped.</p>
 <p>Unless your background is in math, physics, or engineering, you won’t use this module any time soon. For those already familiar with the passionate secrets of math, you’ll be glad to know that those module’s functions are mainly self-explanatory. Names such as cross, dot, slerp (what?), and a quick look at their specifications will be all you need to know to start working with them. Nevertheless, newcomers often use this module without even knowing it. Every time you change an object position, get the vector from an object, or apply a rotation, you are using mathutils classes and methods. Therefore, it’s good to have this module as a reference for further studies and more advanced coding. (We all get there eventually.)</p>
 <p>We are going to present the four available classes in this module: vector, matrix, Euler, and quaternion. For a list of the available methods, refer to the API documentation.</p>
 <section id="vector">
-<h4>Vector<a class="headerlink" href="#vector" title="Permalink to this heading"></a></h4>
+<h4>Vector<a class="headerlink" href="#vector" title="Link to this heading"></a></h4>
 <p>This class was already present in the KX_GameObject class and in the script example. It behaves like a list object, with some advanced features (for example, swizzle and slicing) expanded with its instance methods. Some of those methods are: reflect, dot, cross, and normalize.</p>
 <p>A recurring problem that new Python programmers have is with list copying. If you forget to manually copy the list when assigning it to a new variable, you end up with two variables sharing the same list values forever (each of the variables becomes a pointer to the same data).</p>
 <p>The same behavior happens with Vectors. Look at the differences:</p>
@@ -1403,7 +1403,7 @@ You can read about this in the “bge.logic API” section in this chapter or on
 <p>new_vector is a new Vector, an independent copy of the old_vector object.</p>
 </section>
 <section id="matrix">
-<h4>Matrix<a class="headerlink" href="#matrix" title="Permalink to this heading"></a></h4>
+<h4>Matrix<a class="headerlink" href="#matrix" title="Link to this heading"></a></h4>
 <p>While vectors behave similarly to lists, matrices behave similarly to multidimensional lists. A multidimensional list is a list of a list, organized either in columns or rows.</p>
 <p>While in Python, a list of a list is always the same:</p>
 <p><cite>matrix_row = [[1,2,3], [4,5,6], [7,8,9]]</cite></p>
@@ -1421,7 +1421,7 @@ You can read about this in the “bge.logic API” section in this chapter or on
 <p>If your matrix represents a transformation matrix (rotation, translation, and scale) you can get its values separately. Matrix.to_quaternion() and Matrix.to_euler() will give you the rotation part of the matrix in the form you prefer (see next section), and Matrix.to_translation() and Matrix.to_scale () will give you the translation and the scale vector, respectively.</p>
 </section>
 <section id="euler-and-quaternion">
-<h4>Euler and Quaternion<a class="headerlink" href="#euler-and-quaternion" title="Permalink to this heading"></a></h4>
+<h4>Euler and Quaternion<a class="headerlink" href="#euler-and-quaternion" title="Link to this heading"></a></h4>
 <p>Euler and quaternion are different rotation systems. The same rotation can be represented using Euler, quaternion, or an orientation matrix.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -1442,11 +1442,11 @@ You can convert an orientation matrix to Euler, an Euler to a quaternion, a quat
 </section>
 </section>
 <section id="aud-audio-system">
-<h3>aud - Audio System<a class="headerlink" href="#aud-audio-system" title="Permalink to this heading"></a></h3>
+<h3>aud - Audio System<a class="headerlink" href="#aud-audio-system" title="Link to this heading"></a></h3>
 <p>This module allows you to play sounds directly from your scripts. There are three classes you will be working with: Device, Factory, and Handle.</p>
 <p>The audaspace module in a nutshell: you need to create one audio Device per game. You need one Factory per audio file (which can also be any video file containing a sound track). And every time you need to play a sound, a new Handle object will be generated from the Factory (this is where its name comes from).</p>
 <section id="example-basic-audio-playback-todo-to-be-adapted-to-new-api">
-<h4>Example: Basic Audio Playback (TODO to be adapted to new API)<a class="headerlink" href="#example-basic-audio-playback-todo-to-be-adapted-to-new-api" title="Permalink to this heading"></a></h4>
+<h4>Example: Basic Audio Playback (TODO to be adapted to new API)<a class="headerlink" href="#example-basic-audio-playback-todo-to-be-adapted-to-new-api" title="Link to this heading"></a></h4>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">aud</span>
 <span class="n">device</span> <span class="o">=</span> <span class="n">aud</span><span class="o">.</span><span class="n">Device</span><span class="p">()</span>
 </pre></div>
@@ -1484,7 +1484,7 @@ The possible statuses are:</p>
 </section>
 </section>
 <section id="bgl-opengl-wrapper">
-<h3>bgl - OpenGL Wrapper<a class="headerlink" href="#bgl-opengl-wrapper" title="Permalink to this heading"></a></h3>
+<h3>bgl - OpenGL Wrapper<a class="headerlink" href="#bgl-opengl-wrapper" title="Link to this heading"></a></h3>
 <p>This module is a wrapping of OpenGL constants and functions. It allows you to access low-level graphic resources within the game engine. You can use this module to draw directly to the screen or to read OpenGL matrices and buffers directly.</p>
 <p>Sometimes, you will need to run your OpenGL code specifically before or after the game engine drawing routine, so you can store your Python function as a list element either in the scene attributes pre_draw and/or in the post_draw. This will be demonstrated in our first example.</p>
 <div class="admonition note">
@@ -1493,7 +1493,7 @@ The possible statuses are:</p>
 <p>You can find good OpenGL learning material on the Internet or in a bookstore. <em>The Official Guide to Learning OpenGL</em> (also known as <em>The Red Book</em>) is highly recommended, and some older versions of it can be found online for download.</p>
 </div>
 <section id="example-01-line-width-changing">
-<h4>Example 01: Line Width Changing<a class="headerlink" href="#example-01-line-width-changing" title="Permalink to this heading"></a></h4>
+<h4>Example 01: Line Width Changing<a class="headerlink" href="#example-01-line-width-changing" title="Link to this heading"></a></h4>
 <p>Open the file /Book/Chapter7/7_bgl/line_width.blend.</p>
 <p>(run it in wireframe mode)</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bge</span> <span class="kn">import</span> <span class="n">logic</span>
@@ -1510,7 +1510,7 @@ The possible statuses are:</p>
 <p>You will find on the book files another example where the line width changes dynamically - /Book/Chapter7/7_bgl/line_width_animate.blend.</p>
 </section>
 <section id="example-02-color-picker">
-<h4>Example 02: Color Picker<a class="headerlink" href="#example-02-color-picker" title="Permalink to this heading"></a></h4>
+<h4>Example 02: Color Picker<a class="headerlink" href="#example-02-color-picker" title="Link to this heading"></a></h4>
 <p>Open the file /Book/Chapter7/7_bgl/color_pickup.blend.</p>
 <p>In this file, you can change the light color according to where you click.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bge</span> <span class="kn">import</span> <span class="n">logic</span>
@@ -1562,7 +1562,7 @@ The possible statuses are:</p>
 </section>
 </section>
 <section id="blf-font-drawing">
-<h3>blf - Font Drawing<a class="headerlink" href="#blf-font-drawing" title="Permalink to this heading"></a></h3>
+<h3>blf - Font Drawing<a class="headerlink" href="#blf-font-drawing" title="Link to this heading"></a></h3>
 <p>If you need to control text drawing directly from your scripts, you may need to use this module. Be aware, though, that this module is a low-level API that has to be combined with the OpenGL wrapper to handle texts properly.</p>
 <p>The blf module works in three stages:</p>
 <ol class="arabic simple">
@@ -1571,7 +1571,7 @@ The possible statuses are:</p>
 <li><p>Draw the text on the screen.</p></li>
 </ol>
 <section id="example-writing-hello-world">
-<h4>Example: Writing Hello World<a class="headerlink" href="#example-writing-hello-world" title="Permalink to this heading"></a></h4>
+<h4>Example: Writing Hello World<a class="headerlink" href="#example-writing-hello-world" title="Link to this heading"></a></h4>
 <p>Open the file /Book/Chapter7/8_blf/hello_world.blend.</p>
 <p>In the init function, we load a new font in memory and store the generated font ID to use later.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">init</span><span class="p">():</span>

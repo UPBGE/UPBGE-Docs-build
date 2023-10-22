@@ -12,11 +12,11 @@
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="../../_static/jquery.js"></script>
-        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
-        <script src="../../_static/doctools.js"></script>
-        <script src="../../_static/sphinx_highlight.js"></script>
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=c6e86fd7"></script>
+        <script src="../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -101,9 +101,9 @@
            <div itemprop="articleBody">
              
   <section id="understanding-inheritance-and-composition-in-game-scripting">
-<span id="id1"></span><h1>Understanding Inheritance And Composition In Game Scripting<a class="headerlink" href="#understanding-inheritance-and-composition-in-game-scripting" title="Permalink to this heading"></a></h1>
+<span id="id1"></span><h1>Understanding Inheritance And Composition In Game Scripting<a class="headerlink" href="#understanding-inheritance-and-composition-in-game-scripting" title="Link to this heading"></a></h1>
 <section id="introduction">
-<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this heading"></a></h2>
+<h2>Introduction<a class="headerlink" href="#introduction" title="Link to this heading"></a></h2>
 <p>Let us imagine we are making a video game in which characters can attack each other and receive damage.
 You will likely want to add a few properties like health or max_health to each object and write simple scripts
 to calculate them when the character gets hit or drinks a potion. Pretty simple, isn’t it?</p>
@@ -130,7 +130,7 @@ the most widely used software paradigms, well supported by popular languages lik
 So, let’s look into the concept briefly in the next chapter.</p>
 </section>
 <section id="type-and-inheritance">
-<h2>Type and Inheritance<a class="headerlink" href="#type-and-inheritance" title="Permalink to this heading"></a></h2>
+<h2>Type and Inheritance<a class="headerlink" href="#type-and-inheritance" title="Link to this heading"></a></h2>
 <p>To put it simply, a type in an OOP language determines an object’s nature (i.e. properties and behaviours).
 It also applies to a dynamically typed language like Python, which allows you to write code without caring
 too much about types. You know that you can change the value of a variable from abc to ABC by invoking
@@ -179,7 +179,7 @@ from ‘Damageable’ type like this:</p>
 it is not without problems which we will discuss in the following chapter.</p>
 </section>
 <section id="problems-of-inheritance">
-<h2>Problems of Inheritance<a class="headerlink" href="#problems-of-inheritance" title="Permalink to this heading"></a></h2>
+<h2>Problems of Inheritance<a class="headerlink" href="#problems-of-inheritance" title="Link to this heading"></a></h2>
 <p>We just made a crate damageable by deriving it from Damageable type. But what if we also want to
 add some other features, like being able to be opened? Maybe we could define another class Openable
 to describe the concept of something which can be opened. But can an object inherit from both of those types?</p>
@@ -204,7 +204,7 @@ working on a game project. Fortunately, a design principle can be used to overco
 called Composition Over Inheritance, which also works well when writing game scripts.</p>
 </section>
 <section id="composition-over-inheritance">
-<h2>Composition Over Inheritance<a class="headerlink" href="#composition-over-inheritance" title="Permalink to this heading"></a></h2>
+<h2>Composition Over Inheritance<a class="headerlink" href="#composition-over-inheritance" title="Link to this heading"></a></h2>
 <p>The basic idea of composition is implementing each feature of an object as a modular ‘component’. By doing so,
 we can compose such elements to describe the behaviours and properties of the whole.</p>
 <p>For example, instead of making the Crate class inherit from Damageable type, we can rename the latter
@@ -267,7 +267,7 @@ instance of it as a property of Crate:</p>
 introducing potential conflict in the type hierarchy.</p>
 </section>
 <section id="dynamic-component-model">
-<h2>Dynamic Component Model<a class="headerlink" href="#dynamic-component-model" title="Permalink to this heading"></a></h2>
+<h2>Dynamic Component Model<a class="headerlink" href="#dynamic-component-model" title="Link to this heading"></a></h2>
 <p>Let’s take the idea one step further and generalise the concept of components itself. What if
 we replace individual properties like door or hit_box with a generic list?</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Crate</span><span class="p">:</span>
@@ -339,7 +339,7 @@ write game scripts.</p>
 for everything, why almost all major OOP languages still support inheritance?</p>
 </section>
 <section id="why-inheritance-still-matters">
-<h2>Why Inheritance Still Matters?<a class="headerlink" href="#why-inheritance-still-matters" title="Permalink to this heading"></a></h2>
+<h2>Why Inheritance Still Matters?<a class="headerlink" href="#why-inheritance-still-matters" title="Link to this heading"></a></h2>
 <p>One prominent case where using inheritance over composition would make sense is when
 the concepts you want to represent as types have an is-a relationship with each other.</p>
 <p>Suppose you want to make an inventory system that can store things like food or weapons.
@@ -409,7 +409,7 @@ having to rewrite the Crate class every time?</p>
 <p>A language feature or a design pattern called mixin can provide an answer to this question.</p>
 </section>
 <section id="mixins-and-traits">
-<h2>Mixins And Traits<a class="headerlink" href="#mixins-and-traits" title="Permalink to this heading"></a></h2>
+<h2>Mixins And Traits<a class="headerlink" href="#mixins-and-traits" title="Link to this heading"></a></h2>
 <p>According to a relevant Wikipedia article, a mixin is “a class that contains methods
 for use by other classes without having to be the parent class of those other classes”.</p>
 <p>Such a class is sometimes called a trait and often named as an adjective like Damageable or
@@ -504,7 +504,7 @@ fine with any Openable object, be it an animated door or one that requires a key
 open it, for instance.</p>
 </section>
 <section id="mixins-and-components-in-upbge">
-<h2>Mixins and Components in UPBGE<a class="headerlink" href="#mixins-and-components-in-upbge" title="Permalink to this heading"></a></h2>
+<h2>Mixins and Components in UPBGE<a class="headerlink" href="#mixins-and-components-in-upbge" title="Link to this heading"></a></h2>
 <p>As shown in the previous chapters, the component model and mixins are powerful tools
 to design your software while maintaining a clean separation of concern between
 classes responsible for different functionalities.</p>

@@ -12,11 +12,11 @@
     <script src="../../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="../../../_static/jquery.js"></script>
-        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
-        <script src="../../../_static/doctools.js"></script>
-        <script src="../../../_static/sphinx_highlight.js"></script>
+        <script src="../../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../../_static/documentation_options.js?v=c6e86fd7"></script>
+        <script src="../../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
@@ -123,15 +123,15 @@
            <div itemprop="articleBody">
              
   <section id="physics">
-<span id="game-engine-physics"></span><h1>Physics<a class="headerlink" href="#physics" title="Permalink to this heading"></a></h1>
+<span id="game-engine-physics"></span><h1>Physics<a class="headerlink" href="#physics" title="Link to this heading"></a></h1>
 <figure class="align-default" id="id2">
 <img alt="../../../_images/editors-properties-physics-physics.png" src="../../../_images/editors-properties-physics-physics.png" />
 <figcaption>
-<p><span class="caption-text">Physics tab.</span><a class="headerlink" href="#id2" title="Permalink to this image"></a></p>
+<p><span class="caption-text">Physics tab.</span><a class="headerlink" href="#id2" title="Link to this image"></a></p>
 </figcaption>
 </figure>
 <section id="game-engine-physics-type">
-<span id="id1"></span><h2>Physics<a class="headerlink" href="#game-engine-physics-type" title="Permalink to this heading"></a></h2>
+<span id="id1"></span><h2>Physics<a class="headerlink" href="#game-engine-physics-type" title="Link to this heading"></a></h2>
 <p>Options in Physics panel change according to its selected Physics Type. See below:</p>
 <div class="toctree-wrapper compound">
 <p class="caption" role="heading"><span class="caption-text">Physics Types</span></p>
@@ -150,11 +150,11 @@
 </div>
 </section>
 <section id="collision-bounds">
-<span id="game-engine-physics-object-collision-bounds"></span><h2>Collision Bounds<a class="headerlink" href="#collision-bounds" title="Permalink to this heading"></a></h2>
+<span id="game-engine-physics-object-collision-bounds"></span><h2>Collision Bounds<a class="headerlink" href="#collision-bounds" title="Link to this heading"></a></h2>
 <figure class="align-default" id="id3">
 <img alt="../../../_images/editors-properties-physics-collision_bounds.png" src="../../../_images/editors-properties-physics-collision_bounds.png" />
 <figcaption>
-<p><span class="caption-text">Collision Bounds panel in Physics tab.</span><a class="headerlink" href="#id3" title="Permalink to this image"></a></p>
+<p><span class="caption-text">Collision Bounds panel in Physics tab.</span><a class="headerlink" href="#id3" title="Link to this image"></a></p>
 </figcaption>
 </figure>
 <p>The first thing you must understand is the idea of the 3D Bounding Box.
@@ -165,7 +165,7 @@ This box could be oriented relative globally to the world or locally to the obje
 <figure class="align-default" id="id4">
 <img alt="../../../_images/editors-properties-physics-rigid_body-bounding_box.png" src="../../../_images/editors-properties-physics-rigid_body-bounding_box.png" />
 <figcaption>
-<p><span class="caption-text">Demonstration of a Local Bounding Box (left) and a Global Bounding Box (right).</span><a class="headerlink" href="#id4" title="Permalink to this image"></a></p>
+<p><span class="caption-text">Demonstration of a Local Bounding Box (left) and a Global Bounding Box (right).</span><a class="headerlink" href="#id4" title="Link to this image"></a></p>
 </figcaption>
 </figure>
 <p>The <em>x extent</em>, then, is half of the distance between the x min/max.</p>
@@ -179,7 +179,7 @@ Blender will remember this change for future <kbd class="kbd compound docutils l
 <figure class="align-default" id="id5">
 <img alt="../../../_images/editors-properties-physics-rigid_body-origin_to_box_bounds.png" src="../../../_images/editors-properties-physics-rigid_body-origin_to_box_bounds.png" />
 <figcaption>
-<p><span class="caption-text">Setting the origin to Bounds Center instead of Median Center.</span><a class="headerlink" href="#id5" title="Permalink to this image"></a></p>
+<p><span class="caption-text">Setting the origin to Bounds Center instead of Median Center.</span><a class="headerlink" href="#id5" title="Link to this image"></a></p>
 </figcaption>
 </figure>
 <p>A final introductory comment: When you set the Collision Bounds on an object,
@@ -213,7 +213,7 @@ Height is the z bounds.</p>
 <figure class="align-default" id="id6">
 <a class="reference internal image-reference" href="../../../_images/editors-properties-physics-rigid_body-convex_hull.png"><img alt="../../../_images/editors-properties-physics-rigid_body-convex_hull.png" src="../../../_images/editors-properties-physics-rigid_body-convex_hull.png" style="width: 200px;" /></a>
 <figcaption>
-<p><span class="caption-text">A convex hull sketch.</span><a class="headerlink" href="#id6" title="Permalink to this image"></a></p>
+<p><span class="caption-text">A convex hull sketch.</span><a class="headerlink" href="#id6" title="Link to this image"></a></p>
 </figcaption>
 </figure>
 </dd>
@@ -229,13 +229,13 @@ with the efficiency of some of the others. See the demo of this in the dune bugg
 <figure class="align-default" id="id7">
 <a class="reference internal image-reference" href="../../../_images/editors-properties-physics-rigid_body-manual_hull.png"><img alt="../../../_images/editors-properties-physics-rigid_body-manual_hull.png" src="../../../_images/editors-properties-physics-rigid_body-manual_hull.png" style="width: 300px;" /></a>
 <figcaption>
-<p><span class="caption-text">Another way to create Collision Bounds – By hand.</span><a class="headerlink" href="#id7" title="Permalink to this image"></a></p>
+<p><span class="caption-text">Another way to create Collision Bounds – By hand.</span><a class="headerlink" href="#id7" title="Link to this image"></a></p>
 </figcaption>
 </figure>
 </dd>
 </dl>
 <section id="options">
-<h3>Options<a class="headerlink" href="#options" title="Permalink to this heading"></a></h3>
+<h3>Options<a class="headerlink" href="#options" title="Link to this heading"></a></h3>
 <p>There are only two options in the Collision Bounds subpanel.</p>
 <dl>
 <dt>Margin</dt><dd><p>“Add extra margin around object for collision detection, small amount required for stability.”
@@ -256,7 +256,7 @@ the parent’s physics will respond to the child’s collision (thus updating th
 </section>
 </section>
 <section id="create-obstacle">
-<h2>Create Obstacle<a class="headerlink" href="#create-obstacle" title="Permalink to this heading"></a></h2>
+<h2>Create Obstacle<a class="headerlink" href="#create-obstacle" title="Link to this heading"></a></h2>
 <p>Todo</p>
 </section>
 </section>

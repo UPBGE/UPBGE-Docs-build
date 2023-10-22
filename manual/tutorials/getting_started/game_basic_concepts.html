@@ -12,11 +12,11 @@
     <script src="../../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="../../../_static/jquery.js"></script>
-        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
-        <script src="../../../_static/doctools.js"></script>
-        <script src="../../../_static/sphinx_highlight.js"></script>
+        <script src="../../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../../_static/documentation_options.js?v=c6e86fd7"></script>
+        <script src="../../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
@@ -105,9 +105,9 @@
            <div itemprop="articleBody">
              
   <section id="game-basic-concepts">
-<h1>Game Basic Concepts<a class="headerlink" href="#game-basic-concepts" title="Permalink to this heading"></a></h1>
+<h1>Game Basic Concepts<a class="headerlink" href="#game-basic-concepts" title="Link to this heading"></a></h1>
 <section id="game">
-<h2>Game<a class="headerlink" href="#game" title="Permalink to this heading"></a></h2>
+<h2>Game<a class="headerlink" href="#game" title="Link to this heading"></a></h2>
 <p>So far, we have talked about 3D at length. But how does the game engine fit into? Well, a game engine simply takes the existing 3D assets and attaches a “brain”
 to them so the objects know how to respond to events. The “brain” can be in the form of logic bricks (which can perform different actions depending on the
 user input), scripts (which can extend the functionality of logic bricks), or other physical properties of an object (such as rigid body settings to make
@@ -115,7 +115,7 @@ an object tumble and fall realistically).</p>
 <figure class="align-default" id="id1">
 <img alt="../../../_images/Fig01-19.jpg" src="../../../_images/Fig01-19.jpg" />
 <figcaption>
-<p><span class="caption-text">Game = Object + Logic.</span><a class="headerlink" href="#id1" title="Permalink to this image"></a></p>
+<p><span class="caption-text">Game = Object + Logic.</span><a class="headerlink" href="#id1" title="Link to this image"></a></p>
 </figcaption>
 </figure>
 <p>A game engine is made up of many distinct components:</p>
@@ -136,7 +136,7 @@ is slowing it down.</p>
 </aside>
 </section>
 <section id="game-loop">
-<h2>Game Loop<a class="headerlink" href="#game-loop" title="Permalink to this heading"></a></h2>
+<h2>Game Loop<a class="headerlink" href="#game-loop" title="Link to this heading"></a></h2>
 <p>The game loop is something that every game or general software has: it consists of several
 processing steps and then, repeating it. To make it clear, think of a video player
 processing steps:</p>
@@ -152,7 +152,7 @@ mysterious behavior that you might discover.</p>
 <figure class="align-default" id="id2">
 <img alt="../../../_images/tutorials-getting_started-game_loop.png" src="../../../_images/tutorials-getting_started-game_loop.png" />
 <figcaption>
-<p><span class="caption-text">Game loop diagram.</span><a class="headerlink" href="#id2" title="Permalink to this image"></a></p>
+<p><span class="caption-text">Game loop diagram.</span><a class="headerlink" href="#id2" title="Link to this image"></a></p>
 </figcaption>
 </figure>
 <p>Each cycle in the game loop represents a logical frame, also known as logic tick.
@@ -169,11 +169,11 @@ how long it takes. Such ‘render’ lags will result in ‘logic’ lags, makin
 slower than expected.</p>
 </section>
 <section id="scene-loop">
-<h2>Scene Loop<a class="headerlink" href="#scene-loop" title="Permalink to this heading"></a></h2>
+<h2>Scene Loop<a class="headerlink" href="#scene-loop" title="Link to this heading"></a></h2>
 <figure class="align-default" id="id3">
 <img alt="../../../_images/tutorials-getting_started-scene_loop.png" src="../../../_images/tutorials-getting_started-scene_loop.png" />
 <figcaption>
-<p><span class="caption-text">Scene loop diagram.</span><a class="headerlink" href="#id3" title="Permalink to this image"></a></p>
+<p><span class="caption-text">Scene loop diagram.</span><a class="headerlink" href="#id3" title="Link to this image"></a></p>
 </figcaption>
 </figure>
 <p>This loop is a bit more complex. The scenes loop cycles through all active scenes
@@ -198,7 +198,7 @@ performing the following steps for each scene:</p>
 <p>Once all these steps are taken for all active scenes, the main loop continues.</p>
 </section>
 <section id="logic-ticks">
-<h2>Logic Ticks<a class="headerlink" href="#logic-ticks" title="Permalink to this heading"></a></h2>
+<h2>Logic Ticks<a class="headerlink" href="#logic-ticks" title="Link to this heading"></a></h2>
 <p>The logic processing works through frames called <em>logic ticks</em>. By default, a game
 running at 60 frames per second also can run 60 logic ticks per second. In practical
 examples:</p>
@@ -214,7 +214,7 @@ doesn’t need to run each frame. The following diagram shows how logic tick ski
 <figure class="align-default" id="id4">
 <img alt="../../../_images/tutorials-getting_started-logic_ticks_diagram.png" src="../../../_images/tutorials-getting_started-logic_ticks_diagram.png" />
 <figcaption>
-<p><span class="caption-text">Logic tick skipping diagram.</span><a class="headerlink" href="#id4" title="Permalink to this image"></a></p>
+<p><span class="caption-text">Logic tick skipping diagram.</span><a class="headerlink" href="#id4" title="Link to this image"></a></p>
 </figcaption>
 </figure>
 <p>In the given diagram, where dark red is logic execution and grey is a interval:</p>

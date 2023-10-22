@@ -12,11 +12,11 @@
     <script src="../../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="../../../_static/jquery.js"></script>
-        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
-        <script src="../../../_static/doctools.js"></script>
-        <script src="../../../_static/sphinx_highlight.js"></script>
+        <script src="../../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../../_static/documentation_options.js?v=c6e86fd7"></script>
+        <script src="../../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
@@ -109,9 +109,9 @@
            <div itemprop="articleBody">
              
   <section id="d-basic-concepts">
-<h1>3D Basic Concepts<a class="headerlink" href="#d-basic-concepts" title="Permalink to this heading"></a></h1>
+<h1>3D Basic Concepts<a class="headerlink" href="#d-basic-concepts" title="Link to this heading"></a></h1>
 <section id="d-basics">
-<h2>3D Basics<a class="headerlink" href="#d-basics" title="Permalink to this heading"></a></h2>
+<h2>3D Basics<a class="headerlink" href="#d-basics" title="Link to this heading"></a></h2>
 <p>If you haven’t used any 3D application before, the terms modeling, animation, and rendering might be foreign to you. So before you go off to create
 the spectacular game that you always wanted to make, let’s have a quick refresher on the basics of computer graphics. You don’t have to endure the
 boring section below if you are already know what RGB stands for and the difference between Cartesian and Gaussian.</p>
@@ -119,7 +119,7 @@ boring section below if you are already know what RGB stands for and the differe
 same concepts drive all of them.</p>
 </section>
 <section id="coordinate-system">
-<h2>Coordinate System<a class="headerlink" href="#coordinate-system" title="Permalink to this heading"></a></h2>
+<h2>Coordinate System<a class="headerlink" href="#coordinate-system" title="Link to this heading"></a></h2>
 <a class="reference internal image-reference" href="../../../_images/Fig01-05.png"><img alt="../../../_images/Fig01-05.png" class="align-right" src="../../../_images/Fig01-05.png" style="width: 33%;" /></a>
 <p>We live in a three-dimensional world that has width, height, and depth. So to represent anything that resembles real life as a virtual world inside a
 computer, we need to think and work in three dimensions. The most common system used is called the Cartesian coordinate system, where the three dimensions
@@ -129,7 +129,7 @@ origin: thus (2, -4, 8) is a point in space that is 2 units from the origin alon
 in the Z direction.</p>
 </section>
 <section id="points-edges-triangles-and-meshes">
-<h2>Points, Edges, Triangles, and Meshes<a class="headerlink" href="#points-edges-triangles-and-meshes" title="Permalink to this heading"></a></h2>
+<h2>Points, Edges, Triangles, and Meshes<a class="headerlink" href="#points-edges-triangles-and-meshes" title="Link to this heading"></a></h2>
 <p>Although we can define a position in space using the XYZ coordinates, a single point (or a “vertex,” as it’s more commonly known in computer graphics)
 is not terribly useful; after all, you can’t see a dot that is infinitesimally small. But you can join this vertex with another vertex to form a
 line (also known as an “edge”). An edge by itself still wouldn’t be very visible, so you create another vertex and join all three vertices together
@@ -139,7 +139,7 @@ and ultimately, as vertices.</p>
 <figure class="align-default" id="id1">
 <img alt="../../../_images/Fig01-06.jpg" src="../../../_images/Fig01-06.jpg" />
 <figcaption>
-<p><span class="caption-text">Teapot, cube, face, edge and vertex.</span><a class="headerlink" href="#id1" title="Permalink to this image"></a></p>
+<p><span class="caption-text">Teapot, cube, face, edge and vertex.</span><a class="headerlink" href="#id1" title="Link to this image"></a></p>
 </figcaption>
 </figure>
 <p>Why is the triangle so important? Turns out, modern computer graphics use the triangle as the basic building block for almost any shape.
@@ -164,7 +164,7 @@ and voxel (short for VOlumetric piXEL). But polygon modeling and rendering is by
 </aside>
 </section>
 <section id="basic-transforms">
-<h2>Basic Transforms<a class="headerlink" href="#basic-transforms" title="Permalink to this heading"></a></h2>
+<h2>Basic Transforms<a class="headerlink" href="#basic-transforms" title="Link to this heading"></a></h2>
 <p>The three basic transforms that you should be familiar with are:</p>
 <ul class="simple">
 <li><p><strong>Translation:</strong> The moving of an object in any direction, without rotating it.</p></li>
@@ -175,12 +175,12 @@ and voxel (short for VOlumetric piXEL). But polygon modeling and rendering is by
 <figure class="align-default" id="id2">
 <img alt="../../../_images/Fig01-09.jpg" src="../../../_images/Fig01-09.jpg" />
 <figcaption>
-<p><span class="caption-text">Translation, scaling, and rotation.</span><a class="headerlink" href="#id2" title="Permalink to this image"></a></p>
+<p><span class="caption-text">Translation, scaling, and rotation.</span><a class="headerlink" href="#id2" title="Link to this image"></a></p>
 </figcaption>
 </figure>
 </section>
 <section id="materials-and-textures">
-<h2>Materials and Textures<a class="headerlink" href="#materials-and-textures" title="Permalink to this heading"></a></h2>
+<h2>Materials and Textures<a class="headerlink" href="#materials-and-textures" title="Link to this heading"></a></h2>
 <p>Using polygons, you can define the shape of a mesh. To alter the color and appearance of it, you need to apply materials to the object. Material controls the
 color, shininess, bumpiness, and even transparency of the object. These variables ultimately all serve to add details to the object.</p>
 <p>Often, changing the color is not enough to make a surface look realistic. This is where textures come in. Texturing is a common technique used to add color
@@ -191,7 +191,7 @@ a UV layout to map the 2D image onto the 3D mesh. Figure 1.10 illustrates how an
 <figure class="align-default" id="id3">
 <img alt="../../../_images/Fig01-10.jpg" src="../../../_images/Fig01-10.jpg" />
 <figcaption>
-<p><span class="caption-text">Meshes with texture applied.</span><a class="headerlink" href="#id3" title="Permalink to this image"></a></p>
+<p><span class="caption-text">Meshes with texture applied.</span><a class="headerlink" href="#id3" title="Link to this image"></a></p>
 </figcaption>
 </figure>
 <p>Traditionally, a texture changes the color of a surface. But that’s not all it can do: textures can also be used to alter other properties of the
@@ -204,7 +204,7 @@ and dull in others. A texture map can also have transparent pixels, rendering pa
 differs from an image in that it’s generated by an algorithm in real time, rather than from a pre-made image file.</p>
 </section>
 <section id="lights">
-<h2>Lights<a class="headerlink" href="#lights" title="Permalink to this heading"></a></h2>
+<h2>Lights<a class="headerlink" href="#lights" title="Link to this heading"></a></h2>
 <p>Everything you see is the result of light hitting your eyes-without lights, the world would be pitch black. Likewise, light is just as
 important in a virtual world. With light comes shadow as well. Shadow might not be something that you think about every day, but the interplay of shadow
 and light makes a huge difference in how the scene is presented.</p>
@@ -217,7 +217,7 @@ details while hiding irrelevant areas in shadow. Skillful placement of lighting 
 boring scene look visually exciting.</p>
 </section>
 <section id="camera">
-<h2>Camera<a class="headerlink" href="#camera" title="Permalink to this heading"></a></h2>
+<h2>Camera<a class="headerlink" href="#camera" title="Link to this heading"></a></h2>
 <a class="reference internal image-reference" href="../../../_images/Fig01-13.png"><img alt="Camera objects" class="align-right" src="../../../_images/Fig01-13.png" style="width: 50%;" /></a>
 <p>When you are creating a 3D scene, you are looking at the virtual world from an omniscient view. In this mode, you can view and edit the world
 from any angle just like a movie director walking around a set in order to adjust things. Once the game starts, the player must view the game
@@ -231,7 +231,7 @@ in a platformer, the camera is usually looking at the scene from the side.</p>
 </aside>
 </section>
 <section id="animation">
-<h2>Animation<a class="headerlink" href="#animation" title="Permalink to this heading"></a></h2>
+<h2>Animation<a class="headerlink" href="#animation" title="Link to this heading"></a></h2>
 <p>In this context, _animation_ refers to the technique of making things change over time. For example, animation can involve moving an object, deforming it,
 or changing its color. To set up an animation, you create “keyframes,” which are snapshots in time that store specific values pertaining to the animation.
 The software can then automatically interpolate in between those values to create a smooth transition. The image below shows Blender’s Dopesheet Editor.
@@ -240,7 +240,7 @@ various properties, such as location or rotation that are keyframed.</p>
 <figure class="align-default" id="id4">
 <img alt="../../../_images/Fig01-14.png" src="../../../_images/Fig01-14.png" />
 <figcaption>
-<p><span class="caption-text">Dopesheet Editor: each diamond shape is a keyframe.</span><a class="headerlink" href="#id4" title="Permalink to this image"></a></p>
+<p><span class="caption-text">Dopesheet Editor: each diamond shape is a keyframe.</span><a class="headerlink" href="#id4" title="Link to this image"></a></p>
 </figcaption>
 </figure>
 <a class="reference internal image-reference" href="../../../_images/Fig01-15.png"><img alt="LocRotScale animation" class="align-right" src="../../../_images/Fig01-15.png" style="width: 50%;" /></a>
