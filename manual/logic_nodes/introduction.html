@@ -51,7 +51,13 @@
 <li class="toctree-l1"><a class="reference internal" href="../editors/index.html">Editors</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../logic/index.html">Logic Bricks</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Logic Nodes</a><ul class="current">
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Introduction</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Introduction</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#logic-trees">Logic Trees</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#logic-nodes">Logic Nodes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#global-variables">Global Variables</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#architecture">Architecture</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="basic/index.html">General Nodes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="scene/index.html">Scene Manipulation Nodes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="logic_math/index.html">Logic &amp; Math Nodes</a></li>
@@ -94,10 +100,65 @@
              
   <section id="introduction">
 <span id="logic-nodes-introduction"></span><h1>Introduction<a class="headerlink" href="#introduction" title="Link to this heading"></a></h1>
-<p>Logic Nodes is an <a class="reference external" href="https://docs.blender.org/manual/en/latest/advanced/scripting/addon_tutorial.html">Add-on</a> present in the <strong>Uchronia Project Blender Game Engine (UPBGE)</strong> base files</p>
-<p>Its functionality is the application of logic programming through pluggable blocks.</p>
-<p>This manual <em>(under development)</em> explains the functionality of all available nodes.</p>
-<p>It is also possible to download it via the link: <a class="reference external" href="https://github.com/IzaZed/Uchronian-Logic-UPBGE-Logic-Nodes">Logic Nodes</a></p>
+<p>As an alternative to Python scripts and Logic Bricks, Logic Nodes try to provide an intuitive and versatile
+way to create game logic. They are designed to support rapid prototyping, enabling artists and game designers
+to quickly test and even fully implement features.</p>
+<p>Logic Nodes use a visual approach to programming, allowing developers to skip learning a programming language and
+the engine’s API to get their game done. With a set of over 250 nodes, close to all functionalitiy is
+covered, including calling custom scripts and referencing logic bricks to make full use of UPBGE’s power.</p>
+<section id="logic-trees">
+<h2>Logic Trees<a class="headerlink" href="#logic-trees" title="Link to this heading"></a></h2>
+<p><em>Logic Trees</em> are different from <em>Logic Bricks</em>, as they are not directly bound to an object.
+They can be created, edited and compiled without any object in the scene. To be executed though,
+they need to be applied to at least one object (or called through another tree, but more on
+that later). Now the difference between being bound and being applied to an object is that
+multiple objects can have the same <em>Logic Tree</em> applied to them, while <em>Logic Bricks</em> are unique
+for each object.</p>
+<p>Basically, <em>Logic Node Trees</em> work just as <em>Material Node Trees</em> do, you add nodes, connect them
+to one another and something happens. One difference would be that with a material, you always
+try to route all of your nodes back to the <em>Material Output</em> at some point. This is not the case
+with Logic Nodes. You can have a lot of smaller patches within a single tree which will be
+executed, regardless if they’re connected or not. As there’s no such thing as an “Output” Node,
+each part of the tree is evaluated “as is”.</p>
+</section>
+<section id="logic-nodes">
+<h2>Logic Nodes<a class="headerlink" href="#logic-nodes" title="Link to this heading"></a></h2>
+<p>The system is built around <em>Nodes</em>, and each Node has <em>Sockets</em> that can be connected to the
+Sockets of other nodes. Normally the code isn’t very picky and will try to work with whatever comes
+its way, meaning that you can try to combine different types of Sockets without having to fear a
+complete crash.</p>
+<p>It is generally advised to try to keep Logic Trees as small as possible to keep the performance high.
+You would for example use the “Formula” Node for more complex equations instead of putting multiple
+“Math” nodes together.</p>
+</section>
+<section id="global-variables">
+<h2>Global Variables<a class="headerlink" href="#global-variables" title="Link to this heading"></a></h2>
+<p>With the Logic Node Addon also comes the ability to create and read global variables. They work very
+similarly to Properties, but again they are not bound to an object, but to the scene. These variables
+are intended to be used to store data about the world like time, temperature, etc. or game settings,
+though they can just as well be used for player or entity data that wouldn’t really make sense on an
+object.</p>
+</section>
+<section id="architecture">
+<h2>Architecture<a class="headerlink" href="#architecture" title="Link to this heading"></a></h2>
+<p>Under the hood, Logic Nodes are actually generating Python scripts to be executed by the game engine.
+These scripts can be loaded in two ways:</p>
+<ul class="simple">
+<li><p>Applied as <a class="reference internal" href="../logic/introduction.html"><span class="doc">Logic Bricks</span></a> or</p></li>
+<li><p>applied as a <a class="reference internal" href="../python_components/introduction.html"><span class="doc">Python Component</span></a></p></li>
+</ul>
+<p>Applying a tree using Logic Bricks generates the necessary bricks on the selected object to execute the tree.
+This method gives you full access to Logic Brick functionality, which can be very useful when trying to work
+with object-specific behavior.</p>
+<p>Using the Component method has the advantage of being tidier. The generated component will have options for
+executing the tree only at startup and for executing the tree only when a certain property is set. Using
+this method will prevent you from accessing Logic Bricks directly, but you can still access them via custom
+Python calls.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Due to the way Logic Nodes <em>currently</em> work, they are the most performance-heavy way to create logic.</p>
+</div>
+</section>
 </section>
 
 
