@@ -1,13 +1,15 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<html class="writer-html5" lang="en" data-content_root="../../../">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>A First Example &mdash; UPBGE Manual</title>
-      <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../../_static/css/theme_overrides.css" type="text/css" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/theme_overrides.css?v=199cd01f" />
+
+  
   <!--[if lt IE 9]>
     <script src="../../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
@@ -52,11 +54,11 @@
 <li class="toctree-l2"><a class="reference internal" href="../introducing_logic_bricks/index.html">Introducing Logic Bricks</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="index.html">Introducing Logic Nodes</a><ul class="current">
 <li class="toctree-l3 current"><a class="current reference internal" href="#">A First Example</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#system-console">System Console</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#activating-the-logic-nodes-add-on">Activating the Logic Nodes Add-on</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#creating-a-new-logic-tree">Creating A New Logic Tree</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#creating-a-new-logic-tree">Creating a New Logic Tree</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#adding-nodes">Adding Nodes</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#applying-logic-trees">Applying Logic Trees</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#system-console">System Console</a></li>
 </ul>
 </li>
 </ul>
@@ -105,110 +107,184 @@
              
   <section id="a-first-example">
 <h1>A First Example<a class="headerlink" href="#a-first-example" title="Link to this heading"></a></h1>
-<p>Here we will try print some text to the console when a key is pressed. This could
-probably be called the “Hello World” example for the Logic Nodes.</p>
-<section id="activating-the-logic-nodes-add-on">
-<h2>Activating the Logic Nodes Add-on<a class="headerlink" href="#activating-the-logic-nodes-add-on" title="Link to this heading"></a></h2>
-<p>The <em>Logic Nodes</em> add-on cames pre-installed in UPBGE 0.3+. To activate it you have
-to go to <code class="docutils literal notranslate"><span class="pre">Edit</span> <span class="pre">-&gt;</span> <span class="pre">Preferences</span> <span class="pre">-&gt;</span> <span class="pre">Add-ons</span></code> and filter for Game Engine.
-There, check the box for the Logic Nodes and you’re good to go.</p>
+<p>We will print some text to the console when a keyboard key is pressed. This is the “Hello World” example for the Logic Nodes.</p>
+<section id="system-console">
+<h2>System Console<a class="headerlink" href="#system-console" title="Link to this heading"></a></h2>
+<p>UPBGE uses system console / terminal to print info and error messages. To see those messages:</p>
+<p>Windows users:</p>
+<ul class="simple">
+<li><p><span class="menuselection">Window ‣ Toggle System Console</span> menu.</p></li>
+</ul>
+<p>Linux and Mac users:</p>
+<ul class="simple">
+<li><p>start UPBGE via console / terminal - navigate to blender executable file, and run:</p></li>
+</ul>
+<p><code class="docutils literal notranslate"><span class="pre">./blender</span></code></p>
 <figure class="align-default" id="id1">
-<img alt="../../../_images/tutorials-introducing-logic-nodes-01.png" src="../../../_images/tutorials-introducing-logic-nodes-01.png" />
+<img alt="../../../_images/tutorials_introducing-logic-nodes_00_linux-terminal-run.png" src="../../../_images/tutorials_introducing-logic-nodes_00_linux-terminal-run.png" />
 <figcaption>
-<p><span class="caption-text">Activating Logic Nodes Add-on</span><a class="headerlink" href="#id1" title="Link to this image"></a></p>
+<p><span class="caption-text">Run UPBGE on Linux or Mac terminal</span><a class="headerlink" href="#id1" title="Link to this image"></a></p>
 </figcaption>
 </figure>
 </section>
-<section id="creating-a-new-logic-tree">
-<h2>Creating A New Logic Tree<a class="headerlink" href="#creating-a-new-logic-tree" title="Link to this heading"></a></h2>
-<p>Now, let’s get started. First we will need to create a logic tree. For this, check
-the view menu for a new editor called Logic Tree Editor (Should be under “General”).</p>
+<section id="activating-the-logic-nodes-add-on">
+<h2>Activating the Logic Nodes Add-on<a class="headerlink" href="#activating-the-logic-nodes-add-on" title="Link to this heading"></a></h2>
+<p>The <em>Logic Nodes</em> add-on comes preinstalled in UPBGE 0.3+. If not already, it needs to be activated:</p>
+<ul class="simple">
+<li><p><span class="menuselection">Edit -&gt; Preferences -&gt; Add-ons</span></p></li>
+</ul>
 <figure class="align-default" id="id2">
-<img alt="../../../_images/tutorials-introducing-logic-nodes-02.png" src="../../../_images/tutorials-introducing-logic-nodes-02.png" />
+<img alt="../../../_images/tutorials_introducing-logic-nodes_01_edit-menu_preferences.png" src="../../../_images/tutorials_introducing-logic-nodes_01_edit-menu_preferences.png" />
 <figcaption>
-<p><span class="caption-text">Set-up for Logic Nodes Editor</span><a class="headerlink" href="#id2" title="Link to this image"></a></p>
+<p><span class="caption-text">Navigate to Preferences</span><a class="headerlink" href="#id2" title="Link to this image"></a></p>
 </figcaption>
 </figure>
-<p>This editor is similar to the Shader Editor, so creating a new logic tree is the same as
-creating a new Material. Just click on New and a new tree (named NodeTree by default)
-should appear.</p>
+<p>There, in <em>search / filter</em> field, filter for <code class="docutils literal notranslate"><span class="pre">logic</span></code>, and check the box for <em>Logic Nodes+</em>.</p>
 <figure class="align-default" id="id3">
-<img alt="../../../_images/tutorials-introducing-logic-nodes-03.png" src="../../../_images/tutorials-introducing-logic-nodes-03.png" />
+<img alt="../../../_images/tutorials_introducing-logic-nodes_02_preferences_filter_logic.png" src="../../../_images/tutorials_introducing-logic-nodes_02_preferences_filter_logic.png" />
 <figcaption>
-<p><span class="caption-text">Logic Nodes Editor</span><a class="headerlink" href="#id3" title="Link to this image"></a></p>
+<p><span class="caption-text">Search for ‘logic’ and check the box</span><a class="headerlink" href="#id3" title="Link to this image"></a></p>
 </figcaption>
 </figure>
+<p>Click the little arrow, next to the check box, to expand the <em>Logic Nodes+</em> add-on menu, and in the <span class="menuselection">Preferences</span> click <span class="menuselection">Install or Update Uplogic Module</span> button.</p>
 <figure class="align-default" id="id4">
-<img alt="../../../_images/tutorials-introducing-logic-nodes-04.png" src="../../../_images/tutorials-introducing-logic-nodes-04.png" />
+<img alt="../../../_images/tutorials_introducing-logic-nodes_03_preferences_addons_logic-nodes-unfold.png" src="../../../_images/tutorials_introducing-logic-nodes_03_preferences_addons_logic-nodes-unfold.png" />
 <figcaption>
-<p><span class="caption-text">Node Tree Created</span><a class="headerlink" href="#id4" title="Link to this image"></a></p>
+<p><span class="caption-text">Install or Update Uplogic Module</span><a class="headerlink" href="#id4" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This same <span class="menuselection">Preferences</span> menu can be used to report a bug - click on <span class="menuselection">Report a Bug</span> button (internet connection is required). The default web browser will open github.com web page. There, click <span class="menuselection">New issue</span> button, and follow the instructions.</p>
+</div>
+<p>Houston, the eagle has landed. We’re good to go.</p>
+</section>
+<section id="creating-a-new-logic-tree">
+<h2>Creating a New Logic Tree<a class="headerlink" href="#creating-a-new-logic-tree" title="Link to this heading"></a></h2>
+<p>Now let’s get started. First we need to create a logic tree. Switch the <em>Editor Type</em> to the <span class="menuselection">Logic Node Editor</span>.</p>
+<figure class="align-default" id="id5">
+<img alt="../../../_images/tutorials_introducing-logic-nodes_04_editor.png" src="../../../_images/tutorials_introducing-logic-nodes_04_editor.png" />
+<figcaption>
+<p><span class="caption-text">Select Logic Node Editor</span><a class="headerlink" href="#id5" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>This editor is similar to the <em>Shader Editor</em> or <em>Geometry Node Editor</em>. Click on <span class="menuselection">New</span> and a new empty tree (named <em>Logic Node Editor</em> by default) will be created.</p>
+<figure class="align-default" id="id6">
+<img alt="../../../_images/tutorials_introducing-logic-nodes_05_new-logic-node-tree.png" src="../../../_images/tutorials_introducing-logic-nodes_05_new-logic-node-tree.png" />
+<figcaption>
+<p><span class="caption-text">Click <span class="menuselection">New</span> button</span><a class="headerlink" href="#id6" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<figure class="align-default" id="id7">
+<img alt="../../../_images/tutorials_introducing-logic-nodes_06_n-panel-dashboard.png" src="../../../_images/tutorials_introducing-logic-nodes_06_n-panel-dashboard.png" />
+<figcaption>
+<p><span class="caption-text">New empty Node Tree with side Dashboard</span><a class="headerlink" href="#id7" title="Link to this image"></a></p>
 </figcaption>
 </figure>
 </section>
 <section id="adding-nodes">
 <h2>Adding Nodes<a class="headerlink" href="#adding-nodes" title="Link to this heading"></a></h2>
-<p>Let’s make something happen here. When you press <kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Shift</kbd>-<kbd class="kbd docutils literal notranslate">A</kbd></kbd>, you’ll notice that you
-can add new nodes now. Go ahead, take a look at what’s at your disposal.</p>
-<figure class="align-default" id="id5">
-<img alt="../../../_images/tutorials-introducing-logic-nodes-05.png" src="../../../_images/tutorials-introducing-logic-nodes-05.png" />
+<p>With mouse cursor inside <em>Logic Node Editor</em>, press <kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Shift</kbd>-<kbd class="kbd docutils literal notranslate">A</kbd></kbd>, or click <span class="menuselection">Add</span> button in top header. This will pop-up a menu with all available <em>Logic Nodes</em>, organized in sub-menus. Go ahead and take a look at what is available.</p>
+<figure class="align-default" id="id8">
+<img alt="../../../_images/tutorials_introducing-logic-nodes_07_add-key-node.png" src="../../../_images/tutorials_introducing-logic-nodes_07_add-key-node.png" />
 <figcaption>
-<p><span class="caption-text">Adding Logic Nodes</span><a class="headerlink" href="#id5" title="Link to this image"></a></p>
+<p><span class="caption-text">Available Logic Nodes in Add menu</span><a class="headerlink" href="#id8" title="Link to this image"></a></p>
 </figcaption>
 </figure>
-<p>For this example, we’re looking for two nodes: the <code class="docutils literal notranslate"><span class="pre">Key</span> <span class="pre">Down</span></code> node and the <code class="docutils literal notranslate"><span class="pre">Print</span></code> node.
-If you can’t find them, you can also search for those words.</p>
-<p>The <code class="docutils literal notranslate"><span class="pre">Key</span> <span class="pre">Down</span></code> node is a node of the condition type. These nodes do not actually do anything in-game,
-but they either provide a condition or can be used to check for a more complex set of conditions.</p>
-<p>The <code class="docutils literal notranslate"><span class="pre">Print</span></code> node is an action type node. These nodes actually do something.
-They move objects, change properties, add constraints, you name it.</p>
-<p>Now we need to link the two together. The <code class="docutils literal notranslate"><span class="pre">Key</span> <span class="pre">Down</span></code> node has a Condition Socket,
-they are colored red. Connect that to the condition socket of the <code class="docutils literal notranslate"><span class="pre">Print</span></code> node and enter “Hello World” in
-the text box. Also, if you didn’t already, look at the <code class="docutils literal notranslate"><span class="pre">Key</span> <span class="pre">Down</span></code> node and you’ll see that it asks you
-to choose a key. It should look something like this now:</p>
-<figure class="align-default" id="id6">
-<img alt="../../../_images/tutorials-introducing-logic-nodes-06.png" src="../../../_images/tutorials-introducing-logic-nodes-06.png" />
+<p>For this example, we’re looking for two nodes: the <code class="docutils literal notranslate"><span class="pre">Key</span></code> and the <code class="docutils literal notranslate"><span class="pre">Print</span></code> node. If you can’t find them:</p>
+<ul class="simple">
+<li><p>press <kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Shift</kbd>-<kbd class="kbd docutils literal notranslate">A</kbd></kbd> hotkey, to add a node;</p></li>
+<li><p><strong>immediately</strong> after that start typing, i.e. <code class="docutils literal notranslate"><span class="pre">print</span></code> - UPBGE is smart and will search for it;</p></li>
+<li><p>if accidentally wrong node is selected, press <kbd class="kbd docutils literal notranslate">ESC</kbd> to cancel, and repeat.</p></li>
+</ul>
+<figure class="align-default" id="id9">
+<img alt="../../../_images/tutorials_introducing-logic-nodes_08_shift-a-search-print-node.png" src="../../../_images/tutorials_introducing-logic-nodes_08_shift-a-search-print-node.png" />
 <figcaption>
-<p><span class="caption-text">Logic Nodes Added</span><a class="headerlink" href="#id6" title="Link to this image"></a></p>
+<p><span class="caption-text">Editor searches for node</span><a class="headerlink" href="#id9" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Beside finding the node, <em>Search</em> pop-up also shows in which <em>sub-menu / sub-sub-menu</em> the nodes are.</p>
+</div>
+<p>The <code class="docutils literal notranslate"><span class="pre">Key</span></code> node is a node of the <strong>condition</strong> type. These nodes do not actually do anything in-game; they either provide a condition, or can be used to check for a more complex set of conditions.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">Print</span></code> node is an <strong>action</strong> type node. These nodes actually do something. They move objects, change properties, add constraints etc. - you name it.</p>
+<p>Those two nodes need to be connected together. The <code class="docutils literal notranslate"><span class="pre">Key</span></code> node has an <em>If Pressed</em> output socket, colored red. Connect it (click-and-drag) to the <em>Condition</em> input socket of the <code class="docutils literal notranslate"><span class="pre">Print</span></code> node and enter “Hello World” in the text box at the bottom, next to <em>Value</em> input socket (blue sockets are for <em>strings</em>). Also, if not already, look at the <code class="docutils literal notranslate"><span class="pre">Key</span></code> node and you’ll see that it expects user to choose a key. Click the bottom field and press <kbd class="kbd docutils literal notranslate">SPACE</kbd> key, which will set that key as selected one. It should look something like this now:</p>
+<figure class="align-default" id="id10">
+<img alt="../../../_images/tutorials_introducing-logic-nodes_09_nodes-added-connected.png" src="../../../_images/tutorials_introducing-logic-nodes_09_nodes-added-connected.png" />
+<figcaption>
+<p><span class="caption-text">Logic Nodes added and connected</span><a class="headerlink" href="#id10" title="Link to this image"></a></p>
 </figcaption>
 </figure>
 </section>
 <section id="applying-logic-trees">
 <h2>Applying Logic Trees<a class="headerlink" href="#applying-logic-trees" title="Link to this heading"></a></h2>
-<p>Once you’ve done that, all that’s left is to apply the tree to an object. Logic trees work the
-following way: each tree can be applied to as many objects as you want, meaning it is executed
-by each object it is applied to separately.</p>
-<p>Example: If you attached this tree to 4 objects and pressed the key ONCE,
+<p>Once done, all that’s left is to apply the tree to an object. Logic trees work the
+following way:</p>
+<ul class="simple">
+<li><p>each tree can be applied to as many objects as you want;</p></li>
+<li><p>meaning it is executed by each object it is applied to, separately.</p></li>
+</ul>
+<p>Example: if this tree is attached to 4 objects and user presses <kbd class="kbd docutils literal notranslate">SPACE</kbd> key <strong>once</strong>,
 the message would be printed 4 times, once for each object.</p>
-<p>To apply a tree to a cube, first add a cube, select it and press <code class="docutils literal notranslate"><span class="pre">Apply</span> <span class="pre">to</span> <span class="pre">selected</span></code> in the
-logic tree editor under the <code class="docutils literal notranslate"><span class="pre">Item</span></code> tab.</p>
+<p>To apply a tree to a cube, first a cube is added; select it and press <span class="menuselection">Apply to selected</span> button, in the <em>Dashboard</em> tab of side <em>N-panel</em>. Press <kbd class="kbd docutils literal notranslate">N</kbd> to toggle <em>N-panel</em>, if it is hidden.</p>
+<figure class="align-default" id="id11">
+<img alt="../../../_images/tutorials_introducing-logic-nodes_10_dashboard_tree-apply-to-selected.png" src="../../../_images/tutorials_introducing-logic-nodes_10_dashboard_tree-apply-to-selected.png" />
+<figcaption>
+<p><span class="caption-text">Apply Logic tree to selected object</span><a class="headerlink" href="#id11" title="Link to this image"></a></p>
+</figcaption>
+</figure>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p>Be Careful, trees can be applied to multiple objects at once!</p>
+<p>Be careful, trees can be applied to multiple objects at once!</p>
 </div>
-<figure class="align-default" id="id7">
-<img alt="../../../_images/tutorials-introducing-logic-nodes-07.png" src="../../../_images/tutorials-introducing-logic-nodes-07.png" />
+<p>To see which objects have been applied with a <em>Logic Node</em> tree, scroll down the <em>Dashboard</em> tab, and check the <em>Tree applied to:</em> sub-panel at the bottom.</p>
+<figure class="align-default" id="id12">
+<img alt="../../../_images/tutorials_introducing-logic-nodes_11_dashboard_tree-applied-to.png" src="../../../_images/tutorials_introducing-logic-nodes_11_dashboard_tree-applied-to.png" />
 <figcaption>
-<p><span class="caption-text">Applying Logic Tree</span><a class="headerlink" href="#id7" title="Link to this image"></a></p>
+<p><span class="caption-text">Objects with applied Logic Node tree</span><a class="headerlink" href="#id12" title="Link to this image"></a></p>
 </figcaption>
 </figure>
-</section>
-<section id="system-console">
-<h2>System Console<a class="headerlink" href="#system-console" title="Link to this heading"></a></h2>
-<p>Now, Last step! Hit Window -&gt; Toggle System Console (for Linux and Mac users: save the file
-and start blender via console again), start your game and hit that key you entered before.
-Quit the game, check the system console and there should be your message, printed as many times as you hit the key.</p>
-<figure class="align-default" id="id8">
-<img alt="../../../_images/tutorials-introducing-logic-nodes-08.png" src="../../../_images/tutorials-introducing-logic-nodes-08.png" />
+<p>If needed, sub-panels can be rearranged:</p>
+<ul class="simple">
+<li><p>for easier rearranging, first collapse sub-panels - click small arrow next to the sub-panel title;</p></li>
+<li><p>click-and-drag top-right icon (4 by 2 dots) of sub-panel.</p></li>
+</ul>
+<figure class="align-default" id="id13">
+<img alt="../../../_images/tutorials_introducing-logic-nodes_12_rearange-n-sub-panel.png" src="../../../_images/tutorials_introducing-logic-nodes_12_rearange-n-sub-panel.png" />
 <figcaption>
-<p><span class="caption-text">Console Output</span><a class="headerlink" href="#id8" title="Link to this image"></a></p>
+<p><span class="caption-text">Collapsed and rearranged N-panel sub-panels</span><a class="headerlink" href="#id13" title="Link to this image"></a></p>
 </figcaption>
 </figure>
-<p>This console is also the place where your errors will be printed if you are working in Debug Mode.</p>
+<p>What is left now is to run our example 'game':</p>
+<ul class="simple">
+<li><p>in <em>Render</em> panel of a <em>Properties</em> editor, click <span class="menuselection">Embedded Start</span> or <span class="menuselection">Standalone Start</span> (hotkey is <kbd class="kbd docutils literal notranslate">P</kbd>) - the 'game' shall start;</p></li>
+<li><p>with 'game' running, press <kbd class="kbd docutils literal notranslate">SPACE</kbd> (or whichever keyboard key is assigned in <code class="docutils literal notranslate"><span class="pre">Key</span></code> node) once;</p></li>
+</ul>
+<figure class="align-default" id="id14">
+<img alt="../../../_images/tutorials_introducing-logic-nodes_13_render-properties_embedded-start.png" src="../../../_images/tutorials_introducing-logic-nodes_13_render-properties_embedded-start.png" />
+<figcaption>
+<p><span class="caption-text">Start the game in Render panel</span><a class="headerlink" href="#id14" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>Finally check the system console - it should have our message printed:</p>
+<ul class="simple">
+<li><p>once if logic tree was applied to one object;</p></li>
+<li><p>twice if logic tree was applied to two objects;</p></li>
+<li><p>four times if logic tree was applied to two objects, and <kbd class="kbd docutils literal notranslate">SPACE</kbd> was pressed twice etc.</p></li>
+</ul>
+<figure class="align-default" id="id15">
+<img alt="../../../_images/tutorials_introducing-logic-nodes_14_terminal_print-output.png" src="../../../_images/tutorials_introducing-logic-nodes_14_terminal_print-output.png" />
+<figcaption>
+<p><span class="caption-text">System console/terminal output</span><a class="headerlink" href="#id15" title="Link to this image"></a></p>
+</figcaption>
+</figure>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>The <code class="docutils literal notranslate"><span class="pre">Print</span></code> node prints to the system console only, not to the python interactive console.
-Sadly this is not changable.</p>
+<p>See top of this page for System Console info.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">Print</span></code> node prints to the system console only, not to the Python interactive console. This is a feature of Blender and is not changable.</p>
 </div>
+<p>Press <kbd class="kbd docutils literal notranslate">ESC</kbd> key to end the 'game'.</p>
 </section>
 </section>
 
