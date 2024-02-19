@@ -7,7 +7,7 @@
   <title>Text Editor &mdash; UPBGE Manual</title>
       <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=fa44fd50" />
       <link rel="stylesheet" type="text/css" href="../../../_static/css/theme.css?v=19f00094" />
-      <link rel="stylesheet" type="text/css" href="../../../_static/css/theme_overrides.css?v=199cd01f" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/theme_overrides.css?v=5e9f35f9" />
 
   
   <!--[if lt IE 9]>
@@ -16,7 +16,7 @@
   
         <script src="../../../_static/jquery.js?v=5d32c60e"></script>
         <script src="../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-        <script src="../../../_static/documentation_options.js?v=c6e86fd7"></script>
+        <script src="../../../_static/documentation_options.js?v=f4332903"></script>
         <script src="../../../_static/doctools.js?v=888ff710"></script>
         <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../../_static/js/theme.js"></script>
@@ -54,26 +54,11 @@
 <li class="toctree-l2"><a class="reference internal" href="../properties/index.html">Properties Editor</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../logic/index.html">Logic Bricks Editor</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Text Editor</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#header">Header</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#view-menu">View Menu</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#text-menu">Text Menu</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#edit-menu">Edit Menu</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#select-menu">Select Menu</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#format-menu">Format Menu</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#template-menu">Template Menu</a></li>
-</ul>
-</li>
+<li class="toctree-l3"><a class="reference internal" href="#header">Header</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#main-view">Main View</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#sidebar">Sidebar</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#find-replace">Find &amp; Replace</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#properties">Properties</a></li>
-</ul>
-</li>
+<li class="toctree-l3"><a class="reference internal" href="#sidebar">Sidebar</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#footer">Footer</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#usage">Usage</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#running-scripts">Running Scripts</a></li>
-</ul>
-</li>
+<li class="toctree-l3"><a class="reference internal" href="#usage">Usage</a></li>
 </ul>
 </li>
 </ul>
@@ -86,7 +71,11 @@
 <li class="toctree-l1"><a class="reference internal" href="../../datablocks/index.html">Datablocks</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../release/index.html">Deployment</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../tools/index.html">Tools</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../about/index.html">About</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../glossary/index.html">Glossary</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Contribute</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../contribute/index.html">Contribute</a></li>
 </ul>
 
         </div>
@@ -159,8 +148,8 @@ More options become available when a text file is created or opened.</p>
 After that the header will change.</p>
 </dd>
 <dt>Run Script (play icon)</dt><dd><p>Executes the text as a Python script <kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Alt</kbd>-<kbd class="kbd docutils literal notranslate">P</kbd></kbd>. This execution has placed out of Game Engine only,
-and it is focused for development mainly. If you want to execute a Python script into the Game Engine checks
-the <span class="xref std std-doc">Python Scripting</span> chapter.</p>
+and it is focused for development mainly. If you want to execute a Python script inside the Game Engine check
+the <a class="reference internal" href="../../python/introduction.html"><span class="doc">Python Scripting</span></a> chapter.</p>
 </dd>
 <dt>Show</dt><dd><p>Toggle display options.</p>
 <p>Line Numbers, Word Wrap, Syntax Highlighting</p>
@@ -214,7 +203,7 @@ If the cursor is in the middle of a word, the cursor is moved to the end of the 
 <dt>Save <kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Alt</kbd>-<kbd class="kbd docutils literal notranslate">S</kbd></kbd></dt><dd><p>Saves an already open file.</p>
 </dd>
 <dt>Save As <kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Shift</kbd>-<kbd class="kbd docutils literal notranslate">Ctrl</kbd>-<kbd class="kbd docutils literal notranslate">Alt</kbd>-<kbd class="kbd docutils literal notranslate">S</kbd></kbd>.</dt><dd><p>Saves text as a new text file, a File Browser is opened to select the directory
-to save the file along with giving the file a name / file extension.</p>
+to save the file along with giving the file a name/file extension.</p>
 </dd>
 <dt>Register</dt><dd><p>Registers the current text data-block as a module on loading (the text name must end with <code class="docutils literal notranslate"><span class="pre">.py</span></code>).</p>
 </dd>
@@ -315,10 +304,7 @@ which are useful for writing tools, like a class/function/variable browser, comp
 Pressing <kbd class="kbd docutils literal notranslate">RMB</kbd> opens the context menu.</p>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
-<p>Usages for the Text editor</p>
-<p>The Text editor is handy also when you want to share your blend-files with others.
-The Text editor can be used to write in a <code class="docutils literal notranslate"><span class="pre">README</span></code> text explaining the contents of your blend-file.
-Be sure to keep it visible when saving!</p>
+<p>Text editor is handy also when you want to share your blend-files with others. I.e write a <code class="docutils literal notranslate"><span class="pre">README</span></code> text explaining the contents of your blend-file. Be sure to keep it visible when saving!</p>
 </div>
 </section>
 <section id="sidebar">
@@ -375,8 +361,8 @@ Before going on it is worth noticing that UPBGE comes with a fully functional Py
 and with a lots of Blender/UPBGE-specific modules.</p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p>This script execution takes place outside Game Engine, and it is focused for development purpose only.
-If you want to execute a Python script into the Game Engine checks the <span class="xref std std-doc">Python Scripting</span> chapter.</p>
+<p>This script execution takes place outside Game Engine, and it is intended for development purpose only.
+If you want to execute a Python script inside the Game Engine check the <a class="reference internal" href="../../python/introduction.html"><span class="doc">Python Scripting</span></a> chapter.</p>
 </div>
 </section>
 </section>
@@ -393,7 +379,7 @@ If you want to execute a Python script into the Game Engine checks the <span cla
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright This page is licensed under a CC-BY-SA 4.0 Int. License..</p>
+    <p>&#169; Copyright : This page is licensed under a CC-BY-SA 4.0 Int. License.</p>
   </div>
 
    

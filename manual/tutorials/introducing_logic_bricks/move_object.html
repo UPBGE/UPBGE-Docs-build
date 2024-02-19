@@ -7,7 +7,7 @@
   <title>Moving A Cube &mdash; UPBGE Manual</title>
       <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=fa44fd50" />
       <link rel="stylesheet" type="text/css" href="../../../_static/css/theme.css?v=19f00094" />
-      <link rel="stylesheet" type="text/css" href="../../../_static/css/theme_overrides.css?v=199cd01f" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/theme_overrides.css?v=5e9f35f9" />
 
   
   <!--[if lt IE 9]>
@@ -16,7 +16,7 @@
   
         <script src="../../../_static/jquery.js?v=5d32c60e"></script>
         <script src="../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-        <script src="../../../_static/documentation_options.js?v=c6e86fd7"></script>
+        <script src="../../../_static/documentation_options.js?v=f4332903"></script>
         <script src="../../../_static/doctools.js?v=888ff710"></script>
         <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../../_static/js/theme.js"></script>
@@ -52,13 +52,7 @@
 <li class="toctree-l1 current"><a class="reference internal" href="../index.html">Tutorials</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../getting_started/index.html">Getting Started</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="index.html">Introducing Logic Bricks</a><ul class="current">
-<li class="toctree-l3 current"><a class="current reference internal" href="#">Moving A Cube</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#setup-scene">Setup Scene</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#adding-logic">Adding Logic</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#logic-depending-on-properties">Logic Depending On Properties</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#conclusion">Conclusion</a></li>
-</ul>
-</li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Moving A Cube</a></li>
 <li class="toctree-l3"><a class="reference internal" href="first_person_camera.html">First Person Camera</a></li>
 <li class="toctree-l3"><a class="reference internal" href="play_animation.html">Playing An Animation</a></li>
 <li class="toctree-l3"><a class="reference internal" href="linked_libraries.html">Using Linked Libraries In Game</a></li>
@@ -78,7 +72,11 @@
 <li class="toctree-l1"><a class="reference internal" href="../../datablocks/index.html">Datablocks</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../release/index.html">Deployment</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../tools/index.html">Tools</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../about/index.html">About</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../glossary/index.html">Glossary</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Contribute</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../contribute/index.html">Contribute</a></li>
 </ul>
 
         </div>
@@ -108,36 +106,26 @@
            <div itemprop="articleBody">
              
   <section id="moving-a-cube">
-<h1>Moving A Cube<a class="headerlink" href="#moving-a-cube" title="Link to this heading"></a></h1>
-<p>In this short tutorial we will introduce two essential elements for logic in UPBGE: logic
-triggering and game properties. These elements allows the interactivity with the set up
-objects.</p>
-<p>A <strong>game property</strong> (also known as variable) is a value that is kept inside a object,
-allowing multiple uses. A common use of game properties is the ammount life of the player,
-the current song playing, or anything else that can be useful to track for later use.</p>
-<p>The <strong>logic triggering</strong> is the act of triggering some kind of event in the game. There’s
-lots of ways to trigger events in UPBGE, from detecting if a key is pressed to detecting an
-object colliding with another, or even triggering events continuously without detecting
-anything. After the detection of an trigger, an event can be happen, like a object to
-move, a property be changed, etc.</p>
+<span id="lb-move-object"></span><h1>Moving A Cube<a class="headerlink" href="#moving-a-cube" title="Link to this heading"></a></h1>
+<p>In this short tutorial we will introduce two essential elements for logic in UPBGE: logic triggering and game properties. These elements allows the interactivity with the set up objects.</p>
+<p>A <strong>game property</strong> (also known as variable) is a value that is kept inside a object, allowing multiple uses. A common use of game properties is the ammount life of the player, the current song playing, or anything else that can be useful to track for later use.</p>
+<p>The <strong>logic triggering</strong> is the act of triggering some kind of event in the game. There’s lots of ways to trigger events in UPBGE, from detecting if a key is pressed to detecting an object colliding with another, or even triggering events continuously without detecting anything. After the detection of an trigger, an event can be happen, like a object to move, a property be changed, etc.</p>
 <section id="setup-scene">
 <h2>Setup Scene<a class="headerlink" href="#setup-scene" title="Link to this heading"></a></h2>
-<p>First, we must add objects to compose our scene. We need three basic objects:</p>
+<p>First, we must add objects to compose our scene (<em>mouse-over</em> 3D Viewport &gt; <kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Shift</kbd>-<kbd class="kbd docutils literal notranslate">A</kbd></kbd>). We need three basic objects:</p>
 <dl class="simple">
 <dt>Camera</dt><dd><p>A camera will allow us to see our scene from a point of view.</p>
 </dd>
-<dt>Light</dt><dd><p>A light will illuminate the scene objects, allowing us to see them. In this example we’ll
-use a Sun light, which will illuminate all objects in the scene.</p>
+<dt>Light</dt><dd><p>A light will illuminate the scene objects, allowing us to see them. In this example we’ll use a Sun light, which will illuminate all objects in the scene.</p>
 </dd>
-<dt>Cube</dt><dd><p>A Cube object will be our visual feedback of our logic. As we can’t see a camera or light,
-we’ll move the Cube.</p>
+<dt>Cube</dt><dd><p>A Cube object will be our visual feedback of our logic. As we can’t see a camera or light, we’ll move the Cube.</p>
 </dd>
 </dl>
 <p>Once all objects were added, place them somewhat like the picture below:</p>
-<figure class="align-default" id="id1">
-<img alt="../../../_images/tutorials-move_object-initial_scene.png" src="../../../_images/tutorials-move_object-initial_scene.png" />
+<figure class="align-default" id="id1" style="width: 90%">
+<img alt="../../../_images/01-move_object-initial_scene.png" src="../../../_images/01-move_object-initial_scene.png" />
 <figcaption>
-<p><span class="caption-text">The Camera is showing the Cube, the Cube is at the center of the scene and the Hemi lamp can be anywhere.</span><a class="headerlink" href="#id1" title="Link to this image"></a></p>
+<p><span class="caption-text">Cube at the center of the scene</span><a class="headerlink" href="#id1" title="Link to this image"></a></p>
 </figcaption>
 </figure>
 <p>Our Cube is not centered in the screen on purpose: we’ll move it in the front direction
@@ -145,92 +133,74 @@ we’ll move the Cube.</p>
 </section>
 <section id="adding-logic">
 <h2>Adding Logic<a class="headerlink" href="#adding-logic" title="Link to this heading"></a></h2>
-<p>After the scene is set up, follow these steps:</p>
+<p>After the scene is set up, with <cite>Cube</cite> selected, follow these steps:</p>
 <ul class="simple">
 <li><p>Go to the <a class="reference internal" href="../../editors/logic/index.html#bpy-types-spacelogiceditor"><span class="std std-ref">Logic Bricks Editor</span></a>.</p></li>
-<li><p>Add a <a class="reference internal" href="../../logic/sensors/types/keyboard.html#sensor-keyboard"><span class="std std-ref">Keyboard Sensor</span></a> through the dropdown menu named <strong>Add Sensor</strong>.</p></li>
-<li><p>Add a <a class="reference internal" href="../../logic/controllers/types/and.html#controller-and"><span class="std std-ref">AND Controller</span></a> through the dropdown menu named <strong>Add Controller</strong>.</p></li>
-<li><p>Add a <a class="reference internal" href="../../logic/actuators/types/motion.html#actuator-motion"><span class="std std-ref">Motion Actuator</span></a> through the dropdown menu named <strong>Add Actuator</strong>.</p></li>
-<li><p>Connect each brick by dragging and dropping one insert into another.</p></li>
+<li><p>Add a <a class="reference internal" href="../../logic/sensors/types/keyboard.html#sensor-keyboard"><span class="std std-ref">Keyboard Sensor</span></a> through the dropdown menu <span class="menuselection">Add Sensor</span>.</p></li>
+<li><p>Add a <a class="reference internal" href="../../logic/controllers/types/and.html#controller-and"><span class="std std-ref">AND Controller</span></a> through the dropdown menu <span class="menuselection">Add Controller</span>.</p></li>
+<li><p>Add a <a class="reference internal" href="../../logic/actuators/types/motion.html#actuator-motion"><span class="std std-ref">Motion Actuator</span></a> through the dropdown menu <span class="menuselection">Add Actuator</span>.</p></li>
 </ul>
+<p>Connect each brick by dragging and dropping one insert into another (<cite>chain link</cite> icon).</p>
 <p>Now we must fill some information on the bricks:</p>
 <ul class="simple">
-<li><p>On the <a class="reference internal" href="../../logic/sensors/types/keyboard.html#sensor-keyboard"><span class="std std-ref">Keyboard Sensor</span></a>, click on the <em>Key</em> field and press a key to assign a key to it.</p></li>
-<li><p>On the <a class="reference internal" href="../../logic/actuators/types/motion.html#actuator-motion"><span class="std std-ref">Motion Actuator</span></a>, insert the value <code class="docutils literal notranslate"><span class="pre">-0.05</span></code> in the field <em>Y</em> of <em>Loc</em>.</p></li>
+<li><p>On the <a class="reference internal" href="../../logic/sensors/types/keyboard.html#sensor-keyboard"><span class="std std-ref">Keyboard Sensor</span></a>, click on the <code class="docutils literal notranslate"><span class="pre">Key</span></code> field and press a key to assign a key to it.</p></li>
+<li><p>On the <a class="reference internal" href="../../logic/actuators/types/motion.html#actuator-motion"><span class="std std-ref">Motion Actuator</span></a>, insert the value <code class="docutils literal notranslate"><span class="pre">-0.05</span></code> in the field <code class="docutils literal notranslate"><span class="pre">Y</span></code> of <code class="docutils literal notranslate"><span class="pre">Loc</span></code>.</p></li>
 </ul>
 <p>The <a class="reference internal" href="../../editors/logic/index.html#bpy-types-spacelogiceditor"><span class="std std-ref">Logic Bricks Editor</span></a> should look like this:</p>
-<figure class="align-default" id="id2">
-<img alt="../../../_images/tutorials-move_object-logic_editor_1.png" src="../../../_images/tutorials-move_object-logic_editor_1.png" />
+<figure class="align-default" id="id2" style="width: 100%">
+<img alt="../../../_images/02-move_object-logic_editor.png" src="../../../_images/02-move_object-logic_editor.png" />
 <figcaption>
 <p><span class="caption-text"><a class="reference internal" href="../../logic/sensors/types/keyboard.html#sensor-keyboard"><span class="std std-ref">Keyboard Sensor</span></a> &gt; <a class="reference internal" href="../../logic/controllers/types/and.html#controller-and"><span class="std std-ref">AND Controller</span></a> &gt; <a class="reference internal" href="../../logic/actuators/types/motion.html#actuator-motion"><span class="std std-ref">Motion Actuator</span></a></span><a class="headerlink" href="#id2" title="Link to this image"></a></p>
 </figcaption>
 </figure>
-<p>Now, start the game engine (by default, pressing <kbd class="kbd docutils literal notranslate">P</kbd> while focusing the 3D Viewport).
-If you press the key you assigned to the <a class="reference internal" href="../../logic/sensors/types/keyboard.html#sensor-keyboard"><span class="std std-ref">Keyboard Sensor</span></a>, the Cube will move in the
-<code class="docutils literal notranslate"><span class="pre">-Y</span></code> direction, and if you release the key, the Cube will stop.</p>
+<p>Start the game engine (by default, pressing <kbd class="kbd docutils literal notranslate">P</kbd> while focusing/mouse-over the 3D Viewport). If you press the key you assigned to the <a class="reference internal" href="../../logic/sensors/types/keyboard.html#sensor-keyboard"><span class="std std-ref">Keyboard Sensor</span></a>, the Cube will move in the <code class="docutils literal notranslate"><span class="pre">-Y</span></code> direction, and if you release the key, the Cube will stop.</p>
 <p>This behavior happens for several reasons:</p>
 <ul class="simple">
 <li><p>The <a class="reference internal" href="../../logic/sensors/types/keyboard.html#sensor-keyboard"><span class="std std-ref">Keyboard Sensor</span></a> emits a positive signal when the selected key is pressed, and emits a negative signal when the key is released.</p></li>
 <li><p>The <a class="reference internal" href="../../logic/controllers/types/and.html#controller-and"><span class="std std-ref">AND Controller</span></a> receives the signals from all connected sensors, and if all signals are positive, the controller emits an activation signal to all connected actuators, or an deactivation signal if one or more incoming signals are negative.</p></li>
 <li><p>The <a class="reference internal" href="../../logic/actuators/types/motion.html#actuator-motion"><span class="std std-ref">Motion Actuator</span></a> receives the activation signal from the controller and perform the motion. When it receives a deactivation signal, it stops performing the motion.</p></li>
 </ul>
-<p>This is the basic of visual logic when using UPBGE, pretty straightforward. However,
-according to what you want to achieve, it can get a lot more complex.</p>
+<p>This is the basic of visual logic when using UPBGE, pretty straightforward. However, according to what you want to achieve, it can get a lot more complex.</p>
 </section>
 <section id="logic-depending-on-properties">
 <h2>Logic Depending On Properties<a class="headerlink" href="#logic-depending-on-properties" title="Link to this heading"></a></h2>
-<p>In games, the logic depends on statuses most of the time. An enemy dies when its life reaches
-<code class="docutils literal notranslate"><span class="pre">0</span></code>, the player can shoot while its ammo is greater than <code class="docutils literal notranslate"><span class="pre">0</span></code>, and so on. In UPBGE, you
-can do these conditions through the use of properties.</p>
+<p>In games, the logic depends on statuses most of the time. An enemy dies when its life reaches <code class="docutils literal notranslate"><span class="pre">0</span></code>, the player can shoot while its ammo is greater than <code class="docutils literal notranslate"><span class="pre">0</span></code>, and so on. In UPBGE, you can do these conditions through the use of properties.</p>
 <p>To continue, perform the following steps:</p>
 <ul class="simple">
-<li><p>In <span class="xref std std-ref">editor-logic-properties</span>, add a property through <strong>Add Game Property</strong>, set its name to <em>fuel</em>, its type to <em>Integer</em> and its value to <code class="docutils literal notranslate"><span class="pre">200</span></code>.</p></li>
-<li><p>In <a class="reference internal" href="../../editors/logic/index.html#bpy-types-spacelogiceditor"><span class="std std-ref">Logic Bricks Editor</span></a>, add a <a class="reference internal" href="../../logic/sensors/types/property.html#sensor-property"><span class="std std-ref">Property Sensor</span></a>, set its evaluation type to <strong>Greater Than</strong>, the property to <em>fuel</em> and the value to <code class="docutils literal notranslate"><span class="pre">0</span></code>.</p></li>
+<li><p>In <a class="reference internal" href="../../editors/logic/index.html#bpy-types-spacelogiceditor"><span class="std std-ref">Logic Bricks Editor</span></a> (No. 1 - <span class="menuselection">Properties</span>), add a property through <span class="menuselection">Add Game Property</span>, set its name to <code class="docutils literal notranslate"><span class="pre">fuel</span></code>, its type to <code class="docutils literal notranslate"><span class="pre">Integer</span></code> and its value to <code class="docutils literal notranslate"><span class="pre">200</span></code>.</p></li>
+<li><p>Next add a <a class="reference internal" href="../../logic/sensors/types/property.html#sensor-property"><span class="std std-ref">Property Sensor</span></a>, set its evaluation type to <em>Greater Than</em>, the Property to <em>fuel</em> and the value to <code class="docutils literal notranslate"><span class="pre">0</span></code>.</p></li>
 <li><p>Connect the <a class="reference internal" href="../../logic/sensors/types/property.html#sensor-property"><span class="std std-ref">Property Sensor</span></a> to the <a class="reference internal" href="../../logic/controllers/types/and.html#controller-and"><span class="std std-ref">AND Controller</span></a>, along with the <a class="reference internal" href="../../logic/sensors/types/keyboard.html#sensor-keyboard"><span class="std std-ref">Keyboard Sensor</span></a>.</p></li>
 </ul>
-<figure class="align-default" id="id3">
-<img alt="../../../_images/tutorials-move_object-logic_editor_2.png" src="../../../_images/tutorials-move_object-logic_editor_2.png" />
+<figure class="align-default" id="id3" style="width: 100%">
+<img alt="../../../_images/03-move_object-property_2x.png" src="../../../_images/03-move_object-property_2x.png" />
 <figcaption>
-<p><span class="caption-text">The property <em>fuel</em> added and the <a class="reference internal" href="../../logic/sensors/types/property.html#sensor-property"><span class="std std-ref">Property Sensor</span></a> properly filled.</span><a class="headerlink" href="#id3" title="Link to this image"></a></p>
+<p><span class="caption-text">Property Sensor (left side) properly filled and Fuel property added (right side)</span><a class="headerlink" href="#id3" title="Link to this image"></a></p>
 </figcaption>
 </figure>
-<p>This makes our Cube move only if the value of <em>fuel</em> is greater than <code class="docutils literal notranslate"><span class="pre">0</span></code>. You can set the
-property <em>fuel</em> to <code class="docutils literal notranslate"><span class="pre">0</span></code> and play the game, and you will see that the Cube will not move.
-However, it would be good if we decrease the value of <em>fuel</em> as our Cube moves, until it
-reaches <code class="docutils literal notranslate"><span class="pre">0</span></code>. To do that, do the following steps:</p>
+<p>This makes our Cube move only if the value of <em>fuel</em> is greater than <code class="docutils literal notranslate"><span class="pre">0</span></code>. You can set the property <em>fuel</em> to <code class="docutils literal notranslate"><span class="pre">0</span></code> and play the game, and you will see that the Cube will not move. However, it would be good if we decrease the value of <em>fuel</em> as our Cube moves, until it reaches <code class="docutils literal notranslate"><span class="pre">0</span></code>. To do that, do the following steps:</p>
 <ul class="simple">
 <li><p>Add a <a class="reference internal" href="../../logic/actuators/types/property.html#actuator-property"><span class="std std-ref">Property Actuator</span></a> and connect it to the <a class="reference internal" href="../../logic/controllers/types/and.html#controller-and"><span class="std std-ref">AND Controller</span></a>.</p></li>
 <li><p>Set the mode of <a class="reference internal" href="../../logic/actuators/types/property.html#actuator-property"><span class="std std-ref">Property Actuator</span></a> to <strong>Add</strong>, its property to <em>fuel</em> and its value to <code class="docutils literal notranslate"><span class="pre">-1</span></code>.</p></li>
 <li><p>Enable the pulse mode on <a class="reference internal" href="../../logic/sensors/types/keyboard.html#sensor-keyboard"><span class="std std-ref">Keyboard Sensor</span></a>.</p></li>
 </ul>
-<figure class="align-default" id="id4">
-<img alt="../../../_images/tutorials-move_object-logic_editor_3.png" src="../../../_images/tutorials-move_object-logic_editor_3.png" />
+<figure class="align-default" id="id4" style="width: 100%">
+<img alt="../../../_images/04-move_object-fuel_consumption.png" src="../../../_images/04-move_object-fuel_consumption.png" />
 <figcaption>
-<p><span class="caption-text">The sensors connected to <a class="reference internal" href="../../logic/controllers/types/and.html#controller-and"><span class="std std-ref">AND Controller</span></a> and the new <a class="reference internal" href="../../logic/actuators/types/property.html#actuator-property"><span class="std std-ref">Property Actuator</span></a> properly filled.</span><a class="headerlink" href="#id4" title="Link to this image"></a></p>
+<p><span class="caption-text">Fuel consumption logic: Sensors &gt; And Controller &gt; Property Actuator</span><a class="headerlink" href="#id4" title="Link to this image"></a></p>
 </figcaption>
 </figure>
-<p>There’s a new factor involved here: the pulse mode on <a class="reference internal" href="../../logic/sensors/types/keyboard.html#sensor-keyboard"><span class="std std-ref">Keyboard Sensor</span></a>. By default,
-a sensor sends a single positive signal to the controller when active, and a single negative
-signal when inactive. The pulse mode makes the signal be sent each logical frame (default
-is 60 frames per second). This is useful for us now, because we need our <em>fuel</em> to be
-decreased while we press the key without the need of releasing and pressing it again.</p>
-<p>Go ahead em play the game. The Cube will move and, after some time, it stops. It happens
-because the <a class="reference internal" href="../../logic/actuators/types/property.html#actuator-property"><span class="std std-ref">Property Actuator</span></a> has decreased <code class="docutils literal notranslate"><span class="pre">1</span></code> unit of <em>fuel</em> each frame,
-according to the <a class="reference internal" href="../../logic/sensors/types/keyboard.html#sensor-keyboard"><span class="std std-ref">Keyboard Sensor</span></a> pulse mode, and when <em>fuel</em> reaches <code class="docutils literal notranslate"><span class="pre">0</span></code>, the
-logic of the <a class="reference internal" href="../../logic/actuators/types/motion.html#actuator-motion"><span class="std std-ref">Motion Actuator</span></a> doesn’t respond anymore. It would be good, however, to
-see the value of <em>fuel</em> be decreased over time. You can do this by enabling the debug flag
-on the <em>fuel</em> property and the <strong>Show Debug Properties</strong> on menu <em>Game &gt; Show Debug &gt; Show
-Debug Properties</em>, or on the <strong>Render</strong> editor, as shown in the figure below.</p>
-<figure class="align-default">
-<img alt="../../../_images/tutorials-move_object-debug_properties.png" src="../../../_images/tutorials-move_object-debug_properties.png" />
+<p>There’s a new factor involved here: the pulse mode on <a class="reference internal" href="../../logic/sensors/types/keyboard.html#sensor-keyboard"><span class="std std-ref">Keyboard Sensor</span></a> (blue <code class="docutils literal notranslate"><span class="pre">up</span></code> arrow in top left corner). By default, a sensor sends a single positive signal to the controller when active, and a single negative signal when inactive. The pulse mode makes the signal be sent each logical frame (default is 60 frames per second). This is useful for us now, because we need our <em>fuel</em> to be decreased while we press the key without the need of releasing and pressing it again.</p>
+<p>Go ahead and play the game. The Cube will move and, after some time, it stops. It happens because the <a class="reference internal" href="../../logic/actuators/types/property.html#actuator-property"><span class="std std-ref">Property Actuator</span></a> has decreased <code class="docutils literal notranslate"><span class="pre">1</span></code> unit of <em>fuel</em> each frame, according to the <a class="reference internal" href="../../logic/sensors/types/keyboard.html#sensor-keyboard"><span class="std std-ref">Keyboard Sensor</span></a> pulse mode, and when <em>fuel</em> reaches <code class="docutils literal notranslate"><span class="pre">0</span></code>, the logic of the <a class="reference internal" href="../../logic/actuators/types/motion.html#actuator-motion"><span class="std std-ref">Motion Actuator</span></a> doesn’t respond anymore. It would be good, however, to see the value of <em>fuel</em> be decreased over time. You can do this by enabling the debug flag on the <em>fuel</em> property (<span class="menuselection">Properties Editor &gt; Game &gt; Game Properties</span>), or <span class="menuselection">Logic Bricks Editor &gt; N-panel &gt; Properties</span>, as shown in the figure below.</p>
+<figure class="align-default" id="id5" style="width: 100%">
+<img alt="../../../_images/05-move_object-debug.png" src="../../../_images/05-move_object-debug.png" />
+<figcaption>
+<p><span class="caption-text">Debug settings and display on screen</span><a class="headerlink" href="#id5" title="Link to this image"></a></p>
+</figcaption>
 </figure>
 </section>
 <section id="conclusion">
 <h2>Conclusion<a class="headerlink" href="#conclusion" title="Link to this heading"></a></h2>
-<p>The goal of this basic tutorial is to show how to work with the visual logic and properties
-on UPBGE. There’s more to be discovered about visual logic and properties, like other
-<a class="reference internal" href="../../logic/properties.html#logic-properties-types"><span class="std std-ref">Property Types</span></a>, the use of <a class="reference internal" href="../../logic/states.html#logic-states"><span class="std std-ref">States</span></a> with logic bricks, etc,
-and those subjects can be better understood on their own pages.</p>
+<p>The goal of this basic tutorial is to show how to work with the visual logic and properties on UPBGE. There’s more to be discovered about visual logic and properties, like other <a class="reference internal" href="../../logic/properties.html#logic-properties-types"><span class="std std-ref">Property Types</span></a>, the use of <a class="reference internal" href="../../logic/states.html#logic-states"><span class="std std-ref">States</span></a> with logic bricks, etc, and those subjects can be better understood on their own pages.</p>
 </section>
 </section>
 
@@ -245,7 +215,7 @@ and those subjects can be better understood on their own pages.</p>
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright This page is licensed under a CC-BY-SA 4.0 Int. License..</p>
+    <p>&#169; Copyright : This page is licensed under a CC-BY-SA 4.0 Int. License.</p>
   </div>
 
    

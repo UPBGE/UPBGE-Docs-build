@@ -7,7 +7,7 @@
   <title>Python and the Game Engine &mdash; UPBGE Manual</title>
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
       <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
-      <link rel="stylesheet" type="text/css" href="../../_static/css/theme_overrides.css?v=199cd01f" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme_overrides.css?v=5e9f35f9" />
 
   
   <!--[if lt IE 9]>
@@ -16,7 +16,7 @@
   
         <script src="../../_static/jquery.js?v=5d32c60e"></script>
         <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-        <script src="../../_static/documentation_options.js?v=c6e86fd7"></script>
+        <script src="../../_static/documentation_options.js?v=f4332903"></script>
         <script src="../../_static/doctools.js?v=888ff710"></script>
         <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../_static/js/theme.js"></script>
@@ -57,108 +57,9 @@
 <li class="toctree-l2"><a class="reference internal" href="introduction.html">Introduction to Scripting</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Python and the Game Engine</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#integrating-python-in-the-game-engine">Integrating Python in the Game Engine</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#writing-your-python-scripts">Writing Your Python Scripts</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#text-editors">Text Editors</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="#upbge-text-editor">UPBGE Text Editor</a></li>
-<li class="toctree-l5"><a class="reference internal" href="#visual-studio-code-or-pycharm">Visual Studio Code or PyCharm</a></li>
-</ul>
-</li>
-<li class="toctree-l4"><a class="reference internal" href="#reference-material-and-documentation">Reference Material and Documentation</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#testing-your-scripts">Testing Your Scripts</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="#designing-your-python-script-study-example">Designing Your Python Script - Study Example</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#d-world-elements">3D World Elements</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#understanding-the-code">Understanding the Code</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="#global-initialization">Global Initialization</a></li>
-<li class="toctree-l5"><a class="reference internal" href="#event-management">Event Management</a><ul>
-<li class="toctree-l6"><a class="reference internal" href="#scripts-mouse-move">scripts.mouse_move</a></li>
-<li class="toctree-l6"><a class="reference internal" href="#scripts-keyboard">scripts.keyboard</a></li>
-</ul>
-</li>
-<li class="toctree-l5"><a class="reference internal" href="#internal-functions">Internal Functions</a><ul>
-<li class="toctree-l6"><a class="reference internal" href="#scripts-move-camera">scripts.move_camera</a></li>
-<li class="toctree-l6"><a class="reference internal" href="#scripts-orbit-camera">scripts.orbit_camera</a></li>
-<li class="toctree-l6"><a class="reference internal" href="#scripts-look-camera">scripts.look_camera</a></li>
-</ul>
-</li>
-<li class="toctree-l5"><a class="reference internal" href="#game-interaction">Game Interaction</a><ul>
-<li class="toctree-l6"><a class="reference internal" href="#outcome-of-the-functions-scripts-move-camera-scripts-look-camera-and-scripts-orbit-camera">Outcome of the functions: scripts.move_camera, scripts.look_camera, and scripts.orbit_camera</a></li>
-<li class="toctree-l6"><a class="reference internal" href="#scripts-change-view">scripts.change_view</a></li>
-</ul>
-</li>
-<li class="toctree-l5"><a class="reference internal" href="#more-python">More Python</a></li>
-</ul>
-</li>
-<li class="toctree-l4"><a class="reference internal" href="#reusing-your-script">Reusing Your Script</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="#file-organization-groups-and-layers">File Organization - Groups and Layers</a></li>
-<li class="toctree-l5"><a class="reference internal" href="#tweaks-and-adjustments-getting-your-hands-dirty">Tweaks and Adjustments - Getting Your Hands Dirty</a><ul>
-<li class="toctree-l6"><a class="reference internal" href="#organize-and-append-your-file">Organize and Append Your File</a></li>
-<li class="toctree-l6"><a class="reference internal" href="#adjustments-in-loco">Adjustments in Loco</a></li>
-<li class="toctree-l6"><a class="reference internal" href="#script-tweaks">Script Tweaks</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="#using-the-game-engine-api-application-programming-interface">Using the Game Engine API - Application Programming Interface</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#bge-logic">bge.logic</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="#getcurrentcontroller">getCurrentController()</a></li>
-<li class="toctree-l5"><a class="reference internal" href="#getcurrentscene">getCurrentScene()</a></li>
-<li class="toctree-l5"><a class="reference internal" href="#expandpath">expandPath()</a></li>
-<li class="toctree-l5"><a class="reference internal" href="#sendmessage-addscene-start-restart-endgame">sendMessage(), addScene(), start/restart/endGame()</a></li>
-<li class="toctree-l5"><a class="reference internal" href="#libload-libnew-libfree-liblist-todo-to-be-replaced-with-new-ones">LibLoad(), LibNew(), LibFree(), LibList() (TODO to be replaced with new ones)</a></li>
-<li class="toctree-l5"><a class="reference internal" href="#globaldict-loadglobaldict-saveglobaldict">globalDict, loadGlobalDict(), saveGlobalDict()</a></li>
-<li class="toctree-l5"><a class="reference internal" href="#keyboard">keyboard</a></li>
-<li class="toctree-l5"><a class="reference internal" href="#mouse">mouse</a></li>
-<li class="toctree-l5"><a class="reference internal" href="#joysticks">joysticks</a></li>
-<li class="toctree-l5"><a class="reference internal" href="#others">Others</a></li>
-</ul>
-</li>
-<li class="toctree-l4"><a class="reference internal" href="#bge-types">bge.types</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="#class-kx-gameobject">Class KX_GameObject</a><ul>
-<li class="toctree-l6"><a class="reference internal" href="#python-internal-methods">Python Internal Methods</a></li>
-<li class="toctree-l6"><a class="reference internal" href="#instance-methods">Instance Methods</a></li>
-<li class="toctree-l6"><a class="reference internal" href="#instance-variables">Instance Variables</a></li>
-<li class="toctree-l6"><a class="reference internal" href="#sub-class-kx-camera">Sub-Class KX_Camera</a></li>
-<li class="toctree-l6"><a class="reference internal" href="#sub-class-kx-lamp">Sub-Class KX_Lamp</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l4"><a class="reference internal" href="#bge-render">bge.render</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="#window-and-mouse">Window and Mouse</a></li>
-<li class="toctree-l5"><a class="reference internal" href="#world-settings-todo-to-be-removed-changed">World Settings (TODO to be removed/changed)</a></li>
-<li class="toctree-l5"><a class="reference internal" href="#stereo-settings-todo-to-be-changed">Stereo Settings (TODO to be changed)</a></li>
-<li class="toctree-l5"><a class="reference internal" href="#material-settings-todo-to-be-changed">Material Settings (TODO to be changed)</a></li>
-<li class="toctree-l5"><a class="reference internal" href="#id1">Others</a></li>
-</ul>
-</li>
-<li class="toctree-l4"><a class="reference internal" href="#bge-events">bge.events</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#bge-texture">bge.texture</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#bge-constraints">bge.constraints</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#mathutils-math-types-and-utilities">Mathutils - Math Types and Utilities</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="#vector">Vector</a></li>
-<li class="toctree-l5"><a class="reference internal" href="#matrix">Matrix</a></li>
-<li class="toctree-l5"><a class="reference internal" href="#euler-and-quaternion">Euler and Quaternion</a></li>
-</ul>
-</li>
-<li class="toctree-l4"><a class="reference internal" href="#aud-audio-system">aud - Audio System</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="#example-basic-audio-playback-todo-to-be-adapted-to-new-api">Example: Basic Audio Playback (TODO to be adapted to new API)</a></li>
-</ul>
-</li>
-<li class="toctree-l4"><a class="reference internal" href="#bgl-opengl-wrapper">bgl - OpenGL Wrapper</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="#example-01-line-width-changing">Example 01: Line Width Changing</a></li>
-<li class="toctree-l5"><a class="reference internal" href="#example-02-color-picker">Example 02: Color Picker</a></li>
-</ul>
-</li>
-<li class="toctree-l4"><a class="reference internal" href="#blf-font-drawing">blf - Font Drawing</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="#example-writing-hello-world">Example: Writing Hello World</a></li>
-</ul>
-</li>
-</ul>
-</li>
+<li class="toctree-l3"><a class="reference internal" href="#writing-your-python-scripts">Writing Your Python Scripts</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#designing-your-python-script-study-example">Designing Your Python Script - Study Example</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#using-the-game-engine-api-application-programming-interface">Using the Game Engine API - Application Programming Interface</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="understanding_inheritance_and_composition_in_game_scripting.html">Understanding Inheritance And Composition In Game Scripting</a></li>
@@ -169,7 +70,11 @@
 <li class="toctree-l1"><a class="reference internal" href="../datablocks/index.html">Datablocks</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../release/index.html">Deployment</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tools/index.html">Tools</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../about/index.html">About</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../glossary/index.html">Glossary</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Contribute</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../contribute/index.html">Contribute</a></li>
 </ul>
 
         </div>
@@ -211,18 +116,10 @@ inside the game engine. This part is divided into four submodules:</p>
 </ul>
 <section id="integrating-python-in-the-game-engine">
 <h2>Integrating Python in the Game Engine<a class="headerlink" href="#integrating-python-in-the-game-engine" title="Link to this heading"></a></h2>
-<p>In the game engine, the script interface is controller-centric by design. Therefore, you can consider
-the Python script simply as a more complex controller to replace the Expression or the Boolean controllers.
-In those cases, the script will be responsible for controlling how the sensors are related with the actuators
-of a given object. In fact, the sensors, actuators, and even the object where you are calling the script
-from are all attributes of the controller.</p>
-<p>As we mentioned earlier, with a Python script you can control external devices, control multiple objects at once,
-and much more. However, you will never be free from using a logic brick framework. And from the combination
-of logic bricks, individual sensors, global sensors, and actuators, the elegance of your system will arise.</p>
-<p>In the first example, you will find a very simple case study of how to make your Python controller work.
-It will cover the basic behavior of receiving sensors’ input in the script and triggering actuators from it.</p>
-<p>Download the example <a class="reference download internal" download="" href="../../_downloads/245a6442fefa0e61779dbd0c6c876ca5/003_template.zip"><code class="xref download docutils literal notranslate"><span class="pre">003_template.zip</span></code></a>, extract it
-and load the abracadabra.blend file.</p>
+<p>In the game engine, the script interface is controller-centric by design. Therefore, you can consider the Python script simply as a more complex controller to replace the Expression or the Boolean controllers. In those cases, the script will be responsible for controlling how the sensors are related with the actuators of a given object. In fact, the sensors, actuators, and even the object where you are calling the script from are all attributes of the controller.</p>
+<p>As we mentioned earlier, with a Python script you can control external devices, control multiple objects at once, and much more. However, you will never be free from using a logic brick framework. And from the combination of logic bricks, individual sensors, global sensors, and actuators, the elegance of your system will arise.</p>
+<p>In the first example, you will find a very simple case study of how to make your Python controller work. It will cover the basic behavior of receiving sensors’ input in the script and triggering actuators from it.</p>
+<p>Download the example <a class="reference download internal" download="" href="../../_downloads/245a6442fefa0e61779dbd0c6c876ca5/003_template.zip"><code class="xref download docutils literal notranslate"><span class="pre">003_template.zip</span></code></a>, extract it and load the abracadabra.blend file.</p>
 <figure class="align-default" id="id2">
 <img alt="../../_images/python-scripting-introduction-to-scripting-05.png" src="../../_images/python-scripting-introduction-to-scripting-05.png" />
 <figcaption>
@@ -1120,8 +1017,6 @@ You can read about this in the “bge.logic API” section in this chapter or on
       <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">joystick</span><span class="o">.</span><span class="n">name</span><span class="p">,</span> <span class="n">joystick</span><span class="o">.</span><span class="n">numAxis</span><span class="p">,</span> <span class="n">joystick</span><span class="o">.</span><span class="n">activeButtons</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>For the complete list of all the parameters supported by the Joystick python object, visit the official API: _http://www.blender.org/documentation/blender_python_api_2_66_release/<a href="#id14"><span class="problematic" id="id15">bge.types.SCA_JoystickSensor.html_</span></a></p>
-<p>A sample file can be found on BookChapter7joystick.blend.</p>
 </section>
 <section id="others">
 <h4>Others<a class="headerlink" href="#others" title="Link to this heading"></a></h4>
@@ -1627,7 +1522,7 @@ The possible statuses are:</p>
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright This page is licensed under a CC-BY-SA 4.0 Int. License..</p>
+    <p>&#169; Copyright : This page is licensed under a CC-BY-SA 4.0 Int. License.</p>
   </div>
 
    

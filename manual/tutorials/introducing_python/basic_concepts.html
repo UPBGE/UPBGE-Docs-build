@@ -7,7 +7,7 @@
   <title>Basic Concepts &mdash; UPBGE Manual</title>
       <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=fa44fd50" />
       <link rel="stylesheet" type="text/css" href="../../../_static/css/theme.css?v=19f00094" />
-      <link rel="stylesheet" type="text/css" href="../../../_static/css/theme_overrides.css?v=199cd01f" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/theme_overrides.css?v=5e9f35f9" />
 
   
   <!--[if lt IE 9]>
@@ -16,7 +16,7 @@
   
         <script src="../../../_static/jquery.js?v=5d32c60e"></script>
         <script src="../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-        <script src="../../../_static/documentation_options.js?v=c6e86fd7"></script>
+        <script src="../../../_static/documentation_options.js?v=f4332903"></script>
         <script src="../../../_static/doctools.js?v=888ff710"></script>
         <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../../_static/js/theme.js"></script>
@@ -54,11 +54,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../introducing_logic_bricks/index.html">Introducing Logic Bricks</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../introducing_logic_nodes/index.html">Introducing Logic Nodes</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="index.html">Introducing Python</a><ul class="current">
-<li class="toctree-l3 current"><a class="current reference internal" href="#">Basic Concepts</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#if-you-don-t-know-enough-python-to-begin">If you don’t know enough Python to begin…</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#logic-brick-python-controller">Logic Brick: Python Controller</a></li>
-</ul>
-</li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Basic Concepts</a></li>
 <li class="toctree-l3"><a class="reference internal" href="move_object.html">Moving A Cube</a></li>
 <li class="toctree-l3"><a class="reference internal" href="play_animation.html">Playing An Animation</a></li>
 <li class="toctree-l3"><a class="reference internal" href="group_instances.html">Dealing With Group Instances</a></li>
@@ -76,7 +72,11 @@
 <li class="toctree-l1"><a class="reference internal" href="../../datablocks/index.html">Datablocks</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../release/index.html">Deployment</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../tools/index.html">Tools</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../about/index.html">About</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../glossary/index.html">Glossary</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Contribute</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../contribute/index.html">Contribute</a></li>
 </ul>
 
         </div>
@@ -106,59 +106,52 @@
            <div itemprop="articleBody">
              
   <section id="basic-concepts">
-<h1>Basic Concepts<a class="headerlink" href="#basic-concepts" title="Link to this heading"></a></h1>
-<p>This tutorial will give you a quick introduction about how to use Python within the
-Game Engine. Basically, it will enable you to start with Python scripting avoiding
-typical errors and wrong paths.</p>
-<p>When writing Python code for the UPBGE we recommend to keep the UPBGE Python API
-open as reference. You can find it here: <a class="reference external" href="https://upbge.org/api/">UPBGE Python API</a></p>
+<span id="py-basic-concepts"></span><h1>Basic Concepts<a class="headerlink" href="#basic-concepts" title="Link to this heading"></a></h1>
+<p>This tutorial will give you a quick introduction about how to use Python within the Game Engine. Basically, it will enable you to start with Python scripting avoiding typical errors and wrong paths.</p>
+<p>When writing Python code for the UPBGE we recommend to keep the UPBGE Python API open as reference. You can find it here: <a class="reference external" href="https://upbge.org/api/#/documentation/docs/latest/api/index.html">UPBGE Python API</a>.</p>
 <section id="if-you-don-t-know-enough-python-to-begin">
-<h2>If you don’t know enough Python to begin…<a class="headerlink" href="#if-you-don-t-know-enough-python-to-begin" title="Link to this heading"></a></h2>
-<p>This tutorial is not a tutorial to teach you Python. If you don’t know enough Python
-to begin with maybe worth trying to play with Python on the side, at least to cover the basics.</p>
-<p>This one essentially looks amazing (make sure to go through the different chapters!)
-<a class="reference external" href="https://jakevdp.github.io/WhirlwindTourOfPython/02-basic-python-syntax.html">https://jakevdp.github.io/WhirlwindTourOfPython/02-basic-python-syntax.html</a></p>
-<p>Maybe a lot to read, but at least they explain a bunch of things, you don’t have
-to rush… <a class="reference external" href="https://www.techbeamers.com/python-tutorial-step-by-step/">https://www.techbeamers.com/python-tutorial-step-by-step</a></p>
-<p>And we mean, maybe Google explains better than us:
-<a class="reference external" href="https://developers.google.com/edu/python/set-up/">https://developers.google.com/edu/python/set-up</a></p>
-<p>Just pick your poison. Take your time to read, really :-).
-If you go through with it, you’ll be ready to try your new spells on the UPBGE!</p>
+<h2>If you don’t know enough Python to begin<a class="headerlink" href="#if-you-don-t-know-enough-python-to-begin" title="Link to this heading"></a></h2>
+<p>This tutorial is not a tutorial to teach you Python. If you don’t know enough Python to begin, find an online Python beginner tutorial, and learn the basics. Some recommendations:</p>
+<dl class="simple">
+<dt>This one essentially looks amazing (make sure to go through the different chapters!):</dt><dd><p><a class="reference external" href="https://jakevdp.github.io/WhirlwindTourOfPython/02-basic-python-syntax.html">jakevdp.github.io/WhirlwindTourOfPython</a>.</p>
+</dd>
+<dt>Maybe a lot to read, but at least they explain a bunch of things, you don’t have to rush:</dt><dd><p><a class="reference external" href="https://www.techbeamers.com/python-tutorial-step-by-step/">techbeamers.com/python-tutorial-step-by-step</a>.</p>
+</dd>
+<dt>Another good one:</dt><dd><p><a class="reference external" href="https://developers.google.com/edu/python/set-up/">developers.google.com/edu/python/set-up</a>.</p>
+</dd>
+</dl>
+<p>Just pick your poison. Take your time and learn the basics :-). If you go through it, you’ll be ready to try your new spells on the UPBGE!</p>
 </section>
-<section id="logic-brick-python-controller">
-<h2>Logic Brick: Python Controller<a class="headerlink" href="#logic-brick-python-controller" title="Link to this heading"></a></h2>
+<section id="logic-bricks-python-controller">
+<h2>Logic Bricks: Python Controller<a class="headerlink" href="#logic-bricks-python-controller" title="Link to this heading"></a></h2>
 <figure class="align-default" id="id1">
 <img alt="../../../_images/tutorials-introducing-python-01.png" src="../../../_images/tutorials-introducing-python-01.png" />
 <figcaption>
-<p><span class="caption-text">Controller brick at Logic Brick editor.</span><a class="headerlink" href="#id1" title="Link to this image"></a></p>
+<p><span class="caption-text">Controller brick at Logic Bricks editor</span><a class="headerlink" href="#id1" title="Link to this image"></a></p>
 </figcaption>
 </figure>
 <p>A Python controller is basically a logic brick that you can program using Python scripts.</p>
-<p>If you look at how a controller usually behaves, they do pretty simple things:</p>
+<p>If you look at how a controllers usually behave, they do pretty simple things:</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">AND</span></code> Controller: When all connected sensors are positive, activate all connected actuators.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">OR</span></code> Controller: When one of the connected sensors is positive, activate all connected actuators.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">NAND</span></code> Controller: When no connected sensor is positive, activate all connected actuators.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">XOR</span></code> Controller: When only one of the connected sensors is positive, activate all, etc.</p></li>
 </ul>
-<p>These are all basic logic gates, but what if you want more control? What if you want to test
-if a sensor is positive, and actually check some values from it?</p>
-<p>That is when you use a Python controller:</p>
+<p>These are all basic logic gates, but what if you want more control? What if you want to test if a sensor is positive, and actually check some values from it?</p>
+<p>This is when you use a Python controller:</p>
 <figure class="align-default" id="id2">
 <img alt="../../../_images/tutorials-introducing-python-02.png" src="../../../_images/tutorials-introducing-python-02.png" />
 <figcaption>
-<p><span class="caption-text">Python controller at Logic Brick editor.</span><a class="headerlink" href="#id2" title="Link to this image"></a></p>
+<p><span class="caption-text">Python controller at Logic Bricks editor</span><a class="headerlink" href="#id2" title="Link to this image"></a></p>
 </figcaption>
 </figure>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>You need at least one sensor connected to the controller in order to trigger it!.
-It can be anything, but the trigger comes from a sensor…</p>
+<p>You need at least one sensor connected to the controller in order to trigger it! It can be anything, but the trigger comes from a sensor.</p>
 </div>
-<p>Now to write a script you just open Blender’s text editor, and you can start writing your first script.</p>
-<p>So, little bit of disclaimer: When people see programs they usually go “that’s so hacker, it is too complex”.
-But fear not: Programs are meant to be written using English words, a bit like a recipe! It is a simple
-list of instructions to get from a state A to a state B.</p>
+<p>Now to write a script, open UPBGE text editor, and start writing your first script.</p>
+<p>So, little bit of disclaimer: When people see programming code, they usually go “that’s so hacker, it is too complex”. But fear not: Programs are written using English words, a bit like a recipe! It is a simple list of instructions to get from a state A to a state B.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">bge</span> <span class="c1"># the module to interact with the Blender Game Engine</span>
 
 <span class="c1"># When this script gets executed by a controller (when it will be its turn)</span>
@@ -180,8 +173,7 @@ list of instructions to get from a state A to a state B.</p>
 <span class="n">owner</span><span class="o">.</span><span class="n">applyRotation</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">])</span> <span class="c1"># [x, y, z]</span>
 </pre></div>
 </div>
-<p>Lot of comments in this code, but if you read the code word by word, usually it is pretty easy
-to understand what is going to happen once the Python controller will execute it!</p>
+<p>Lot of comments in this code, but if you read the code word by word, it is pretty easy to understand what is going to happen once the Python controller will execute it!</p>
 </section>
 </section>
 
@@ -196,7 +188,7 @@ to understand what is going to happen once the Python controller will execute it
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright This page is licensed under a CC-BY-SA 4.0 Int. License..</p>
+    <p>&#169; Copyright : This page is licensed under a CC-BY-SA 4.0 Int. License.</p>
   </div>
 
    

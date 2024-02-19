@@ -7,7 +7,7 @@
   <title>Logic Bricks Editor &mdash; UPBGE Manual</title>
       <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=fa44fd50" />
       <link rel="stylesheet" type="text/css" href="../../../_static/css/theme.css?v=19f00094" />
-      <link rel="stylesheet" type="text/css" href="../../../_static/css/theme_overrides.css?v=199cd01f" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/theme_overrides.css?v=5e9f35f9" />
 
   
   <!--[if lt IE 9]>
@@ -16,7 +16,7 @@
   
         <script src="../../../_static/jquery.js?v=5d32c60e"></script>
         <script src="../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-        <script src="../../../_static/documentation_options.js?v=c6e86fd7"></script>
+        <script src="../../../_static/documentation_options.js?v=f4332903"></script>
         <script src="../../../_static/doctools.js?v=888ff710"></script>
         <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../../_static/js/theme.js"></script>
@@ -53,12 +53,7 @@
 <li class="toctree-l1 current"><a class="reference internal" href="../index.html">Editors</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../properties/index.html">Properties Editor</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Logic Bricks Editor</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#main-view">Main View</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#sensor-column">Sensor Column</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#controller-column">Controller Column</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#actuator-column">Actuator Column</a></li>
-</ul>
-</li>
+<li class="toctree-l3"><a class="reference internal" href="#main-view">Main View</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#property-region">Property Region</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#python-components-region">Python Components Region</a></li>
 </ul>
@@ -74,7 +69,11 @@
 <li class="toctree-l1"><a class="reference internal" href="../../datablocks/index.html">Datablocks</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../release/index.html">Deployment</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../tools/index.html">Tools</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../about/index.html">About</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../glossary/index.html">Glossary</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Contribute</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../contribute/index.html">Contribute</a></li>
 </ul>
 
         </div>
@@ -104,14 +103,8 @@
              
   <section id="logic-bricks-editor">
 <span id="bpy-types-spacelogiceditor"></span><h1>Logic Bricks Editor<a class="headerlink" href="#logic-bricks-editor" title="Link to this heading"></a></h1>
-<p>The Logic Bricks Editor provides the main method of setting up and
-editing the game logic for the various actors (i.e. objects) that make up the game.
-The logic for the objects which are currently selected in the associated 3D View are displayed as logic bricks,
-which are shown as a table with three columns, showing sensors, controllers, and actuators, respectively.
-The links joining the logic bricks conduct the pulses between sensor-controller and controller-actuator.</p>
-<p>To give you a better understanding of the Logic Bricks Editor, the image below shows a typical
-editor content in which the major components have been labeled.
-We will look at each one individually.</p>
+<p>The Logic Bricks Editor provides the main method of setting up and editing the game logic for the various actors (i.e. objects) that make up the game. The logic for the objects which are currently selected in the associated 3D View are displayed as logic bricks, which are shown as a table with three columns, showing sensors, controllers, and actuators, respectively. The links joining the logic bricks conduct the pulses between sensor-controller and controller-actuator.</p>
+<p>To give you a better understanding of the Logic Bricks Editor, the image below shows a typical editor content in which the major components have been labeled. We will look at each one individually.</p>
 <figure class="align-default" id="id1">
 <img alt="../../../_images/editors-logic_editor-logic_editor.png" src="../../../_images/editors-logic_editor-logic_editor.png" />
 <figcaption>
@@ -146,7 +139,7 @@ To delete a link between two nodes, <kbd class="kbd compound docutils literal no
 <p>This column contains a list of all sensors owned by the active object (and any other selected objects).
 New sensors for the active object are created using the “Add Sensor” button.
 For a more in-depth look at the content, layout and available operations in this area,
-see <span class="xref std std-doc">Sensors</span>.</p>
+see <a class="reference internal" href="../../logic/sensors/introduction.html"><span class="doc">Sensors</span></a>.</p>
 </section>
 <section id="controller-column">
 <h3>Controller Column<a class="headerlink" href="#controller-column" title="Link to this heading"></a></h3>
@@ -154,14 +147,14 @@ see <span class="xref std std-doc">Sensors</span>.</p>
 New controllers for the active object are created using the “Add Controller” button,
 together with the creation of states for the active object.
 For a more in-depth look at the content, layout, and available operations in this area,
-see <span class="xref std std-doc">Controllers</span>.</p>
+see <a class="reference internal" href="../../logic/controllers/introduction.html"><span class="doc">Controllers</span></a>.</p>
 </section>
 <section id="actuator-column">
 <h3>Actuator Column<a class="headerlink" href="#actuator-column" title="Link to this heading"></a></h3>
 <p>This column contains a list of all actuators owned by the active object (and any other selected objects).
 New actuators for the active object are created using the “Add Actuator” button.
 For a more in-depth look at the content, layout, and available operations in this area,
-see <span class="xref std std-doc">Actuators</span>.</p>
+see <a class="reference internal" href="../../logic/actuators/introduction.html"><span class="doc">Actuators</span></a>.</p>
 </section>
 </section>
 <section id="property-region">
@@ -171,14 +164,14 @@ They are used to save and access data associated with an object.
 Several types of properties are available.
 Properties are declared by clicking the <em>Add Game Property</em> button in this region.
 For a more in-depth look at the content,
-layout and available operations in this region, see <span class="xref std std-doc">Properties</span>.</p>
+layout and available operations in this region, see <a class="reference internal" href="../../logic/properties.html"><span class="doc">Properties</span></a>.</p>
 </section>
 <section id="python-components-region">
 <h2>Python Components Region<a class="headerlink" href="#python-components-region" title="Link to this heading"></a></h2>
 <p>This region is where the <em>Python Components</em> are placed. <em>Python Components</em> are an independently
 logic system from Logic Bricks system. They are modules that can be attached to game objects.
 For a more in-depth look at the content,
-layout and available operations in this region, see <span class="xref std std-doc">Python Components</span>.</p>
+layout and available operations in this region, see <a class="reference internal" href="../../python_components/introduction.html"><span class="doc">Python Components</span></a>.</p>
 </section>
 </section>
 
@@ -193,7 +186,7 @@ layout and available operations in this region, see <span class="xref std std-do
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright This page is licensed under a CC-BY-SA 4.0 Int. License..</p>
+    <p>&#169; Copyright : This page is licensed under a CC-BY-SA 4.0 Int. License.</p>
   </div>
 
    
