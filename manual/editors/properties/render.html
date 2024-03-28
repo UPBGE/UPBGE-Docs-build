@@ -7,7 +7,7 @@
   <title>Render &mdash; UPBGE Manual</title>
       <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=fa44fd50" />
       <link rel="stylesheet" type="text/css" href="../../../_static/css/theme.css?v=19f00094" />
-      <link rel="stylesheet" type="text/css" href="../../../_static/css/theme_overrides.css?v=5e9f35f9" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/theme_overrides.css?v=b4c3fc50" />
 
   
   <!--[if lt IE 9]>
@@ -63,17 +63,18 @@
 <li class="toctree-l3"><a class="reference internal" href="data.html">Data</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../logic/index.html">Logic Bricks Editor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../logic_bricks/index.html">Logic Bricks Editor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../logic_nodes/index.html">Logic Node Editor</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../text/index.html">Text Editor</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../../logic/index.html">Logic Bricks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../logic_bricks/index.html">Logic Bricks</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../logic_nodes/index.html">Logic Nodes</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../python/index.html">Python Scripting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../python_scripting/index.html">Python Scripting</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../python_components/index.html">Python Components</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../physics/index.html">Physics</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../datablocks/index.html">Datablocks</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../release/index.html">Deployment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../datablocks/index.html">Data-Blocks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../deployment/index.html">Deployment</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../tools/index.html">Tools</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../glossary/index.html">Glossary</a></li>
 </ul>
@@ -110,41 +111,25 @@
              
   <section id="render">
 <h1>Render<a class="headerlink" href="#render" title="Link to this heading"></a></h1>
-<p>The <strong>Render</strong> tab in <a class="reference internal" href="index.html"><span class="doc">Properties Editor</span></a> exposes
-options related to game screen rendering.</p>
-<p>Some of the options showed here may behave differently according to the conditions, as
-there are two separate game “players” for previewing the game during development. Note
-that while UPBGE is running in either player, the computer’s mouse and keyboard
-are captured by the game and by default, the mouse cursor is not visible (this can be
-changed in the <a class="reference internal" href="#editors-properties-render-display"><span class="std std-ref">Display panel</span></a> of this tab).
-To exit the game, press the <kbd class="kbd docutils literal notranslate">Esc</kbd> key.</p>
+<p>The <strong>Render</strong> tab in <a class="reference internal" href="index.html"><span class="doc">Properties Editor</span></a> exposes options related to game screen rendering.</p>
+<p>Some of the options showed here may behave differently according to the conditions, as there are two separate game “players” for previewing the game during development. Note that while UPBGE is running in either player, the computer’s mouse and keyboard are captured by the game and by default, the mouse cursor is not visible (this can be changed in the <a class="reference internal" href="#editors-properties-render-display"><span class="std std-ref">Display panel</span></a> of this tab). To exit the game, press the <kbd class="kbd docutils literal notranslate">Esc</kbd> key.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Make sure that the render engine is set to <strong>UPBGE</strong> when attempting to set these
-controls, otherwise this description will not apply to what you see!</p>
+<p>Make sure that the render engine is set to <strong>EEVEE</strong> when attempting to set these controls, otherwise this description will not apply to what you see!</p>
 </div>
-<p>In <strong>Render</strong> tab, there are several panels available, as shown. Each one can be expanded
-or contracted using the usual triangle button. The features in each panel will be
-described in details below.</p>
+<p>In <strong>Render</strong> tab, there are several panels available, as shown. Each one can be expanded or contracted using the usual triangle button. The features in each panel will be described in details below.</p>
 <section id="embedded-player">
 <span id="editors-properties-render-embedded-player"></span><h2>Embedded Player<a class="headerlink" href="#embedded-player" title="Link to this heading"></a></h2>
-<figure class="align-default" id="id1">
-<img alt="../../../_images/editors-properties-render-embedded_player.png" src="../../../_images/editors-properties-render-embedded_player.png" />
+<figure class="align-right" id="id1" style="width: 40%">
+<img alt="../../../_images/edt-embedded_standalone.png" src="../../../_images/edt-embedded_standalone.png" />
 <figcaption>
-<p><span class="caption-text">Embedded Player panel.</span><a class="headerlink" href="#id1" title="Link to this image"></a></p>
+<p><span class="caption-text">Embedded Player panel</span><a class="headerlink" href="#id1" title="Link to this image"></a></p>
 </figcaption>
 </figure>
-<p>This panel provides information for the <strong>Embedded Player</strong> which allows games to be run
-inside the Blender <strong>3D View</strong>. The <strong>Embedded Player</strong> renders onto the <strong>3D View</strong>
-editor in the Blender GUI using the current perspective and zoom level of the <strong>3D View</strong>.</p>
-<p>Note that the <em>Resolution</em> settings are independent of the size of the viewport preview
-pane. In fact, the <em>Resolution</em> controls seem to have no effect at all. The resolution
-and aspect ratio of the embedded preview are always fixed to the <strong>3D View</strong> editor,
-which behaves much like the <em>Extend</em> framing mode for the
-<a class="reference internal" href="#editors-properties-render-standalone-player"><span class="std std-ref">Standalone Player</span></a>.</p>
+<p>This panel provides information for the <em>Embedded Player</em> which allows games to be run inside the Blender <em>3D Viewport</em>. <em>Embedded Player</em> renders onto the <em>3D Viewport</em> editor in the Blender GUI using the current perspective and zoom level of the <em>3D Viewport</em>.</p>
+<p>Note that the <em>Resolution</em> settings are independent of the size of the viewport preview pane. In fact, the <em>Resolution</em> controls seem to have no effect at all. The resolution and aspect ratio of the embedded preview are always fixed to the <em>3D Viewport</em> editor, which behaves much like the <em>Extend</em> framing mode for the <a class="reference internal" href="#editors-properties-render-standalone-player"><span class="std std-ref">Standalone Player</span></a>.</p>
 <dl class="simple">
-<dt>Start</dt><dd><p>Starts UPBGE inside the current Blender <strong>3D View</strong>. Shortcut <kbd class="kbd docutils literal notranslate">P</kbd> while mouse
-hovers the desired <strong>3D View</strong>.</p>
+<dt>Start</dt><dd><p>Starts UPBGE inside the current Blender <em>3D View</em>. Shortcut <kbd class="kbd docutils literal notranslate">P</kbd> with mouse-over <em>3D Viewport</em>.</p>
 </dd>
 <dt>Resolution X/Y</dt><dd><p>Sets the internal X/Y rendering resolution.</p>
 </dd>
@@ -152,69 +137,42 @@ hovers the desired <strong>3D View</strong>.</p>
 </section>
 <section id="standalone-player">
 <span id="editors-properties-render-standalone-player"></span><h2>Standalone Player<a class="headerlink" href="#standalone-player" title="Link to this heading"></a></h2>
-<figure class="align-default" id="id2">
-<img alt="../../../_images/editors-properties-render-standalone_player.png" src="../../../_images/editors-properties-render-standalone_player.png" />
+<figure class="align-right" id="id2" style="width: 40%">
+<img alt="../../../_images/edt-embedded_standalone.png" src="../../../_images/edt-embedded_standalone.png" />
 <figcaption>
-<p><span class="caption-text">Standalone Player panel.</span><a class="headerlink" href="#id2" title="Link to this image"></a></p>
+<p><span class="caption-text">Standalone Player panel</span><a class="headerlink" href="#id2" title="Link to this image"></a></p>
 </figcaption>
 </figure>
-<p>This panel provides information for the <strong>Standalone Player</strong> which allows games to be
-run without Blender. See <a class="reference internal" href="../../release/blender_player.html"><span class="doc">Standalone Player</span></a> for
-further details.</p>
-<p>The <strong>Standalone Player</strong> renders the scene from the perspective of the active scene
-camera and either creates a new desktop window or switches into fullscreen rendering mode.</p>
-<p>The semantics of the <strong>Standalone Player</strong>’s <em>Resolution</em> controls differ for Windowed
-and Fullscreen modes. In Windowed mode (<em>Fullscreen</em> checkbox unchecked), the
-<em>Resolution</em> controls set the initial dimensions of the desktop window. The user may
-resize the window at any time, causing the rendering resolution to change accordingly.
-In Fullscreen mode (<em>Fullscreen</em> checkbox checked), the <em>Resolution</em> controls set the
-internal rendering resolution. The actual display resolution will be a best fit depending
-on the user’s hardware. In either mode, the aspect ratio/cropping/scaling are determined
-by the <em>Framing</em> selection under the <strong>Display</strong> panel.</p>
-<p>Regarding <em>Fullscreen</em> mode, it is important to remember that the <em>Resolution</em> settings
-in <em>Fullscreen</em> mode are only hints to the operating system. Each display and monitor
-combination will have a different set of resolutions that they are capable of displaying;
-so there can be little confidence that all end-users will actually get the resolution you
-suggest; unless you choose one of the most standard resolutions (e.g. 800x600 or 1024x768).
-If you insist on using higher resolutions, then you may want to state clearly in your
-documentation that only certain resolutions are supported. In most other cases, the user’s
-machine may select a resolution that is close to the one suggested; but the results can
-be unpredictable, especially in <em>Letterbox</em> framing mode.</p>
+<p>This panel provides information for the <em>Standalone Player</em> which allows games to be run without Blender. See <a class="reference internal" href="../../deployment/blender_player.html"><span class="doc">Standalone Player</span></a> for further details.</p>
+<p>The <em>Standalone Player</em> renders the scene from the perspective of the active scene camera and either creates a new desktop window or switches into fullscreen rendering mode.</p>
+<p>The semantics of the <em>Standalone Player</em>’s <em>Resolution</em> controls differ for Windowed and Fullscreen modes. In Windowed mode (<span class="menuselection">Fullscreen</span> checkbox unchecked), the <em>Resolution</em> controls set the initial dimensions of the desktop window. The user may resize the window at any time, causing the rendering resolution to change accordingly. In Fullscreen mode (<span class="menuselection">Fullscreen</span> checkbox checked), the <em>Resolution</em> controls set the internal rendering resolution. The actual display resolution will be a best fit depending on the user’s hardware. In either mode, the aspect ratio/cropping/scaling are determined by the <em>Framing</em> selection under the <em>Display</em> panel.</p>
+<p>Regarding <em>Fullscreen</em> mode, it is important to remember that the <em>Resolution</em> settings in <em>Fullscreen</em> mode are only hints to the operating system. Each display and monitor combination will have a different set of resolutions that they are capable of displaying; so there can be little confidence that all end-users will actually get the resolution you suggest; unless you choose one of the most standard resolutions (e.g. 800x600 or 1024x768). If you insist on using higher resolutions, then you may want to state clearly in your documentation that only certain resolutions are supported. In most other cases, the user’s machine may select a resolution that is close to the one suggested; but the results can be unpredictable, especially in <em>Letterbox</em> framing mode.</p>
 <p>Note that the <em>Desktop</em> checkbox has no effect in Windowed mode.</p>
 <dl class="simple">
-<dt>Start</dt><dd><p>Launches the current blend file with the <strong>Standalone Player</strong>.</p>
+<dt>Start</dt><dd><p>Launches the current blend file with the <em>Standalone Player</em>.</p>
+</dd>
+<dt>Resolution</dt><dd><dl class="simple">
+<dt>X</dt><dd><p>Sets the X (width) window size or fullscreen display resolution.</p>
+</dd>
+<dt>Y</dt><dd><p>Sets the Y (height) window size or fullscreen display resolution.</p>
 </dd>
 </dl>
-<p>Resolution</p>
-<blockquote>
-<div><dl class="simple">
-<dt>X</dt><dd><p>Sets the X window size or fullscreen display resolution.</p>
 </dd>
-<dt>Y</dt><dd><p>Sets the Y window size or fullscreen display resolution.</p>
-</dd>
-</dl>
-</div></blockquote>
-<p>Fullscreen</p>
-<blockquote>
-<div><dl class="simple">
+<dt>Fullscreen</dt><dd><dl class="simple">
 <dt>Off</dt><dd><p>Opens standalone game as a new window.</p>
 </dd>
 <dt>On</dt><dd><p>Opens standalone game in fullscreen.</p>
 </dd>
 </dl>
-</div></blockquote>
-<p>Desktop</p>
-<blockquote>
-<div><dl class="simple">
+</dd>
+<dt>Desktop</dt><dd><dl class="simple">
 <dt>Off</dt><dd><p>Attempts to obey the <em>Resolution</em> specified above when in <em>Fullscreen</em> mode.</p>
 </dd>
 <dt>On</dt><dd><p>Keeps the current desktop resolution when in <em>Fullscreen</em> mode.</p>
 </dd>
 </dl>
-</div></blockquote>
-<p>Quality</p>
-<blockquote>
-<div><dl class="simple">
+</dd>
+<dt>Quality</dt><dd><dl class="simple">
 <dt>AA Samples</dt><dd><p>The number of AA samples to use for MSAA.</p>
 </dd>
 <dt>Bit Depth</dt><dd><p>Number of bits used to represent color of each pixel in fullscreen display.</p>
@@ -222,26 +180,22 @@ be unpredictable, especially in <em>Letterbox</em> framing mode.</p>
 <dt>Refresh Rate</dt><dd><p>Number of frames per second of fullscreen display.</p>
 </dd>
 </dl>
-</div></blockquote>
+</dd>
+</dl>
 </section>
 <section id="stereo">
 <span id="editors-properties-render-stereo"></span><h2>Stereo<a class="headerlink" href="#stereo" title="Link to this heading"></a></h2>
 <figure class="align-default" id="id3">
 <img alt="../../../_images/editors-properties-render-stereo.png" src="../../../_images/editors-properties-render-stereo.png" />
 <figcaption>
-<p><span class="caption-text">Stereo panel.</span><a class="headerlink" href="#id3" title="Link to this image"></a></p>
+<p><span class="caption-text">Stereo panel</span><a class="headerlink" href="#id3" title="Link to this image"></a></p>
 </figcaption>
 </figure>
-<p>Toggle if use an stereo mode and, if use, select a stereo mode that will be used to
-capture stereo images of the game (and also, by implication, that stereo displays will
-use to render images in the
-<a class="reference internal" href="#editors-properties-render-standalone-player"><span class="std std-ref">Standalone Player</span></a>).</p>
+<p>Toggle if use an stereo mode and, if use, select a stereo mode that will be used to capture stereo images of the game (and also, by implication, that stereo displays will use to render images in the <a class="reference internal" href="#editors-properties-render-standalone-player"><span class="std std-ref">Standalone Player</span></a>).</p>
 <dl class="simple">
 <dt>None</dt><dd><p>Render single images with no stereo.</p>
 </dd>
-<dt>Stereo</dt><dd><p>Render dual images for stereo viewing using appropriate equipment. See
-<a class="reference internal" href="render_stereo.html"><span class="doc">Stereo Camera</span></a>
-for full details of available options.</p>
+<dt>Stereo</dt><dd><p>Render dual images for stereo viewing using appropriate equipment. See <a class="reference internal" href="render_stereo.html"><span class="doc">Stereo Camera</span></a> for full details of available options.</p>
 </dd>
 </dl>
 </section>
@@ -261,8 +215,7 @@ for full details of available options.</p>
 </dd>
 <dt>Shadows</dt><dd><p>Toggles realtime shadows from lamps.</p>
 </dd>
-<dt>Environment Lighting</dt><dd><p>Toggles environment lighting from
-<a class="reference internal" href="world.html"><span class="doc">World tab</span></a>.</p>
+<dt>Environment Lighting</dt><dd><p>Toggles environment lighting from <a class="reference internal" href="world.html"><span class="doc">World tab</span></a>.</p>
 </dd>
 <dt>Ramps</dt><dd><p>Toggles material ramps.</p>
 </dd>
@@ -277,22 +230,14 @@ for full details of available options.</p>
 <figure class="align-default" id="id5">
 <img alt="../../../_images/editors-properties-render-system.png" src="../../../_images/editors-properties-render-system.png" />
 <figcaption>
-<p><span class="caption-text">System panel in the Render tab.</span><a class="headerlink" href="#id5" title="Link to this image"></a></p>
+<p><span class="caption-text">System panel in the Render tab</span><a class="headerlink" href="#id5" title="Link to this image"></a></p>
 </figcaption>
 </figure>
-<p>The <strong>System</strong> panel at the Render tab lets the game developer specify options about
-the system performance regarding to frame discard and restrictions about frame rendering,
-the key to stop UPBGE, etc.</p>
+<p>The <strong>System</strong> panel at the Render tab lets the game developer specify options about the system performance regarding to frame discard and restrictions about frame rendering, the key to stop UPBGE, etc.</p>
 <dl class="simple">
-<dt>Use Frame Rate</dt><dd><p>Respect the frame rate rather than rendering as many frames as possible. When
-unchecked, this will inform Blender to run freely without frame rate restrictions.
-The frame rate is specified at the <strong>Display</strong> panel, also in the <strong>Render</strong> tab. For
-more information about frame rates, see
-<a class="reference internal" href="#editors-properties-render-display"><span class="std std-ref">Display panel</span></a>.</p>
+<dt>Use Frame Rate</dt><dd><p>Respect the frame rate rather than rendering as many frames as possible. When unchecked, this will inform Blender to run freely without frame rate restrictions. The frame rate is specified at the <strong>Display</strong> panel, also in the <strong>Render</strong> tab. For more information about frame rates, see <a class="reference internal" href="#editors-properties-render-display"><span class="std std-ref">Display panel</span></a>.</p>
 </dd>
-<dt>Deprecation Warnings</dt><dd><p>Every time when the game developer uses a deprecated functionality (which in some
-cases are outdated or crippled OpenGL Graphic cards functions), the system will emit
-warnings about the deprecated function on the console.</p>
+<dt>Deprecation Warnings</dt><dd><p>Every time when the game developer uses a deprecated functionality (which in some cases are outdated or crippled OpenGL Graphic cards functions), the system will emit warnings about the deprecated function on the console.</p>
 </dd>
 <dt>Vsync</dt><dd><p>Change Vsync settings.</p>
 </dd>
@@ -309,19 +254,14 @@ warnings about the deprecated function on the console.</p>
 <figure class="align-default" id="id6">
 <img alt="../../../_images/editors-properties-render-animations.png" src="../../../_images/editors-properties-render-animations.png" />
 <figcaption>
-<p><span class="caption-text">Animations panel in the Render tab.</span><a class="headerlink" href="#id6" title="Link to this image"></a></p>
+<p><span class="caption-text">Animations panel in the Render tab</span><a class="headerlink" href="#id6" title="Link to this image"></a></p>
 </figcaption>
 </figure>
 <p>Specifies animations settings of game, like frame rate.</p>
 <dl class="simple">
-<dt>Animation Frame Rate</dt><dd><p>This number button/slider specify the maximum frame rate at which the game will run.
-Minimum is 1, maximum is 120.</p>
+<dt>Animation Frame Rate</dt><dd><p>This number button/slider specify the maximum frame rate at which the game will run. Minimum is 1, maximum is 120.</p>
 </dd>
-<dt>Restrict Animation Updates</dt><dd><p>Restrict number of animation updates to the animation FPS. This is better for
-performance, but can cause issues with smooth playback. When checked, this will force
-UPBGE to discard frames (even at the middle of redrawing, sometimes causing tearing
-artifacts) if the rate of frames rendered by the GPU is greater than the specified on
-<a class="reference internal" href="#editors-properties-render-display"><span class="std std-ref">Display panel</span></a>.</p>
+<dt>Restrict Animation Updates</dt><dd><p>Restrict number of animation updates to the animation FPS. This is better for performance, but can cause issues with smooth playback. When checked, this will force UPBGE to discard frames (even at the middle of redrawing, sometimes causing tearing artifacts) if the rate of frames rendered by the GPU is greater than the specified on <a class="reference internal" href="#editors-properties-render-display"><span class="std std-ref">Display panel</span></a>.</p>
 </dd>
 </dl>
 </section>
@@ -330,45 +270,29 @@ artifacts) if the rate of frames rendered by the GPU is greater than the specifi
 <figure class="align-default" id="id7">
 <img alt="../../../_images/editors-properties-render-display.png" src="../../../_images/editors-properties-render-display.png" />
 <figcaption>
-<p><span class="caption-text">Display panel at the Render tab.</span><a class="headerlink" href="#id7" title="Link to this image"></a></p>
+<p><span class="caption-text">Display panel at the Render tab</span><a class="headerlink" href="#id7" title="Link to this image"></a></p>
 </figcaption>
 </figure>
-<p>The <strong>Display</strong> panel in the <strong>Render</strong> tab lets the game developer specify whether the
-mouse cursor is shown during the game execution, and options to specify the framing style
-of the game to fit the window with the specified resolution.</p>
+<p>The <strong>Display</strong> panel in the <strong>Render</strong> tab lets the game developer specify whether the mouse cursor is shown during the game execution, and options to specify the framing style of the game to fit the window with the specified resolution.</p>
 <dl>
 <dt>Mouse Cursor</dt><dd><p>Whether to show or not the mouse cursor when the game is running.</p>
 </dd>
-<dt>Framing</dt><dd><p>Selects how the scene is to be fitted onto the display window or screen. There are
-three types of framing available:</p>
-<p>Letterbox</p>
-<blockquote>
-<div><dl class="simple">
-<dt>In Windowed mode:</dt><dd><p>Maintains a 4:3 aspect ratio by scaling to fit the current window dimensions
-without cropping, covering any portions of the display that lie outside of the
-aspect ratio with color bars.</p>
-</dd>
-<dt>In Fullscreen mode:</dt><dd><p>The behavior of this combination seems to be heavily dependent on the user’s
-hardware. The result can be quite unpredictable, especially when the resolution
-and aspect ratio differ too much from the machine’s capabilities. For this
-reason, <em>Extend</em> mode should be preferred for <em>Fullscreen</em> applications.</p>
-</dd>
-</dl>
-</div></blockquote>
+<dt>Framing</dt><dd><p>Selects how the scene is to be fitted onto the display window or screen. There are three types of framing available:</p>
 <dl class="simple">
-<dt>Extend</dt><dd><p>This mode behaves much like <em>Letterbox</em> mode, maintaining a 4:3 aspect ratio by
-scaling whenever possible; except that the camera frustum is expanded or contracted
-wherever necessary to fill any portions of the display that lie outside of the
-aspect ratio, instead of covering those portions of the scene with color bars, as
-with <em>Letterbox</em> mode, or distorting then scene, as with <em>Scale</em> mode.</p>
+<dt>Letterbox</dt><dd><dl class="simple">
+<dt>In Windowed mode:</dt><dd><p>Maintains a 4:3 aspect ratio by scaling to fit the current window dimensions without cropping, covering any portions of the display that lie outside of the aspect ratio with color bars.</p>
 </dd>
-<dt>Scale</dt><dd><p>In this mode, no attempt is made to maintain a particular aspect ratio. The scene
-and objects within will be stretched or squashed to fit the display exactly.</p>
+<dt>In Fullscreen mode:</dt><dd><p>The behavior of this combination seems to be heavily dependent on the user’s hardware. The result can be quite unpredictable, especially when the resolution and aspect ratio differ too much from the machine’s capabilities. For this reason, <em>Extend</em> mode should be preferred for <em>Fullscreen</em> applications.</p>
 </dd>
 </dl>
 </dd>
-<dt>Color Bar</dt><dd><p>This will let the game developer choose the bar colors when using the <em>Letterbox</em>
-Framing mode.</p>
+<dt>Extend</dt><dd><p>This mode behaves much like <em>Letterbox</em> mode, maintaining a 4:3 aspect ratio by scaling whenever possible; except that the camera frustum is expanded or contracted wherever necessary to fill any portions of the display that lie outside of the aspect ratio, instead of covering those portions of the scene with color bars, as with <em>Letterbox</em> mode, or distorting then scene, as with <em>Scale</em> mode.</p>
+</dd>
+<dt>Scale</dt><dd><p>In this mode, no attempt is made to maintain a particular aspect ratio. The scene and objects within will be stretched or squashed to fit the display exactly.</p>
+</dd>
+</dl>
+</dd>
+<dt>Color Bar</dt><dd><p>This will let the game developer choose the bar colors when using the <em>Letterbox</em> Framing mode.</p>
 </dd>
 </dl>
 </section>
@@ -377,36 +301,30 @@ Framing mode.</p>
 <figure class="align-default" id="id8">
 <img alt="../../../_images/editors-properties-render-debug.png" src="../../../_images/editors-properties-render-debug.png" />
 <figcaption>
-<p><span class="caption-text">Debug panel at the Render tab.</span><a class="headerlink" href="#id8" title="Link to this image"></a></p>
+<p><span class="caption-text">Debug panel at the Render tab</span><a class="headerlink" href="#id8" title="Link to this image"></a></p>
 </figcaption>
 </figure>
-<p>The <strong>Debug</strong> panel at the <strong>Render</strong> tab toggles various specific debug helpers on UPBGE,
-from frame rate being showed on the screen to detailed physics visualization of specific
-elements, like armatures and camera frustum.</p>
+<p>The <strong>Debug</strong> panel at the <strong>Render</strong> tab toggles various specific debug helpers on UPBGE, from frame rate being showed on the screen to detailed physics visualization of specific elements, like armatures and camera frustum.</p>
 <dl class="simple">
-<dt>Framerate and Profile</dt><dd><p>When checked, this will show values for each of the calculations Blender is doing
-while the game is running on the top left of the screen.</p>
+<dt>Framerate and Profile</dt><dd><p>When checked, this will show values for each of the calculations Blender is doing while the game is running on the top left of the screen.</p>
 </dd>
 <dt>Render Queries</dt><dd><p>Shows render queries information while the game runs.</p>
 </dd>
-<dt>Properties</dt><dd><p>When checked, the values of any properties which are selected to be debugged in the
-objects are shown on the top left side of the screen.</p>
+<dt>Properties</dt><dd><p>When checked, the values of any properties which are selected to be debugged in the objects are shown on the top left side of the screen.</p>
 </dd>
-<dt>Physics Visualization</dt><dd><p>Shows a visualization of physics bounds and interactions (like hulls and collision
-shapes), and their interaction.</p>
+<dt>Physics Visualization</dt><dd><p>Shows a visualization of physics bounds and interactions (like hulls and collision shapes), and their interaction.</p>
 </dd>
 </dl>
 <p>The following remaining options are dropdown menus which allows the following options:
-- Disable: Disables the debug of the current option.
-- Allow: Allow debugging from individual settings of the current option.
-- Force: Allow debugging of the current option.</p>
+-  Disable: Disables the debug of the current option.
+-  Allow: Allow debugging from individual settings of the current option.
+-  Force: Allow debugging of the current option.</p>
 <dl class="simple">
 <dt>Bounding Box</dt><dd><p>Shows bounding volume boxes of objects while the game is running.</p>
 </dd>
 <dt>Armatures</dt><dd><p>Shows armatures while the game is running.</p>
 </dd>
-<dt>Camera Frustum</dt><dd><p>Shows camera limits visualization according to the current viewport dimensions while
-the game is running.</p>
+<dt>Camera Frustum</dt><dd><p>Shows camera limits visualization according to the current viewport dimensions while the game is running.</p>
 </dd>
 <dt>Shadow Frustum</dt><dd><p>Shows lamp’s shadows bounds while the game is running.</p>
 </dd>
@@ -414,14 +332,11 @@ the game is running.</p>
 </section>
 <section id="bake">
 <span id="editors-properties-render-bake"></span><h2>Bake<a class="headerlink" href="#bake" title="Link to this heading"></a></h2>
-<p>The <strong>Bake</strong> panel in the <strong>Render</strong> tab is very similar to its <strong>Blender Render</strong>
-counterpart and serves much the same purpose. See
-<a class="reference external" href="https://docs.blender.org/manual/en/dev/render/blender_render/bake.html">Render Baking</a>
-for further details.</p>
+<p>The <strong>Bake</strong> panel in the <strong>Render</strong> tab is very similar to its <strong>Blender Render</strong> counterpart and serves much the same purpose. See <a class="reference external" href="https://docs.blender.org/manual/en/dev/render/blender_render/bake.html">Render Baking</a> for further details.</p>
 <figure class="align-default" id="id9">
 <img alt="../../../_images/editors-properties-render-bake.png" src="../../../_images/editors-properties-render-bake.png" />
 <figcaption>
-<p><span class="caption-text">Bake panel at the Render tab (showing different bake modes).</span><a class="headerlink" href="#id9" title="Link to this image"></a></p>
+<p><span class="caption-text">Different Bake modes in the Render tab</span><a class="headerlink" href="#id9" title="Link to this image"></a></p>
 </figcaption>
 </figure>
 <dl>
@@ -431,8 +346,7 @@ for further details.</p>
 <dl class="simple">
 <dt>Full Render</dt><dd><p>Bakes all materials, textures, and lighting except specularity and SSS.</p>
 </dd>
-<dt>Ambient Occlusion</dt><dd><p>Bakes ambient occlusion as specified in the World panels. Ignores all lights in
-the scene.</p>
+<dt>Ambient Occlusion</dt><dd><p>Bakes ambient occlusion as specified in the World panels. Ignores all lights in the scene.</p>
 </dd>
 <dt>Shadows</dt><dd><p>Bakes shadows and lighting.</p>
 </dd>
@@ -440,8 +354,7 @@ the scene.</p>
 </dd>
 <dt>Textures</dt><dd><p>Bakes colors of materials and textures only, without shading.</p>
 </dd>
-<dt>Displacement</dt><dd><p>Similar to baking normal maps, displacement maps can also be baked from a high-res
-object to an unwrapped low-res object, using the Selected to Active option.</p>
+<dt>Displacement</dt><dd><p>Similar to baking normal maps, displacement maps can also be baked from a high-res object to an unwrapped low-res object, using the Selected to Active option.</p>
 </dd>
 <dt>Derivative</dt><dd><p>Bake derivative map.</p>
 </dd>
@@ -463,39 +376,30 @@ object to an unwrapped low-res object, using the Selected to Active option.</p>
 </dd>
 <dt>Bake from Multiresolution</dt><dd><p>Bake directly from a multi-resolution object.</p>
 </dd>
-</dl>
-<p>Normalized</p>
-<blockquote>
-<div><dl class="simple">
+<dt>Normalized</dt><dd><dl class="simple">
 <dt>In Displacement Mode:</dt><dd><p>Normalize to the distance.</p>
 </dd>
 <dt>In Ambient Occlusion Mode:</dt><dd><p>Normalize without using material’s settings.</p>
 </dd>
 </dl>
-</div></blockquote>
-<dl>
+</dd>
 <dt>Normal Space</dt><dd><p>Normals can be baked in different spaces:</p>
 <dl class="simple">
 <dt>Camera space</dt><dd><p>Default method.</p>
 </dd>
 <dt>World space</dt><dd><p>Normals in world coordinates, dependent on object transformation and deformation.</p>
 </dd>
-<dt>Object space</dt><dd><p>Normals in object coordinates, independent of object transformation, but dependent
-on deformation.</p>
+<dt>Object space</dt><dd><p>Normals in object coordinates, independent of object transformation, but dependent on deformation.</p>
 </dd>
-<dt>Tangent space</dt><dd><p>Normals in tangent space coordinates, independent of object transformation and
-deformation. This is the new default, and the right choice in most cases, since
-then the normal map can be used for animated objects too.</p>
+<dt>Tangent space</dt><dd><p>Normals in tangent space coordinates, independent of object transformation and deformation. This is the new default, and the right choice in most cases, since then the normal map can be used for animated objects too.</p>
 </dd>
 </dl>
 </dd>
 <dt>Bake to Vertex Color</dt><dd><p>Bake to vertex colors instead of to a UV-mapped image.</p>
 </dd>
-<dt>Clear</dt><dd><p>If selected, clears the image to selected background color (default is black) before
-render.</p>
+<dt>Clear</dt><dd><p>If selected, clears the image to selected background color (default is black) before render.</p>
 </dd>
-<dt>Margin</dt><dd><p>Baked result is extended this many pixels beyond the border of each UV “island”, to
-soften seams in the texture.</p>
+<dt>Margin</dt><dd><p>Baked result is extended this many pixels beyond the border of each UV “island”, to soften seams in the texture.</p>
 </dd>
 <dt>Selected to Active</dt><dd><p>Bake shading on the surface of selected objects to the active object.</p>
 <dl class="simple">

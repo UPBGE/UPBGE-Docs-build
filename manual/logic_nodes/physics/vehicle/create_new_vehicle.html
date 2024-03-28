@@ -7,7 +7,7 @@
   <title>Create New Vehicle &mdash; UPBGE Manual</title>
       <link rel="stylesheet" type="text/css" href="../../../../_static/pygments.css?v=fa44fd50" />
       <link rel="stylesheet" type="text/css" href="../../../../_static/css/theme.css?v=19f00094" />
-      <link rel="stylesheet" type="text/css" href="../../../../_static/css/theme_overrides.css?v=5e9f35f9" />
+      <link rel="stylesheet" type="text/css" href="../../../../_static/css/theme_overrides.css?v=b4c3fc50" />
 
   
   <!--[if lt IE 9]>
@@ -51,7 +51,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../../../introduction/index.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../tutorials/index.html">Tutorials</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../editors/index.html">Editors</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../logic/index.html">Logic Bricks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../logic_bricks/index.html">Logic Bricks</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../../index.html">Logic Nodes</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../../introduction.html">Introduction</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../events/index.html">Events</a></li>
@@ -75,7 +75,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../add_constraint.html">Add Constraint</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../remove_constraint.html">Remove Constraint</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../set_physics.html">Set Physics</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../set_gravity.html">Set Gravity</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../set_character_gravity.html">Set Character Gravity</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../set_dynamics.html">Set Dynamics</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../set_rigid_body.html">Set Rigid Body</a></li>
 </ul>
@@ -91,11 +91,11 @@
 <li class="toctree-l2"><a class="reference internal" href="../../utility/index.html">Utility</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../../../python/index.html">Python Scripting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../python_scripting/index.html">Python Scripting</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../python_components/index.html">Python Components</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../physics/index.html">Physics</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../datablocks/index.html">Datablocks</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../release/index.html">Deployment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../datablocks/index.html">Data-Blocks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../deployment/index.html">Deployment</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../tools/index.html">Tools</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../glossary/index.html">Glossary</a></li>
 </ul>
@@ -136,20 +136,35 @@
 </figure>
 <section id="create-new-vehicle">
 <span id="ln-create-new-vehicle"></span><h1>Create New Vehicle<a class="headerlink" href="#create-new-vehicle" title="Link to this heading"></a></h1>
+<p>Attaches a vehicle constraint to an object. This object will become the collider for the vehicle.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>This node needs a specific object setup to work correctly. A vehicle needs to be ceated only once, otherwise the vehicle control nodes won’t be able to address the correct constraint. Of course, there must be the collider object. This will be the object executing the tree. Parented directly to this collider must be all the wheels.</p>
+<p>The wheels must follow a naming convention:</p>
+<p>If <code class="docutils literal notranslate"><span class="pre">FWheel</span></code> appears somewhere in the wheels name, it will be a <code class="docutils literal notranslate"><span class="pre">front</span></code> mounted wheel.</p>
+<p>If <code class="docutils literal notranslate"><span class="pre">RWheel</span></code> appears somewhere in the wheels name, it will be a <code class="docutils literal notranslate"><span class="pre">rear</span></code> mounted wheel.</p>
+</div>
+<p>Wheels will be mounted in the position they are placed at, but the difference is that vehicle control nodes can be targeted to either front, rear or all wheels, which are accessed differently.</p>
+<p>The collider may have any number of wheels. It may also have other children, as everything not named <em>FWheel</em> or <em>RWheel</em> will be ignored.</p>
+<p>The node will return a vehicle constraint which can be used to drive the vehicle or modify its attributes. This constraint will also be automatically saved to the collider object and can be accessed via:</p>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># obj is the collider object</span>
+<span class="n">vehicle_constraint</span> <span class="o">=</span> <span class="n">obj</span><span class="p">[</span><span class="s1">&#39;_vconst&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
 <section id="inputs">
 <h2>Inputs<a class="headerlink" href="#inputs" title="Link to this heading"></a></h2>
 <dl class="simple">
 <dt>Condition</dt><dd><p>If connected, condition must be fulfilled for node to activate.</p>
 </dd>
-<dt>Collider</dt><dd><p>Object that will act as collider for vehicle. todo</p>
+<dt>Collider</dt><dd><p>Object that will act as collider for vehicle.</p>
 </dd>
-<dt>Suspension</dt><dd><p>Vehicle suspension settings.</p>
+<dt>Suspension</dt><dd><p>Vehicle suspension height.</p>
 </dd>
-<dt>Stiffness</dt><dd><p>Vehicle suspension stiffness. todo</p>
+<dt>Stiffness</dt><dd><p>Vehicle suspension stiffness, will determine how much vehicle <cite>wiggles</cite>.</p>
 </dd>
-<dt>Damping</dt><dd><p>Vehicle suspension damping. todo</p>
+<dt>Damping</dt><dd><p>The rate at which suspension activity will subside.</p>
 </dd>
-<dt>Friction</dt><dd><p>Vehicle wheels friction. todo</p>
+<dt>Friction</dt><dd><p>The grip of the wheel. Pavement would be a higher value than mud.</p>
 </dd>
 <dt>Wheel Modifier</dt><dd><p>todo</p>
 </dd>
@@ -160,9 +175,9 @@
 <dl class="simple">
 <dt>Done</dt><dd><p><em>True</em> if node performed successfully, else <em>False</em>.</p>
 </dd>
-<dt>Vehicle Constraint</dt><dd><p>todo</p>
+<dt>Vehicle Constraint</dt><dd><p>A vehicle constraint.</p>
 </dd>
-<dt>Wheels</dt><dd><p>A list of . todo</p>
+<dt>Wheels</dt><dd><p>A list of wheel objects.</p>
 </dd>
 </dl>
 </section>

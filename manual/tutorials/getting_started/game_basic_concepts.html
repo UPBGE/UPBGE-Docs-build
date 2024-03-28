@@ -7,7 +7,7 @@
   <title>Game Basic Concepts &mdash; UPBGE Manual</title>
       <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=fa44fd50" />
       <link rel="stylesheet" type="text/css" href="../../../_static/css/theme.css?v=19f00094" />
-      <link rel="stylesheet" type="text/css" href="../../../_static/css/theme_overrides.css?v=5e9f35f9" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/theme_overrides.css?v=b4c3fc50" />
 
   
   <!--[if lt IE 9]>
@@ -58,18 +58,18 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../introducing_logic_bricks/index.html">Introducing Logic Bricks</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../introducing_logic_nodes/index.html">Introducing Logic Nodes</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../introducing_python/index.html">Introducing Python</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../introducing_python_scripting/index.html">Introducing Python Scripting</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../introducing_python_components/index.html">Introducing Python Components</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../editors/index.html">Editors</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../logic/index.html">Logic Bricks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../logic_bricks/index.html">Logic Bricks</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../logic_nodes/index.html">Logic Nodes</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../python/index.html">Python Scripting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../python_scripting/index.html">Python Scripting</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../python_components/index.html">Python Components</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../physics/index.html">Physics</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../datablocks/index.html">Datablocks</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../release/index.html">Deployment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../datablocks/index.html">Data-Blocks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../deployment/index.html">Deployment</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../tools/index.html">Tools</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../glossary/index.html">Glossary</a></li>
 </ul>
@@ -117,10 +117,10 @@
 </figure>
 <p>A game engine is made up of many distinct components:</p>
 <ul class="simple">
-<li><p><strong>Rendering Engine</strong> : Turns the 3D scene you’ve built (including models, lights, and camera) into an image to be displayed onscreen.</p></li>
-<li><p><strong>Physics</strong> : Handles collisions and physical simulations of objects.</p></li>
-<li><p><strong>Logic/Scripting</strong> : The brain behind a game, it reacts to the user input, makes decisions, and keeps track of what’s going on in the game.</p></li>
-<li><p><strong>Sound</strong> : Produces the audio events.</p></li>
+<li><p><strong>Rendering Engine</strong> - turns the 3D scene you’ve built (including models, lights, and camera) into an image to be displayed onscreen.</p></li>
+<li><p><strong>Physics</strong> - handles collisions and physical simulations of objects.</p></li>
+<li><p><strong>Logic/Scripting</strong> - the brain behind a game, it reacts to the user input, makes decisions, and keeps track of what’s going on in the game.</p></li>
+<li><p><strong>Sound</strong> - produces the audio events.</p></li>
 </ul>
 <p>The above list is not meant to be exhaustive, but it should give you an idea of what a game engine does. The Blender game engine gives you a lot of control over each of these components, which you will learn one by one in later chapters.</p>
 <aside class="topic">
@@ -160,21 +160,21 @@
 </figcaption>
 </figure>
 <p>This loop is a bit more complex. The scenes loop cycles through all active scenes performing the following steps for each scene:</p>
-<ul class="simple">
-<li><dl class="simple">
-<dt>Logic processing</dt><dd><p>This first step processes the logic of the game, be it visual or Python.</p>
-</dd>
-</dl>
+<ul>
+<li><p>Logic processing</p>
+<blockquote>
+<div><p>This first step processes the logic of the game, be it visual or Python.</p>
+</div></blockquote>
 </li>
-<li><dl class="simple">
-<dt>Physics update</dt><dd><p>The physics update will be done after the logic runs, but before the render is drawn.</p>
-</dd>
-</dl>
+<li><p>Physics update</p>
+<blockquote>
+<div><p>The physics update will be done after the logic runs, but before the render is drawn.</p>
+</div></blockquote>
 </li>
-<li><dl class="simple">
-<dt>Sound playing</dt><dd><p>The sound playing is put in the last step of the scene loop.</p>
-</dd>
-</dl>
+<li><p>Sound playing</p>
+<blockquote>
+<div><p>The sound playing is put in the last step of the scene loop.</p>
+</div></blockquote>
 </li>
 </ul>
 <p>Once all these steps are taken for all active scenes, the main loop continues.</p>
@@ -183,10 +183,8 @@
 <h3>Logic Ticks<a class="headerlink" href="#logic-ticks" title="Link to this heading"></a></h3>
 <p>The logic processing works through frames called <em>logic ticks</em>. By default, a game running at 60 frames per second also can run 60 logic ticks per second. In practical examples:</p>
 <ul class="simple">
-<li><p>If I have a number 0 and increase it by 1 each frame, after 1 second its value
-will be 60.</p></li>
-<li><p>If I have an object and move it 0.1 meters each frame, after 1 second it
-should have been moved 6 meters.</p></li>
+<li><p>If I have a number 0 and increase it by 1 each frame, after 1 second its value will be 60.</p></li>
+<li><p>If I have an object and move it 0.1 meters each frame, after 1 second it should have been moved 6 meters.</p></li>
 </ul>
 <p>In UPBGE you can control the logic tick intervals for each object by skipping a given ammount of ticks, allowing you to run logic at exact custom time intervals or optimize logic which doesn’t need to run each frame. The following diagram shows how logic tick skipping work.</p>
 <figure class="align-default" id="id5" style="width: 50%">

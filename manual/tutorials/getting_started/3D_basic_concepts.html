@@ -7,7 +7,7 @@
   <title>3D Basic Concepts &mdash; UPBGE Manual</title>
       <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=fa44fd50" />
       <link rel="stylesheet" type="text/css" href="../../../_static/css/theme.css?v=19f00094" />
-      <link rel="stylesheet" type="text/css" href="../../../_static/css/theme_overrides.css?v=5e9f35f9" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/theme_overrides.css?v=b4c3fc50" />
 
   
   <!--[if lt IE 9]>
@@ -58,18 +58,18 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../introducing_logic_bricks/index.html">Introducing Logic Bricks</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../introducing_logic_nodes/index.html">Introducing Logic Nodes</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../introducing_python/index.html">Introducing Python</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../introducing_python_scripting/index.html">Introducing Python Scripting</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../introducing_python_components/index.html">Introducing Python Components</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../editors/index.html">Editors</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../logic/index.html">Logic Bricks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../logic_bricks/index.html">Logic Bricks</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../logic_nodes/index.html">Logic Nodes</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../python/index.html">Python Scripting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../python_scripting/index.html">Python Scripting</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../python_components/index.html">Python Components</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../physics/index.html">Physics</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../datablocks/index.html">Datablocks</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../release/index.html">Deployment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../datablocks/index.html">Data-Blocks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../deployment/index.html">Deployment</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../tools/index.html">Tools</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../glossary/index.html">Glossary</a></li>
 </ul>
@@ -133,7 +133,7 @@
 <figure class="align-default" id="id4">
 <a class="reference internal image-reference" href="../../../_images/03-cylinder_cap.jpg"><img alt="../../../_images/03-cylinder_cap.jpg" src="../../../_images/03-cylinder_cap.jpg" style="width: 70%;" /></a>
 <figcaption>
-<p><span class="caption-text">The cylinder cap can be made up of triangles, quads, or an n-gon</span><a class="headerlink" href="#id4" title="Link to this image"></a></p>
+<p><span class="caption-text">The cylinder cap can be made up of triangles, quads, or a n-gon</span><a class="headerlink" href="#id4" title="Link to this image"></a></p>
 </figcaption>
 </figure>
 <p>In Blender, a mesh can be made from a combination of triangles, quads, or n-gons. The benefit of n-gons is their ability to retain a clean topology while modeling. Without n-gons, certain areas of a model (such as a window on a wall) would require a higher number of triangles or quads to approximate, as shown below. While n-gons make modeling easier in some cases, Blender still converts them to triangles when you start the game.</p>
@@ -145,7 +145,7 @@
 <p><span class="caption-text">Surface normals are displayed as cyan lines protruding from the faces</span><a class="headerlink" href="#id5" title="Link to this image"></a></p>
 </figcaption>
 </figure>
-<p>Another concept that a modeler will likely encounter is surface normals, or “normals” for short. Normal is a property of each face that indicates the direction a polygon is facing. Because normals are used for shading computation of the surface, ideally all the normals for a mesh should be pointed “outward”. Wrongly oriented normals can cause the mesh to show up as black or invisible. Fortunately, there is a Make Normals Consistent function in Blender that can usually resolve the issue. Figure 1.8 shows how normals are presented in Blender.</p>
+<p>Another concept that a modeler will likely encounter is surface normals, or “normals” for short. Normal is a property of each face that indicates the direction a polygon is facing. Because normals are used for shading computation of the surface, ideally all the normals for a mesh should be pointed “outward”. Wrongly oriented normals can cause the mesh to show up as black or invisible. Fortunately, there is a Make Normals Consistent function in Blender that can usually resolve the issue. Figure above shows how normals are presented in Blender.</p>
 <aside class="topic">
 <p class="topic-title"><strong>Beyond Polygons</strong></p>
 <p>Technically, there are other approaches to computer graphics that do not rely on triangles or polygons, such as NURBS (Non-uniform rational B-spline) and voxel (short for VOlumetric piXEL). But polygon modeling and rendering is by far the most common, and it is the only supported method in the game engine.</p>
@@ -170,7 +170,7 @@
 <section id="materials-and-textures">
 <h3>Materials and Textures<a class="headerlink" href="#materials-and-textures" title="Link to this heading"></a></h3>
 <p>Using polygons, you can define the shape of a mesh. To alter the color and appearance of it, you need to apply materials to the object. Material controls the color, shininess, bumpiness, and even transparency of the object. These variables ultimately all serve to add details to the object.</p>
-<p>Often, changing the color is not enough to make a surface look realistic. This is where textures come in. Texturing is a common technique used to add color and detail to a mesh by wrapping the mesh with an image, like a decal. Imagine a toy globe: if you carefully peel off the paper map that is glued onto the plastic ball and lay it out flat on the table, that map would be the texture, and the plastic ball would be the mesh. The projection of the 2D image onto a 3D mesh is called <strong>texture mapping</strong>. Texture mapping can be an automatic process, using one of the predefined projections, or a manual process, which uses a UV layout to map the 2D image onto the 3D mesh. Figure 1.10 illustrates how an image is mapped onto a model.</p>
+<p>Often, changing the color is not enough to make a surface look realistic. This is where textures come in. Texturing is a common technique used to add color and detail to a mesh by wrapping the mesh with an image, like a decal. Imagine a toy globe: if you carefully peel off the paper map that is glued onto the plastic ball and lay it out flat on the table, that map would be the texture, and the plastic ball would be the mesh. The projection of the 2D image onto a 3D mesh is called <strong>texture mapping</strong>. Texture mapping can be an automatic process, using one of the predefined projections, or a manual process, which uses a UV layout to map the 2D image onto the 3D mesh. Figure below illustrates how an image is mapped onto a model.</p>
 <figure class="align-default" id="id7" style="width: 86%">
 <img alt="../../../_images/06-mesh_with_texture.jpg" src="../../../_images/06-mesh_with_texture.jpg" />
 <figcaption>
@@ -191,12 +191,12 @@
 <h3>Lights<a class="headerlink" href="#lights" title="Link to this heading"></a></h3>
 <p>Everything you see is the result of light hitting your eyes-without lights, the world would be pitch black. Likewise, light is just as important in a virtual world. With light comes shadow as well. Shadow might not be something that you think about every day, but the interplay of shadow and light makes a huge difference in how the scene is presented.</p>
 <figure class="align-default" id="id9">
-<a class="reference internal image-reference" href="../../../_images/08-lamp_sun.png"><img alt="../../../_images/08-lamp_sun.png" src="../../../_images/08-lamp_sun.png" style="width: 70%;" /></a>
+<a class="reference internal image-reference" href="../../../_images/08-lights.png"><img alt="../../../_images/08-lights.png" src="../../../_images/08-lights.png" style="width: 70%;" /></a>
 <figcaption>
-<p><span class="caption-text">Lamp, Sun, Spot lamp, Hemi lamp, and Area lamp</span><a class="headerlink" href="#id9" title="Link to this image"></a></p>
+<p><span class="caption-text">Point, Sun, Spot and Area light</span><a class="headerlink" href="#id9" title="Link to this image"></a></p>
 </figcaption>
 </figure>
-<p>In most 3D applications, there are several different types of light available to the artist; each type has its advantages and disadvantages. For example, a Spot lamp approximates a lamp with a conical influence; a sun lamp approximates a light source from infinitely far away. Lamps in Blender are treated like regular objects: they can be positioned and rotated just like any other object. Figure 1.12 shows how different lamps look in Blender.</p>
+<p>In most 3D applications, there are several different types of light available to the artist; each type has its advantages and disadvantages. For example, a spot lamp approximates a lamp with a conical influence; a sun lamp approximates a light source from infinitely far away. Lamps in Blender are treated like regular objects: they can be positioned and rotated just like any other object. Figure above shows how different lamps look in Blender.</p>
 <p>Think of lighting as more than something that makes your scene visible. Good lighting can enhance the purpose of the scene by highlighting details while hiding irrelevant areas in shadow. Skillful placement of lighting also adds drama and realism to the scene, making an otherwise boring scene look visually exciting.</p>
 </section>
 <section id="camera">

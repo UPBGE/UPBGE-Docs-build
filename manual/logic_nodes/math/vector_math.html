@@ -7,7 +7,7 @@
   <title>Vector Math &mdash; UPBGE Manual</title>
       <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=fa44fd50" />
       <link rel="stylesheet" type="text/css" href="../../../_static/css/theme.css?v=19f00094" />
-      <link rel="stylesheet" type="text/css" href="../../../_static/css/theme_overrides.css?v=5e9f35f9" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/theme_overrides.css?v=b4c3fc50" />
 
   
   <!--[if lt IE 9]>
@@ -51,7 +51,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../../introduction/index.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../tutorials/index.html">Tutorials</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../editors/index.html">Editors</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../logic/index.html">Logic Bricks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../logic_bricks/index.html">Logic Bricks</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../index.html">Logic Nodes</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../introduction.html">Introduction</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../events/index.html">Events</a></li>
@@ -70,6 +70,8 @@
 <li class="toctree-l3 current"><a class="current reference internal" href="#">Vector Math</a></li>
 <li class="toctree-l3"><a class="reference internal" href="vectors/index.html">Vectors</a></li>
 <li class="toctree-l3"><a class="reference internal" href="interpolate.html">Interpolate</a></li>
+<li class="toctree-l3"><a class="reference internal" href="curve_interpolation.html">Curve Interpolation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tween_value.html">Tween Value</a></li>
 <li class="toctree-l3"><a class="reference internal" href="absolute.html">Absolute</a></li>
 <li class="toctree-l3"><a class="reference internal" href="clamp.html">Clamp</a></li>
 <li class="toctree-l3"><a class="reference internal" href="compare.html">Compare</a></li>
@@ -93,11 +95,11 @@
 <li class="toctree-l2"><a class="reference internal" href="../utility/index.html">Utility</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../../python/index.html">Python Scripting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../python_scripting/index.html">Python Scripting</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../python_components/index.html">Python Components</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../physics/index.html">Physics</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../datablocks/index.html">Datablocks</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../release/index.html">Deployment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../datablocks/index.html">Data-Blocks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../deployment/index.html">Deployment</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../tools/index.html">Tools</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../glossary/index.html">Glossary</a></li>
 </ul>
@@ -139,8 +141,9 @@
 <span id="ln-vector-math"></span><h1>Vector Math<a class="headerlink" href="#vector-math" title="Link to this heading"></a></h1>
 <section id="parameters">
 <h2>Parameters<a class="headerlink" href="#parameters" title="Link to this heading"></a></h2>
-<dl class="simple">
+<dl>
 <dt>Operation</dt><dd><p>Mode of vector math to perform.</p>
+<p>I.e. <em>Multiply</em> takes 2 vectors (blue-ish input dot), <em>Scale</em> takes a vector and a float (gray input dot). <em>Normalize</em> only exposes 1 input socket, and will normalize input values between 0 to 1.</p>
 </dd>
 </dl>
 </section>
@@ -149,7 +152,7 @@
 <dl class="simple">
 <dt>Vector 1</dt><dd><p>Vector3 values.</p>
 </dd>
-<dt>Vector 2</dt><dd><p>Vextor3 values.</p>
+<dt>Vector 2</dt><dd><p>Vector3 values.</p>
 </dd>
 </dl>
 </section>
@@ -159,6 +162,15 @@
 <dt>Result</dt><dd><p>Result of vector math operation.</p>
 </dd>
 </dl>
+</section>
+<section id="example">
+<h2>Example<a class="headerlink" href="#example" title="Link to this heading"></a></h2>
+<figure class="align-center" id="id1" style="width: 80%">
+<img alt="Vector Math Node" src="../../../_images/ln-vector_math-example.png" />
+<figcaption>
+<p><span class="caption-text">Vector Math nodes in Normalize and Scale mode</span><a class="headerlink" href="#id1" title="Link to this image"></a></p>
+</figcaption>
+</figure>
 </section>
 </section>
 

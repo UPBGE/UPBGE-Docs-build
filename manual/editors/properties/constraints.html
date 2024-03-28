@@ -7,7 +7,7 @@
   <title>Constraints &mdash; UPBGE Manual</title>
       <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=fa44fd50" />
       <link rel="stylesheet" type="text/css" href="../../../_static/css/theme.css?v=19f00094" />
-      <link rel="stylesheet" type="text/css" href="../../../_static/css/theme_overrides.css?v=5e9f35f9" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/theme_overrides.css?v=b4c3fc50" />
 
   
   <!--[if lt IE 9]>
@@ -63,17 +63,18 @@
 <li class="toctree-l3"><a class="reference internal" href="data.html">Data</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../logic/index.html">Logic Bricks Editor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../logic_bricks/index.html">Logic Bricks Editor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../logic_nodes/index.html">Logic Node Editor</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../text/index.html">Text Editor</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../../logic/index.html">Logic Bricks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../logic_bricks/index.html">Logic Bricks</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../logic_nodes/index.html">Logic Nodes</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../python/index.html">Python Scripting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../python_scripting/index.html">Python Scripting</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../python_components/index.html">Python Components</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../physics/index.html">Physics</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../datablocks/index.html">Datablocks</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../release/index.html">Deployment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../datablocks/index.html">Data-Blocks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../deployment/index.html">Deployment</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../tools/index.html">Tools</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../glossary/index.html">Glossary</a></li>
 </ul>
@@ -110,86 +111,73 @@
              
   <section id="constraints">
 <h1>Constraints<a class="headerlink" href="#constraints" title="Link to this heading"></a></h1>
-<p>The <strong>Constraints</strong> tab in <strong>Properties</strong> editor exposes constraints setups for current
-object.</p>
-<p>Currently in UPBGE only the <em>Rigid Body Joint</em> constraint can be set through the user
-interface.</p>
+<p>The <strong>Constraints</strong> tab in <strong>Properties</strong> editor exposes constraints setups for current object.</p>
+<p>Currently in UPBGE only the <em>Rigid Body Joint</em> constraint can be set through the user interface.</p>
 <section id="rigid-body-joint-constraint">
 <h2>Rigid Body Joint Constraint<a class="headerlink" href="#rigid-body-joint-constraint" title="Link to this heading"></a></h2>
-<p>The <em>Rigid Body Joint</em> constraint is very special, it is used by the physics part of
-UPBGE to simulate a joint between its owner and its target. It offers four joint types:
-hinge type, ball-and-socket type, cone-twist type, and generic six-<abbr title="Degrees of Freedom">DoF</abbr> type.</p>
-<p>The joint point and axes are defined and fixed relative to the owner. The target moves as
-if it were stuck to the center point of a stick, the other end of the stick rotating
-around the joint/pivot point.</p>
+<p>The <em>Rigid Body Joint</em> constraint is very special, it is used by the physics part of UPBGE to simulate a joint between its owner and its target. It offers four joint types: hinge type, ball-and-socket type, cone-twist type, and generic six-<abbr title="Degrees of Freedom">DoF</abbr> type.</p>
+<p>The joint point and axes are defined and fixed relative to the owner. The target moves as if it were stuck to the center point of a stick, the other end of the stick rotating around the joint/pivot point.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>In order for this constraint to work properly, both objects
-(so the owner and the target object) need to have <em>Collision Bounds</em> enabled.</p>
+<p>In order for this constraint to work properly, both objects (so the owner and the target object) need to have <em>Collision Bounds</em> enabled.</p>
 </div>
+</section>
 <section id="options">
-<h3>Options<a class="headerlink" href="#options" title="Link to this heading"></a></h3>
+<h2>Options<a class="headerlink" href="#options" title="Link to this heading"></a></h2>
 <figure class="align-default" id="id1">
 <img alt="../../../_images/editors-properties-constraints-rigid_body_joint.png" src="../../../_images/editors-properties-constraints-rigid_body_joint.png" />
 <figcaption>
-<p><span class="caption-text">Rigid Body Joint panel.</span><a class="headerlink" href="#id1" title="Link to this image"></a></p>
+<p><span class="caption-text">Rigid Body Joint panel</span><a class="headerlink" href="#id1" title="Link to this image"></a></p>
 </figcaption>
 </figure>
 <dl>
-<dt>Target</dt><dd><p>Object used to select the constraints target, and is not functional (red state) when
-it has none.</p>
+<dt>Target</dt><dd><p>Object used to select the constraints target, and is not functional (red state) when it has none.</p>
 </dd>
 <dt>Pivot Type</dt><dd><dl>
-<dt>Ball</dt><dd><p>Works like an ideal ball-and-socket joint, i.e. allows rotations around all axes
-like a shoulder joint.</p>
+<dt>Ball</dt><dd><p>Works like an ideal ball-and-socket joint, i.e. allows rotations around all axes like a shoulder joint.</p>
 </dd>
-<dt>Hinge</dt><dd><p>Works in one plane, like an elbow: the owner and target can only rotate around the
-X axis of the pivot (joint point).</p>
+<dt>Hinge</dt><dd><p>Works in one plane, like an elbow: the owner and target can only rotate around the X axis of the pivot (joint point).</p>
 <dl>
-<dt>Limits</dt><dd><figure class="align-default">
+<dt>Limits</dt><dd><figure class="align-default" id="id2">
 <img alt="../../../_images/editors-properties-constraints-rigid_body_joint-hinge.png" src="../../../_images/editors-properties-constraints-rigid_body_joint-hinge.png" />
+<figcaption>
+<p><span class="caption-text">Angular limits for the X axis</span><a class="headerlink" href="#id2" title="Link to this image"></a></p>
+</figcaption>
 </figure>
-<p>Angular limits for the X axis.</p>
 </dd>
 </dl>
 </dd>
-<dt>Cone Twist</dt><dd><p>Similar to <em>Ball</em>, this is a point-to-point joint with limits added for the cone
-and twist axis.</p>
+<dt>Cone Twist</dt><dd><p>Similar to <em>Ball</em>, this is a point-to-point joint with limits added for the cone and twist axis.</p>
 <dl>
-<dt>Limits</dt><dd><figure class="align-default">
+<dt>Limits</dt><dd><figure class="align-default" id="id3">
 <img alt="../../../_images/editors-properties-constraints-rigid_body_joint-cone_twist.png" src="../../../_images/editors-properties-constraints-rigid_body_joint-cone_twist.png" />
+<figcaption>
+<p><span class="caption-text">Angular limits</span><a class="headerlink" href="#id3" title="Link to this image"></a></p>
+</figcaption>
 </figure>
-<p>Angular limits.</p>
 </dd>
 </dl>
 </dd>
-<dt>Generic 6DOF</dt><dd><p>Works like the <em>Ball</em> option, but the target is no longer constrained at a fixed
-distance from the pivot point, by default (hence the six degrees of freedom:
-rotation and translation around/along the three axes). In fact, there is no longer
-a joint by default, with this option, but it enables additional settings which
-allow you to restrict some of these DoF:</p>
+<dt>Generic 6DOF</dt><dd><p>Works like the <em>Ball</em> option, but the target is no longer constrained at a fixed distance from the pivot point, by default (hence the six degrees of freedom: rotation and translation around/along the three axes). In fact, there is no longer a joint by default, with this option, but it enables additional settings which allow you to restrict some of these DoF:</p>
 <dl>
-<dt>Limits</dt><dd><figure class="align-default">
+<dt>Limits</dt><dd><figure class="align-default" id="id4">
 <img alt="../../../_images/editors-properties-constraints-rigid_body_joint-generic_6_dof.png" src="../../../_images/editors-properties-constraints-rigid_body_joint-generic_6_dof.png" />
+<figcaption>
+<p><span class="caption-text">Linear and angular limits for a given axis (of the pivot) in Blender Units and degrees respectively.</span><a class="headerlink" href="#id4" title="Link to this image"></a></p>
+</figcaption>
 </figure>
-<p>Linear and angular limits for a given axis (of the pivot) in Blender Units and
-degrees respectively.</p>
 </dd>
 </dl>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>The 6DOF constraint has a limitation due to it uses euler angles instead of quaternions. Basically, the rotation of Y-axis can be +/-90 degrees only,
-if you exceed that maximum the constrain will go haywire. A good solution to avoid issues is to modify your model in a way that the free rotation doesn’t match
-with the Y local axis of your object.</p>
+<p>The 6DOF constraint has a limitation due to it uses euler angles instead of quaternions. Basically, the rotation of Y-axis can be +/-90 degrees only, if you exceed that maximum the constrain will go haywire. A good solution to avoid issues is to modify your model in a way that the free rotation doesn’t match with the Y local axis of your object.</p>
 </div>
 </dd>
 </dl>
 </dd>
-<dt>Child Object</dt><dd><p>Normally, leave this blank. You can reset it to blank by right-clicking and selecting
-Reset to Default Value.</p>
+<dt>Child Object</dt><dd><p>Normally, leave this blank. You can reset it to blank by right-clicking and selecting Reset to Default Value.</p>
 </dd>
-<dt>Linked Collision</dt><dd><p>When enabled, this will disable the collision detection between the owner and the
-target (in the physical engine of the BGE).</p>
+<dt>Linked Collision</dt><dd><p>When enabled, this will disable the collision detection between the owner and the target (in the physical engine of the BGE).</p>
 </dd>
 <dt>Display Pivot</dt><dd><p>When enabled, this will draw the pivot of the joint in the 3D Views. The most useful,
 especially with the <em>Generic 6DOF</em> joint type!</p>
@@ -205,7 +193,6 @@ especially with the <em>Generic 6DOF</em> joint type!</p>
 <dt>Axis</dt><dd><p>These three numeric fields allow you to rotate the pivot point, <em>in the owner’s space</em>.</p>
 </dd>
 </dl>
-</section>
 </section>
 </section>
 

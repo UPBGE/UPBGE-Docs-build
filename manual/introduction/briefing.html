@@ -7,7 +7,7 @@
   <title>Briefing &mdash; UPBGE Manual</title>
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
       <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
-      <link rel="stylesheet" type="text/css" href="../../_static/css/theme_overrides.css?v=5e9f35f9" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme_overrides.css?v=b4c3fc50" />
 
   
   <!--[if lt IE 9]>
@@ -59,13 +59,13 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../tutorials/index.html">Tutorials</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../editors/index.html">Editors</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../logic/index.html">Logic Bricks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../logic_bricks/index.html">Logic Bricks</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../logic_nodes/index.html">Logic Nodes</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../python/index.html">Python Scripting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../python_scripting/index.html">Python Scripting</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../python_components/index.html">Python Components</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../physics/index.html">Physics</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../datablocks/index.html">Datablocks</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../release/index.html">Deployment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../datablocks/index.html">Data-Blocks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../deployment/index.html">Deployment</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tools/index.html">Tools</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../glossary/index.html">Glossary</a></li>
 </ul>
@@ -123,7 +123,7 @@
 <section id="blender-rises">
 <h3>Blender Rises<a class="headerlink" href="#blender-rises" title="Link to this heading"></a></h3>
 <p>Located in beautiful Amsterdam, the Blender Foundation now oversees the development, distribution, and marketing of Blender. But because of the open source nature of the software, its development has been driven largely by volunteer contributors from across the world.</p>
-<p>The Blender Foundation also created the Blender Institute, an animation and game studio that focuses on movie and game development using Blender. The Institute produced the movies <strong>Elephants Dream</strong>, <strong>Big Buck Bunny</strong>, <strong>Sintel</strong>, <strong>Tears of Steel</strong>, <strong>Cosmos Laundromat</strong> and the game <strong>Yo, Frankie!</strong>. These projects serve two main goals: The production process is an opportunity to improve Blender in a real studio environment, and the end result also serves as an advertisement for the software itself.</p>
+<p>The Blender Foundation also created the Blender Institute, an animation and game studio that focuses on movie and game development using Blender. The Institute produced the movies <code class="docutils literal notranslate"><span class="pre">Elephants</span> <span class="pre">Dream</span></code>, <code class="docutils literal notranslate"><span class="pre">Big</span> <span class="pre">Buck</span> <span class="pre">Bunny</span></code>, <code class="docutils literal notranslate"><span class="pre">Sintel</span></code>, <code class="docutils literal notranslate"><span class="pre">Tears</span> <span class="pre">of</span> <span class="pre">Steel</span></code>, <code class="docutils literal notranslate"><span class="pre">Cosmos</span> <span class="pre">Laundromat</span></code> and the game <code class="docutils literal notranslate"><span class="pre">Yo,</span> <span class="pre">Frankie!</span></code>. These projects serve two main goals: The production process is an opportunity to improve Blender in a real studio environment, and the end result also serves as an advertisement for the software itself.</p>
 <figure class="align-default" id="id2">
 <img alt="../../_images/02-blender_reel.jpg" src="../../_images/02-blender_reel.jpg" />
 <figcaption>
@@ -144,10 +144,10 @@
 <h3>Blender vs UPBGE<a class="headerlink" href="#blender-vs-upbge" title="Link to this heading"></a></h3>
 <p>You already know that Blender is an open source 3D software that is capable of modeling, animation, rendering, compositing, and producing a game all in one package. Let’s analyze the term “open source 3D software”: “Open source 3D software” means that Blender’s source code is available for anyone to access and modify. The most obvious advantage to open source software is that as an artist, you can use Blender for free, for non-commercial as well as commercial work. As a developer, you are allowed to modify Blender in any way you want to suit your specific needs. But open source does not mean that anyone can make changes to the Blender code without approval. Blender is licensed under the GNU Public License v2 (GPL2). In a nutshell, it means that Blender can be copied, modified, and if re-shared, the changes in the source code have to be available and licensed in an equivalent license.</p>
 <p>The <strong>Uchronia Project Blender Game Engine</strong> (UPBGE) is a <a class="reference external" href="https://www.blender.org/">Blender</a>’s builtin tool derived from Blender Foundation’s <a class="reference external" href="https://en.wikipedia.org/wiki/Blender_Game_Engine/">Blender Game Engine</a> for real-time projects, from architectural visualizations and simulations to games.</p>
-<p>Originally created by Tristan Porteries as a fork from the Blender Game Engine with the purpose to develop the Blender Game Engine in a faster way, became indepent with the Blender Foundation’s announcement of BGE’s removal when it reached to Blender 2.80. With this independency, the UPBGE’s developers (former BGE developers) have freedom to change and add features that could not be changed before (because the possibility of an official Blender merge, now discarded).</p>
+<p>Originally created by Tristan Porteries as a fork from the Blender Game Engine with the purpose to develop the Blender Game Engine in a faster way, became independent with the Blender Foundation’s announcement of BGE’s removal when it reached to Blender 2.80. With this independency, the UPBGE’s developers (former BGE developers) have freedom to change and add features that could not be changed before (because the possibility of an official Blender merge, now discarded).</p>
 <p>Basically, due to its periodic synchronization with Blender source code (almost daily), UPBGE, as its acronym suggests, has become a Blender from a parallel universe in which the game engine was never removed.</p>
 <p>In any case, UPBGE is kriptonian for “hope”. Who knows if in the future that parallel universe merges with our universe and we may add another line entitled “Justice League” to this beautiful story :-).</p>
-<p>Until that time comes, UPBGE has adopted the new physically based and state-of-the-art real-time render engine, Eevee. This way all you can do in Blender/UPBGE editor you can translate it to the Game Engine. A truly WYSIWYG (What You See Is What You Get) Game Engine, the strongest UPBGE feature.</p>
+<p>Until that time comes, UPBGE has adopted the new physically based and state-of-the-art real-time render engine, EEVEE. This way all you can do in Blender/UPBGE editor you can translate it to the Game Engine. A truly WYSIWYG (What You See Is What You Get) Game Engine, the strongest UPBGE feature.</p>
 <p>Of course, software exists to serve the users - that’s you. Every time a Blender and/or UPBGE user creates a piece of artwork, it justifies, even if just a little, the enormous amount of time that went into creating the software. We hope that by picking up this manual, you are on your way to creating something amazing to share with the world.</p>
 </section>
 <section id="features">
@@ -159,9 +159,9 @@
 <li><p>Fully integrated audio engine powered by <a class="reference external" href="https://www.openal.org/">OpenAL</a> and <a class="reference external" href="https://github.com/neXyon/audaspace/">Audaspace</a>,supporting 3D sound and sound effects.</p></li>
 <li><p>Two easy and straightforward visual logic systems, Logic Bricks and Logic Nodes.</p></li>
 <li><p>Powerful <a class="reference external" href="https://www.python.org/">Python</a> language bindings, allowing support to even more libraries through the use of <a class="reference external" href="https://pypi.org/">PyPI</a>.</p></li>
-<li><p>Development process entirely inside Blender, without needing to import/export assets, although most used formats are supported through import/export addons (FBX, Collada, glTF, obj, stl, etc).</p></li>
+<li><p>Development process entirely inside Blender, without needing to import/export assets, although most used formats are supported through import/export add-ons (FBX, Collada, glTF, obj, stl, etc).</p></li>
 <li><p>Execution of game in Blender’s viewport (for fast previewing) or on an standalone executable.</p></li>
-<li><p>Rendering powered by state of art Blender’s EEVEE engine including PBR shading, SSR reflections, GTAO ambient occlusion, Bloom, Soft and contact shadows, Light probes for global ilumination, Volumetrics, etc.</p></li>
+<li><p>Rendering powered by state of art Blender’s EEVEE engine including PBR shading, SSR reflections, GTAO ambient occlusion, Bloom, Soft and contact shadows, Light probes for global illumination, Volumetrics, etc.</p></li>
 <li><p>Blender’s <a class="reference external" href="https://docs.blender.org/manual/en/dev/data_system/linked_libraries.html">Linked Libraries</a> feature, allowing to organize projects in multiple blend files.</p></li>
 <li><p>GLSL custom shaders for visual effects and post processing.</p></li>
 </ul>

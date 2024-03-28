@@ -7,7 +7,7 @@
   <title>Physics &mdash; UPBGE Manual</title>
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
       <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
-      <link rel="stylesheet" type="text/css" href="../../_static/css/theme_overrides.css?v=5e9f35f9" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme_overrides.css?v=b4c3fc50" />
 
   
   <!--[if lt IE 9]>
@@ -23,7 +23,7 @@
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="Introduction" href="introduction.html" />
-    <link rel="prev" title="Vehicle Templates" href="../python_components/getting_started/vehicle_templates.html" /> 
+    <link rel="prev" title="Utils Templates" href="../python_components/getting_started/util_templates.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -51,16 +51,17 @@
 <li class="toctree-l1"><a class="reference internal" href="../introduction/index.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tutorials/index.html">Tutorials</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../editors/index.html">Editors</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../logic/index.html">Logic Bricks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../logic_bricks/index.html">Logic Bricks</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../logic_nodes/index.html">Logic Nodes</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../python/index.html">Python Scripting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../python_scripting/index.html">Python Scripting</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../python_components/index.html">Python Components</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Physics</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="introduction.html">Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="world.html">World Physics</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../datablocks/index.html">Datablocks</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../release/index.html">Deployment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../datablocks/index.html">Data-Blocks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../deployment/index.html">Deployment</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tools/index.html">Tools</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../glossary/index.html">Glossary</a></li>
 </ul>
@@ -101,6 +102,7 @@
 <li class="toctree-l2"><a class="reference internal" href="introduction.html#what-is-physics">What Is Physics?</a></li>
 <li class="toctree-l2"><a class="reference internal" href="introduction.html#bullet-physics-library">Bullet Physics Library</a></li>
 <li class="toctree-l2"><a class="reference internal" href="introduction.html#overview">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="introduction.html#visualizing-physics">Visualizing Physics</a></li>
 <li class="toctree-l2"><a class="reference internal" href="introduction.html#show-framerate-and-profile">Show Framerate and Profile</a></li>
 <li class="toctree-l2"><a class="reference internal" href="introduction.html#mesh-deformations">Mesh Deformations</a></li>
 <li class="toctree-l2"><a class="reference internal" href="introduction.html#soft-bodies">Soft Bodies</a></li>
@@ -110,7 +112,12 @@
 <li class="toctree-l2"><a class="reference internal" href="introduction.html#recording-to-keyframes">Recording to Keyframes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="introduction.html#keyframe-clean-up">Keyframe Clean-up</a></li>
 <li class="toctree-l2"><a class="reference internal" href="introduction.html#exporting">Exporting</a></li>
-<li class="toctree-l2"><a class="reference internal" href="introduction.html#bullet-bullet-compatible-engines">.bullet / Bullet Compatible Engines</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="world.html">World Physics</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="world.html#physics-panel">Physics Panel</a></li>
+<li class="toctree-l2"><a class="reference internal" href="world.html#navigation-mesh">Navigation Mesh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="world.html#obstacle-simulation">Obstacle Simulation</a></li>
 </ul>
 </li>
 </ul>
@@ -121,7 +128,7 @@
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="../python_components/getting_started/vehicle_templates.html" class="btn btn-neutral float-left" title="Vehicle Templates" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../python_components/getting_started/util_templates.html" class="btn btn-neutral float-left" title="Utils Templates" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
         <a href="introduction.html" class="btn btn-neutral float-right" title="Introduction" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 

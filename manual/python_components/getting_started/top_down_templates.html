@@ -7,7 +7,7 @@
   <title>Top Down Templates &mdash; UPBGE Manual</title>
       <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=fa44fd50" />
       <link rel="stylesheet" type="text/css" href="../../../_static/css/theme.css?v=19f00094" />
-      <link rel="stylesheet" type="text/css" href="../../../_static/css/theme_overrides.css?v=5e9f35f9" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/theme_overrides.css?v=b4c3fc50" />
 
   
   <!--[if lt IE 9]>
@@ -51,23 +51,22 @@
 <li class="toctree-l1"><a class="reference internal" href="../../introduction/index.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../tutorials/index.html">Tutorials</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../editors/index.html">Editors</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../logic/index.html">Logic Bricks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../logic_bricks/index.html">Logic Bricks</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../logic_nodes/index.html">Logic Nodes</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../python/index.html">Python Scripting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../python_scripting/index.html">Python Scripting</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../index.html">Python Components</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../introduction.html">Introduction</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="index.html">Getting Started</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="character_controller_templates.html">Character Controller Templates</a></li>
 <li class="toctree-l3 current"><a class="current reference internal" href="#">Top Down Templates</a></li>
 <li class="toctree-l3"><a class="reference internal" href="util_templates.html">Utils Templates</a></li>
-<li class="toctree-l3"><a class="reference internal" href="vehicle_templates.html">Vehicle Templates</a></li>
 </ul>
 </li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../physics/index.html">Physics</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../datablocks/index.html">Datablocks</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../release/index.html">Deployment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../datablocks/index.html">Data-Blocks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../deployment/index.html">Deployment</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../tools/index.html">Tools</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../glossary/index.html">Glossary</a></li>
 </ul>
@@ -108,17 +107,20 @@
 <figure class="align-default">
 <img alt="../../../_images/Fig-13.png" src="../../../_images/Fig-13.png" />
 </figure>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
 <p>To use, just select it from template label at script editor and you’re done! You can use this template in your projects, even for commercial projects. You only need to give credits to Guilherme Teres Nunes (UnidayStudio) for this. It’s very easy to use: Just load this script into your .blend file through template label (or paste it in the same folder that your .blend is), select the object that you want, and attach the script into the object’s components using <strong>Register Component</strong> button.</p>
 <section id="mouse-camera-drag-component">
 <h2>Mouse Camera Drag Component<a class="headerlink" href="#mouse-camera-drag-component" title="Link to this heading"></a></h2>
-<p>This component will allow the player to move the camera (or other objects) by simple holding a mouse button (you decide what button) and dragging the mouse around. Very useful for top down games. It will also allow the player to move the camera (or other objects) by pressing <kbd class="kbd docutils literal notranslate">W</kbd>, <kbd class="kbd docutils literal notranslate">A</kbd>, <kbd class="kbd docutils literal notranslate">S</kbd>, <kbd class="kbd docutils literal notranslate">D</kbd> keys. There is some configuration to help you adapting this logic to better fit in your project. If you want to drag the camera in a vertial way, to create a side scroller game, for example, you can easly change the “Up Axis” to allow this. You can attach this component into your camera or into other objects.
-It’s very simple to configure:</p>
-<figure class="align-left" id="id1">
+<p>This component will allow the player to move the camera (or other objects) by simple holding a mouse button (you decide what button) and dragging the mouse around. Very useful for top down games. It will also allow the player to move the camera (or other objects) by pressing <kbd class="kbd docutils literal notranslate">W</kbd>, <kbd class="kbd docutils literal notranslate">A</kbd>, <kbd class="kbd docutils literal notranslate">S</kbd>, <kbd class="kbd docutils literal notranslate">D</kbd> keys. There is some configuration to help you adapting this logic to better fit in your project. If you want to drag the camera in a vertial way, to create a side scroller game, for example, you can easly change the “Up Axis” to allow this.</p>
+<figure class="align-right" id="id1">
 <img alt="../../../_images/Fig-14.png" src="../../../_images/Fig-14.png" />
 <figcaption>
 <p><span class="caption-text">Mouse Camera Drag component</span><a class="headerlink" href="#id1" title="Link to this image"></a></p>
 </figcaption>
 </figure>
+<p>You can attach this component into your camera or into other objects. It’s very simple to configure:</p>
 <ul class="simple">
 <li><p><strong>Show Mouse</strong>: Enable if you want to show the mouse</p></li>
 <li><p><strong>Mouse Movement</strong>: Enable if you want to activate the mouse drag logic</p></li>
@@ -130,35 +132,28 @@ It’s very simple to configure:</p>
 <li><p><strong>Keyboard Speed</strong>: If you enabled the Keyboard Movement, control the speed here!</p></li>
 <li><p><strong>Limit Area</strong>: You can limit the area that the object can stay by playing around with this values. If you don’t want, just set to <kbd class="kbd docutils literal notranslate">0</kbd>.</p></li>
 </ul>
-<div class="line-block">
-<div class="line"><br /></div>
-</div>
 </section>
 <section id="mouse-point-and-click-component">
 <h2>Mouse Point And Click Component<a class="headerlink" href="#mouse-point-and-click-component" title="Link to this heading"></a></h2>
-<p>This component will allow you to teleport an object right into the point that the player clicks. You can limit the scope of the clicks by adding a property. This feature is very useful for top down/point and click games, because you need a pivot to point where the player wants the character to go.
-It’s very simple to configure:</p>
-<figure class="align-left" id="id2">
+<p>This component will allow you to teleport an object right into the point that the player clicks. You can limit the scope of the clicks by adding a property.</p>
+<figure class="align-right" id="id2">
 <img alt="../../../_images/Fig-15.png" src="../../../_images/Fig-15.png" />
 <figcaption>
 <p><span class="caption-text">Mouse Point and Click component</span><a class="headerlink" href="#id2" title="Link to this image"></a></p>
 </figcaption>
 </figure>
+<p>This feature is very useful for top down/point and click games, because you need a pivot to point where the player wants the character to go. It’s very simple to configure:</p>
 <ul class="simple">
 <li><p><strong>Activate</strong>: Activate or deactivate the logic</p></li>
 <li><p><strong>Mouse Button</strong>: Which mouse button you want to use</p></li>
 <li><p><strong>Align To Normal</strong>: Enable if you want to align the object to the mouse over normal.</p></li>
 <li><p><strong>Property</strong>: The property that you want to interact with (leave this blank if you want to interact with everything).</p></li>
 </ul>
-<div class="line-block">
-<div class="line"><br /></div>
-</div>
 </section>
 <section id="object-chaser-component">
 <h2>Object Chaser Component<a class="headerlink" href="#object-chaser-component" title="Link to this heading"></a></h2>
-<p>This component will make the object chase a target (another object) when they have certain distance. Note that is necessary to have a navmesh in your scene. You can also change the Target object in realtime by calling the function setTarget().
-It’s very simple to configure:</p>
-<figure class="align-left" id="id3">
+<p>This component will make the object chase a target (another object) when they have certain distance. Note that is necessary to have a navmesh in your scene. You can also change the Target object in realtime by calling the function setTarget(). It’s very simple to configure:</p>
+<figure class="align-right" id="id3">
 <img alt="../../../_images/Fig-16.png" src="../../../_images/Fig-16.png" />
 <figcaption>
 <p><span class="caption-text">Object Chaser component</span><a class="headerlink" href="#id3" title="Link to this image"></a></p>

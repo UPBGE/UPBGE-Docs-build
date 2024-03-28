@@ -7,7 +7,7 @@
   <title>Combine XYZW &mdash; UPBGE Manual</title>
       <link rel="stylesheet" type="text/css" href="../../../../_static/pygments.css?v=fa44fd50" />
       <link rel="stylesheet" type="text/css" href="../../../../_static/css/theme.css?v=19f00094" />
-      <link rel="stylesheet" type="text/css" href="../../../../_static/css/theme_overrides.css?v=5e9f35f9" />
+      <link rel="stylesheet" type="text/css" href="../../../../_static/css/theme_overrides.css?v=b4c3fc50" />
 
   
   <!--[if lt IE 9]>
@@ -51,7 +51,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../../../introduction/index.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../tutorials/index.html">Tutorials</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../editors/index.html">Editors</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../logic/index.html">Logic Bricks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../logic_bricks/index.html">Logic Bricks</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../../index.html">Logic Nodes</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../../introduction.html">Introduction</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../events/index.html">Events</a></li>
@@ -94,11 +94,11 @@
 <li class="toctree-l2"><a class="reference internal" href="../../utility/index.html">Utility</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../../../python/index.html">Python Scripting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../python_scripting/index.html">Python Scripting</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../python_components/index.html">Python Components</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../physics/index.html">Physics</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../datablocks/index.html">Datablocks</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../release/index.html">Deployment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../datablocks/index.html">Data-Blocks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../deployment/index.html">Deployment</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../tools/index.html">Tools</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../glossary/index.html">Glossary</a></li>
 </ul>
@@ -139,23 +139,24 @@
 </figure>
 <section id="combine-xyzw">
 <span id="ln-combine-xyzw"></span><h1>Combine XYZW<a class="headerlink" href="#combine-xyzw" title="Link to this heading"></a></h1>
+<p>Accepts float inputs and combines them into Quaternion.</p>
 <section id="inputs">
 <h2>Inputs<a class="headerlink" href="#inputs" title="Link to this heading"></a></h2>
 <dl class="simple">
-<dt>X</dt><dd><p>Fixed input X value, or result from connected node.</p>
+<dt>X</dt><dd><p>Fixed input X float value, or result from connected node.</p>
 </dd>
-<dt>Y</dt><dd><p>Fixed input Y value, or result from connected node.</p>
+<dt>Y</dt><dd><p>Fixed input Y float value, or result from connected node.</p>
 </dd>
-<dt>Z</dt><dd><p>Fixed input Z value, or result from connected node.</p>
+<dt>Z</dt><dd><p>Fixed input Z float value, or result from connected node.</p>
 </dd>
-<dt>W</dt><dd><p>Fixed input W value, or result from connected node.</p>
+<dt>W</dt><dd><p>Fixed input W float value, or result from connected node.</p>
 </dd>
 </dl>
 </section>
 <section id="outputs">
 <h2>Outputs<a class="headerlink" href="#outputs" title="Link to this heading"></a></h2>
 <dl class="simple">
-<dt>Vector</dt><dd><p>Resulting XYZ (Vector3) vector.</p>
+<dt>Vector</dt><dd><p>Resulting XYZW Quaternion.</p>
 </dd>
 </dl>
 </section>

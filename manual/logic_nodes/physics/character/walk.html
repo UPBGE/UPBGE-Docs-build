@@ -7,7 +7,7 @@
   <title>Walk &mdash; UPBGE Manual</title>
       <link rel="stylesheet" type="text/css" href="../../../../_static/pygments.css?v=fa44fd50" />
       <link rel="stylesheet" type="text/css" href="../../../../_static/css/theme.css?v=19f00094" />
-      <link rel="stylesheet" type="text/css" href="../../../../_static/css/theme_overrides.css?v=5e9f35f9" />
+      <link rel="stylesheet" type="text/css" href="../../../../_static/css/theme_overrides.css?v=b4c3fc50" />
 
   
   <!--[if lt IE 9]>
@@ -51,7 +51,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../../../introduction/index.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../tutorials/index.html">Tutorials</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../editors/index.html">Editors</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../logic/index.html">Logic Bricks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../logic_bricks/index.html">Logic Bricks</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../../index.html">Logic Nodes</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../../introduction.html">Introduction</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../events/index.html">Events</a></li>
@@ -75,7 +75,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../add_constraint.html">Add Constraint</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../remove_constraint.html">Remove Constraint</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../set_physics.html">Set Physics</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../set_gravity.html">Set Gravity</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../set_character_gravity.html">Set Character Gravity</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../set_dynamics.html">Set Dynamics</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../set_rigid_body.html">Set Rigid Body</a></li>
 </ul>
@@ -91,11 +91,11 @@
 <li class="toctree-l2"><a class="reference internal" href="../../utility/index.html">Utility</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../../../python/index.html">Python Scripting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../python_scripting/index.html">Python Scripting</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../python_components/index.html">Python Components</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../physics/index.html">Physics</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../datablocks/index.html">Datablocks</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../release/index.html">Deployment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../datablocks/index.html">Data-Blocks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../deployment/index.html">Deployment</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../tools/index.html">Tools</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../glossary/index.html">Glossary</a></li>
 </ul>
@@ -136,14 +136,19 @@
 </figure>
 <section id="walk">
 <span id="ln-walk"></span><h1>Walk<a class="headerlink" href="#walk" title="Link to this heading"></a></h1>
-<section id="inputs">
-<h2>Inputs<a class="headerlink" href="#inputs" title="Link to this heading"></a></h2>
+<section id="parameters">
+<h2>Parameters<a class="headerlink" href="#parameters" title="Link to this heading"></a></h2>
 <dl class="simple">
 <dt>Local</dt><dd><p>Use character’s local axis for walking.</p>
 </dd>
+</dl>
+</section>
+<section id="inputs">
+<h2>Inputs<a class="headerlink" href="#inputs" title="Link to this heading"></a></h2>
+<dl class="simple">
 <dt>Condition</dt><dd><p>If connected, condition must be fulfilled for node to activate.</p>
 </dd>
-<dt>Object</dt><dd><p>Which object to use as character.</p>
+<dt>Object</dt><dd><p>Which character to use.</p>
 </dd>
 <dt>Vector</dt><dd><p>Vector3 values for walking to apply. todo</p>
 </dd>
@@ -155,6 +160,15 @@
 <dt>Done</dt><dd><p><em>True</em> if node performed successfully, else <em>False</em>.</p>
 </dd>
 </dl>
+</section>
+<section id="example">
+<h2>Example<a class="headerlink" href="#example" title="Link to this heading"></a></h2>
+<figure class="align-center" id="id1" style="width: 80%">
+<img alt="Walk Node" src="../../../../_images/ln-walk-example.png" />
+<figcaption>
+<p><span class="caption-text">Walk node at the end of the 4-Key Template</span><a class="headerlink" href="#id1" title="Link to this image"></a></p>
+</figcaption>
+</figure>
 </section>
 </section>
 

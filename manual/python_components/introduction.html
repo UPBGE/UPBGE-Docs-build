@@ -7,7 +7,7 @@
   <title>Introduction &mdash; UPBGE Manual</title>
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
       <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
-      <link rel="stylesheet" type="text/css" href="../../_static/css/theme_overrides.css?v=5e9f35f9" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme_overrides.css?v=b4c3fc50" />
 
   
   <!--[if lt IE 9]>
@@ -51,21 +51,23 @@
 <li class="toctree-l1"><a class="reference internal" href="../introduction/index.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tutorials/index.html">Tutorials</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../editors/index.html">Editors</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../logic/index.html">Logic Bricks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../logic_bricks/index.html">Logic Bricks</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../logic_nodes/index.html">Logic Nodes</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../python/index.html">Python Scripting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../python_scripting/index.html">Python Scripting</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Python Components</a><ul class="current">
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Introduction</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#what-is-a-python-component">What Is A Python Component?</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#python-component-creation">Python Component Creation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#create-component">Create Component</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#add-component">Add Component</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="getting_started/index.html">Getting Started</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../physics/index.html">Physics</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../datablocks/index.html">Datablocks</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../release/index.html">Deployment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../datablocks/index.html">Data-Blocks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../deployment/index.html">Deployment</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tools/index.html">Tools</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../glossary/index.html">Glossary</a></li>
 </ul>
@@ -103,23 +105,15 @@
 <span id="python-components-introduction"></span><h1>Introduction<a class="headerlink" href="#introduction" title="Link to this heading"></a></h1>
 <section id="what-is-a-python-component">
 <h2>What Is A Python Component?<a class="headerlink" href="#what-is-a-python-component" title="Link to this heading"></a></h2>
-<p>The idea of a component is a simple one. They are modules that can be attached to game objects. You can attach as many as you want,
-and each one serves a specific purpose such as third person character movement with <kbd class="kbd docutils literal notranslate">WASD</kbd> keys. After a component has been attached to an object,
-it can have various exposed settings that you can edit. In the case of a third person movement component, this could be things such as
-movement speed and turn speed.</p>
+<p>The idea of a component is a simple one. They are modules that can be attached to game objects. You can attach as many as you want, and each one serves a specific purpose such as third person character movement with <kbd class="kbd docutils literal notranslate">WASD</kbd> keys. After a component has been attached to an object, it can have various exposed settings that you can edit. In the case of a third person movement component, this could be things such as movement speed and turn speed.</p>
 <figure class="align-default" id="id1">
 <img alt="../../_images/Fig-01.png" src="../../_images/Fig-01.png" />
 <figcaption>
 <p><span class="caption-text">Python Component (Vehicle Wheeled template)</span><a class="headerlink" href="#id1" title="Link to this image"></a></p>
 </figcaption>
 </figure>
-<p>Python component can be compared to python logic bricks with parameters. The python component is a script loaded in the UI, this script defined
-a component class by inheriting from KX_PythonComponent.
-This class must contain a dictionary of properties: <strong>args</strong> and two default functions: <strong>start()</strong> and <strong>update()</strong>.
-Additionally, the component can include an optional function: <strong>dispose()</strong></p>
-<p>The script used to create the component must have .py extension. The component properties are loaded from the args attribute from the UI at loading time.
-When the game start the function start() is called with as arguments a dictionary of the properties’ name and value.
-The update() function is called each frame during the logic stage before running logics bricks. The goal of this function is to handle and process everything.</p>
+<p>Python component can be compared to python logic bricks with parameters. The python component is a script loaded in the UI, this script defined a component class by inheriting from KX_PythonComponent. This class must contain a dictionary of properties: <strong>args</strong> and two default functions: <strong>start()</strong> and <strong>update()</strong>. Additionally, the component can include an optional function: <strong>dispose()</strong>.</p>
+<p>The script used to create the component must have .py extension. The component properties are loaded from the args attribute from the UI at loading time. When the game start the function start() is called with as arguments a dictionary of the properties’ name and value. The update() function is called each frame during the logic stage before running logics bricks. The goal of this function is to handle and process everything.</p>
 <p>The following component example moves and rotates the object when pressing the keys <kbd class="kbd docutils literal notranslate">W</kbd>, <kbd class="kbd docutils literal notranslate">A</kbd>, <kbd class="kbd docutils literal notranslate">S</kbd> and <kbd class="kbd docutils literal notranslate">D</kbd>.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">bge</span>
 <span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">OrderedDict</span>
@@ -163,8 +157,7 @@ The update() function is called each frame during the logic stage before running
       <span class="bp">self</span><span class="o">.</span><span class="n">object</span><span class="o">.</span><span class="n">applyRotation</span><span class="p">((</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">rotate</span><span class="p">),</span> <span class="kc">True</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>The standard property types supported are float, integer, boolean, string, set (for enumeration) and Vector 2D, 3D and 4D.
-The following example show all of these property types:</p>
+<p>The standard property types supported are float, integer, boolean, string, set (for enumeration) and Vector 2D, 3D and 4D. The following example shows all of these property types:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bge</span> <span class="kn">import</span> <span class="o">*</span>
 <span class="kn">from</span> <span class="nn">mathutils</span> <span class="kn">import</span> <span class="o">*</span>
 <span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">OrderedDict</span>
@@ -190,7 +183,7 @@ The following example show all of these property types:</p>
 </div>
 <p>Additionally, the following data (ID) property types are supported too:</p>
 <figure class="align-left" id="id2">
-<a class="reference internal image-reference" href="../../_images/Fig-20.png"><img alt="../../_images/Fig-20.png" src="../../_images/Fig-20.png" style="width: 90%;" /></a>
+<a class="reference internal image-reference" href="../../_images/Fig-20.png"><img alt="../../_images/Fig-20.png" src="../../_images/Fig-20.png" style="width: 80%;" /></a>
 <figcaption>
 <p><span class="caption-text">Data (ID) Property Types supported</span><a class="headerlink" href="#id2" title="Link to this image"></a></p>
 </figcaption>
@@ -249,18 +242,17 @@ The following example show all of these property types:</p>
 <p><span class="caption-text">Game Component panel</span><a class="headerlink" href="#id3" title="Link to this image"></a></p>
 </figcaption>
 </figure>
-<p>You will find there the 2 ways to make a Python Component in UPBGE, <strong>Add</strong> and <strong>Create</strong>.</p>
+<p>You will find there two ways to make a Python Component in UPBGE, <strong>Add</strong> and <strong>Create</strong>.</p>
 <figure class="align-default" id="id4">
 <img alt="../../_images/Fig-03.png" src="../../_images/Fig-03.png" />
 <figcaption>
-<p><span class="caption-text">The 2 ways to make a Python Component</span><a class="headerlink" href="#id4" title="Link to this image"></a></p>
+<p><span class="caption-text">2 ways to make a Python Component</span><a class="headerlink" href="#id4" title="Link to this image"></a></p>
 </figcaption>
 </figure>
+</section>
 <section id="create-component">
-<h3>Create Component<a class="headerlink" href="#create-component" title="Link to this heading"></a></h3>
-<p>When you push over the <strong>Create</strong> button a detachable panel will appear. In that panel you can introduce the component module name and the class name, both separate by a dot.
-After entering the name and clicking on the <strong>Create</strong> button, a new python script with the name of the component’s module will be created in the script editor.
-That python script will contain an empty class which name will be the one entered previously.</p>
+<h2>Create Component<a class="headerlink" href="#create-component" title="Link to this heading"></a></h2>
+<p>When you click <strong>Create</strong> button a panel will appear. In that panel you can write the component module and the class name, separated by a dot. Clicking on the <strong>Ok</strong> button, a new python script with the name of the component’s module will be created in the script editor. That python script will contain an empty class which name will be the one entered previously.</p>
 <figure class="align-default" id="id5">
 <img alt="../../_images/Fig-04.png" src="../../_images/Fig-04.png" />
 <figcaption>
@@ -276,16 +268,15 @@ That python script will contain an empty class which name will be the one entere
 </figure>
 </section>
 <section id="add-component">
-<h3>Add Component<a class="headerlink" href="#add-component" title="Link to this heading"></a></h3>
+<h2>Add Component<a class="headerlink" href="#add-component" title="Link to this heading"></a></h2>
 <p>This process is the opposite of the previous one. First of all, we already have a python script previously formatted as a component that can be placed either in the script editor or at the same level as the .blend file.</p>
-<p>When we click on the <strong>Add</strong> button we will have to enter the name of the python script (without the .py) followed by a dot and the class name. After accept the Python Component will be created.</p>
+<p>When we click the <strong>Add</strong> button we will have to enter the name of the python script (without the .py), followed by a dot and the class name. After clicking <strong>Ok</strong> the Python Component will be created.</p>
 <figure class="align-default" id="id7">
 <img alt="../../_images/Fig-06.png" src="../../_images/Fig-06.png" />
 <figcaption>
 <p><span class="caption-text">Add Component process</span><a class="headerlink" href="#id7" title="Link to this image"></a></p>
 </figcaption>
 </figure>
-</section>
 </section>
 </section>
 

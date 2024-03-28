@@ -7,7 +7,7 @@
   <title>Compatibility Notes &mdash; UPBGE Manual</title>
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
       <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
-      <link rel="stylesheet" type="text/css" href="../../_static/css/theme_overrides.css?v=5e9f35f9" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme_overrides.css?v=b4c3fc50" />
 
   
   <!--[if lt IE 9]>
@@ -59,13 +59,13 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../tutorials/index.html">Tutorials</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../editors/index.html">Editors</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../logic/index.html">Logic Bricks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../logic_bricks/index.html">Logic Bricks</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../logic_nodes/index.html">Logic Nodes</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../python/index.html">Python Scripting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../python_scripting/index.html">Python Scripting</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../python_components/index.html">Python Components</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../physics/index.html">Physics</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../datablocks/index.html">Datablocks</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../release/index.html">Deployment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../datablocks/index.html">Data-Blocks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../deployment/index.html">Deployment</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tools/index.html">Tools</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../glossary/index.html">Glossary</a></li>
 </ul>
@@ -106,37 +106,37 @@
 <p>UPBGE is fully integrated into Blender environment, but it doesn’t mean it supports all the features that Blender provides. Here’s some compatibility info about various features present in Blender relative to UPBGE.</p>
 <p class="rubric" id="object-types-supported">Object types supported</p>
 <ul class="simple">
-<li><p><a class="reference internal" href="../datablocks/armature.html#datablock-armature"><span class="std std-ref">Armature</span></a></p></li>
-<li><p><a class="reference internal" href="../datablocks/camera.html#datablock-camera"><span class="std std-ref">Camera</span></a></p></li>
-<li><p><a class="reference internal" href="../datablocks/collection.html#datablock-collection"><span class="std std-ref">Collection</span></a></p></li>
-<li><p><a class="reference internal" href="../datablocks/empty.html#datablock-empty"><span class="std std-ref">Empty</span></a></p></li>
-<li><p><a class="reference internal" href="../datablocks/light.html#datablock-light"><span class="std std-ref">Light</span></a></p></li>
-<li><p><a class="reference internal" href="../datablocks/mesh.html#datablock-mesh"><span class="std std-ref">Mesh</span></a></p></li>
-<li><p><a class="reference internal" href="../datablocks/object.html#datablock-object"><span class="std std-ref">Object</span></a></p></li>
-<li><p><a class="reference internal" href="../datablocks/text.html#datablock-text"><span class="std std-ref">Text</span></a></p></li>
+<li><p>Armature</p></li>
+<li><p>Camera</p></li>
+<li><p>Collection</p></li>
+<li><p>Empty</p></li>
+<li><p>Light</p></li>
+<li><p>Mesh</p></li>
+<li><p>Object</p></li>
+<li><p>Text</p></li>
 </ul>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p>Any other object type (like Curve, Speaker, Force Field, etc) will not be rendered into game. A Curve Object can be converted to <a class="reference internal" href="../datablocks/mesh.html#datablock-mesh"><span class="std std-ref">Mesh</span></a> though.</p>
+<p>Any other object type (like Curve, Speaker, Force Field, etc) will not be rendered into game. A Curve Object can be converted to Mesh though.</p>
 </div>
 <p class="rubric" id="data-blocks-supported">Data-blocks supported</p>
 <ul class="simple">
-<li><p><a class="reference internal" href="../datablocks/action.html#datablock-action"><span class="std std-ref">Action</span></a></p></li>
-<li><p><a class="reference internal" href="../datablocks/armature.html#datablock-armature"><span class="std std-ref">Armature</span></a></p></li>
-<li><p><a class="reference internal" href="../datablocks/camera.html#datablock-camera"><span class="std std-ref">Camera</span></a></p></li>
-<li><p><a class="reference internal" href="../datablocks/collection.html#datablock-collection"><span class="std std-ref">Collection</span></a></p></li>
-<li><p><a class="reference internal" href="../datablocks/image.html#datablock-image"><span class="std std-ref">Image</span></a></p></li>
-<li><p><a class="reference internal" href="../datablocks/light.html#datablock-light"><span class="std std-ref">Light</span></a></p></li>
-<li><p><a class="reference internal" href="../datablocks/library.html#datablock-library"><span class="std std-ref">Library</span></a></p></li>
-<li><p><a class="reference internal" href="../datablocks/material.html#datablock-material"><span class="std std-ref">Material</span></a></p></li>
-<li><p><a class="reference internal" href="../datablocks/mesh.html#datablock-mesh"><span class="std std-ref">Mesh</span></a></p></li>
-<li><p><a class="reference internal" href="../datablocks/object.html#datablock-object"><span class="std std-ref">Object</span></a></p></li>
-<li><p><a class="reference internal" href="../datablocks/scene.html#datablock-scene"><span class="std std-ref">Scene</span></a></p></li>
-<li><p>Shapekey (along with <a class="reference internal" href="../datablocks/action.html#datablock-action"><span class="std std-ref">Action</span></a>, otherwise unused)</p></li>
-<li><p><a class="reference internal" href="../datablocks/sound.html#datablock-sound"><span class="std std-ref">Sound</span></a></p></li>
-<li><p><a class="reference internal" href="../datablocks/text.html#datablock-text"><span class="std std-ref">Text</span></a></p></li>
-<li><p><a class="reference internal" href="../datablocks/texture.html#datablock-texture"><span class="std std-ref">Texture</span></a></p></li>
-<li><p><a class="reference internal" href="../datablocks/world.html#datablock-world"><span class="std std-ref">World</span></a></p></li>
+<li><p>Action</p></li>
+<li><p>Armature</p></li>
+<li><p>Camera</p></li>
+<li><p>Collection</p></li>
+<li><p>Image</p></li>
+<li><p>Light</p></li>
+<li><p>Library</p></li>
+<li><p>Material</p></li>
+<li><p>Mesh</p></li>
+<li><p>Object</p></li>
+<li><p>Scene</p></li>
+<li><p>Shapekey (with Action, otherwise unused)</p></li>
+<li><p>Sound</p></li>
+<li><p>Text</p></li>
+<li><p>Texture</p></li>
+<li><p>World</p></li>
 <li><p>Particle (partially supported)</p></li>
 </ul>
 <div class="admonition important">

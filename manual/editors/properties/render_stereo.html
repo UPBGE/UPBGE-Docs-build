@@ -7,7 +7,7 @@
   <title>Stereo Camera &mdash; UPBGE Manual</title>
       <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=fa44fd50" />
       <link rel="stylesheet" type="text/css" href="../../../_static/css/theme.css?v=19f00094" />
-      <link rel="stylesheet" type="text/css" href="../../../_static/css/theme_overrides.css?v=5e9f35f9" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/theme_overrides.css?v=b4c3fc50" />
 
   
   <!--[if lt IE 9]>
@@ -63,17 +63,18 @@
 <li class="toctree-l3"><a class="reference internal" href="data.html">Data</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../logic/index.html">Logic Bricks Editor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../logic_bricks/index.html">Logic Bricks Editor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../logic_nodes/index.html">Logic Node Editor</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../text/index.html">Text Editor</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../../logic/index.html">Logic Bricks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../logic_bricks/index.html">Logic Bricks</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../logic_nodes/index.html">Logic Nodes</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../python/index.html">Python Scripting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../python_scripting/index.html">Python Scripting</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../python_components/index.html">Python Components</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../physics/index.html">Physics</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../datablocks/index.html">Datablocks</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../release/index.html">Deployment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../datablocks/index.html">Data-Blocks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../deployment/index.html">Deployment</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../tools/index.html">Tools</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../glossary/index.html">Glossary</a></li>
 </ul>
@@ -111,38 +112,23 @@
              
   <section id="stereo-camera">
 <h1>Stereo Camera<a class="headerlink" href="#stereo-camera" title="Link to this heading"></a></h1>
-<p>Stereo rendering allow you to generate images that appear three-dimensional when wearing
-special glasses.
-This is achieved by rendering two separate images from cameras that are a small distance
-apart from each other, simulating how our own eyes see. When viewing a stereo image, one
-eye is limited to seeing one of the images, and the other eye sees the second image. Our
-brain is able to merge these together, making it appear that we are looking at a 3D object
-rather than a flat image. See
-<a class="reference external" href="https://en.wikipedia.org/wiki/Stereoscopy">Stereoscopy</a>
-for more information on different stereoscopic viewing methods.</p>
+<p>Stereo rendering allow you to generate images that appear three-dimensional when wearing special glasses. This is achieved by rendering two separate images from cameras that are a small distance apart from each other, simulating how our own eyes see. When viewing a stereo image, one eye is limited to seeing one of the images, and the other eye sees the second image. Our brain is able to merge these together, making it appear that we are looking at a 3D object rather than a flat image. See <a class="reference external" href="https://en.wikipedia.org/wiki/Stereoscopy">Stereoscopy</a> for more information on different stereoscopic viewing methods.</p>
 <section id="stereo-settings">
 <h2>Stereo Settings<a class="headerlink" href="#stereo-settings" title="Link to this heading"></a></h2>
 <figure class="align-default" id="id1">
 <img alt="../../../_images/editors-properties-render-stereo.png" src="../../../_images/editors-properties-render-stereo.png" />
 <figcaption>
-<p><span class="caption-text">Stereo settings.</span><a class="headerlink" href="#id1" title="Link to this image"></a></p>
+<p><span class="caption-text">Stereo settings</span><a class="headerlink" href="#id1" title="Link to this image"></a></p>
 </figcaption>
 </figure>
 <dl>
 <dt>None</dt><dd><p>Disable stereo rendering.</p>
 </dd>
-<dt>Stereo Mode</dt><dd><p>Specifies the way in which the left-eye image and the right-eye image pixels are put together
-during rendering. This must be selected according to the type of apparatus available to
-display the appropriate images to the viewer’s eyes.</p>
+<dt>Stereo Mode</dt><dd><p>Specifies the way in which the left-eye image and the right-eye image pixels are put together during rendering. This must be selected according to the type of apparatus available to display the appropriate images to the viewer’s eyes.</p>
 <dl class="simple">
-<dt>Anaglyph</dt><dd><p>One frame is displayed with both images color encoded with red-blue filters. This mode
-only requires
-<a class="reference external" href="https://en.wikipedia.org/wiki/Stereoscopy#Color_anaglyph_systems">glasses with color filters</a>,
-there are no special requirements for the display screen and GPU.</p>
+<dt>Anaglyph</dt><dd><p>One frame is displayed with both images color encoded with red-blue filters. This mode only requires <a class="reference external" href="https://en.wikipedia.org/wiki/Stereoscopy#Color_anaglyph_systems">glasses with color filters</a>, there are no special requirements for the display screen and GPU.</p>
 </dd>
-<dt>Quad Buffer</dt><dd><p>Uses double buffering with a buffer for each eye, totaling four buffers
-(Left Front, Left Back, Right Front and Right Back), allowing to swap the buffers for both eyes in sync.
-See <a class="reference external" href="https://en.wikipedia.org/wiki/Quad_buffering">Quad Buffering</a> for more information.</p>
+<dt>Quad Buffer</dt><dd><p>Uses double buffering with a buffer for each eye, totaling four buffers (Left Front, Left Back, Right Front and Right Back), allowing to swap the buffers for both eyes in sync. See <a class="reference external" href="https://en.wikipedia.org/wiki/Quad_buffering">Quad Buffering</a> for more information.</p>
 </dd>
 <dt>Side by Side</dt><dd><p>Lines are displayed one after the other, so providing the two images in two frames side-by-side.</p>
 </dd>
@@ -150,18 +136,13 @@ See <a class="reference external" href="https://en.wikipedia.org/wiki/Quad_buffe
 </dd>
 <dt>Interlaced</dt><dd><p>One frame is displayed with the two images on alternate lines of the display.</p>
 </dd>
-<dt>Vinterlaced</dt><dd><p>One frame is displayed with both images displayed on alternate columns of the display.
-This works with some ‘autostereo displays’.</p>
+<dt>Vinterlaced</dt><dd><p>One frame is displayed with both images displayed on alternate columns of the display. This works with some ‘autostereo displays’.</p>
 </dd>
-<dt>3D TV Top-Bottom</dt><dd><p>One frame displays the left image above and the right image below.
-The images are squashed vertically to fit. This mode is designed for passive 3D TV.</p>
+<dt>3D TV Top-Bottom</dt><dd><p>One frame displays the left image above and the right image below. The images are squashed vertically to fit. This mode is designed for passive 3D TV.</p>
 </dd>
 </dl>
 </dd>
-<dt>Eye Separation</dt><dd><p>This value is extremely important. It determines how far apart the two image-capturing
-cameras are, and thus how “deep” the scene appears. Too small a value and the image
-appears flat; too high a value can result in headaches and eye strain. The ideal value
-mimics the separation of the viewer’s two eyes.</p>
+<dt>Eye Separation</dt><dd><p>This value is extremely important. It determines how far apart the two image-capturing cameras are, and thus how “deep” the scene appears. Too small a value and the image appears flat; too high a value can result in headaches and eye strain. The ideal value mimics the separation of the viewer’s two eyes.</p>
 </dd>
 </dl>
 </section>

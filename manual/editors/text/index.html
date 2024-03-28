@@ -7,7 +7,7 @@
   <title>Text Editor &mdash; UPBGE Manual</title>
       <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=fa44fd50" />
       <link rel="stylesheet" type="text/css" href="../../../_static/css/theme.css?v=19f00094" />
-      <link rel="stylesheet" type="text/css" href="../../../_static/css/theme_overrides.css?v=5e9f35f9" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/theme_overrides.css?v=b4c3fc50" />
 
   
   <!--[if lt IE 9]>
@@ -22,8 +22,8 @@
     <script src="../../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
-    <link rel="next" title="Logic Bricks" href="../../logic/index.html" />
-    <link rel="prev" title="Logic Bricks Editor" href="../logic/index.html" /> 
+    <link rel="next" title="Logic Bricks" href="../../logic_bricks/index.html" />
+    <link rel="prev" title="Additional Details" href="../logic_nodes/editor_details.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -52,24 +52,21 @@
 <li class="toctree-l1"><a class="reference internal" href="../../tutorials/index.html">Tutorials</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../index.html">Editors</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../properties/index.html">Properties Editor</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../logic/index.html">Logic Bricks Editor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../logic_bricks/index.html">Logic Bricks Editor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../logic_nodes/index.html">Logic Node Editor</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Text Editor</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#header">Header</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#main-view">Main View</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#sidebar">Sidebar</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#footer">Footer</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#usage">Usage</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../../logic/index.html">Logic Bricks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../logic_bricks/index.html">Logic Bricks</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../logic_nodes/index.html">Logic Nodes</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../python/index.html">Python Scripting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../python_scripting/index.html">Python Scripting</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../python_components/index.html">Python Components</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../physics/index.html">Physics</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../datablocks/index.html">Datablocks</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../release/index.html">Deployment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../datablocks/index.html">Data-Blocks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../deployment/index.html">Deployment</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../tools/index.html">Tools</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../glossary/index.html">Glossary</a></li>
 </ul>
@@ -105,28 +102,26 @@
              
   <section id="text-editor">
 <span id="bpy-types-spacetexteditor"></span><h1>Text Editor<a class="headerlink" href="#text-editor" title="Link to this heading"></a></h1>
-<p>UPBGE has a <em>Text Editor</em> among its editor types,
-accessible via the <em>Editor type</em> menu, or the shortcut <kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Shift</kbd>-<kbd class="kbd docutils literal notranslate">F11</kbd></kbd>.</p>
+<p>UPBGE has a <em>Text Editor</em> among its editor types, accessible via the <em>Editor type</em> menu, or the shortcut <kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Shift</kbd>-<kbd class="kbd docutils literal notranslate">F11</kbd></kbd>.</p>
 <figure class="align-default" id="id1">
 <img alt="../../../_images/editors-text_editor-text_editor.png" src="../../../_images/editors-text_editor-text_editor.png" />
 <figcaption>
-<p><span class="caption-text">Text Editor for Python/GLSL edition.</span><a class="headerlink" href="#id1" title="Link to this image"></a></p>
+<p><span class="caption-text">Text Editor for Python/GLSL edition</span><a class="headerlink" href="#id1" title="Link to this image"></a></p>
 </figcaption>
 </figure>
 <section id="header">
 <h2>Header<a class="headerlink" href="#header" title="Link to this heading"></a></h2>
-<p>The newly opened Text editor is empty, with a very simple header.
-More options become available when a text file is created or opened.</p>
+<p>The newly opened Text editor is empty, with a very simple header. More options become available when a text file is created or opened.</p>
 <figure class="align-default" id="id2">
 <img alt="../../../_images/editors-text_editor-header.png" src="../../../_images/editors-text_editor-header.png" />
 <figcaption>
-<p><span class="caption-text">Text header.</span><a class="headerlink" href="#id2" title="Link to this image"></a></p>
+<p><span class="caption-text">Text header</span><a class="headerlink" href="#id2" title="Link to this image"></a></p>
 </figcaption>
 </figure>
 <figure class="align-default" id="id3">
 <img alt="../../../_images/editors-text_editor-header_loaded.png" src="../../../_images/editors-text_editor-header_loaded.png" />
 <figcaption>
-<p><span class="caption-text">Text header with a text loaded.</span><a class="headerlink" href="#id3" title="Link to this image"></a></p>
+<p><span class="caption-text">Text header with a text loaded</span><a class="headerlink" href="#id3" title="Link to this image"></a></p>
 </figcaption>
 </figure>
 <dl>
@@ -144,12 +139,9 @@ More options become available when a text file is created or opened.</p>
 </dd>
 </dl>
 </dd>
-<dt>Text</dt><dd><p>A data-block menu to select a text or to create a new one.
-After that the header will change.</p>
+<dt>Text</dt><dd><p>A data-block menu to select a text or to create a new one. After that the header will change.</p>
 </dd>
-<dt>Run Script (play icon)</dt><dd><p>Executes the text as a Python script <kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Alt</kbd>-<kbd class="kbd docutils literal notranslate">P</kbd></kbd>. This execution has placed out of Game Engine only,
-and it is focused for development mainly. If you want to execute a Python script inside the Game Engine check
-the <a class="reference internal" href="../../python/introduction.html"><span class="doc">Python Scripting</span></a> chapter.</p>
+<dt>Run Script (play icon)</dt><dd><p>Executes the text as a Python script <kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Alt</kbd>-<kbd class="kbd docutils literal notranslate">P</kbd></kbd>. This execution has placed out of Game Engine only, and it is focused for development mainly. If you want to execute a Python script inside the Game Engine check the <a class="reference internal" href="../../python_scripting/introduction.html"><span class="doc">Python Scripting</span></a> chapter.</p>
 </dd>
 <dt>Show</dt><dd><p>Toggle display options.</p>
 <p>Line Numbers, Word Wrap, Syntax Highlighting</p>
@@ -181,11 +173,9 @@ the <a class="reference internal" href="../../python/introduction.html"><span cl
 </dd>
 <dt>Next Line <kbd class="kbd docutils literal notranslate">Down</kbd></dt><dd><p>Moves the cursor to the same position in the line below the current line.</p>
 </dd>
-<dt>Previous Word <kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Ctrl</kbd>-<kbd class="kbd docutils literal notranslate">Left</kbd></kbd></dt><dd><p>Moves the cursor to the beginning of the previous word.
-If the cursor is in the middle of a word, the cursor is moved to the beginning of the current word.</p>
+<dt>Previous Word <kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Ctrl</kbd>-<kbd class="kbd docutils literal notranslate">Left</kbd></kbd></dt><dd><p>Moves the cursor to the beginning of the previous word. If the cursor is in the middle of a word, the cursor is moved to the beginning of the current word.</p>
 </dd>
-<dt>Next Word <kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Ctrl</kbd>-<kbd class="kbd docutils literal notranslate">Right</kbd></kbd></dt><dd><p>Moves the cursor to the end of the next word.
-If the cursor is in the middle of a word, the cursor is moved to the end of the current word.</p>
+<dt>Next Word <kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Ctrl</kbd>-<kbd class="kbd docutils literal notranslate">Right</kbd></kbd></dt><dd><p>Moves the cursor to the end of the next word. If the cursor is in the middle of a word, the cursor is moved to the end of the current word.</p>
 </dd>
 </dl>
 </dd>
@@ -202,8 +192,7 @@ If the cursor is in the middle of a word, the cursor is moved to the end of the 
 </dd>
 <dt>Save <kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Alt</kbd>-<kbd class="kbd docutils literal notranslate">S</kbd></kbd></dt><dd><p>Saves an already open file.</p>
 </dd>
-<dt>Save As <kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Shift</kbd>-<kbd class="kbd docutils literal notranslate">Ctrl</kbd>-<kbd class="kbd docutils literal notranslate">Alt</kbd>-<kbd class="kbd docutils literal notranslate">S</kbd></kbd>.</dt><dd><p>Saves text as a new text file, a File Browser is opened to select the directory
-to save the file along with giving the file a name/file extension.</p>
+<dt>Save As <kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Shift</kbd>-<kbd class="kbd docutils literal notranslate">Ctrl</kbd>-<kbd class="kbd docutils literal notranslate">Alt</kbd>-<kbd class="kbd docutils literal notranslate">S</kbd></kbd>.</dt><dd><p>Saves text as a new text file, a File Browser is opened to select the directory to save the file along with giving the file a name/file extension.</p>
 </dd>
 <dt>Register</dt><dd><p>Registers the current text data-block as a module on loading (the text name must end with <code class="docutils literal notranslate"><span class="pre">.py</span></code>).</p>
 </dd>
@@ -263,11 +252,9 @@ to save the file along with giving the file a name/file extension.</p>
 </dd>
 <dt>Next Line <kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Shift</kbd>-<kbd class="kbd docutils literal notranslate">Down</kbd></kbd></dt><dd><p>Selects everything between the cursor and the position of the cursor one line below.</p>
 </dd>
-<dt>Previous Word <kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Shift</kbd>-<kbd class="kbd docutils literal notranslate">Ctrl</kbd>-<kbd class="kbd docutils literal notranslate">Left</kbd></kbd></dt><dd><p>Selects everything between the cursor and the beginning of the previous word.
-If the cursor is in the middle of a word, select everything to the beginning of the current word.</p>
+<dt>Previous Word <kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Shift</kbd>-<kbd class="kbd docutils literal notranslate">Ctrl</kbd>-<kbd class="kbd docutils literal notranslate">Left</kbd></kbd></dt><dd><p>Selects everything between the cursor and the beginning of the previous word. If the cursor is in the middle of a word, select everything to the beginning of the current word.</p>
 </dd>
-<dt>Next Word <kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Shift</kbd>-<kbd class="kbd docutils literal notranslate">Ctrl</kbd>-<kbd class="kbd docutils literal notranslate">Right</kbd></kbd></dt><dd><p>Selects everything between the cursor and the end of the next word.
-If the cursor is in the middle of a word, select everything to the end of the current word.</p>
+<dt>Next Word <kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Shift</kbd>-<kbd class="kbd docutils literal notranslate">Ctrl</kbd>-<kbd class="kbd docutils literal notranslate">Right</kbd></kbd></dt><dd><p>Selects everything between the cursor and the end of the next word. If the cursor is in the middle of a word, select everything to the end of the current word.</p>
 </dd>
 </dl>
 </section>
@@ -278,8 +265,7 @@ If the cursor is in the middle of a word, select everything to the end of the cu
 </dd>
 <dt>Unindent <kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Shift</kbd>-<kbd class="kbd docutils literal notranslate">Tab</kbd></kbd>.</dt><dd><p>Unindents the selection.</p>
 </dd>
-<dt>Toggle Comments <kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Ctrl</kbd>-<kbd class="kbd docutils literal notranslate">Slash</kbd></kbd>.</dt><dd><p>Toggles whether the selected line(s) are a Python comment.
-If no lines are selected the current line is toggled.</p>
+<dt>Toggle Comments <kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Ctrl</kbd>-<kbd class="kbd docutils literal notranslate">Slash</kbd></kbd>.</dt><dd><p>Toggles whether the selected line(s) are a Python comment. If no lines are selected the current line is toggled.</p>
 </dd>
 <dt>Convert Whitespace</dt><dd><p>Converts indentation characters <em>To Spaces</em> or <em>To Tabs</em>.</p>
 </dd>
@@ -287,40 +273,33 @@ If no lines are selected the current line is toggled.</p>
 </section>
 <section id="template-menu">
 <h3>Template Menu<a class="headerlink" href="#template-menu" title="Link to this heading"></a></h3>
-<p>The <em>Text Editor</em> has some dedicated templates for Python scripts, Python Components and GLSL shaders,
+<p><em>Text Editor</em> has some dedicated templates for Python scripts, Python Components and GLSL shaders,
 which are useful for writing tools, like a class/function/variable browser, completion…</p>
 <figure class="align-default" id="id4">
 <img alt="../../../_images/editors-text_editor-template_files.png" src="../../../_images/editors-text_editor-template_files.png" />
 <figcaption>
-<p><span class="caption-text">Template files.</span><a class="headerlink" href="#id4" title="Link to this image"></a></p>
+<p><span class="caption-text">Template files</span><a class="headerlink" href="#id4" title="Link to this image"></a></p>
 </figcaption>
 </figure>
-</section>
-</section>
 <section id="main-view">
-<h2>Main View<a class="headerlink" href="#main-view" title="Link to this heading"></a></h2>
+<h4>Main View<a class="headerlink" href="#main-view" title="Link to this heading"></a></h4>
 <p>Typing on the keyboard produces text in the text buffer.</p>
-<p>As usual, pressing, dragging and releasing <kbd class="kbd docutils literal notranslate">LMB</kbd> selects text.
-Pressing <kbd class="kbd docutils literal notranslate">RMB</kbd> opens the context menu.</p>
+<p>As usual, pressing, dragging and releasing <kbd class="kbd docutils literal notranslate">LMB</kbd> selects text. Pressing <kbd class="kbd docutils literal notranslate">RMB</kbd> opens the context menu.</p>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p>Text editor is handy also when you want to share your blend-files with others. I.e write a <code class="docutils literal notranslate"><span class="pre">README</span></code> text explaining the contents of your blend-file. Be sure to keep it visible when saving!</p>
 </div>
 </section>
 <section id="sidebar">
-<h2>Sidebar<a class="headerlink" href="#sidebar" title="Link to this heading"></a></h2>
+<h4>Sidebar<a class="headerlink" href="#sidebar" title="Link to this heading"></a></h4>
+</section>
+</section>
 <section id="find-replace">
 <h3>Find &amp; Replace<a class="headerlink" href="#find-replace" title="Link to this heading"></a></h3>
 <dl class="simple">
-<dt>Find Text <kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Ctrl</kbd>-<kbd class="kbd docutils literal notranslate">F</kbd></kbd></dt><dd><p>Searches for instances of a text that occur after the cursor.
-Using the eyedropper icon will search for the currently selected text
-and sets the selection to the match.
-<em>Find Next</em> searches for the next instance of the text.</p>
+<dt>Find Text <kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Ctrl</kbd>-<kbd class="kbd docutils literal notranslate">F</kbd></kbd></dt><dd><p>Searches for instances of a text that occur after the cursor. Using the eyedropper icon will search for the currently selected text and sets the selection to the match. <em>Find Next</em> searches for the next instance of the text.</p>
 </dd>
-<dt>Replace Text <kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Ctrl</kbd>-<kbd class="kbd docutils literal notranslate">H</kbd></kbd></dt><dd><p>Searches for the text specified in <em>Find Text</em> and replaces it with the new text.
-Using the eyedropper icon will set the currently selected text as the replace text.
-<em>Replace</em> searches for the next match and replaces it.
-<em>Replace All</em> searches for the match and replaces all occurrences of the match with the new text.</p>
+<dt>Replace Text <kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Ctrl</kbd>-<kbd class="kbd docutils literal notranslate">H</kbd></kbd></dt><dd><p>Searches for the text specified in <em>Find Text</em> and replaces it with the new text. Using the eyedropper icon will set the currently selected text as the replace text. <em>Replace</em> searches for the next match and replaces it. <em>Replace All</em> searches for the match and replaces all occurrences of the match with the new text.</p>
 </dd>
 <dt>Case</dt><dd><p>Search is sensitive to upper-case and lower-case letters.</p>
 </dd>
@@ -333,8 +312,7 @@ Using the eyedropper icon will set the currently selected text as the replace te
 <section id="properties">
 <h3>Properties<a class="headerlink" href="#properties" title="Link to this heading"></a></h3>
 <dl class="simple">
-<dt>Margin</dt><dd><p>Shows a right margin to help keep line length at a reasonable length when scripting.
-The width of the margin is specified in <em>Margin Column</em>.</p>
+<dt>Margin</dt><dd><p>Shows a right margin to help keep line length at a reasonable length when scripting. The width of the margin is specified in <em>Margin Column</em>.</p>
 </dd>
 <dt>Font Size <kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Ctrl</kbd>-<kbd class="kbd docutils literal notranslate">WheelUp</kbd></kbd></dt><dd><p>The size of the font used to display text.</p>
 </dd>
@@ -343,26 +321,20 @@ The width of the margin is specified in <em>Margin Column</em>.</p>
 <dt>Indentation</dt><dd><p>Use <em>Tabs</em> or <em>Spaces</em> for indentations.</p>
 </dd>
 </dl>
-</section>
-</section>
 <section id="footer">
-<h2>Footer<a class="headerlink" href="#footer" title="Link to this heading"></a></h2>
-<p>The Text editor footer displays if the text is saved internal or external and
-if there are unsaved changes to an external file.
-For external files, this region also displays the file path to the text file.</p>
+<h4>Footer<a class="headerlink" href="#footer" title="Link to this heading"></a></h4>
+<p>The Text editor footer displays if the text is saved internal or external and if there are unsaved changes to an external file. For external files, this region also displays the file path to the text file.</p>
 </section>
 <section id="usage">
-<h2>Usage<a class="headerlink" href="#usage" title="Link to this heading"></a></h2>
+<h4>Usage<a class="headerlink" href="#usage" title="Link to this heading"></a></h4>
+</section>
+</section>
 <section id="running-scripts">
 <h3>Running Scripts<a class="headerlink" href="#running-scripts" title="Link to this heading"></a></h3>
-<p>The most notable keystroke is <kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Alt</kbd>-<kbd class="kbd docutils literal notranslate">P</kbd></kbd> which makes the content of the buffer
-being parsed by the internal Python interpreter built into UPBGE.
-Before going on it is worth noticing that UPBGE comes with a fully functional Python interpreter built-in,
-and with a lots of Blender/UPBGE-specific modules.</p>
+<p>The most notable keystroke is <kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Alt</kbd>-<kbd class="kbd docutils literal notranslate">P</kbd></kbd> which makes the content of the buffer being parsed by the internal Python interpreter built into UPBGE. Before going on it is worth noticing that UPBGE comes with a fully functional Python interpreter built-in, and with a lots of Blender/UPBGE-specific modules.</p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p>This script execution takes place outside Game Engine, and it is intended for development purpose only.
-If you want to execute a Python script inside the Game Engine check the <a class="reference internal" href="../../python/introduction.html"><span class="doc">Python Scripting</span></a> chapter.</p>
+<p>This script execution takes place outside Game Engine, and it is intended for development purpose only. If you want to execute a Python script inside the Game Engine check the <a class="reference internal" href="../../python_scripting/introduction.html"><span class="doc">Python Scripting</span></a> chapter.</p>
 </div>
 </section>
 </section>
@@ -372,8 +344,8 @@ If you want to execute a Python script inside the Game Engine check the <a class
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="../logic/index.html" class="btn btn-neutral float-left" title="Logic Bricks Editor" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="../../logic/index.html" class="btn btn-neutral float-right" title="Logic Bricks" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="../logic_nodes/editor_details.html" class="btn btn-neutral float-left" title="Additional Details" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../../logic_bricks/index.html" class="btn btn-neutral float-right" title="Logic Bricks" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
