@@ -17,7 +17,7 @@
         <script src="../../../_static/jquery.js?v=5d32c60e"></script>
         <script src="../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
         <script src="../../../_static/documentation_options.js?v=f4332903"></script>
-        <script src="../../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../../_static/doctools.js?v=9a2dae69"></script>
         <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
@@ -156,22 +156,22 @@
 <dl class="simple">
 <dt>Type</dt><dd><p>A value type to process.</p>
 </dd>
-<dt>On Demand</dt><dd><p>todo</p>
+<dt>On Demand</dt><dd><p>Automatically move right on the curve if the “Result” socket is being accessed.</p>
 </dd>
 </dl>
 </section>
 <section id="inputs">
 <h2>Inputs<a class="headerlink" href="#inputs" title="Link to this heading"></a></h2>
 <dl class="simple">
-<dt>Forward</dt><dd><p>todo</p>
+<dt>Forward</dt><dd><p>Move right on the curve.</p>
 </dd>
-<dt>Back</dt><dd><p>todo</p>
+<dt>Back</dt><dd><p>Move left on the curve.</p>
 </dd>
-<dt>From</dt><dd><p>Starting tween value. todo</p>
+<dt>From</dt><dd><p>Starting tween value.</p>
 </dd>
-<dt>To</dt><dd><p>Ending tween value. todo</p>
+<dt>To</dt><dd><p>Ending tween value.</p>
 </dd>
-<dt>Duration</dt><dd><p>Duration of tween. todo</p>
+<dt>Duration</dt><dd><p>Duration of Tweening.</p>
 </dd>
 </dl>
 </section>
@@ -180,9 +180,11 @@
 <dl class="simple">
 <dt>Done</dt><dd><p><em>True</em> if node performed successfully, else <em>False</em>.</p>
 </dd>
-<dt>Result</dt><dd><p>Resulting tween value. todo</p>
+<dt>Reached</dt><dd><p><em>True</em> if the factor is either 0 or 1, else <em>False</em>.</p>
 </dd>
-<dt>Factor</dt><dd><p>todo</p>
+<dt>Result</dt><dd><p>Resulting tween value.</p>
+</dd>
+<dt>Factor</dt><dd><p>Current X-Axis position.</p>
 </dd>
 </dl>
 </section>
