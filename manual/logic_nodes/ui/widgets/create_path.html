@@ -1,29 +1,27 @@
+
+
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" data-content_root="../../../../">
 <head>
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Create Canvas &mdash; UPBGE Manual</title>
+  <title>Create Path &mdash; UPBGE Manual</title>
       <link rel="stylesheet" type="text/css" href="../../../../_static/pygments.css?v=fa44fd50" />
-      <link rel="stylesheet" type="text/css" href="../../../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../../../_static/css/theme.css?v=e59714d7" />
       <link rel="stylesheet" type="text/css" href="../../../../_static/css/theme_overrides.css?v=b4c3fc50" />
 
   
-  <!--[if lt IE 9]>
-    <script src="../../../../_static/js/html5shiv.min.js"></script>
-  <![endif]-->
-  
-        <script src="../../../../_static/jquery.js?v=5d32c60e"></script>
-        <script src="../../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-        <script src="../../../../_static/documentation_options.js?v=f4332903"></script>
-        <script src="../../../../_static/doctools.js?v=9a2dae69"></script>
-        <script src="../../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../../../../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../../../../_static/documentation_options.js?v=f4332903"></script>
+      <script src="../../../../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../../../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../../../genindex.html" />
     <link rel="search" title="Search" href="../../../../search.html" />
-    <link rel="next" title="Create Layout" href="create_layout.html" />
-    <link rel="prev" title="Widgets" href="index.html" /> 
+    <link rel="next" title="Create Canvas" href="../create_canvas.html" />
+    <link rel="prev" title="Create Slider" href="create_slider.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -76,6 +74,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../../render/index.html">Render</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="../index.html">UI</a><ul class="current">
 <li class="toctree-l3 current"><a class="reference internal" href="index.html">Widgets</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../create_canvas.html">Create Canvas</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../add_widget.html">Add Widget</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../get_widget_attribute.html">Get Widget Attribute</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../set_widget_attribute.html">Set Widget Attribute</a></li>
@@ -115,9 +114,9 @@
           <li class="breadcrumb-item"><a href="../../index.html">Logic Nodes</a></li>
           <li class="breadcrumb-item"><a href="../index.html">UI</a></li>
           <li class="breadcrumb-item"><a href="index.html">Widgets</a></li>
-      <li class="breadcrumb-item active">Create Canvas</li>
+      <li class="breadcrumb-item active">Create Path</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../../../../_sources/manual/logic_nodes/ui/widgets/create_canvas.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../../../../_sources/manual/logic_nodes/ui/widgets/create_path.rst.txt" rel="nofollow"> View page source</a>
       </li>
   </ul>
   <hr/>
@@ -126,14 +125,38 @@
            <div itemprop="articleBody">
              
   <figure class="align-right">
-<a class="reference internal image-reference" href="../../../../_images/ln-create_canvas.png"><img alt="Create Canvas Node" src="../../../../_images/ln-create_canvas.png" style="width: 215px;" /></a>
+<a class="reference internal image-reference" href="../../../../_images/ln-create_path.png"><img alt="Create Path Node" src="../../../../_images/ln-create_path.png" style="width: 215px;" />
+</a>
 </figure>
-<section id="create-canvas">
-<span id="ln-create-canvas"></span><h1>Create Canvas<a class="headerlink" href="#create-canvas" title="Link to this heading"></a></h1>
+<section id="create-path">
+<span id="ln-create-path"></span><h1>Create Path<a class="headerlink" href="#create-path" title="Link to this heading"></a></h1>
 <section id="parameters">
 <h2>Parameters<a class="headerlink" href="#parameters" title="Link to this heading"></a></h2>
 <dl class="simple">
-<dt>On Init</dt><dd><p>If checked, canvas will be created on game initialization.</p>
+<dt>World:</dt><dd><p>Draw the path in screen or world coordinates.</p>
+</dd>
+</dl>
+</section>
+<section id="inputs">
+<h2>Inputs<a class="headerlink" href="#inputs" title="Link to this heading"></a></h2>
+<dl class="simple">
+<dt>Condition</dt><dd><p>If connected, condition must be fulfilled for node to activate.</p>
+</dd>
+<dt>Parent</dt><dd><p>If connected, the created widget will be added as a child to this parent.</p>
+</dd>
+<dt>Relative Position</dt><dd><p>If enabled, position will use a factor value (0-1) instead of pixels.</p>
+</dd>
+<dt>Position</dt><dd><p>X and Y position of this Widget.</p>
+</dd>
+<dt>Relative Points</dt><dd><p>If enabled, each point in Points will use a factor value for its position (0-1) instead of pixels.</p>
+</dd>
+<dt>Points</dt><dd><p>List of points.</p>
+</dd>
+<dt>Line Color</dt><dd><p>Color to draw the line with.</p>
+</dd>
+<dt>Line Width</dt><dd><p>Width of Path line, in pixels.</p>
+</dd>
+<dt>Angle</dt><dd><p>Widget tilt Angle.</p>
 </dd>
 </dl>
 </section>
@@ -142,7 +165,7 @@
 <dl class="simple">
 <dt>Done</dt><dd><p><em>True</em> if node performed successfully, else <em>False</em>.</p>
 </dd>
-<dt>Canvas</dt><dd><p>Resulting canvas data. todo</p>
+<dt>Button</dt><dd><p>Created widget.</p>
 </dd>
 </dl>
 </section>
@@ -152,8 +175,8 @@
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="index.html" class="btn btn-neutral float-left" title="Widgets" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="create_layout.html" class="btn btn-neutral float-right" title="Create Layout" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="create_slider.html" class="btn btn-neutral float-left" title="Create Slider" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../create_canvas.html" class="btn btn-neutral float-right" title="Create Canvas" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

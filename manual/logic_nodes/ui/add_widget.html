@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" data-content_root="../../../">
 <head>
@@ -6,24 +8,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Add Widget &mdash; UPBGE Manual</title>
       <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=fa44fd50" />
-      <link rel="stylesheet" type="text/css" href="../../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/theme.css?v=e59714d7" />
       <link rel="stylesheet" type="text/css" href="../../../_static/css/theme_overrides.css?v=b4c3fc50" />
 
   
-  <!--[if lt IE 9]>
-    <script src="../../../_static/js/html5shiv.min.js"></script>
-  <![endif]-->
-  
-        <script src="../../../_static/jquery.js?v=5d32c60e"></script>
-        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-        <script src="../../../_static/documentation_options.js?v=f4332903"></script>
-        <script src="../../../_static/doctools.js?v=9a2dae69"></script>
-        <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../../../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../../../_static/documentation_options.js?v=f4332903"></script>
+      <script src="../../../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
     <link rel="next" title="Get Widget Attribute" href="get_widget_attribute.html" />
-    <link rel="prev" title="Create Slider" href="widgets/create_slider.html" /> 
+    <link rel="prev" title="Create Canvas" href="create_canvas.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -76,6 +74,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../render/index.html">Render</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="index.html">UI</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="widgets/index.html">Widgets</a></li>
+<li class="toctree-l3"><a class="reference internal" href="create_canvas.html">Create Canvas</a></li>
 <li class="toctree-l3 current"><a class="current reference internal" href="#">Add Widget</a></li>
 <li class="toctree-l3"><a class="reference internal" href="get_widget_attribute.html">Get Widget Attribute</a></li>
 <li class="toctree-l3"><a class="reference internal" href="set_widget_attribute.html">Set Widget Attribute</a></li>
@@ -125,18 +124,22 @@
            <div itemprop="articleBody">
              
   <figure class="align-right">
-<a class="reference internal image-reference" href="../../../_images/ln-add_widget.png"><img alt="Add Widget Node" src="../../../_images/ln-add_widget.png" style="width: 215px;" /></a>
+<a class="reference internal image-reference" href="../../../_images/ln-add_widget.png"><img alt="Add Widget Node" src="../../../_images/ln-add_widget.png" style="width: 215px;" />
+</a>
 </figure>
 <section id="add-widget">
 <span id="ln-add-widget"></span><h1>Add Widget<a class="headerlink" href="#add-widget" title="Link to this heading"></a></h1>
+<p>Add one widget to another. Child widgets will inherit positioning
+and rotation from their parent and can be placed locally. They will
+also only be visible if their parent is also visible.</p>
 <section id="inputs">
 <h2>Inputs<a class="headerlink" href="#inputs" title="Link to this heading"></a></h2>
 <dl class="simple">
 <dt>Condition</dt><dd><p>If connected, condition must be fulfilled for node to activate.</p>
 </dd>
-<dt>Parent</dt><dd><p>todo</p>
+<dt>Parent</dt><dd><p>Parent to which to add the widget.</p>
 </dd>
-<dt>Widget</dt><dd><p>todo</p>
+<dt>Widget</dt><dd><p>Widget to add to the parent.</p>
 </dd>
 </dl>
 </section>
@@ -153,7 +156,7 @@
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="widgets/create_slider.html" class="btn btn-neutral float-left" title="Create Slider" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="create_canvas.html" class="btn btn-neutral float-left" title="Create Canvas" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
         <a href="get_widget_attribute.html" class="btn btn-neutral float-right" title="Get Widget Attribute" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 

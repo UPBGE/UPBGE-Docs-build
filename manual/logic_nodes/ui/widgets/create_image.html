@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" data-content_root="../../../../">
 <head>
@@ -6,19 +8,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Create Image &mdash; UPBGE Manual</title>
       <link rel="stylesheet" type="text/css" href="../../../../_static/pygments.css?v=fa44fd50" />
-      <link rel="stylesheet" type="text/css" href="../../../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../../../_static/css/theme.css?v=e59714d7" />
       <link rel="stylesheet" type="text/css" href="../../../../_static/css/theme_overrides.css?v=b4c3fc50" />
 
   
-  <!--[if lt IE 9]>
-    <script src="../../../../_static/js/html5shiv.min.js"></script>
-  <![endif]-->
-  
-        <script src="../../../../_static/jquery.js?v=5d32c60e"></script>
-        <script src="../../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-        <script src="../../../../_static/documentation_options.js?v=f4332903"></script>
-        <script src="../../../../_static/doctools.js?v=9a2dae69"></script>
-        <script src="../../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../../../../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../../../../_static/documentation_options.js?v=f4332903"></script>
+      <script src="../../../../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../../../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../../../genindex.html" />
     <link rel="search" title="Search" href="../../../../search.html" />
@@ -76,6 +74,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../../render/index.html">Render</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="../index.html">UI</a><ul class="current">
 <li class="toctree-l3 current"><a class="reference internal" href="index.html">Widgets</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../create_canvas.html">Create Canvas</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../add_widget.html">Add Widget</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../get_widget_attribute.html">Get Widget Attribute</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../set_widget_attribute.html">Set Widget Attribute</a></li>
@@ -126,16 +125,17 @@
            <div itemprop="articleBody">
              
   <figure class="align-right">
-<a class="reference internal image-reference" href="../../../../_images/ln-create_image.png"><img alt="Create Image Node" src="../../../../_images/ln-create_image.png" style="width: 215px;" /></a>
+<a class="reference internal image-reference" href="../../../../_images/ln-create_image.png"><img alt="Create Image Node" src="../../../../_images/ln-create_image.png" style="width: 215px;" />
+</a>
 </figure>
 <section id="create-image">
 <span id="ln-create-image"></span><h1>Create Image<a class="headerlink" href="#create-image" title="Link to this heading"></a></h1>
 <section id="parameters">
 <h2>Parameters<a class="headerlink" href="#parameters" title="Link to this heading"></a></h2>
 <dl class="simple">
-<dt>X:</dt><dd><p>Origin/start horizontal position.</p>
+<dt>X:</dt><dd><p>Widget horizontal alignment</p>
 </dd>
-<dt>Y:</dt><dd><p>Origin/start vertical position.</p>
+<dt>Y:</dt><dd><p>Widget vertical alignment</p>
 </dd>
 </dl>
 </section>
@@ -144,17 +144,17 @@
 <dl class="simple">
 <dt>Condition</dt><dd><p>If connected, condition must be fulfilled for node to activate.</p>
 </dd>
-<dt>Parent</dt><dd><p>todo</p>
+<dt>Parent</dt><dd><p>If connected, the created widget will be added as a child to this parent.</p>
 </dd>
 <dt>Relative Position</dt><dd><p>todo</p>
 </dd>
-<dt>Vector</dt><dd><p>X and Y vector of . todo</p>
+<dt>Position</dt><dd><p>X and Y position of this Widget.</p>
 </dd>
-<dt>Relative Size</dt><dd><p>todo</p>
+<dt>Relative Size</dt><dd><p>If enabled, Size will use a factor value (0-1) instead of pixels.</p>
 </dd>
-<dt>Vector</dt><dd><p>todo</p>
+<dt>Size</dt><dd><p>Width and Height of this Widget.</p>
 </dd>
-<dt>Angle</dt><dd><p>Angle in radians. todo</p>
+<dt>Angle</dt><dd><p>Widget tilt Angle.</p>
 </dd>
 <dt>Image</dt><dd><p>Path to the image to use.</p>
 </dd>
@@ -165,7 +165,7 @@
 <dl class="simple">
 <dt>Done</dt><dd><p><em>True</em> if node performed successfully, else <em>False</em>.</p>
 </dd>
-<dt>Image</dt><dd><p>Resulting image data . todo</p>
+<dt>Image</dt><dd><p>Created Widget.</p>
 </dd>
 </dl>
 </section>

@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" data-content_root="../../../../">
 <head>
@@ -6,23 +8,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Create Slider &mdash; UPBGE Manual</title>
       <link rel="stylesheet" type="text/css" href="../../../../_static/pygments.css?v=fa44fd50" />
-      <link rel="stylesheet" type="text/css" href="../../../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../../../_static/css/theme.css?v=e59714d7" />
       <link rel="stylesheet" type="text/css" href="../../../../_static/css/theme_overrides.css?v=b4c3fc50" />
 
   
-  <!--[if lt IE 9]>
-    <script src="../../../../_static/js/html5shiv.min.js"></script>
-  <![endif]-->
-  
-        <script src="../../../../_static/jquery.js?v=5d32c60e"></script>
-        <script src="../../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-        <script src="../../../../_static/documentation_options.js?v=f4332903"></script>
-        <script src="../../../../_static/doctools.js?v=9a2dae69"></script>
-        <script src="../../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../../../../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../../../../_static/documentation_options.js?v=f4332903"></script>
+      <script src="../../../../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../../../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../../../genindex.html" />
     <link rel="search" title="Search" href="../../../../search.html" />
-    <link rel="next" title="Add Widget" href="../add_widget.html" />
+    <link rel="next" title="Create Path" href="create_path.html" />
     <link rel="prev" title="Create Image" href="create_image.html" /> 
 </head>
 
@@ -76,6 +74,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../../render/index.html">Render</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="../index.html">UI</a><ul class="current">
 <li class="toctree-l3 current"><a class="reference internal" href="index.html">Widgets</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../create_canvas.html">Create Canvas</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../add_widget.html">Add Widget</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../get_widget_attribute.html">Get Widget Attribute</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../set_widget_attribute.html">Set Widget Attribute</a></li>
@@ -126,7 +125,8 @@
            <div itemprop="articleBody">
              
   <figure class="align-right">
-<a class="reference internal image-reference" href="../../../../_images/ln-create_slider.png"><img alt="Create Slider Node" src="../../../../_images/ln-create_slider.png" style="width: 215px;" /></a>
+<a class="reference internal image-reference" href="../../../../_images/ln-create_slider.png"><img alt="Create Slider Node" src="../../../../_images/ln-create_slider.png" style="width: 215px;" />
+</a>
 </figure>
 <section id="create-slider">
 <span id="ln-create-slider"></span><h1>Create Slider<a class="headerlink" href="#create-slider" title="Link to this heading"></a></h1>
@@ -137,9 +137,9 @@
 </dd>
 <dt>Orientation</dt><dd><p>Selected slider orientation.</p>
 </dd>
-<dt>X:</dt><dd><p>Origin/start horizontal position.</p>
+<dt>X:</dt><dd><p>Widget horizontal alignment</p>
 </dd>
-<dt>Y:</dt><dd><p>Origin/start vertical position.</p>
+<dt>Y:</dt><dd><p>Widget vertical alignment</p>
 </dd>
 </dl>
 </section>
@@ -148,17 +148,17 @@
 <dl class="simple">
 <dt>Condition</dt><dd><p>If connected, condition must be fulfilled for node to activate.</p>
 </dd>
-<dt>Parent</dt><dd><p>todo</p>
+<dt>Parent</dt><dd><p>If connected, the created widget will be added as a child to this parent.</p>
 </dd>
-<dt>Relative Position</dt><dd><p>todo</p>
+<dt>Relative Position</dt><dd><p>If enabled, position will use a factor value (0-1) instead of pixels.</p>
 </dd>
-<dt>Vector</dt><dd><p>X and Y vector of . todo</p>
+<dt>Position</dt><dd><p>X and Y position of this Widget.</p>
 </dd>
-<dt>Relative Size</dt><dd><p>todo</p>
+<dt>Relative Size</dt><dd><p>If enabled, Size will use a factor value (0-1) instead of pixels.</p>
 </dd>
-<dt>Vector</dt><dd><p>todo</p>
+<dt>Size</dt><dd><p>Width and Height of this Widget.</p>
 </dd>
-<dt>Angle</dt><dd><p>Angle in radians. todo</p>
+<dt>Angle</dt><dd><p>Widget tilt Angle.</p>
 </dd>
 <dt>Bar Width</dt><dd><p>Width of the slider bar.</p>
 </dd>
@@ -168,15 +168,15 @@
 </dd>
 <dt>Bar Hover Color</dt><dd><p>Slider color when in mouse-over state.</p>
 </dd>
-<dt>Knob Size</dt><dd><p>todo</p>
+<dt>Knob Size</dt><dd><p>Size of the control knob (only on some slider types).</p>
 </dd>
 <dt>Knob Color</dt><dd><p>Color of the knob.</p>
 </dd>
 <dt>Knob Hover Color</dt><dd><p>Color of the knob when in mouse-over state.</p>
 </dd>
-<dt>Steps</dt><dd><p>If step functionality is required, i.e. slider moves by value of 10-20-30 etc. 0 (zero) will enable smooth value changing. todo</p>
+<dt>Steps</dt><dd><p>If step functionality is required, i.e. slider moves by value of 10-20-30 etc. 0 (zero) will enable smooth value changing.</p>
 </dd>
-<dt>Bar Control</dt><dd><p>If checked, . todo</p>
+<dt>Bar Control</dt><dd><p>If checked, clicking on the bar has the same effect as clicking on the knob.</p>
 </dd>
 </dl>
 </section>
@@ -185,11 +185,11 @@
 <dl class="simple">
 <dt>Done</dt><dd><p><em>True</em> if node performed successfully, else <em>False</em>.</p>
 </dd>
-<dt>Slider</dt><dd><p>Resulting slider data . todo</p>
+<dt>Slider</dt><dd><p>Created widget.</p>
 </dd>
-<dt>Slider Value</dt><dd><p>Initial slider value. todo</p>
+<dt>Slider Value</dt><dd><p>Current slider value.</p>
 </dd>
-<dt>Knob Position</dt><dd><p>Knob rotation relative to slider value. todo</p>
+<dt>Knob Position</dt><dd><p>Knob position in pixel screen coordinates.</p>
 </dd>
 </dl>
 </section>
@@ -200,7 +200,7 @@
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="create_image.html" class="btn btn-neutral float-left" title="Create Image" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="../add_widget.html" class="btn btn-neutral float-right" title="Add Widget" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="create_path.html" class="btn btn-neutral float-right" title="Create Path" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

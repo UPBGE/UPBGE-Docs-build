@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" data-content_root="../../../">
 <head>
@@ -6,19 +8,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Collision &mdash; UPBGE Manual</title>
       <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=fa44fd50" />
-      <link rel="stylesheet" type="text/css" href="../../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/theme.css?v=e59714d7" />
       <link rel="stylesheet" type="text/css" href="../../../_static/css/theme_overrides.css?v=b4c3fc50" />
 
   
-  <!--[if lt IE 9]>
-    <script src="../../../_static/js/html5shiv.min.js"></script>
-  <![endif]-->
-  
-        <script src="../../../_static/jquery.js?v=5d32c60e"></script>
-        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-        <script src="../../../_static/documentation_options.js?v=f4332903"></script>
-        <script src="../../../_static/doctools.js?v=9a2dae69"></script>
-        <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../../../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../../../_static/documentation_options.js?v=f4332903"></script>
+      <script src="../../../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
@@ -131,10 +129,12 @@
            <div itemprop="articleBody">
              
   <figure class="align-right">
-<a class="reference internal image-reference" href="../../../_images/ln-collision.png"><img alt="Collision Node" src="../../../_images/ln-collision.png" style="width: 215px;" /></a>
+<a class="reference internal image-reference" href="../../../_images/ln-collision.png"><img alt="Collision Node" src="../../../_images/ln-collision.png" style="width: 215px;" />
+</a>
 </figure>
 <section id="collision">
 <span id="ln-collision"></span><h1>Collision<a class="headerlink" href="#collision" title="Link to this heading"></a></h1>
+<p>Detect and react to collisions involving a given object.</p>
 <section id="parameters">
 <h2>Parameters<a class="headerlink" href="#parameters" title="Link to this heading"></a></h2>
 <dl class="simple">
@@ -145,26 +145,28 @@
 <section id="inputs">
 <h2>Inputs<a class="headerlink" href="#inputs" title="Link to this heading"></a></h2>
 <dl class="simple">
-<dt>Object</dt><dd><p>Which object to use for collision.</p>
+<dt>Object</dt><dd><p>The monitored object.</p>
 </dd>
-<dt>Use Material</dt><dd><p>Which material to use.</p>
+<dt>Use Material</dt><dd><p>If enabled, changes the “Property” socket to a “Material” one.</p>
 </dd>
-<dt>Property</dt><dd><p>todo</p>
+<dt>Property</dt><dd><p>If set, only detect collisions with objects that have this property.</p>
+</dd>
+<dt>Material</dt><dd><p>If set, only detect collisions with objects that have this material applied.</p>
 </dd>
 </dl>
 </section>
 <section id="outputs">
 <h2>Outputs<a class="headerlink" href="#outputs" title="Link to this heading"></a></h2>
 <dl class="simple">
-<dt>On Collision</dt><dd><p>What to trigger when collision happens. todo</p>
+<dt>On Collision</dt><dd><p><cite>True</cite> if a collision has occured according to the “Continuous” property, else <cite>False</cite>.</p>
 </dd>
-<dt>Colliding Object</dt><dd><p>Which other object has collided with used object. todo</p>
+<dt>Colliding Object</dt><dd><p>The object with which the monitored object is colliding with.</p>
 </dd>
-<dt>Colliding Objects</dt><dd><p>A list of colliding objects. todo</p>
+<dt>Colliding Objects</dt><dd><p>A list of objects with which the monitored object is colliding with.</p>
 </dd>
-<dt>Point</dt><dd><p>todo</p>
+<dt>Point</dt><dd><p>The point in world space where the collision has occured.</p>
 </dd>
-<dt>Normal</dt><dd><p>todo</p>
+<dt>Normal</dt><dd><p>The normal of the face on which the collision has occured.</p>
 </dd>
 </dl>
 </section>

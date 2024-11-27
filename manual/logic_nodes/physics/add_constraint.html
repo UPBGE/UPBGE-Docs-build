@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" data-content_root="../../../">
 <head>
@@ -6,19 +8,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Add Constraint &mdash; UPBGE Manual</title>
       <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=fa44fd50" />
-      <link rel="stylesheet" type="text/css" href="../../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/theme.css?v=e59714d7" />
       <link rel="stylesheet" type="text/css" href="../../../_static/css/theme_overrides.css?v=b4c3fc50" />
 
   
-  <!--[if lt IE 9]>
-    <script src="../../../_static/js/html5shiv.min.js"></script>
-  <![endif]-->
-  
-        <script src="../../../_static/jquery.js?v=5d32c60e"></script>
-        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-        <script src="../../../_static/documentation_options.js?v=f4332903"></script>
-        <script src="../../../_static/doctools.js?v=9a2dae69"></script>
-        <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../../../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../../../_static/documentation_options.js?v=f4332903"></script>
+      <script src="../../../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
@@ -131,10 +129,12 @@
            <div itemprop="articleBody">
              
   <figure class="align-right">
-<a class="reference internal image-reference" href="../../../_images/ln-add_constraint.png"><img alt="Add Constraint Node" src="../../../_images/ln-add_constraint.png" style="width: 215px;" /></a>
+<a class="reference internal image-reference" href="../../../_images/ln-add_constraint.png"><img alt="Add Constraint Node" src="../../../_images/ln-add_constraint.png" style="width: 215px;" />
+</a>
 </figure>
 <section id="add-constraint">
 <span id="ln-add-constraint"></span><h1>Add Constraint<a class="headerlink" href="#add-constraint" title="Link to this heading"></a></h1>
+<p>This node will create a new physics constraint on the selected object.</p>
 <section id="parameters">
 <h2>Parameters<a class="headerlink" href="#parameters" title="Link to this heading"></a></h2>
 <dl class="simple">
@@ -147,17 +147,17 @@
 <dl class="simple">
 <dt>Condition</dt><dd><p>If connected, condition must be fulfilled for node to activate.</p>
 </dd>
-<dt>Object</dt><dd><p>Which object to use todo.</p>
+<dt>Object</dt><dd><p>Which object to apply the constraint to.</p>
 </dd>
-<dt>Target</dt><dd><p>Which object to use as target.</p>
+<dt>Target</dt><dd><p>Which object to use as target for the constraint (may not be the same as Object socket).</p>
 </dd>
-<dt>Name</dt><dd><p>todo</p>
+<dt>Name</dt><dd><p>Unique name for this constraint for later access.</p>
 </dd>
-<dt>Use World Space</dt><dd><p>todo</p>
+<dt>Use World Space</dt><dd><p>Calculate the pivot in world space instead of local.</p>
 </dd>
-<dt>Pivot</dt><dd><p>todo</p>
+<dt>Pivot</dt><dd><p>Pivot for physics calculations.</p>
 </dd>
-<dt>Linked Collision</dt><dd><p>todo</p>
+<dt>Linked Collision</dt><dd><p>If enabled, object will collide with target.</p>
 </dd>
 </dl>
 </section>

@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" data-content_root="../../../../">
 <head>
@@ -6,19 +8,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Add Filter &mdash; UPBGE Manual</title>
       <link rel="stylesheet" type="text/css" href="../../../../_static/pygments.css?v=fa44fd50" />
-      <link rel="stylesheet" type="text/css" href="../../../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../../../_static/css/theme.css?v=e59714d7" />
       <link rel="stylesheet" type="text/css" href="../../../../_static/css/theme_overrides.css?v=b4c3fc50" />
 
   
-  <!--[if lt IE 9]>
-    <script src="../../../../_static/js/html5shiv.min.js"></script>
-  <![endif]-->
-  
-        <script src="../../../../_static/jquery.js?v=5d32c60e"></script>
-        <script src="../../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-        <script src="../../../../_static/documentation_options.js?v=f4332903"></script>
-        <script src="../../../../_static/doctools.js?v=9a2dae69"></script>
-        <script src="../../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../../../../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../../../../_static/documentation_options.js?v=f4332903"></script>
+      <script src="../../../../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../../../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../../../genindex.html" />
     <link rel="search" title="Search" href="../../../../search.html" />
@@ -130,10 +128,23 @@
            <div itemprop="articleBody">
              
   <figure class="align-right">
-<a class="reference internal image-reference" href="../../../../_images/ln-add_filter.png"><img alt="Add Filter Node" src="../../../../_images/ln-add_filter.png" style="width: 215px;" /></a>
+<a class="reference internal image-reference" href="../../../../_images/ln-add_filter.png"><img alt="Add Filter Node" src="../../../../_images/ln-add_filter.png" style="width: 215px;" />
+</a>
 </figure>
 <section id="add-filter">
 <span id="ln-add-filter"></span><h1>Add Filter<a class="headerlink" href="#add-filter" title="Link to this heading"></a></h1>
+<p>This node will add a new GL filter, modifying the render output.</p>
+<p>Available filters are:
+- FXAA
+- HBAO
+- SSAO
+- Vignette
+- Brightness
+- Chromatic Abberation
+- Grayscale
+- Levels
+- Mist
+- Blur</p>
 <section id="parameters">
 <h2>Parameters<a class="headerlink" href="#parameters" title="Link to this heading"></a></h2>
 <dl class="simple">
@@ -146,15 +157,15 @@
 <dl class="simple">
 <dt>Condition</dt><dd><p>If connected, condition must be fulfilled for node to activate.</p>
 </dd>
-<dt>Pass Index</dt><dd><p>todo</p>
+<dt>Pass Index</dt><dd><p>Higher indices will affect the rendered image by lower indices.</p>
 </dd>
-<dt>Power</dt><dd><p>todo</p>
+<dt>Power</dt><dd><p>Strength of the effect.</p>
 </dd>
-<dt>Color</dt><dd><p>Color of the added filter.</p>
+<dt>Color</dt><dd><p>Color of the added filter (if applicable).</p>
 </dd>
-<dt>Brightness</dt><dd><p>Brightness of the selected filter.</p>
+<dt>Brightness</dt><dd><p>Brightness of the selected filter (if applicable).</p>
 </dd>
-<dt>Start</dt><dd><p>todo. For <em>Mist</em> filter only.</p>
+<dt>Start</dt><dd><p>Starting distance of the mist. For <em>Mist</em> filter only.</p>
 </dd>
 <dt>Density</dt><dd><p>Density of the mist. For <em>Mist</em> filter only.</p>
 </dd>

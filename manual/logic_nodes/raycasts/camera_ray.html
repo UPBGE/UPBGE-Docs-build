@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" data-content_root="../../../">
 <head>
@@ -6,19 +8,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Camera Ray &mdash; UPBGE Manual</title>
       <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=fa44fd50" />
-      <link rel="stylesheet" type="text/css" href="../../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/theme.css?v=e59714d7" />
       <link rel="stylesheet" type="text/css" href="../../../_static/css/theme_overrides.css?v=b4c3fc50" />
 
   
-  <!--[if lt IE 9]>
-    <script src="../../../_static/js/html5shiv.min.js"></script>
-  <![endif]-->
-  
-        <script src="../../../_static/jquery.js?v=5d32c60e"></script>
-        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-        <script src="../../../_static/documentation_options.js?v=f4332903"></script>
-        <script src="../../../_static/doctools.js?v=9a2dae69"></script>
-        <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../../../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../../../_static/documentation_options.js?v=f4332903"></script>
+      <script src="../../../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
@@ -124,37 +122,39 @@
            <div itemprop="articleBody">
              
   <figure class="align-right">
-<a class="reference internal image-reference" href="../../../_images/ln-camera_ray.png"><img alt="Camera Ray Node" src="../../../_images/ln-camera_ray.png" style="width: 215px;" /></a>
+<a class="reference internal image-reference" href="../../../_images/ln-camera_ray.png"><img alt="Camera Ray Node" src="../../../_images/ln-camera_ray.png" style="width: 215px;" />
+</a>
 </figure>
 <section id="camera-ray">
 <span id="ln-camera-ray"></span><h1>Camera Ray<a class="headerlink" href="#camera-ray" title="Link to this heading"></a></h1>
+<p>Cast a ray from the camera in the direction of coordinates on the screen.</p>
 <section id="inputs">
 <h2>Inputs<a class="headerlink" href="#inputs" title="Link to this heading"></a></h2>
 <dl class="simple">
 <dt>Condition</dt><dd><p>Which condition will be used for node to activate.</p>
 </dd>
-<dt>Aim</dt><dd><p>todo</p>
+<dt>Aim</dt><dd><p>Screen coordinates at which to cast the ray.</p>
 </dd>
 <dt>Property</dt><dd><p>Which property to use.</p>
 </dd>
-<dt>X-Ray</dt><dd><p>todo</p>
+<dt>X-Ray</dt><dd><p>Ignore objects that don’t have the given property.</p>
 </dd>
-<dt>Distance</dt><dd><p>todo.</p>
+<dt>Distance</dt><dd><p>Maximum reach of the ray.</p>
 </dd>
-<dt>Mask</dt><dd><p>Mask layers to use. todo</p>
+<dt>Mask</dt><dd><p>Bitmask to use.</p>
 </dd>
 </dl>
 </section>
 <section id="outputs">
 <h2>Outputs<a class="headerlink" href="#outputs" title="Link to this heading"></a></h2>
 <dl class="simple">
-<dt>Has Result</dt><dd><p>todo</p>
+<dt>Has Result</dt><dd><p><cite>True</cite> if the ray has hit a target, else <cite>False</cite></p>
 </dd>
-<dt>Picked Object</dt><dd><p>todo</p>
+<dt>Picked Object</dt><dd><p>The object the ray has hit, or <cite>None</cite></p>
 </dd>
-<dt>Picked Point</dt><dd><p>todo</p>
+<dt>Picked Point</dt><dd><p>The world point the ray has hit, or <cite>None</cite></p>
 </dd>
-<dt>Picked Normal</dt><dd><p>todo</p>
+<dt>Picked Normal</dt><dd><p>The normal of the face the ray has hit, or <cite>None</cite></p>
 </dd>
 </dl>
 </section>
