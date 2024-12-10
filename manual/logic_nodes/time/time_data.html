@@ -129,14 +129,22 @@
 </figure>
 <section id="time-data">
 <span id="ln-time-data"></span><h1>Time Data<a class="headerlink" href="#time-data" title="Link to this heading"></a></h1>
+<p>Return useful data about the time within your game.</p>
 <section id="outputs">
 <h2>Outputs<a class="headerlink" href="#outputs" title="Link to this heading"></a></h2>
-<dl class="simple">
-<dt>Time</dt><dd><p>todo</p>
+<dl>
+<dt>Time</dt><dd><p>The number of seconds elapsed since the game engine was launched (Float).</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The value returned here is independent of a scene change (time will continue to be counted without resetting the count),
+but it will be reset after loading a .blend file because it relaunches the game engine.</p>
+</div>
 </dd>
-<dt>Delta (Frametime)</dt><dd><p>todo</p>
+<dt>Delta (Frametime)</dt><dd><p>The number of seconds elapsed between the last two frames (Float). Used for calculations requiring absolute temporal precision,
+such as progressive transitions, interpolations or mechanics requiring fine temporal management. For example,
+if you want to animate an object that has to move exactly 10 units over 5 seconds.</p>
 </dd>
-<dt>FPS</dt><dd><p><em>Frames Per Second</em> of the running game.</p>
+<dt>FPS</dt><dd><p><em>Frames Per Second</em> of the running game (Float).</p>
 </dd>
 </dl>
 </section>

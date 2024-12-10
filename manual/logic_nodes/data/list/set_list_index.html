@@ -130,6 +130,7 @@
 </figure>
 <section id="set-list-index">
 <span id="ln-set-list-index"></span><h1>Set List Index<a class="headerlink" href="#set-list-index" title="Link to this heading"></a></h1>
+<p>Set a value for a given index on a list.</p>
 <section id="inputs">
 <h2>Inputs<a class="headerlink" href="#inputs" title="Link to this heading"></a></h2>
 <dl class="simple">
@@ -151,6 +152,11 @@
 <dt>List</dt><dd><p>Resulting list after setting the index.</p>
 </dd>
 </dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This node cannot be used to add a new value at the end of a list, it will result in
+an out of range error. Instead use the <em>Append</em> node to do this.</p>
+</div>
 </section>
 </section>
 

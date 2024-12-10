@@ -129,6 +129,7 @@
 </figure>
 <section id="timer">
 <span id="ln-timer"></span><h1>Timer<a class="headerlink" href="#timer" title="Link to this heading"></a></h1>
+<p>Wait a certain time between the reception of <em>True</em> and the output of <em>True</em>.</p>
 <section id="inputs">
 <h2>Inputs<a class="headerlink" href="#inputs" title="Link to this heading"></a></h2>
 <dl class="simple">
@@ -147,6 +148,14 @@
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p><em>Timer</em> node is tied to the CPU clock, not to game FPS.</p>
+</div>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p><em>Timer</em> will only handle one input at a time and will not stack them, unlike the <em>Delay</em> node.
+For example, if you connect a <em>Keyboard key</em> node to a <em>Timer</em> set to 5 seconds
+and press the key a first time and then 2 seconds later you press the key again, <em>Timer</em> will only
+output <em>True</em> 5 seconds after the first key press and not another one time <em>True</em> at 7 seconds,
+unlike <em>Delay</em>.</p>
 </div>
 </section>
 </section>

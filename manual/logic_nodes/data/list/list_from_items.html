@@ -130,28 +130,33 @@
 </figure>
 <section id="list-from-items">
 <span id="ln-list-from-items"></span><h1>List From Items<a class="headerlink" href="#list-from-items" title="Link to this heading"></a></h1>
+<p>Create a new list with the given items.</p>
 <section id="parameters">
 <h2>Parameters<a class="headerlink" href="#parameters" title="Link to this heading"></a></h2>
 <dl class="simple">
-<dt>Add Socket</dt><dd><p>Will add another socket for additional items.</p>
+<dt>Add Socket</dt><dd><p>Add another socket for additional items inputs.</p>
 </dd>
 </dl>
 </section>
 <section id="inputs">
 <h2>Inputs<a class="headerlink" href="#inputs" title="Link to this heading"></a></h2>
 <dl class="simple">
-<dt>Item</dt><dd><p>First item to add to list.</p>
-</dd>
-<dt>Item</dt><dd><p>Second item to add.</p>
+<dt>Item</dt><dd><p>Item to add to list. Each press of <em>Add Socket</em> will add another <em>Item</em> input.
+Items will be add to the list from top (index 0) to bottom (index list length-1).</p>
 </dd>
 </dl>
 </section>
 <section id="outputs">
 <h2>Outputs<a class="headerlink" href="#outputs" title="Link to this heading"></a></h2>
 <dl class="simple">
-<dt>List</dt><dd><p>Resulting populated list with added items.</p>
+<dt>List</dt><dd><p>New list with the added items.</p>
 </dd>
 </dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Leaving an <em>Item</em> input blank will result in a Null item in your list.
+TODO: Add an example with mutiple blank item inputs.</p>
+</div>
 </section>
 </section>
 

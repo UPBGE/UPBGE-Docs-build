@@ -130,12 +130,13 @@
 </figure>
 <section id="remove-value">
 <span id="ln-remove-value"></span><h1>Remove Value<a class="headerlink" href="#remove-value" title="Link to this heading"></a></h1>
+<p>Remove the first iteration of a given value in a list.</p>
 <section id="inputs">
 <h2>Inputs<a class="headerlink" href="#inputs" title="Link to this heading"></a></h2>
 <dl class="simple">
 <dt>Condition</dt><dd><p>Condition to be fulfilled for node to activate.</p>
 </dd>
-<dt>List</dt><dd><p>Which list to use.</p>
+<dt>List</dt><dd><p>List to remove the value from.</p>
 </dd>
 <dt>Type</dt><dd><p>Which type and value to remove from list.</p>
 </dd>
@@ -149,6 +150,12 @@
 <dt>List</dt><dd><p>Resulting list after value removal.</p>
 </dd>
 </dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This node will only remove the first iteration in the list,
+for example if you give the list [1, 4, 104, 1] and the value integer 1,
+the output list will be [4, 104, 1] and not [4, 104] like we can think at first.</p>
+</div>
 </section>
 </section>
 
