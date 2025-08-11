@@ -105,7 +105,47 @@
              
   <section id="dealing-with-group-instances">
 <h1>Dealing With Group Instances<a class="headerlink" href="#dealing-with-group-instances" title="Link to this heading"></a></h1>
-<p>TODO</p>
+<p>Learn to dynamically spawn and manage group instances.</p>
+<section id="setup">
+<h2>Setup<a class="headerlink" href="#setup" title="Link to this heading"></a></h2>
+<ol class="arabic simple">
+<li><p>Create a group named “Projectile”</p></li>
+<li><p>Make sure it has a <strong>Rigid Body</strong> setup</p></li>
+<li><p>Add <strong>Always</strong> + <strong>Python Controller</strong></p></li>
+</ol>
+</section>
+<section id="spawning-script">
+<h2>Spawning Script<a class="headerlink" href="#spawning-script" title="Link to this heading"></a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">bge</span>
+<span class="kn">from</span> <span class="nn">random</span> <span class="kn">import</span> <span class="n">uniform</span>
+
+<span class="k">def</span> <span class="nf">spawn_projectiles</span><span class="p">(</span><span class="n">scene</span><span class="p">,</span> <span class="n">owner</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">bge</span><span class="o">.</span><span class="n">logic</span><span class="o">.</span><span class="n">keyboard</span><span class="o">.</span><span class="n">events</span><span class="p">[</span><span class="n">bge</span><span class="o">.</span><span class="n">events</span><span class="o">.</span><span class="n">SPACEKEY</span><span class="p">]</span> <span class="o">==</span> <span class="n">bge</span><span class="o">.</span><span class="n">logic</span><span class="o">.</span><span class="n">KX_INPUT_ACTIVE</span><span class="p">:</span>
+        <span class="c1"># Random position near spawner</span>
+        <span class="n">pos</span> <span class="o">=</span> <span class="p">[</span><span class="n">uniform</span><span class="p">(</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="n">uniform</span><span class="p">(</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="mi">3</span><span class="p">]</span>
+
+        <span class="c1"># Create instance</span>
+        <span class="n">new_obj</span> <span class="o">=</span> <span class="n">scene</span><span class="o">.</span><span class="n">addObject</span><span class="p">(</span><span class="s2">&quot;Projectile&quot;</span><span class="p">,</span> <span class="n">owner</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+        <span class="n">new_obj</span><span class="o">.</span><span class="n">worldPosition</span> <span class="o">=</span> <span class="n">pos</span>
+
+        <span class="c1"># Apply physics force</span>
+        <span class="n">new_obj</span><span class="o">.</span><span class="n">applyForce</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">50</span><span class="p">],</span> <span class="n">local</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+
+<span class="n">scene</span> <span class="o">=</span> <span class="n">bge</span><span class="o">.</span><span class="n">logic</span><span class="o">.</span><span class="n">getCurrentScene</span><span class="p">()</span>
+<span class="n">controller</span> <span class="o">=</span> <span class="n">bge</span><span class="o">.</span><span class="n">logic</span><span class="o">.</span><span class="n">getCurrentController</span><span class="p">()</span>
+<span class="n">owner</span> <span class="o">=</span> <span class="n">controller</span><span class="o">.</span><span class="n">owner</span>
+<span class="n">spawn_projectiles</span><span class="p">(</span><span class="n">scene</span><span class="p">,</span> <span class="n">owner</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="advanced-usage">
+<h2>Advanced Usage<a class="headerlink" href="#advanced-usage" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p>Object pooling for better performance</p></li>
+<li><p>Damage system on collision</p></li>
+<li><p>Particle trail effects</p></li>
+</ul>
+</section>
 </section>
 
 

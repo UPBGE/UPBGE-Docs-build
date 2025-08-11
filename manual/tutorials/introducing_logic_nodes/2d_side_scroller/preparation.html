@@ -117,7 +117,7 @@
 <p>In our <a class="reference download internal" download="" href="../../../../_downloads/bd63832c50a32158388f12fe41dcb916/2d_scroller_ln_tutorial.blend"><code class="xref download docutils literal notranslate"><span class="pre">.blend</span> <span class="pre">assets</span></code></a> file, find a <code class="docutils literal notranslate"><span class="pre">player</span></code> object. Not a simple task, since there is no object with that name - names in Outliner are all cryptic/default. Although there is a hint, if you search the Outliner, we’ll assume this is not the case.</p>
 <ul class="simple">
 <li><p>Switch to <span class="menuselection">layout</span> workspace, select the ‘egg’ object.</p></li>
-<li><p>Mouse-over Outliner &gt; <kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Numpad</kbd> <kbd class="kbd docutils literal notranslate">,</kbd></kbd> (comma) - currently selected object is focused in Outliner. Rename to <code class="docutils literal notranslate"><span class="pre">player</span></code> or whatever you prefer. This works also in reverse - select object in Outliner &gt; mouse-over <code class="docutils literal notranslate"><span class="pre">3D</span> <span class="pre">Viewport</span></code> &gt; <kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Numpad</kbd> <kbd class="kbd docutils literal notranslate">,</kbd></kbd>.</p></li>
+<li><p>Mouse-over Outliner &gt; <kbd class="kbd docutils literal notranslate">Numpad</kbd> <kbd class="kbd docutils literal notranslate">,</kbd> (comma) - currently selected object is focused in Outliner. Rename to <code class="docutils literal notranslate"><span class="pre">player</span></code> or whatever you prefer. This works also in reverse - select object in Outliner &gt; mouse-over <code class="docutils literal notranslate"><span class="pre">3D</span> <span class="pre">Viewport</span></code> &gt; <kbd class="kbd docutils literal notranslate">Numpad</kbd> <kbd class="kbd docutils literal notranslate">,</kbd>.</p></li>
 </ul>
 <p>Next, there are many objects with same name (except for end numbering). Let’s rename those too. Lucky we, Blender has a built-in tool for batch renaming.</p>
 <figure class="align-right" id="id1" style="width: 50%">
@@ -129,19 +129,19 @@
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">3D</span> <span class="pre">Viewport</span></code> &gt; click big object (rock) under <em>player</em>, and find it in Outliner (hotkey above) - should be named ‘Icosphere.002’.</p></li>
 <li><p><kbd class="kbd docutils literal notranslate">F3</kbd> for Search pop-up &gt; type ‘batch rename’ &gt; <kbd class="kbd docutils literal notranslate">Enter</kbd> (there is also hotkey indicated in Search pop-up).</p></li>
-<li><p>Search pop-up &gt; <span class="menuselection">All</span> (also hotkey is indicated - <kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Alt</kbd>-<kbd class="kbd docutils literal notranslate">A</kbd></kbd>). If you want to only rename selected objects &gt; <span class="menuselection">Selected</span>.</p></li>
+<li><p>Search pop-up &gt; <span class="menuselection">All</span> (also hotkey is indicated - <kbd class="kbd docutils literal notranslate">Alt</kbd>-<kbd class="kbd docutils literal notranslate">A</kbd>). If you want to only rename selected objects &gt; <span class="menuselection">Selected</span>.</p></li>
 <li><p>Leave next field as ‘Objects’, since we are renaming objects. But do feel free to explore other available options in dropdown menu. This goes for next ‘Type’ field too.</p></li>
 <li><p>‘Find’ field &gt; type ‘icosphere’ (<span class="menuselection">Case Sensitive</span> is unchecked) &gt; ‘Replace’ field &gt; type ‘big_rock’ (or whatever you prefer). For the sake of this tutorial, we will rename the Cube objects at the same time.</p></li>
 <li><p>Click <span class="menuselection">+</span> button at the right side - this will add another sub-window. ‘Find’ &gt; ‘Cube’ &gt; ‘Replace’ &gt; ‘rock’. Hit <span class="menuselection">OK</span>.</p></li>
 </ul>
-<p>The result is not ok, because we also renamed all trees into rock. <kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Ctrl</kbd>-<kbd class="kbd docutils literal notranslate">Z</kbd></kbd> few times to undo. You now know how to quickly rename objects. If you want to do it properly:</p>
+<p>The result is not ok, because we also renamed all trees into rock. <kbd class="kbd docutils literal notranslate">Ctrl</kbd>-<kbd class="kbd docutils literal notranslate">Z</kbd> few times to undo. You now know how to quickly rename objects. If you want to do it properly:</p>
 <ul class="simple">
 <li><p>Shift-select all trees in 3D Viewport &gt; Batch Rename &gt; ‘Selected’ &gt; ‘Find’ &gt; ‘cube’ &gt; ‘Replace’ &gt; ‘tree’. Repeat for big rocks and small rocks, rename accordingly.</p></li>
 </ul>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p>Can not zoom enough</p>
-<p>Blender will sometimes not zoom enough into the object. Solution: select an object &gt; <kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Numpad</kbd> <kbd class="kbd docutils literal notranslate">,</kbd></kbd> - object is centered and focused, now you can zoom in. This procedure works best with single object selected.</p>
+<p>Blender will sometimes not zoom enough into the object. Solution: select an object &gt; <kbd class="kbd docutils literal notranslate">Numpad</kbd> <kbd class="kbd docutils literal notranslate">,</kbd> - object is centered and focused, now you can zoom in. This procedure works best with single object selected.</p>
 </div>
 <p>Let’s move on.</p>
 <section id="adding-game-logic">
